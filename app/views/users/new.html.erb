@@ -10,6 +10,9 @@
 
       <%= f.label :email %>
       <%= f.text_field :email %>
+      
+      <%= f.label :department %>
+      <%= f.collection_select :department_id, Department.all, :id, :name, :include_blank => true %>
 
       <%= f.label :password %>
       <%= f.password_field :password %>
