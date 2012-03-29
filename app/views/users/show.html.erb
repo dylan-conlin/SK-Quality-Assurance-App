@@ -6,7 +6,9 @@
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
-        <%= @user.department.name %>
+        Department: <%= @user.department.name %></br>
+        Supervisor: <%= link_to @supervisor.name, user_path(@supervisor.id) %>
+
     </section>
   </aside>
   <div class="span8">
