@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  attr_accessible :name, :email, :password, :password_confirmation
+  attr_accessible :name, :email, :password, :password_confirmation, :department_id
   has_secure_password
   has_many :infractions, dependent: :destroy
   has_many :microposts, dependent: :destroy
@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
                                    class_name:  "Relationship",
                                    dependent:   :destroy
   has_many :followers, through: :reverse_relationships, source: :follower
-
+  belongs_to :department                                   
   before_save :create_remember_token
 
   validates :name,  presence: true, length: { maximum: 50 }
