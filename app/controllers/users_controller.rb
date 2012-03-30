@@ -12,6 +12,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @microposts = @user.microposts.paginate(page: params[:page])
     @infractions = @user.infractions.paginate(page: params[:page])
+
     if @user.user_id.present?
       @supervisor = User.find(@user.user_id)
     else
