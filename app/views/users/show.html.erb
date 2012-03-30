@@ -8,6 +8,23 @@
       </h1>
         Department: <%= @user.department.name %></br>
 	Supervisor: <%= link_to @supervisor.name, user_path(@supervisor.id) %>
+
+    <% if @user.supervisor.present? %>
+      <% if @user.supervisor == true %></br></br>
+           Direct Reports: </br>
+        <% @direct_reports.each do |direct_report| %>
+	  <a href="<%= user_path(direct_report) %>">
+          <%= gravatar_for direct_report, size: 35 %>
+          </a>          
+
+        <% end %>
+      <% else %>
+        not a supervisor :(
+      <% end %>
+    <% else %>
+      nil value for this person.
+    <% end %>
+
     </section>
   </aside>
   <div class="span8">
