@@ -5,3 +5,89 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+["Quality Assurance", "Production", "Sanitation", "Logistics", "Purchasing",
+  "Facilities", "R&D", "Human Resources", "Customer Service", "IT", "Labels", "Planning", "Sales", "Seattle Admin"].each do |department|
+  Department.find_or_create_by_name(department)
+end
+
+if User.where(:email => 'dylan.conlin@gmail.com').exists?
+
+  puts "already in db!"
+else
+
+admin = User.create!(:name => "Dylan Conlin",
+   :email => "dylan.conlin@gmail.com",
+   :department_id => 1,
+   :user_id => 7,
+   :supervisor => true,
+   :password => "SuNFL0Wer",
+   :password_confirmation => "SuNFL0Wer")                                       
+
+   
+admin.toggle!(:admin)
+
+end
+
+    User.create!(:name => "Karen Jorgensen",
+   :email => "karen.jorgensen@skfoodgroup.com",
+   :department_id => 1,
+   :user_id => 1,
+   :supervisor => false,
+   :password => "password",
+   :password_confirmation => "password")
+
+    User.create!(:name => "Nicole Carl",
+   :email => "nicole.carl@skfoodgroup.com",
+   :department_id => 1,
+   :user_id => 1,
+   :supervisor => false,
+   :password => "password",
+   :password_confirmation => "password")
+   
+   User.create!(:name => "Marian Becerra",
+   :email => "marian.becerra@skfoodgroup.com",
+   :department_id => 1,
+   :user_id => 1,
+   :supervisor => false,
+   :password => "password",
+   :password_confirmation => "password")
+   
+   User.create!(:name => "Viviana Michealree",
+   :email => "viviana.michealree@skfoodgroup.com",
+   :department_id => 1,
+   :user_id => 1,
+   :supervisor => false,
+   :password => "password",
+   :password_confirmation => "password")
+   
+   User.create!(:name => "Ruben Renteria",
+   :email => "ruben.renteria@skfoodgroup.com",
+   :department_id => 1,
+   :user_id => 1,
+   :supervisor => false,
+   :password => "password",
+   :password_confirmation => "password")
+   
+   User.create!(:name => "Joanne Medeiros",
+   :email => "joanne.medeiros@skfoodgroup.com",
+   :department_id => 1,
+   :supervisor => true,
+   :password => "password",
+   :password_confirmation => "password")   
+
+   User.create!(:name => "Linda Dalhaus",
+   :email => "linda.dalhaus@skfoodgroup.com",
+   :department_id => 1,
+   :user_id => 7,
+   :supervisor => false,
+   :password => "password",
+   :password_confirmation => "password")   
+
+   User.create!(:name => "Jodi Duval",
+   :email => "jodi.duval@skfoodgroup.com",
+   :department_id => 1,
+   :user_id => 7,
+   :supervisor => false,
+   :password => "password",
+   :password_confirmation => "password")   

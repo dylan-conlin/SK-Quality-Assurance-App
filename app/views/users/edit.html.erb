@@ -11,12 +11,21 @@
 
       <%= f.label :email %>
       <%= f.text_field :email %>
-
+    
       <%= f.label :password %>
       <%= f.password_field :password %>
 
-      <%= f.label :password_confirmation, "Confirm Password" %>
-      <%= f.password_field :password_confirmation %>
+      <%= f.label :password_confirmation, "Retype password" %>
+      <%= f.password_field :password_confirmation %>      
+      <%= f.label "What department are you in?" %>
+      <%= f.collection_select :department_id, Department.all, :id, :name, :include_blank => true %>
+
+      <%= f.label "Who is your direct supervisor? (leave blank if yours isn't listed)" %>
+      <%= f.collection_select :user_id, User.where(:supervisor => true), :id, :name, :include_blank => true %>
+
+
+      <%= f.label "Do you have any direct reports?" %>
+      <%= f.check_box :supervisor %></br></br>
 
       <%= f.submit "Save changes", :class => "btn btn-large btn-primary" %>
     <% end %>
