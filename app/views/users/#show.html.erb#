@@ -1,4 +1,5 @@
-plit<% provide(:title, @user.name) %>
+
+<% provide(:title, @user.name) %>
 <div class="row">
   <aside class="span4">
     <section>
@@ -16,7 +17,11 @@ plit<% provide(:title, @user.name) %>
  <% @direct_reports.each do |direct_report| %>
 
  <a href="<%= user_path(direct_report)%>" id="example" class="btn" rel="popover" data-content="<%= direct_report.name %>" data-original-title="<%= direct_report.name %>"><%= gravatar_for direct_report, size: 35 %> </a>          
+
         <% end %>
+
+
+
       <% else %>
         not a supervisor :(
       <% end %>

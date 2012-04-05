@@ -1,16 +1,38 @@
 <p id="notice"><%= notice %></p>
-plit<% provide(:title, @department.name) %>
-<div class="row">
-  <aside class="span4">
-    <section>
-      <h1>
-        <%= @department.name %>
-      </h1>
+<% provide(:title, @department.name) %>
+<h1><%= @department.name %></h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Employee</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <% @department.users.each do |user|  %>
+      <tr>
 
-   <h4>Employees</h4></br>
-  <% @department.users.each do |user|  %>
-  <%= gravatar_for user, size: 35 %>
-  <% end %>
+        <td><%= link_to user.name, user_path(user) %></td>
+
+        <td>
+
+          <%= link_to 'Destroy', user_path(user), :method => :delete, :confirm => 'Are you sure?', :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
 
 <%= link_to 'Edit', edit_department_path(@department) %> |
 <%= link_to 'Back', departments_path %>
