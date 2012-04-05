@@ -1,10 +1,18 @@
 <p id="notice"><%= notice %></p>
+plit<% provide(:title, @department.name) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= @department.name %>
+      </h1>
 
-<p>
-  <b>Name:</b>
-  <%= @department.name %>
-</p>
-
+   <h4>Employees</h4></br>
+  <% @department.users.each do |user|  %>
+  <%= gravatar_for user, size: 35 %>
+  <% end %>
 
 <%= link_to 'Edit', edit_department_path(@department) %> |
 <%= link_to 'Back', departments_path %>
+
+
