@@ -1,15 +1,22 @@
 <p id="notice"><%= notice %></p>
-plit<% provide(:title, @department.name) %>
+
 <div class="row">
   <aside class="span4">
     <section>
       <h1>
         <%= @department.name %>
-      </h1>
+      </h1></br>
 
-   <h4>Employees</h4></br>
+
   <% @department.users.each do |user|  %>
-  <%= gravatar_for user, size: 35 %>
+  <ul>
+
+  <% if user.supervisor == true %>
+ <a href="<%= user_path(user)%>" id="example" class="btn btn-info" rel="popover" data-content="<%= user.name %>" data-original-title="<%= user.name %>"><%= gravatar_for user, size: 35 %> </a>          
+   <% else %>
+ <a href="<%= user_path(user)%>" id="example" class="btn" rel="popover" data-content="<%= user.name %>" data-original-title="<%= user.name %>"><%= gravatar_for user, size: 35 %> </a>          
+  <% end %>
+  </ul>
   <% end %>
 
 <%= link_to 'Edit', edit_department_path(@department) %> |
