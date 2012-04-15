@@ -1,6 +1,17 @@
+<%= provide(:title, 'New Department') %>
 <h1>Editing department</h1>
 
-<%= render 'form' %>
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@department) do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+      <%= f.label "department name" %>
+      <%= f.text_field :name %>
+
+      <%= f.submit "Update department", :class => "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
 
 <%= link_to 'Show', @department %> |
 <%= link_to 'Back', departments_path %>
