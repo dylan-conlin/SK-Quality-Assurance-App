@@ -15,17 +15,20 @@
 
  <% @direct_reports.each do |direct_report| %>
 
+  <% if direct_report.supervisor == true %>
+ <a href="<%= user_path(direct_report)%>" id="example" class="btn btn-info" rel="popover" data-content="<%= direct_report.name %>" data-original-title="<%= direct_report.name %>"><%= gravatar_for direct_report, size: 35 %> </a>          
+   <% else %>
  <a href="<%= user_path(direct_report)%>" id="example" class="btn" rel="popover" data-content="<%= direct_report.name %>" data-original-title="<%= direct_report.name %>"><%= gravatar_for direct_report, size: 35 %> </a>          
-
+  <% end %>
         <% end %>
 
 
 
       <% else %>
-        not a supervisor :(
+        <p>no direct reports</p>
       <% end %>
     <% else %>
-      nil value for this person.
+
     <% end %>
 
     </section>
