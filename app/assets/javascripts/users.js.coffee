@@ -8,3 +8,9 @@ jQuery ->
   $("a[rel=tooltip]").tooltip()
 
 $("#example").popover({placement:'top'})
+
+jQuery ->
+
+  $(".collapse").collapse()
+
+
