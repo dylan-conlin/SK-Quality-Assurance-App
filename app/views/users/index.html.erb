@@ -1,21 +1,27 @@
-<%= provide(:title, 'All users') %>
-<h1>All users</h1>
 
-<%= will_paginate %>
+<h1>Users</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.id %></td>
+        <td><%= link_to user.name, user_path(user) %></td>
 
-<ul class="users">
+        <td>
+          <%= link_to 'Show', user_path(user), :class => 'btn btn-mini btn-info' %>
+          <%= link_to 'Edit', edit_user_path(user), :class => 'btn btn-mini' %>
+          <%= link_to 'Destroy', user_path(user), :method => :delete, :confirm => 'Are you sure?', :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 
-<li>
- <%= @users.each do |user| %>
-  <%= gravatar_for user, size: 52 %>
-  <%= link_to user.name, user %>
-
-  <% if current_user.admin? && !current_user?(user) %>
-    | <%= link_to "delete", user, method: :delete, confirm: "You sure?" %>
-  <% end %>
-<% end %>
-</li>
-
-</ul>
-
-<%= will_paginate %>
+<%= link_to 'New', new_user_path, :class => 'btn btn-primary' %>
