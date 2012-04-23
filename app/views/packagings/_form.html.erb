@@ -1,0 +1,73 @@
+<%= form_for(@packaging) do |f| %>
+  <% if @packaging.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@packaging.errors.count, "error") %> prohibited this packaging from being saved:</h2>
+
+      <ul>
+      <% @packaging.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :workorder %><br />
+    <%= f.number_field :workorder %>
+  </div>
+  <div class="field">
+    <%= f.label :item_number %><br />
+    <%= f.number_field :item_number %>
+  </div>
+  <div class="field">
+    <%= f.label :individual_label_placement %><br />
+    <%= f.check_box :individual_label_placement %>
+  </div>
+  <div class="field">
+    <%= f.label :individual_label_legibility %><br />
+    <%= f.check_box :individual_label_legibility %>
+  </div>
+  <div class="field">
+    <%= f.label :individual_seal_integrity %><br />
+    <%= f.check_box :individual_seal_integrity %>
+  </div>
+  <div class="field">
+    <%= f.label :individual_label_accuracy %><br />
+    <%= f.check_box :individual_label_accuracy %>
+  </div>
+  <div class="field">
+    <%= f.label :individual_general_appearance %><br />
+    <%= f.check_box :individual_general_appearance %>
+  </div>
+  <div class="field">
+    <%= f.label :master_label_placement %><br />
+    <%= f.check_box :master_label_placement %>
+  </div>
+  <div class="field">
+    <%= f.label :master_label_legibility %><br />
+    <%= f.check_box :master_label_legibility %>
+  </div>
+  <div class="field">
+    <%= f.label :master_tape_glue %><br />
+    <%= f.check_box :master_tape_glue %>
+  </div>
+  <div class="field">
+    <%= f.label :master_case_appearance %><br />
+    <%= f.check_box :master_case_appearance %>
+  </div>
+  <div class="field">
+    <%= f.label :case_count %><br />
+    <%= f.number_field :case_count %>
+  </div>
+  <div class="field">
+    <%= f.label :case_weight %><br />
+    <%= f.text_field :case_weight %>
+  </div>
+  <div class="field">
+    <%= f.label :comments %><br />
+    <%= f.text_area :comments %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
