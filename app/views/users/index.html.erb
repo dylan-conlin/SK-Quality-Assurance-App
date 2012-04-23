@@ -12,10 +12,15 @@
     </tr>
   </thead>
   <tbody>
+
+
     <% @users.each do |user| %>
       <tr>
 
-        <td><%= link_to user.name, user_path(user) %></td>
+        <td>
+
+          <%= link_to user.name, user_path(user) %>
+        </td>
         <td></td>
         <td></td>
         <td>
@@ -24,16 +29,21 @@
           <%= link_to 'Destroy', user_path(user), :method => :delete, :confirm => 'Are you sure?', :class => 'btn btn-mini btn-danger' %>
         </td>
         
-      </tr>
-       <% user.infractions.each do |infraction| %>
-       <tr>
-         <td></td>
-         <td><%= infraction.date        %></td>
-         <td><%= infraction.description %></td>
-         <td><%= link_to 'New', new_infraction_path %>
-         <%= link_to 'Edit', edit_infraction_path(infraction) %>
-         <%= link_to 'Destroy', infraction_path(infraction), :method => :delete, :confirm => 'Are you sure?' %></td>
-       </tr>
+	      </tr>
+         <% if current_user.supervisor == true %>
+
+
+	       <% user.infractions.each do |infraction| %>
+	       <tr>
+		 <td></td>
+		 <td><%= infraction.date        %></td>
+		 <td><%= infraction.description %></td>
+		 <td><%= link_to 'New', new_infraction_path %>
+		 <%= link_to 'Edit', edit_infraction_path(infraction) %>
+		 <%= link_to 'Destroy', infraction_path(infraction), :method => :delete, :confirm => 'Are you sure?' %></td>
+	       </tr>
+
+          <% end %>
         <% end %>
     <% end %>
   </tbody>
