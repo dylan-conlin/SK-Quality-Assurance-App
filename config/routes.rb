@@ -1,5 +1,7 @@
 SampleApp::Application.routes.draw do
 
+  resources :packagings
+
   resources :celebrities
 
   resources :users do

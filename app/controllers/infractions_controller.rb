@@ -44,7 +44,7 @@ class InfractionsController < ApplicationController
 
     respond_to do |format|
       if @infraction.save
-        format.html { redirect_to @infraction, notice: 'Infraction was successfully created.' }
+        format.html { redirect_to users_url, notice: 'Infraction was successfully created.' }
         format.json { render json: @infraction, status: :created, location: @infraction }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class InfractionsController < ApplicationController
 
     respond_to do |format|
       if @infraction.update_attributes(params[:infraction])
-        format.html { redirect_to @infraction, notice: 'Infraction was successfully updated.' }
+        format.html { redirect_to users_url, notice: 'Infraction was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -76,7 +76,7 @@ class InfractionsController < ApplicationController
     @infraction.destroy
 
     respond_to do |format|
-      format.html { redirect_to infractions_url }
+      format.html { redirect_to users_url }
       format.json { head :no_content }
     end
   end

@@ -1,0 +1,80 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @packaging.user_id %>
+</p>
+
+<p>
+  <b>Workorder:</b>
+  <%= @packaging.workorder %>
+</p>
+
+<p>
+  <b>Item number:</b>
+  <%= @packaging.item_number %>
+</p>
+
+<p>
+  <b>Individual label placement:</b>
+  <%= @packaging.individual_label_placement %>
+</p>
+
+<p>
+  <b>Individual label legibility:</b>
+  <%= @packaging.individual_label_legibility %>
+</p>
+
+<p>
+  <b>Individual seal integrity:</b>
+  <%= @packaging.individual_seal_integrity %>
+</p>
+
+<p>
+  <b>Individual label accuracy:</b>
+  <%= @packaging.individual_label_accuracy %>
+</p>
+
+<p>
+  <b>Individual general appearance:</b>
+  <%= @packaging.individual_general_appearance %>
+</p>
+
+<p>
+  <b>Master label placement:</b>
+  <%= @packaging.master_label_placement %>
+</p>
+
+<p>
+  <b>Master label legibility:</b>
+  <%= @packaging.master_label_legibility %>
+</p>
+
+<p>
+  <b>Master tape glue:</b>
+  <%= @packaging.master_tape_glue %>
+</p>
+
+<p>
+  <b>Master case appearance:</b>
+  <%= @packaging.master_case_appearance %>
+</p>
+
+<p>
+  <b>Case count:</b>
+  <%= @packaging.case_count %>
+</p>
+
+<p>
+  <b>Case weight:</b>
+  <%= @packaging.case_weight %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @packaging.comments %>
+</p>
+
+
+<%= link_to 'Edit', edit_packaging_path(@packaging) %> |
+<%= link_to 'Back', packagings_path %>

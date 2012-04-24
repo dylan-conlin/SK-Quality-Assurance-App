@@ -1,0 +1,51 @@
+<h1>Listing packagings</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Workorder</th>
+    <th>Item number</th>
+    <th>Individual label placement</th>
+    <th>Individual label legibility</th>
+    <th>Individual seal integrity</th>
+    <th>Individual label accuracy</th>
+    <th>Individual general appearance</th>
+    <th>Master label placement</th>
+    <th>Master label legibility</th>
+    <th>Master tape glue</th>
+    <th>Master case appearance</th>
+    <th>Case count</th>
+    <th>Case weight</th>
+    <th>Comments</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @packagings.each do |packaging| %>
+  <tr>
+    <td><%= packaging.user_id %></td>
+    <td><%= packaging.workorder %></td>
+    <td><%= packaging.item_number %></td>
+    <td><%= packaging.individual_label_placement %></td>
+    <td><%= packaging.individual_label_legibility %></td>
+    <td><%= packaging.individual_seal_integrity %></td>
+    <td><%= packaging.individual_label_accuracy %></td>
+    <td><%= packaging.individual_general_appearance %></td>
+    <td><%= packaging.master_label_placement %></td>
+    <td><%= packaging.master_label_legibility %></td>
+    <td><%= packaging.master_tape_glue %></td>
+    <td><%= packaging.master_case_appearance %></td>
+    <td><%= packaging.case_count %></td>
+    <td><%= packaging.case_weight %></td>
+    <td><%= packaging.comments %></td>
+    <td><%= link_to 'Show', packaging %></td>
+    <td><%= link_to 'Edit', edit_packaging_path(packaging) %></td>
+    <td><%= link_to 'Destroy', packaging, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Packaging', new_packaging_path %>

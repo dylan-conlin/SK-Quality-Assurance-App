@@ -20,6 +20,8 @@ admin = User.create!(:name => "Dylan Conlin",
    :email => "dylan.conlin@skfoodgroup.com",
    :department_id => 1,
    :password => "SuNFL0Wer",
+   :supervisor => true,
+   :user_id => 7,
    :password_confirmation => "SuNFL0Wer")                                       
 
    
@@ -30,6 +32,8 @@ end
     User.create!(:name => "Karen Jorgensen",
    :email => "karen.jorgensen@skfoodgroup.com",
    :department_id => 1,
+   :supervisor => false,
+   :user_id => 1,
    :password => "password",
    :password_confirmation => "password")
 
@@ -37,40 +41,54 @@ end
    :email => "Nicole.Carl@skfoodgroup.com",
    :department_id => 1,
    :password => "password",
+   :user_id => 1,
+   :supervisor => false,
    :password_confirmation => "password")
    
    User.create!(:name => "Marian Becerra",
    :email => "marian.becerra@skfoodgroup.com",
    :department_id => 1,
+   :user_id => 1,
+   :supervisor => false,
    :password => "password",
    :password_confirmation => "password")
    
    User.create!(:name => "Viviana Michealree",
    :email => "Viviana.Michealree@skfoodgroup.com",
    :department_id => 1,
+   :user_id => 1,
+   :supervisor => false,
    :password => "password",
    :password_confirmation => "password")
 
    User.create!(:name => "Ruben Renteria",
    :email => "Ruben.Renteria@skfoodgroup.com",
    :department_id => 1,
+   :user_id => 1,
+   :supervisor => false,
    :password => "password",
    :password_confirmation => "password")
    
    User.create!(:name => "Joanne Medeiros",
    :email => "Joanne.medeiros@skfoodgroup.com",
    :department_id => 1,
+   :user_id => 7,
+   :supervisor => true,
    :password => "password",
    :password_confirmation => "password")   
 
    User.create!(:name => "Linda Dalhaus",
    :email => "Linda.dalhaus@skfoodgroup.com",
    :department_id => 1,
+   :user_id => 7,
+   :supervisor => false,
    :password => "password",
    :password_confirmation => "password")   
 
    User.create!(:name => "Jodi Duval",
    :email => "Jodi.duval@skfoodgroup.com",
    :department_id => 1,
+   :user_id => 7,
+   :supervisor => false,
    :password => "password",
    :password_confirmation => "password")   
