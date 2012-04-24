@@ -1,7 +1,10 @@
 <h1>Listing packagings</h1>
 
-<table>
+<%= will_paginate %>
+
+<table class="table table-striped">
   <tr>
+    <th>Date</th>
     <th>User</th>
     <th>Workorder</th>
     <th>Item number</th>
@@ -22,20 +25,63 @@
     <th></th>
   </tr>
 
+
+
+
 <% @packagings.each do |packaging| %>
   <tr>
-    <td><%= packaging.user_id %></td>
+    <td><%= packaging.created_at.strftime("%m/%d/%y") %></td>
+    <td><%= link_to packaging.user.name, user_path(packaging.user) %></td>
     <td><%= packaging.workorder %></td>
     <td><%= packaging.item_number %></td>
-    <td><%= packaging.individual_label_placement %></td>
-    <td><%= packaging.individual_label_legibility %></td>
-    <td><%= packaging.individual_seal_integrity %></td>
-    <td><%= packaging.individual_label_accuracy %></td>
-    <td><%= packaging.individual_general_appearance %></td>
-    <td><%= packaging.master_label_placement %></td>
-    <td><%= packaging.master_label_legibility %></td>
-    <td><%= packaging.master_tape_glue %></td>
-    <td><%= packaging.master_case_appearance %></td>
+
+    <% if packaging.individual_label_placement == true %>
+      <td><i class="icon-remove"></i></td>
+    <% else %>
+      <td><i class="icon-ok"></i></td>
+    <% end %>
+    <% if packaging.individual_label_legibility == true %>
+      <td><i class="icon-remove"></i></td>
+    <% else %>
+      <td><i class="icon-ok"></i></td>
+    <% end %>
+    <% if packaging.individual_seal_integrity == true %>
+      <td><i class="icon-remove"></i></td>
+    <% else %>
+      <td><i class="icon-ok"></i></td>
+    <% end %>
+    <% if packaging.individual_label_accuracy == true %>
+      <td><i class="icon-remove"></i></td>
+    <% else %>
+      <td><i class="icon-ok"></i></td>
+    <% end %>
+    <% if packaging.individual_general_appearance == true %>
+      <td><i class="icon-remove"></i></td>
+    <% else %>
+      <td><i class="icon-ok"></i></td>
+    <% end %>
+    <% if packaging.master_label_placement == true %>
+      <td><i class="icon-remove"></i></td>
+    <% else %>
+      <td><i class="icon-ok"></i></td>
+    <% end %>
+    <% if packaging.master_label_legibility == true %>
+      <td><i class="icon-remove"></i></td>
+    <% else %>
+      <td><i class="icon-ok"></i></td>
+    <% end %>
+    <% if packaging.master_tape_glue == true %>
+      <td><i class="icon-remove"></i></td>
+    <% else %>
+      <td><i class="icon-ok"></i></td>
+    <% end %>
+    <% if packaging.master_case_appearance == true %>
+      <td><i class="icon-remove"></i></td>
+    <% else %>
+      <td><i class="icon-ok"></i></td>
+    <% end %>
+    <td></td>
+
     <td><%= packaging.case_count %></td>
     <td><%= packaging.case_weight %></td>
     <td><%= packaging.comments %></td>
@@ -46,6 +92,9 @@
 <% end %>
 </table>
 
+<%= will_paginate %>
+
 <br />
 
-<%= link_to 'New Packaging', new_packaging_path %>
+<%= link_to 'New', new_packaging_path, :class => 'btn btn-large btn-primary' %>
+

@@ -16,6 +16,7 @@
 
       <%= f.label :password_confirmation, "Retype password" %>
       <%= f.password_field :password_confirmation %>      
+
       <%= f.label "What department are you in?" %>
       <%= f.collection_select :department_id, Department.all, :id, :name, :include_blank => true %>
 

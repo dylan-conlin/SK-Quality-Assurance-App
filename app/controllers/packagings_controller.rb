@@ -1,16 +1,9 @@
 class PackagingsController < ApplicationController
-  before_filter :signed_in_user
+  #  before_filter :signed_in_user
   before_filter :correct_user,   only: :destroy
 
-  # GET /packagings
-  # GET /packagings.json
   def index
-    @packagings = Packaging.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @packagings }
-    end
+    @packagings = Packaging.paginate(page: params[:page], :per_page => 10)
   end
 
   # GET /packagings/1
@@ -45,12 +38,13 @@ class PackagingsController < ApplicationController
     @packaging = current_user.packagings.build(params[:packaging])
     if @packaging.save
       flash[:success] = "Packaging created!"
-      redirect_to root_path
+      redirect_to @packaging
     else
-      @feed_items = []
-      render 'static_pages/home'
+
+       render action: "new"
     end
   end
+
 
 
   def update
