@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
@@ -13,7 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120330151822) do
+ActiveRecord::Schema.define(:version => 20120423220407) do
+
+  create_table "celebrities", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "departments", :force => true do |t|
     t.string   "name"
@@ -37,6 +41,26 @@ ActiveRecord::Schema.define(:version => 20120330151822) do
   end
 
   add_index "microposts", ["user_id", "created_at"], :name => "index_microposts_on_user_id_and_created_at"
+
+  create_table "packagings", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "workorder"
+    t.integer  "item_number"
+    t.boolean  "individual_label_placement"
+    t.boolean  "individual_label_legibility"
+    t.boolean  "individual_seal_integrity"
+    t.boolean  "individual_label_accuracy"
+    t.boolean  "individual_general_appearance"
+    t.boolean  "master_label_placement"
+    t.boolean  "master_label_legibility"
+    t.boolean  "master_tape_glue"
+    t.boolean  "master_case_appearance"
+    t.integer  "case_count"
+    t.decimal  "case_weight"
+    t.text     "comments"
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+  end
 
   create_table "relationships", :force => true do |t|
     t.integer  "follower_id"
@@ -66,4 +90,3 @@ ActiveRecord::Schema.define(:version => 20120330151822) do
   add_index "users", ["remember_token"], :name => "index_users_on_remember_token"
 
 end
-
