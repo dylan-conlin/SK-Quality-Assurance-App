@@ -38,7 +38,7 @@ class PackagingsController < ApplicationController
     @packaging = current_user.packagings.build(params[:packaging])
     if @packaging.save
       flash[:success] = "Packaging created!"
-      redirect_to @packaging
+      redirect_to packagings_url
     else
 
        render action: "new"
