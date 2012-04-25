@@ -1,6 +1,7 @@
 class PackagingsController < ApplicationController
-  #  before_filter :signed_in_user
+  before_filter :signed_in_user, only: [:index, :edit, :update]
   before_filter :correct_user,   only: :destroy
+  before_filter :admin_user,     only: :destroy
 
   def index
     @packagings = Packaging.paginate(page: params[:page], :per_page => 10)
@@ -76,9 +77,11 @@ class PackagingsController < ApplicationController
 private
 
     def correct_user
-      @packaging = current_user.packagings.find_by_id(params[:id])
-      redirect_to root_path if @packaging.nil?
+      @user = User.find(params[:id])
+      redirect_to(root_path) unless current_user?(@user)
     end
 
-
+    def admin_user
+      redirect_to(root_path) unless current_user.admin?
+    end
 end

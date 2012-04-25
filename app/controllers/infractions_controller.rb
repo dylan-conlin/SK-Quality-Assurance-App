@@ -1,6 +1,9 @@
 class InfractionsController < ApplicationController
-  # GET /infractions
-  # GET /infractions.json
+
+  before_filter :signed_in_user, only: [:index, :edit, :update]
+  before_filter :correct_user,   only: :destroy
+  before_filter :admin_user,     only: :destroy
+
   def index
     @infractions = Infraction.all
 
@@ -80,4 +83,16 @@ class InfractionsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+private
+
+    def correct_user
+      @user = User.find(params[:id])
+      redirect_to(root_path) unless current_user?(@user)
+    end
+
+    def admin_user
+      redirect_to(root_path) unless current_user.admin?
+    end
+
 end
