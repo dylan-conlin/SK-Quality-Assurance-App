@@ -1,5 +1,5 @@
 class InfractionsController < ApplicationController
-
+  before_filter :supervisor, only: [:index, :edit, :update] 
   before_filter :signed_in_user, only: [:index, :edit, :update]
   before_filter :correct_user,   only: :destroy
   before_filter :admin_user,     only: :destroy
@@ -85,6 +85,9 @@ class InfractionsController < ApplicationController
   end
 
 private
+    def supervisor
+      redirect_to(root_path) unless current_user.supervisor?
+    end
 
     def correct_user
       @user = User.find(params[:id])
