@@ -6,11 +6,12 @@ jQuery ->
   $("a[rel=popover]").popover()
   $(".tooltip").tooltip()
   $("a[rel=tooltip]").tooltip()
-
-$("#example").popover({placement:'top'})
-
-jQuery ->
-
-  $(".collapse").collapse()
-
-
+  $("#example").popover({placement:'top'})
+  $('#prettytable').dataTable({
+    "sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>"
+  });
+  $.extend( $.fn.dataTableExt.oStdClasses, {
+      "sSortAsc": "header headerSortDown",
+      "sSortDesc": "header headerSortUp",
+      "sSortable": "header"
+  } );
