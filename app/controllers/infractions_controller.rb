@@ -47,7 +47,7 @@ class InfractionsController < ApplicationController
 
     respond_to do |format|
       if @infraction.save
-        format.html { redirect_to users_url, notice: 'Infraction was successfully created.' }
+        format.html { redirect_to infractions_url, notice: 'Infraction was successfully created.' }
         format.json { render json: @infraction, status: :created, location: @infraction }
       else
         format.html { render action: "new" }
