@@ -1,0 +1,14 @@
+<%= simple_form_for @tunneltemp, :html => {:class => 'form-horizontal' } do |f| %>
+<fieldset>
+<legend>Tunneltemp Check</legend>
+    <%= f.input :tunnel, :collection => [ "1 Tunnel", "2 Tunnel", "3 Tunnel"] %>
+    <%= f.input :item %>
+    <%= f.input :temperature %>
+    <%= f.input :description %>
+  <div class="form-actions">
+    <%= f.submit :submit %>
+  </div>
+
+  </fieldset>
+
+<% end %>
