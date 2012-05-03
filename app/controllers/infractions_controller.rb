@@ -1,7 +1,6 @@
 class InfractionsController < ApplicationController
   before_filter :supervisor, only: [:index, :edit, :update] 
   before_filter :signed_in_user, only: [:index, :edit, :update]
-  before_filter :correct_user,   only: :destroy
   before_filter :admin_user,     only: :destroy
 
   def index
@@ -79,7 +78,7 @@ class InfractionsController < ApplicationController
     @infraction.destroy
 
     respond_to do |format|
-      format.html { redirect_to users_url }
+      format.html { redirect_to infractions_url }
       format.json { head :no_content }
     end
   end
