@@ -2,7 +2,7 @@
 
 /* mixins, variables, etc. */
 
-$grayMediumLight: #eaeaea;
+$grayMediumLight: #FFFFFF;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box; 
@@ -48,19 +48,7 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  font-size: 1.7em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: $grayLight;
-}
 
-p {
-  font-size: 1.1em;
-  line-height: 1.7em;
-}
 
 
 /* header */
@@ -75,10 +63,7 @@ p {
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
-  &:hover {
-    color: white;
-    text-decoration: none;
-  }
+
 }
 
 /* footer */
@@ -87,13 +72,13 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid $grayMediumLight;
-  color: $grayLight;
+  color: $grayMediumLight;
   a {
-    color: $gray;
+    color: $grayMediumLight;
     &:hover { 
-      color: $grayDarker;
-    }
-  }  
+      color: $grayMediumLight;
+    }  }  
+
   small { 
     float: left; 
   }
@@ -119,27 +104,7 @@ footer {
 
 /* sidebar */
 
-aside {
-  section {
-    padding: 10px 0;
-    border-top: 1px solid $grayLighter;
-    &:first-child {
-      border: 0;
-      padding-top: 0;
-    }
-    span {
-      display: block;
-      margin-bottom: 3px;
-      line-height: 1;
-    }
-    h1 {
-      font-size: 1.6em;
-      text-align: left;
-      letter-spacing: -1px;
-      margin-bottom: 3px;
-    }
-  }
-}
+
 
 .gravatar {
   float: left;
@@ -190,20 +155,7 @@ aside {
   @extend .error;
  }
 
- /* users index */
 
-.users {
-  list-style: none;
-  margin: 0;
-  li {
-    overflow: auto;
-    padding: 10px 0;
-    border-top: 1px solid $grayLighter;
-    &:last-child {
-      border-bottom: 1px solid $grayLighter;
-    }
-  }
-}
 
 /* microposts */
 

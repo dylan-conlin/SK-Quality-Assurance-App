@@ -4,6 +4,13 @@
 <legend>Packaging Check</legend>
     <%= f.input :workorder, :input_html => { :class => "span6" } %>       
     <%= f.input :item_number, :input_html => { :class => "span6" } %>
+<div class="alert alert-error">
+Only check items that fail! If there are no issues, leave checkbox unchecked.
+</div>
+
+
+
+
     <%= f.input :individual_label_placement %>
     <%= f.input :individual_label_legibility %>
     <%= f.input :individual_seal_integrity %>

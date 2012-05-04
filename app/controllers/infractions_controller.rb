@@ -1,6 +1,6 @@
 class InfractionsController < ApplicationController
-  before_filter :supervisor, only: [:index, :edit, :update] 
   before_filter :signed_in_user, only: [:index, :edit, :update]
+  before_filter :supervisor, only: [:index, :edit, :update] 
   before_filter :admin_user,     only: :destroy
 
   def index
