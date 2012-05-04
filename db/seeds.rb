@@ -38,7 +38,7 @@ end
    :password_confirmation => "password")
 
     User.create!(:name => "Nicole Carl",
-   :email => "Nicole.Carl@skfoodgroup.com",
+   :email => "nicole.carl@skfoodgroup.com",
    :department_id => 1,
    :password => "password",
    :user_id => 1,
