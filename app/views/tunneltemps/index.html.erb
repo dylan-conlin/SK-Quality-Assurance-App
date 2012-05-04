@@ -8,7 +8,7 @@
     <th>Tunnel</th>
     <th>Item</th>
     <th>Temperature</th>
-    <th>Description</th>
+    <th>Corrective Action</th>
     <th></th>
     <th></th>
     <th></th>
@@ -22,7 +22,11 @@
         <%= link_to tunneltemp.user.name, tunneltemp.user %></td>
     <td><%= tunneltemp.tunnel %></td>
     <td><%= tunneltemp.item %></td>
+    <% if tunneltemp.temperature > 28 %>
+    <td><span class="label label-important"><%= tunneltemp.temperature %></span></td>
+     <% else %>
     <td><%= tunneltemp.temperature %></td>
+    <% end %>
     <td><%= tunneltemp.description %></td>
     <td><%= link_to 'Show', tunneltemp %></td>
     <td><%= link_to 'Edit', edit_tunneltemp_path(tunneltemp) %></td>

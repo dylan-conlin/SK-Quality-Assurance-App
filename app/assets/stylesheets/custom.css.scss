@@ -2,7 +2,7 @@
 
 /* mixins, variables, etc. */
 
-$grayMediumLight: #FFFFFF;
+$grayMediumLight: #eaeaea;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box; 
@@ -48,7 +48,19 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: $grayLight;
+}
 
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
 
 
 /* header */
@@ -63,7 +75,10 @@ h1 {
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
-
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 /* footer */
@@ -72,13 +87,13 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid $grayMediumLight;
-  color: $grayMediumLight;
+  color: $grayLight;
   a {
-    color: $grayMediumLight;
+    color: $gray;
     &:hover { 
-      color: $grayMediumLight;
-    }  }  
-
+      color: $grayDarker;
+    }
+  }  
   small { 
     float: left; 
   }
@@ -104,7 +119,27 @@ footer {
 
 /* sidebar */
 
-
+aside {
+  section {
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.6em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+    }
+  }
+}
 
 .gravatar {
   float: left;
@@ -141,7 +176,6 @@ footer {
 }
 
 
-
 #error_explanation {
   color:#f00;
   ul {
@@ -155,7 +189,20 @@ footer {
   @extend .error;
  }
 
+ /* users index */
 
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:last-child {
+      border-bottom: 1px solid $grayLighter;
+    }
+  }
+}
 
 /* microposts */
 
@@ -183,19 +230,3 @@ aside {
     margin-bottom: 5px;
   }
 }
-
-table.table thead .sorting,
-table.table thead .sorting_asc,
-table.table thead .sorting_desc,
-table.table thead .sorting_asc_disabled,
-table.table thead .sorting_desc_disabled {
-    cursor: pointer;
-    *cursor: hand;
-}
- 
-table.table thead .sorting { background: url('images/sort_both.png') no-repeat center right; }
-table.table thead .sorting_asc { background: url('images/sort_asc.png') no-repeat center right; }
-table.table thead .sorting_desc { background: url('images/sort_desc.png') no-repeat center right; }
- 
-table.table thead .sorting_asc_disabled { background: url('images/sort_asc_disabled.png') no-repeat center right; }
-table.table thead .sorting_desc_disabled { background: url('images/sort_desc_disabled.png') no-repeat center right; }

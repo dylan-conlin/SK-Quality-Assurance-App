@@ -46,7 +46,7 @@ end
    :password_confirmation => "password")
    
    User.create!(:name => "Marian Becerra",
-   :email => "marian.becerra@skfoodgroup.com",
+   :email => "maria.becerra@skfoodgroup.com",
    :department_id => 1,
    :user_id => 1,
    :supervisor => false,
@@ -54,7 +54,7 @@ end
    :password_confirmation => "password")
    
    User.create!(:name => "Viviana Michealree",
-   :email => "Viviana.Michealree@skfoodgroup.com",
+   :email => "viviana.michealree@skfoodgroup.com",
    :department_id => 1,
    :user_id => 1,
    :supervisor => false,
@@ -62,7 +62,7 @@ end
    :password_confirmation => "password")
 
    User.create!(:name => "Ruben Renteria",
-   :email => "Ruben.Renteria@skfoodgroup.com",
+   :email => "ruben.renteria@skfoodgroup.com",
    :department_id => 1,
    :user_id => 1,
    :supervisor => false,
@@ -70,7 +70,7 @@ end
    :password_confirmation => "password")
    
    User.create!(:name => "Joanne Medeiros",
-   :email => "Joanne.medeiros@skfoodgroup.com",
+   :email => "joanne.medeiros@skfoodgroup.com",
    :department_id => 1,
    :user_id => 7,
    :supervisor => true,
@@ -78,7 +78,7 @@ end
    :password_confirmation => "password")   
 
    User.create!(:name => "Linda Dalhaus",
-   :email => "Linda.dalhaus@skfoodgroup.com",
+   :email => "linda.dalhaus@skfoodgroup.com",
    :department_id => 1,
    :user_id => 7,
    :supervisor => false,
@@ -86,7 +86,7 @@ end
    :password_confirmation => "password")   
 
    User.create!(:name => "Jodi Duval",
-   :email => "Jodi.duval@skfoodgroup.com",
+   :email => "jodi.duval@skfoodgroup.com",
    :department_id => 1,
    :user_id => 7,
    :supervisor => false,
