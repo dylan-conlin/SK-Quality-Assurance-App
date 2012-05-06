@@ -1,44 +1,38 @@
 
 <h1>Users</h1>
-<table class="table table-striped" id="prettytable">
+
+<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="prettytable">
   <thead>
     <tr>
       <th>Name</th>
-      <th></th>
-      <th></th>
+     <% if current_user.admin == true %>	
       <th>Actions</th>
+     <% end %>
     </tr>
   </thead>
   <tbody>
     <% @users.each do |user| %>
       <tr>
+        <td><%= gravatar_for user, size: 52 %></br>
+            <%= link_to user.name, user %></td>
+
+         <% if current_user.admin == true %>	
         <td>
-          <%= link_to user.name, user_path(user) %>
+	     <div class="btn-group">
+	       <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+		 Action
+		 <span class="caret"></span>
+	       </a>
+	       <ul class="dropdown-menu">
+		 <!-- dropdown menu links -->
+		       <%= link_to 'Show', user_path(user)%>
+		       <%= link_to 'Destroy', user_path(user), :method => :delete, :confirm => 'Are you sure?' %>
+	       </ul>
+	     </div>
         </td>
-        <td></td>
-        <td></td>
-        <td>
-          <%= link_to 'Show', user_path(user), :class => 'btn btn-mini btn-info' %>
-          <%= link_to 'Edit', edit_user_path(user), :class => 'btn btn-mini' %>
-          <%= link_to 'Destroy', user_path(user), :method => :delete, :confirm => 'Are you sure?', :class => 'btn btn-mini btn-danger' %>
-        </td>
+	 <% end %>
         
-	      </tr>
-         <% if current_user.supervisor == true %>
-
-
-	       <% user.infractions.each do |infraction| %>
-	       <tr>
-		 <td></td>
-		 <td><%= infraction.date        %></td>
-		 <td><%= infraction.description %></td>
-		 <td><%= link_to 'New', new_infraction_path %>
-		 <%= link_to 'Edit', edit_infraction_path(infraction) %>
-		 <%= link_to 'Destroy', infraction_path(infraction), :method => :delete, :confirm => 'Are you sure?' %></td>
-	       </tr>
-
-          <% end %>
-        <% end %>
+       </tr>
     <% end %>
   </tbody>
 </table>

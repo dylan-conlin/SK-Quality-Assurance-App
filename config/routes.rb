@@ -1,5 +1,7 @@
 SampleApp::Application.routes.draw do
 
+  resources :tunneltemps
+
   resources :packagings
 
   resources :celebrities

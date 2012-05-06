@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @tunneltemp.user_id %>
+</p>
+
+<p>
+  <b>Tunnel:</b>
+  <%= @tunneltemp.tunnel %>
+</p>
+
+<p>
+  <b>Item:</b>
+  <%= @tunneltemp.item %>
+</p>
+
+<p>
+  <b>Temperature:</b>
+  <%= @tunneltemp.temperature %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @tunneltemp.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_tunneltemp_path(@tunneltemp) %> |
+<%= link_to 'Back', tunneltemps_path %>

@@ -3,13 +3,9 @@ class Packaging < ActiveRecord::Base
 
  belongs_to :user
 
- default_scope order: 'packagings.created_at DESC'
+ validates :user_id, :workorder, :item_number, :case_count, :case_weight, :presence => true
 
-
- validates :user_id, :presence => true
- validates :workorder, :presence => true
- validates :item_number, :presence => true
- validates :case_count, :presence => true
- validates :case_weight, :presence => true
+ validates_numericality_of :case_count, :greater_than_or_equal_to => 0
+ validates_numericality_of :case_weight, :greater_than_or_equal_to => 0
 
 end

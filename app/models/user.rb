@@ -10,15 +10,19 @@ class User < ActiveRecord::Base
                                    dependent:   :destroy
   has_many :followers, through: :reverse_relationships, source: :follower
   belongs_to :department                                   
+  before_save { |user| user.email = email.downcase }
   before_save :create_remember_token
   has_many :packagings, dependent: :destroy
+  has_many :tunneltemps, dependent: :destroy
   validates :name,  presence: true, length: { maximum: 50 }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
   validates :password, length: { minimum: 6 }
   validates :password_confirmation, presence: true
-
+  validates :user_id, presence: true
+  validates :department_id, presence: true
+  default_scope order: 'name ASC'
   def feed
     Micropost.from_users_followed_by(self)
   end
