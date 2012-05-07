@@ -6,13 +6,57 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-["Quality Assurance", "Production", "Sanitation", "Logistics", "Purchasing",
-  "Facilities", "R&D", "Human Resources", "Customer Service", "IT", "Labels", "Planning", "Sales", "Seattle Admin"].each do |department|
+
+["Hair", 
+"Fiber", 
+"Glove", 
+"Metal", 
+"Grease",
+"Blood", 
+"Soot", 
+"Carbon", 
+"Cardboard",
+"Rock", 
+"Wood", 
+"Plastic", 
+"Rust", 
+"Glass", 
+"Cloth",
+"Unidentifiable"].each do |foreign_object|
+  ForeignObject.find_or_create_by_name(foreign_object)
+end
+
+["Employee Safety", 
+"Foreign Object", 
+"General Maintenance", 
+"Hand Washing Facilities", 
+"Metal Detection",
+"Personnel Practices", 
+"Pest and Vermin Control", 
+"Product Quality", 
+"Sanitation of Food Contact Surfaces", 
+"Toilet Facilities"].each do |gmp|
+  Gmp.find_or_create_by_name(gmp)
+end
+
+["Quality Assurance", 
+"Production", 
+"Sanitation", 
+"Logistics", 
+"Purchasing",
+"Facilities", 
+"R&D", 
+"Human Resources", 
+"Customer Service", 
+"IT", 
+"Labels", 
+"Planning", 
+"Sales", 
+"Seattle Admin"].each do |department|
   Department.find_or_create_by_name(department)
 end
 
 if User.where(:email => 'dylan.conlin@gmail.com').exists?
-
   puts "already in db!"
 else
 
@@ -91,4 +135,4 @@ end
    :user_id => 7,
    :supervisor => false,
    :password => "password",
-   :password_confirmation => "password")   
+   :password_confirmation => "password")

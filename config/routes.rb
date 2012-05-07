@@ -1,5 +1,9 @@
 SampleApp::Application.routes.draw do
 
+  resources :gmps
+
+  resources :foreign_objects
+
   resources :tunneltemps
 
   resources :packagings
