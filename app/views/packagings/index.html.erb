@@ -33,7 +33,7 @@
 <tbody>
 <% @packagings.each do |packaging| %>
   <tr>
-    <td><%= packaging.created_at.strftime("%m/%d/%y") %></td>
+    <td><%= packaging.created_at.strftime("%m/%d/%y %I:%M%p") %></td>
     <td><%= gravatar_for packaging.user, size: 52 %></br>
         <%= link_to packaging.user.name, packaging.user %></td>
     <td><%= packaging.workorder %></td>
