@@ -4,7 +4,6 @@
 
   <thead>
   <tr>
-    <th></th>
     <th>User</th>
     <th>Description</th>
     <th>Date</th>
@@ -16,8 +15,9 @@
 <tbody>
 <% @infractions.each do |infraction| %>
   <tr>
-    <td><%= link_to gravatar_for(infraction.user), user_path(infraction.user_id) %></td>
-    <td><%= link_to infraction.user.name, user_path(infraction.user) %></td>
+
+    <td><%= gravatar_for infraction.user, size: 52 %></br>
+        <%= link_to infraction.user.name, infraction.user %></td>
     <td><%= infraction.description %></td>
     <td><%= infraction.date %></td>
     <td><%= link_to 'Show', infraction %></td>

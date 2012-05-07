@@ -34,7 +34,8 @@
 <% @packagings.each do |packaging| %>
   <tr>
     <td><%= packaging.created_at.strftime("%m/%d/%y") %></td>
-    <td><%= link_to packaging.user.name, user_path(packaging.user) %></td>
+    <td><%= gravatar_for packaging.user, size: 52 %></br>
+        <%= link_to packaging.user.name, packaging.user %></td>
     <td><%= packaging.workorder %></td>
     <td><%= packaging.item_number %></td>
     
