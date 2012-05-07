@@ -17,7 +17,7 @@
 <tbody>
 <% @tunneltemps.each do |tunneltemp| %>
   <tr>
-    <td><%= tunneltemp.created_at.strftime("%m/%d/%y") %></td>
+    <td><%= tunneltemp.created_at.strftime("%m/%d/%y %I:%M%p") %></td>
     <td><%= gravatar_for tunneltemp.user, size: 52 %></br>
         <%= link_to tunneltemp.user.name, tunneltemp.user %></td>
     <td><%= tunneltemp.tunnel %></td>
