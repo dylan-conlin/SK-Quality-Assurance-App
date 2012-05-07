@@ -3,7 +3,7 @@
   <aside class="span4">
     <section>
       <h1>
-        <%= gravatar_for @user %>
+        <%= gravatar_for @user, size: 50 %>
         <%= @user.name %>
       </h1>
         Department: <%= @user.department.name %></br>
@@ -21,8 +21,6 @@
  <a href="<%= user_path(direct_report)%>" id="example" class="btn" rel="popover" data-content="<%= direct_report.name %>" data-original-title="<%= direct_report.name %>"><%= gravatar_for direct_report, size: 35 %> </a>          
   <% end %>
         <% end %>
-
-
 
       <% else %>
         <p>no direct reports</p>

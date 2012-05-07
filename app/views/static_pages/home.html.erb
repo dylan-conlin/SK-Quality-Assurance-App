@@ -12,7 +12,7 @@
   <aside class="span4">
     <section>
       <h1>
-        <%= gravatar_for current_user %>
+        <%= gravatar_for current_user, size: 50 %>
         <%= current_user.name %>
       </h1>
         Department: <%= current_user.department.name %></br>
