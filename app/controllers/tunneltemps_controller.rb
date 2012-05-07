@@ -49,7 +49,12 @@ class TunneltempsController < ApplicationController
 
   def create
     @tunneltemp = current_user.tunneltemps.build(params[:tunneltemp])
+
+
     if @tunneltemp.save
+      if @tunneltemp.temperature > 28
+        UserMailer.above_temp(User.find_by_email("dylan.conlin@skfoodgroup.com")).deliver
+      end
       flash[:success] = "Tunneltemp created!"
       redirect_to tunneltemps_url
     else

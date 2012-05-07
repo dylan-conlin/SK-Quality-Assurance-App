@@ -1,4 +1,3 @@
-
 <% provide(:title, @user.name) %>
 <div class="row">
   <aside class="span4">
@@ -16,29 +15,18 @@
 
  <% @direct_reports.each do |direct_report| %>
 
+  <% if direct_report.supervisor == true %>
+ <a href="<%= user_path(direct_report)%>" id="example" class="btn btn-info" rel="popover" data-content="<%= direct_report.name %>" data-original-title="<%= direct_report.name %>"><%= gravatar_for direct_report, size: 35 %> </a>          
+   <% else %>
  <a href="<%= user_path(direct_report)%>" id="example" class="btn" rel="popover" data-content="<%= direct_report.name %>" data-original-title="<%= direct_report.name %>"><%= gravatar_for direct_report, size: 35 %> </a>          
-
+  <% end %>
         <% end %>
 
-
-
       <% else %>
-        not a supervisor :(
+        <p>no direct reports</p>
       <% end %>
     <% else %>
-      nil value for this person.
+
     <% end %>
 
-    </section>
-  </aside>
-  <div class="span8">
-    <%= render 'follow_form' if signed_in? %>
-    <% if @user.microposts.any? %>
-      <h3>Microposts (<%= @user.microposts.count %>)</h3>
-      <ol class="microposts">
-        <%= render @microposts %>
-      </ol>
-      <%= will_paginate @microposts %>
-    <% end %>
-  </div>
 </div>

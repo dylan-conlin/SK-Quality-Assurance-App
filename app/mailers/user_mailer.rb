@@ -11,4 +11,10 @@ class UserMailer < ActionMailer::Base
       @user = user
       mail to: user.email, subject: "Sign Up Confirmation"
     end
+
+    def above_temp(user)
+      @user = user
+      mail to: user.email, subject: "above temp!"
+    end
+
 end

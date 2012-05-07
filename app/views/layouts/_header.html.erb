@@ -21,6 +21,7 @@
               <i class="icon-cog icon-white"></i>Admin<span class="caret"></span>
             </a>
               <ul class="dropdown-menu">
+		<li><%= link_to "Users", users_path %></li>
        		<li><%= link_to "Infractions", infractions_path %></li>                         <li class="divider"></li>
                 <li><%= link_to "Departments", departments_path %></li>
 		<li><%= link_to "Foreign Objects", foreign_objects_path %></li>
@@ -29,10 +30,12 @@
 
            <% end %>
 	  </li>
-            <li><%= link_to "Users", users_path %></li>
+
             <li><%= link_to "Packaging", packagings_path %></li>
             <li><%= link_to "Tunnel Temps", tunneltemps_path %></li>
-      
+
+
+
       <li id="fat-menu" class="dropdown">
 	    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
               <%= gravatar_for current_user, size: 23 %><%=  current_user.email %>
