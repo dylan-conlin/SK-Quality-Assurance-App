@@ -10,7 +10,7 @@ $(function () {
       title: { text: 'Temperature'}
     },
     series: [{
-      data: 1, 2, 5, 7, 3
+      data: @tunneltemps.
     }]
   });
 });
