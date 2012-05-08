@@ -1,0 +1,16 @@
+<%= simple_form_for(@issue) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :description %>
+    <%= f.input :corrective_action %>
+    <%= f.input :department_id, :collection => Department.all(:order => 'name'), :label => 'Department Responsible' %>
+    <%= f.input :gmp_id, :collection => Gmp.all(:order => 'name'), :label => 'GMP'%>
+    <%= f.input :workorder, :label => 'Workorder associated with this issue?' %>
+    <%= f.input :foreign_object_id, :collection => ForeignObject.all, :label => 'Foreign Object Type' %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

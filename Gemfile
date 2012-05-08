@@ -9,6 +9,7 @@ gem 'bootstrap-will_paginate', '0.0.5'
 gem 'simple_form'
 gem 'paperclip'
 gem 'aws-s3'
+gem "google_visualr", ">= 2.1"
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'

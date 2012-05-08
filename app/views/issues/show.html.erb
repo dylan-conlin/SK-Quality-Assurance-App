@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Department:</b>
+  <%= @issue.department_id %>
+</p>
+
+<p>
+  <b>Gmp:</b>
+  <%= @issue.gmp_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @issue.user_id %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @issue.description %>
+</p>
+
+<p>
+  <b>Workorder:</b>
+  <%= @issue.workorder %>
+</p>
+
+<p>
+  <b>Foreign object:</b>
+  <%= @issue.foreign_object_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_issue_path(@issue) %> |
+<%= link_to 'Back', issues_path %>
