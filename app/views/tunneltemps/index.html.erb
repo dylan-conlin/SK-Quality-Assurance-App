@@ -1,8 +1,5 @@
-[<% @tunneltemps.each do |tunneltemp| %>
-[<%= tunneltemp.created_at.to_i %>,<%= tunneltemp.temperature %>],
-<% end %>]
-
-<div id="orders_chart" style="width: 560px; height: 300px;"></div>
+<%= link_to 'New Tunneltemp', new_tunneltemp_path %>
+<div id="orders_chart" style="width: 900px; height: 300px;"></div>
 
 <table class="pretty">
 
@@ -13,25 +10,40 @@
 $(function () {
   new Highcharts.Chart({
     chart: { renderTo: 'orders_chart' },
-    title: { text: 'Orders by Day' },
-    xAxis: { type: 'datetime', day: '%e. %b'},
+    title: { text: 'Post Tunnel Temperatures' },
+    xAxis: {
+            type: 'datetime'
+
+
+        },
     yAxis: { title: { text: 'Temperature'} },
 tooltip: {
       formatter: function () {
-        return Highcharts.dateFormat("%B %e %Y", this.x) + ", " +
+        return Highcharts.dateFormat("%m/%e/%y, %I:%M %p", this.x) + ", " +
           Highcharts.numberFormat(this.y, 2) + " deg";
       }
     },    
-
     series: [{
-      pointInterval: <%= 1.day * 1000 %>,
-      pointStart: <%= 2.weeks.ago.at_midnight.to_i * 1000 %>,
+      name: 'Tunnel 1',
       data: 
-     [<% @tunneltemps.each do |tunneltemp| %>
-     [<%= tunneltemp.created_at.to_i %>,<%= tunneltemp.temperature %>],
+[<% Tunneltemp.where(:created_at => 10.hours.ago.utc...Time.now.utc, :tunnel => "1 Tunnel").each do |tunneltemp| %>
+     [Date.UTC(<%= tunneltemp.created_at.strftime("%Y,%m,%d,%I,%M") %>),<%= tunneltemp.temperature %>],
+     <% end %>]},
+{
+      name: 'Tunnel 2',
+      data: 
+[<% Tunneltemp.where(:created_at => 10.hours.ago.utc...Time.now.utc, :tunnel => "2 Tunnel").each do |tunneltemp| %>
+     [Date.UTC(<%= tunneltemp.created_at.strftime("%Y,%m,%d,%I,%M") %>),<%= tunneltemp.temperature %>],
+     <% end %>]},
+ 
+{
+      name: 'Tunnel 3',
+      data: 
+[<% Tunneltemp.where(:created_at => 10.hours.ago.utc...Time.now.utc, :tunnel => "3 Tunnel").each do |tunneltemp| %>
+     [Date.UTC(<%= tunneltemp.created_at.strftime("%Y,%m,%d,%I,%M") %>),<%= tunneltemp.temperature %>],
      <% end %>]
-
-    }]
+ 
+  }]
   });
 });
 
@@ -79,4 +91,4 @@ tooltip: {
 <br />
 
 
-<%= link_to 'New Tunneltemp', new_tunneltemp_path %>
+

@@ -10,6 +10,7 @@ gem 'simple_form'
 gem 'paperclip'
 gem 'aws-s3'
 gem "google_visualr", ">= 2.1"
+gem 'heroku'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
