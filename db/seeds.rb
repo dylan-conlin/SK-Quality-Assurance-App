@@ -136,3 +136,11 @@ end
    :supervisor => false,
    :password => "password",
    :password_confirmation => "password")
+
+   User.create!(:name => "Joe Conlin",
+   :email => "joe.conlin@skfoodgroup.com",
+   :department_id => 1,
+   :user_id => 1,
+   :supervisor => false,
+   :password => "password",
+   :password_confirmation => "password")
