@@ -80,6 +80,8 @@ GEM
       railties (>= 3.0.0)
     faker (1.0.1)
       i18n (~> 0.4)
+    fancybox-rails (0.1.4)
+      railties (>= 3.1.0)
     ffi (1.0.11)
     growl (1.0.3)
     guard (1.0.2)
@@ -230,6 +232,7 @@ DEPENDENCIES
   coffee-rails
   factory_girl_rails (= 1.4.0)
   faker (= 1.0.1)
+  fancybox-rails
   growl (= 1.0.3)
   guard-rspec (= 0.5.5)
   guard-spork (= 0.3.2)

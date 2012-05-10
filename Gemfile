@@ -11,6 +11,7 @@ gem 'paperclip'
 gem 'aws-s3'
 gem 'heroku'
 gem 'aws-sdk', '~> 1.3.4'
+gem 'fancybox-rails'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
