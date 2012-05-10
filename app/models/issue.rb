@@ -13,16 +13,12 @@ class Issue < ActiveRecord::Base
    validates_numericality_of :workorder, :greater_than_or_equal_to => 0
 
 
-
-  #paperclip
   has_attached_file :photo,
-       :styles => {
-       :thumb=> "100x100#",
-       :small  => "400x400>" },
+
      :storage => :s3,
+     :bucket => "workapp-qatech-images",
      :s3_credentials => "#{Rails.root}/config/s3.yml",
      :path => "/:style/:id/:filename"
-
 
 
 

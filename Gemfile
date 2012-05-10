@@ -7,9 +7,8 @@ gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.5'
 gem 'simple_form'
-gem "paperclip-aws", "~> 1.6.6"
+gem 'paperclip'
 gem 'aws-s3'
-gem "google_visualr", ">= 2.1"
 gem 'heroku'
 gem 'aws-sdk', '~> 1.3.4'
 
