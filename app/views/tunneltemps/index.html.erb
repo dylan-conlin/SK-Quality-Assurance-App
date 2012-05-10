@@ -17,12 +17,16 @@ $(function () {
 
         },
     yAxis: { title: { text: 'Temperature'} },
+
 tooltip: {
       formatter: function () {
         return Highcharts.dateFormat("%m/%e/%y, %H:%M", this.x) + ", " +
           Highcharts.numberFormat(this.y, 2) + " deg";
       }
-    },    
+    },
+
+
+    
     series: [{
       name: 'Tunnel 1',
       data: 
