@@ -14,13 +14,11 @@ class Issue < ActiveRecord::Base
 
 
   has_attached_file :photo,
- 
+     :styles => { :small => "300x300>" },
      :storage => :s3,
         :bucket => "workapp-qatech-images",
      :s3_credentials => "#{Rails.root}/config/s3.yml",
-     :path => "/:style/:id/:filename"
-
-
-
+     :path => "/:style/:id/:filename",
+     :convert_options => { :all => "-auto-orient" }
 
 end
