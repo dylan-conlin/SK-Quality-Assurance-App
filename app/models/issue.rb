@@ -14,9 +14,9 @@ class Issue < ActiveRecord::Base
 
 
   has_attached_file :photo,
-
+ 
      :storage => :s3,
-     :bucket => "workapp-qatech-images",
+        :bucket => "workapp-qatech-images",
      :s3_credentials => "#{Rails.root}/config/s3.yml",
      :path => "/:style/:id/:filename"
 
