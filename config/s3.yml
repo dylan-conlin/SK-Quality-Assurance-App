@@ -1,0 +1,10 @@
+
+# config/s3.yml
+development:
+  access_key_id: AKIAJZDMNR3XKG5QVCZA
+  secret_access_key: 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
+  bucket: workapp-qatech-images
+production:
+  access_key_id: AKIAJZDMNR3XKG5QVCZA
+  secret_access_key: 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
+  bucket: workapp-qatech-images
