@@ -23,7 +23,7 @@
 <tbody>
 <% @issues.each do |issue| %>
   <tr>
-    <td><%= issue.created_at.strftime("%m/%d/%y %I:%M%p") %></td>
+    <td><%= issue.created_at.strftime("%c") %></td>
         <% if issue.photo.file? %>
 
 
