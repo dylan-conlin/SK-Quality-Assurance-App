@@ -21,7 +21,7 @@ private
       [
         link_to(department.name, department),
 
-        h(department.created_at)
+        h(department.created_at.to_i)
       ]
     end
   end
