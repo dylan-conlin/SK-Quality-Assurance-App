@@ -6,15 +6,19 @@ class DepartmentsDatatable
   end
 
   def as_json(options = {})
-    {
-      sEcho: params[:sEcho].to_i,
-      iTotalRecords: Department.count,
-      iTotalDisplayRecords: departments.total_entries,
-      aaData: data
-    }
+
+
+      {
+        sEcho: params[:sEcho].to_i,
+        iTotalRecords: Department.count,
+        iTotalDisplayRecords: departments.total_entries,
+        aaData: data
+      }
+
   end
 
 private
+
 
   def data
     departments.map do |department|
