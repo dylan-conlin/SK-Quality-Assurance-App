@@ -20,7 +20,8 @@ private
     departments.map do |department|
       [
         link_to(department.name, department),
-        h(department.created_at.strftime("%c"))
+
+        h(department.created_at)
       ]
     end
   end
