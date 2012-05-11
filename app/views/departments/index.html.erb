@@ -2,29 +2,17 @@
 <%= link_to 'Add New Department', new_department_path, :class => 'btn' %>
 </br>
 </br>
-<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="prettytable">
+
+<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="departments" data-source="<%= departments_url(format: "json") %>" >
 
   <thead>
-
     <tr>
-      <th>ID</th>
       <th>Name</th>
-      <th>Actions</th>
+      <th>Created at</th>
+
     </tr>
   </thead>
   <tbody>
-    <% @departments.each do |department| %>
-      <tr>
-        <td><%= department.id %></td>
-        <td><%= link_to department.name, department_path(department) %></td>
-
-        <td>
-          <%= link_to 'Show', department_path(department), :class => 'btn btn-mini btn-info' %>
-          <%= link_to 'Edit', edit_department_path(department), :class => 'btn btn-mini' %>
-          <%= link_to 'Destroy', department_path(department), :method => :delete, :confirm => 'Are you sure?', :class => 'btn btn-mini btn-danger' %>
-        </td>
-      </tr>
-    <% end %>
   </tbody>
 </table>
 

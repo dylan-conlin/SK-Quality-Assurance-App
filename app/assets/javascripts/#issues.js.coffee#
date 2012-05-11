@@ -4,9 +4,14 @@
 
 jQuery ->
 
-  $('#departments').dataTable
-     sPaginationType: "full_numbers"
-     bJQueryUI: true
-     bProcessing: true
-     bServerSide: true
-     sAjaxSource: $('#departments').data('source')
+ $("a.iframe").fancybox({
+    'transitionIn'    :    'elastic',
+    'transitionOut'    :    'elastic',
+    'speedIn'        :    100,
+    'speedOut'        :    200,
+    'overlayShow'    :    false
+  });
+
+  $("#iframe").fancybox();
+
+

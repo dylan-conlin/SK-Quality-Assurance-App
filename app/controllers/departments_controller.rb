@@ -5,11 +5,9 @@ class DepartmentsController < ApplicationController
   before_filter :admin_user,     only: :destroy
 
   def index
-    @departments = Department.all
-
     respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @departments }
+      format.html 
+      format.json { render json: DepartmentsDatatable.new(view_context) }
     end
   end
 
