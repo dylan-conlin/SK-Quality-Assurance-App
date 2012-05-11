@@ -19,9 +19,8 @@ private
   def data
     departments.map do |department|
       [
-        link_to(department.name, department),
+        link_to(department.name, department)
 
-        h(department.created_at)
       ]
     end
   end
@@ -48,7 +47,7 @@ private
   end
 
   def sort_column
-    columns = %w[name created_at]
+    columns = %w[name]
     columns[params[:iSortCol_0].to_i]
   end
 
