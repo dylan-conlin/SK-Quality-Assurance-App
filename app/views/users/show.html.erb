@@ -7,7 +7,7 @@
         <%= @user.name %>
       </h1>
 </br>
-       <strong> Department:</strong> <%= @user.department.name %></br></br>
+       <strong> Department:</strong> <%= link_to  @user.department.name, department_path(@user.department) %></br></br>
        <strong>Supervisor:</strong> <%= link_to @supervisor.name, user_path(@supervisor.id) %>
 
     <% if @user.supervisor.present? %>
