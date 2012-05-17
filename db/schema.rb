@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120510155551) do
+ActiveRecord::Schema.define(:version => 20120517225735) do
 
   create_table "celebrities", :force => true do |t|
     t.string   "name"
@@ -72,8 +72,8 @@ ActiveRecord::Schema.define(:version => 20120510155551) do
 
   create_table "packagings", :force => true do |t|
     t.integer  "user_id"
-    t.integer  "workorder"
-    t.integer  "item_number"
+    t.string   "workorder"
+    t.string   "item_number"
     t.boolean  "individual_label_placement"
     t.boolean  "individual_label_legibility"
     t.boolean  "individual_seal_integrity"

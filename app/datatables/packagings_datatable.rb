@@ -50,11 +50,11 @@ private
     packagings = Packaging.order("#{sort_column} #{sort_direction}")
     packagings = packagings.page(page).per_page(per_page)
     if params[:sSearch].present?
-      packagings = packagings.where("workorder ilike :search", search: "%#{params[:sSearch]}%")
+      packagings = packagings.where("item_number ilike :search or workorder ilike :search or comments ilike :search or case_count ilike :search or case_weight ilike :search", search: "%#{params[:sSearch]}%")
     end
     packagings
   end
-#  or comments ilike :search or case_count ilike :search or case_weight ilike :search
+
   def page
     params[:iDisplayStart].to_i/per_page + 1
   end
@@ -64,10 +64,10 @@ private
   end
 
   def sort_column
-    columns = %w[created_at blank user_id workorder item_number]
+    columns = %w[created_at blank user_id workorder item_number individual_label_placement individual_label_legibility individual_seal_integrity individual_label_accuracy individual_general_appearance master_label_placement master_label_legibility master_tape_glue master_case_appearance case_count case_weight comments]
     columns[params[:iSortCol_0].to_i]
   end
-# individual_label_placement individual_label_legibility individual_seal_integrity individual_label_accuracy individual_general_appearance master_label_placement master_label_legibility master_tape_glue master_case_appearance case_count case_weight comments
+
   def sort_direction
     params[:sSortDir_0] == "desc" ? "desc" : "asc"
   end
