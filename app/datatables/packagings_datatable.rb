@@ -23,8 +23,21 @@ private
       [
         h(packaging.created_at),
         gravatar_for(packaging.user),
-       link_to(packaging.user.name, packaging.user)
-
+        link_to(packaging.user.name, packaging.user),
+        h(packaging.workorder),
+        h(packaging.item_number),
+        h(packaging.individual_label_placement),
+        h(packaging.individual_label_legibility),
+        h(packaging.individual_seal_integrity),
+        h(packaging.individual_label_accuracy),
+        h(packaging.individual_general_appearance),
+        h(packaging.master_label_placement),
+        h(packaging.master_label_legibility),
+        h(packaging.master_tape_glue),
+        h(packaging.master_case_appearance),
+        h(packaging.case_count),
+        h(packaging.case_weight),
+        h(packaging.comments)
       ]
     end
   end
@@ -37,7 +50,7 @@ private
     packagings = Packaging.order("#{sort_column} #{sort_direction}")
     packagings = packagings.page(page).per_page(per_page)
     if params[:sSearch].present?
-      packagings = packagings.where("created_at like :search", search: "%#{params[:sSearch]}%")
+      packagings = packagings.where("created_at like :search or workorder like :search or item_number like :search or comments like :search or case_count like :search or case_weight like :search", search: "%#{params[:sSearch]}%")
     end
     packagings
   end
@@ -51,7 +64,7 @@ private
   end
 
   def sort_column
-    columns = %w[created_at]
+    columns = %w[created_at blank user_id workorder item_number individual_label_placement individual_label_legibility individual_seal_integrity individual_label_accuracy individual_general_appearance master_label_placement master_label_legibility master_tape_glue master_case_appearance case_count case_weight comments]
     columns[params[:iSortCol_0].to_i]
   end
 
