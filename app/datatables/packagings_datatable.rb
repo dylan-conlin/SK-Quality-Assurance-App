@@ -25,7 +25,7 @@ private
         gravatar_for(packaging.user),
         link_to(packaging.user.name, packaging.user),
         h(packaging.workorder),
-        # h(packaging.item_number),
+        h(packaging.item_number),
         # h(packaging.individual_label_placement),
         # h(packaging.individual_label_legibility),
         # h(packaging.individual_seal_integrity),
@@ -50,7 +50,7 @@ private
     packagings = Packaging.order("#{sort_column} #{sort_direction}")
     packagings = packagings.page(page).per_page(per_page)
     if params[:sSearch].present?
-      packagings = packagings.where("workorder like :search or item_number like :search or comments like :search or case_count like :search or case_weight like :search", search: "%#{params[:sSearch]}%")
+      packagings = packagings.where("workorder ilike :search or item_number ilike :search or comments ilike :search or case_count ilike :search or case_weight ilike :search", search: "%#{params[:sSearch]}%")
     end
     packagings
   end
