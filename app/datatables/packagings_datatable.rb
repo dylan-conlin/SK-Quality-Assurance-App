@@ -22,8 +22,8 @@ private
     packagings.map do |packaging|
       [
         h(packaging.created_at),
-        gravatar_for(packaging.user)
-        # link_to(packaging.user.name, packaging.user),
+        gravatar_for(packaging.user),
+        link_to(packaging.user.name, packaging.user),
         # h(packaging.workorder),
         # h(packaging.item_number),
         # h(packaging.individual_label_placement),
