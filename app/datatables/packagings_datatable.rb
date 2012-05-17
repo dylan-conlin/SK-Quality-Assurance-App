@@ -25,19 +25,19 @@ private
         gravatar_for(packaging.user),
         link_to(packaging.user.name, packaging.user),
         h(packaging.workorder),
-        h(packaging.item_number)
-        # h(packaging.individual_label_placement),
-        # h(packaging.individual_label_legibility),
-        # h(packaging.individual_seal_integrity),
-        # h(packaging.individual_label_accuracy),
-        # h(packaging.individual_general_appearance),
-        # h(packaging.master_label_placement),
-        # h(packaging.master_label_legibility),
-        # h(packaging.master_tape_glue),
-        # h(packaging.master_case_appearance),
-        # h(packaging.case_count),
-        # h(packaging.case_weight),
-        # h(packaging.comments)
+        h(packaging.item_number),
+         h(packaging.individual_label_placement),
+         h(packaging.individual_label_legibility),
+         h(packaging.individual_seal_integrity),
+         h(packaging.individual_label_accuracy),
+         h(packaging.individual_general_appearance),
+         h(packaging.master_label_placement),
+         h(packaging.master_label_legibility),
+         h(packaging.master_tape_glue),
+         h(packaging.master_case_appearance),
+         h(packaging.case_count),
+         h(packaging.case_weight),
+         h(packaging.comments)
       ]
     end
   end
