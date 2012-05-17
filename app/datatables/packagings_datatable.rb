@@ -25,7 +25,7 @@ private
         gravatar_for(packaging.user),
         link_to(packaging.user.name, packaging.user),
         h(packaging.workorder),
-        h(packaging.item_number),
+        h(packaging.item_number)
         # h(packaging.individual_label_placement),
         # h(packaging.individual_label_legibility),
         # h(packaging.individual_seal_integrity),
