@@ -50,7 +50,7 @@ private
     packagings = Packaging.order("#{sort_column} #{sort_direction}")
     packagings = packagings.page(page).per_page(per_page)
     if params[:sSearch].present?
-      packagings = packagings.where("item_number ilike :search or workorder ilike :search or comments ilike :search or case_count ilike :search or case_weight ilike :search", search: "%#{params[:sSearch]}%")
+      packagings = packagings.where("item_number like :search or workorder like :search or comments like :search or case_count like :search or case_weight like :search", search: "%#{params[:sSearch]}%")
     end
     packagings
   end
