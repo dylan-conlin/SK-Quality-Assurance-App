@@ -64,10 +64,10 @@ private
   end
 
   def sort_column
-    columns = %w[created_at blank user_id workorder item_number individual_label_placement individual_label_legibility individual_seal_integrity individual_label_accuracy individual_general_appearance master_label_placement master_label_legibility master_tape_glue master_case_appearance case_count case_weight comments]
+    columns = %w[created_at blank user_id workorder item_number]
     columns[params[:iSortCol_0].to_i]
   end
-
+# individual_label_placement individual_label_legibility individual_seal_integrity individual_label_accuracy individual_general_appearance master_label_placement master_label_legibility master_tape_glue master_case_appearance case_count case_weight comments
   def sort_direction
     params[:sSortDir_0] == "desc" ? "desc" : "asc"
   end
