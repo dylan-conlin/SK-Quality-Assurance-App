@@ -14,5 +14,4 @@
 //= require jquery_ujs
 //= require fancybox
 //= require bootstrap
-//= require dataTables/jquery.dataTables
 //= require_tree .
