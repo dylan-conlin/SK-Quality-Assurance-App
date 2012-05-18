@@ -21,4 +21,19 @@ class Issue < ActiveRecord::Base
      :path => "/:style/:id/:filename",
      :convert_options => { :all => "-auto-orient" }
 
+include PgSearch
+
+pg_search_scope :search, :associated_against => {
+    :department => [:name]
+  }
+
+def self.text_search(query)
+  if query.present?
+    search(query)
+  else
+    scoped
+  end
+end
+
+
 end

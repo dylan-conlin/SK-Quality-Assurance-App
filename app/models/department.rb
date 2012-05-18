@@ -7,4 +7,12 @@ class Department < ActiveRecord::Base
   validates :name, :presence => true,
     :length => { :maximum => 50 }
 
+  def self.text_search(query)
+    if query.present?
+      search(query)
+    else
+      scoped
+    end
+  end
+
 end

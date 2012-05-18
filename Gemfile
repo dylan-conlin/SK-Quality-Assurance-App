@@ -12,9 +12,11 @@ gem 'aws-s3'
 gem 'heroku'
 gem 'aws-sdk', '~> 1.3.4'
 gem 'fancybox-rails'
+gem 'pg_search'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.5'
+  gem 'pg', '0.12.2'
+#  gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.8.1'
   gem 'guard-rspec', '0.5.5'
 end

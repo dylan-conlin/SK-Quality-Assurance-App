@@ -37,6 +37,7 @@ private
     departments = Department.order("#{sort_column} #{sort_direction}")
     departments = departments.page(page).per_page(per_page)
     if params[:sSearch].present?
+
       departments = departments.where("name ilike :search", search: "%#{params[:sSearch]}%")
     end
     departments

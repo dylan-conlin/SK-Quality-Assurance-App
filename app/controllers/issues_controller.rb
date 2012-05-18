@@ -2,12 +2,7 @@ class IssuesController < ApplicationController
   # GET /issues
   # GET /issues.json
   def index
-    @issues = Issue.paginate(page: params[:page], :per_page => 5)
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @issues }
-    end
+    @issues = Issue.text_search(params[:query]).page(params[:page]).per_page(10)
   end
 
   # GET /issues/1

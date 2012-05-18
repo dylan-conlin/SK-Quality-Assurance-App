@@ -3,7 +3,14 @@
 </br>
 </br>
 
-<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="departments" data-source="<%= departments_url(format: "json") %>" >
+<%= form_tag departments_path, method: :get do %>
+  <p>
+    <%= text_field_tag :query, params[:query] %>
+    <%= submit_tag "Search", name: nil %>
+  </p>
+<% end %>
+
+<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered"  >
 
   <thead>
     <tr>
@@ -11,7 +18,15 @@
     </tr>
   </thead>
   <tbody>
+   <% @departments.each do |department| %>
+  <tr>
+    <td><%= department.name %></td>
+    <td><%= link_to 'Show', department %></td>
+    <td><%= link_to 'Edit', edit_department_path(department) %></td>
+    <td><%= link_to 'Destroy', department, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
   </tbody>
 </table>
 
-
+<%= will_paginate %>

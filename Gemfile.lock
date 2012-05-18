@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/rweng/jquery-datatables-rails.git
-  revision: 5535ec30e487989b824e8a0de06be5165f4ef89f
+  revision: 9e88f3c3a858a29492adb710e4801b8f19205ead
   specs:
     jquery-datatables-rails (1.9.1.3)
       jquery-rails
@@ -68,7 +68,7 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.3.1)
+    coffee-script-source (1.3.3)
     diff-lcs (1.1.3)
     erubis (2.7.0)
     execjs (1.3.2)
@@ -84,9 +84,9 @@ GEM
       railties (>= 3.1.0)
     ffi (1.0.11)
     growl (1.0.3)
-    guard (1.0.2)
+    guard (1.0.3)
       ffi (>= 0.5.0)
-      thor (~> 0.14.6)
+      thor (>= 0.14.6)
     guard-rspec (0.5.5)
       guard (>= 0.8.4)
     guard-spork (0.3.2)
@@ -106,7 +106,7 @@ GEM
     jquery-rails (2.0.0)
       railties (>= 3.2.0.beta, < 5.0)
       thor (~> 0.14)
-    json (1.7.1)
+    json (1.7.3)
     launchy (2.1.0)
       addressable (~> 2.2.6)
     libwebsocket (0.1.3)
@@ -116,7 +116,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.18)
-    multi_json (1.3.4)
+    multi_json (1.3.5)
     multi_xml (0.5.1)
     netrc (0.7.1)
     nokogiri (1.5.2)
@@ -129,6 +129,9 @@ GEM
       mime-types
     pg (0.12.2)
     pg (0.12.2-x86-mingw32)
+    pg_search (0.5)
+      activerecord (>= 3)
+      activesupport (>= 3)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -172,7 +175,7 @@ GEM
       railties (>= 3.0)
       rspec (~> 2.8.0)
     rubyzip (0.9.8)
-    sass (3.1.17)
+    sass (3.1.18)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
@@ -193,8 +196,6 @@ GEM
       hike (~> 1.2)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sqlite3 (1.3.5)
-    sqlite3 (1.3.5-x86-mingw32)
     thor (0.14.6)
     tilt (1.3.3)
     treetop (1.4.10)
@@ -241,12 +242,12 @@ DEPENDENCIES
   jquery-rails (= 2.0.0)
   paperclip
   pg (= 0.12.2)
+  pg_search
   rails (= 3.2.3)
   rb-fsevent (= 0.4.3.1)
   rspec-rails (= 2.8.1)
   sass-rails
   simple_form
   spork (= 0.9.0)
-  sqlite3 (= 1.3.5)
   uglifier
   will_paginate (= 3.0.3)

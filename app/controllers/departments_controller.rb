@@ -5,10 +5,8 @@ class DepartmentsController < ApplicationController
   before_filter :admin_user,     only: :destroy
 
   def index
-    respond_to do |format|
-      format.html 
-      format.json { render json: DepartmentsDatatable.new(view_context) }
-    end
+    @departments = Department.text_search(params[:query]).page(params[:page]).per_page(10)
+
   end
 
   # GET /departments/1
