@@ -2,7 +2,7 @@ class IssuesController < ApplicationController
   # GET /issues
   # GET /issues.json
   def index
-    @issues = Issue.text_search(params[:query]).page(params[:page]).per_page(10)
+    @issues = Issue.text_search(params[:query]).page(params[:page]).per_page(2)
   end
 
   # GET /issues/1

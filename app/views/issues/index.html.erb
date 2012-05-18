@@ -1,11 +1,8 @@
-<h1>Listing issues</h1>
-
+<h1>Issues</h1>
 
 <%= link_to 'Add New Issue', new_issue_path, :class => 'btn' %>
-</br>
-</br>
 
-<%= form_tag issues_path, method: :get do %>
+<%= form_tag issues_path,  :class => 'pull-right', method: :get do %>
   <p>
     <%= text_field_tag :query, params[:query] %>
     <%= submit_tag "Search", name: nil %>

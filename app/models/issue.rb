@@ -23,9 +23,19 @@ class Issue < ActiveRecord::Base
 
 include PgSearch
 
-pg_search_scope :search, :associated_against => {
-    :department => [:name]
-  }
+pg_search_scope :search,
+
+                :against => [
+                  :description, 
+                  :corrective_action,
+                  :workorder],
+
+                :associated_against => {
+                  :user               => [:name],
+                  :department         => [:name],
+                  :gmp                => [:name],
+                  :foreign_object     => [:name]
+             } 
 
 def self.text_search(query)
   if query.present?
