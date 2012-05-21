@@ -10,7 +10,7 @@ def sortable(column, title = nil)
 
   # Returns the full title on a per-page basis.
   def full_title(page_title)
-    base_title = "SK Food Group"
+    base_title = "SK Food Group - Quality Assurance"
     if page_title.empty?
       base_title
     else
