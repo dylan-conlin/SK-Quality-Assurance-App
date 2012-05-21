@@ -2,58 +2,18 @@
 
 <%= link_to 'Add New Issue', new_issue_path, :class => 'btn' %>
 
-<%= form_tag issues_path,  :class => 'pull-right', method: :get do %>
-  <p>
+
+<%= form_tag issues_path, method: :get do %>
+  <%= hidden_field_tag :direction, params[:direction] %>
+  <%= hidden_field_tag :sort, params[:sort] %>
+   <p class="pull-right">
     <%= text_field_tag :query, params[:query] %>
     <%= submit_tag "Search", name: nil %>
   </p>
+<div id="issues"><%= render 'issues' %></div>
+
 <% end %>
 
 
-<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" >
-
-  <tr>
-    <th>Date</th>
-    <th>Image</th>
-    <th>User</th>
-    <th>Description</th>
-    <th>Corrective Action</th>
-    <th>Workorder</th>
-    <th>Department Responsible</th>
-    <th>Foreign object type</th>
-    <th>Gmp</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-</thead>
-<tbody>
-<% @issues.each do |issue| %>
-  <tr>
-    <td><%= issue.created_at.strftime("%c") %></td>
-        <% if issue.photo.file? %>
-
-
-    <td><%=link_to image_tag(issue.photo.url(:small)), issue.photo.url, :class=>"iframe", :size => "300x300" %></td>
-        <% else %>
-    <td>no image</td>
-        <% end %>
-    <td><%= gravatar_for issue.user, size: 52 %></br>
-        <%= link_to issue.user.name, issue.user %></td>
-    <td><%= issue.description %></td>
-    <td><%= issue.corrective_action %></td>
-    <td><%= issue.workorder %></td>
-    <td><%= issue.department.name %></td>
-    <td><%= issue.foreign_object.name %></td>
-    <td><%= issue.gmp.name %></td>
-    <td><%= link_to 'Show', issue %></td>
-    <td><%= link_to 'Edit', edit_issue_path(issue) %></td>
-    <td><%= link_to 'Destroy', issue, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</tbody>
-</table>
-<%= will_paginate %>
-<br />
 
 

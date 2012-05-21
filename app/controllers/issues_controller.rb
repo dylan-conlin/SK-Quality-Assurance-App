@@ -1,12 +1,11 @@
 class IssuesController < ApplicationController
-  # GET /issues
-  # GET /issues.json
+
+  helper_method :sort_column, :sort_direction
+
   def index
-    @issues = Issue.text_search(params[:query]).page(params[:page]).per_page(2)
+    @issues = Issue.order(sort_column + " " + sort_direction).text_search(params[:query]).paginate(:per_page => 5, :page => params[:page])
   end
 
-  # GET /issues/1
-  # GET /issues/1.json
   def show
     @issue = Issue.find(params[:id])
 
@@ -74,4 +73,14 @@ class IssuesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+private
+  def sort_column
+    Issue.column_names.include?(params[:sort]) ? params[:sort] : "created_at"
+  end
+  
+  def sort_direction
+    %w[asc desc].include?(params[:direction]) ?  params[:direction] : "desc"
+  end
+
 end
