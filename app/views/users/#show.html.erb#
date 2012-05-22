@@ -18,13 +18,6 @@
 </br>
 
 
-<a href="#" data-toggle="collapse" data-target="#demo">
-Direct Reports
-</a>
- 
-<div id="demo" class="collapse in">hidden content</div>
-
-
  <% @direct_reports.each do |direct_report| %>
 
   <% if direct_report.supervisor == true %>

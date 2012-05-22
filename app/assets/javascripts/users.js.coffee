@@ -14,3 +14,7 @@ jQuery ->
       "sSortDesc": "header headerSortUp",
       "sSortable": "header"
   } );
+
+  $(".collapse").collapse({
+    parent: false
+    });
