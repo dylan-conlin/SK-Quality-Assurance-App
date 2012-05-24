@@ -10,9 +10,9 @@
     <th><%= sortable "department_id", "Department Responsible" %></th>
     <th><%= sortable "foreign_object_id", "Foreign Object Type" %></th>
     <th><%= sortable "gmp_id", "GMP" %></th>
-    <th></th>
-    <th></th>
-    <th></th>
+     <% if current_user.admin == true %>	
+      <th>Admin</th>
+     <% end %>
   </tr>
 </thead>
 <tbody>
@@ -32,9 +32,25 @@
     <td><%= issue.department.name %></td>
     <td><%= issue.foreign_object.name %></td>
     <td><%= issue.gmp.name %></td>
-    <td><%= link_to 'Show', issue %></td>
-    <td><%= link_to 'Edit', edit_issue_path(issue) %></td>
-    <td><%= link_to 'Destroy', issue, confirm: 'Are you sure?', method: :delete %></td>
+         <% if current_user.admin == true %>	
+        <td>
+	     <div class="btn-group">
+	       <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+
+		 <span class="caret"></span>
+	       </a>
+	       <ul class="dropdown-menu">
+		 <!-- dropdown menu links -->
+		       <%= link_to 'Show', issue_path(issue)%>
+		       <%= link_to 'Edit', edit_issue_path(issue)%>
+		       <%= link_to 'Destroy', issue_path(issue), :method => :delete, :confirm => 'Are you sure?' %>
+	       </ul>
+	     </div>
+        </td>
+	 <% end %>
+
+
+
   </tr>
 <% end %>
 </tbody>

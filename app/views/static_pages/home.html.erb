@@ -8,19 +8,26 @@
 <%     @direct_reports = User.where(:user_id => current_user.id) %>
 
 
+
+<% provide(:title, current_user.name) %>
 <div class="row">
   <aside class="span4">
     <section>
       <h1>
-        <%= gravatar_for current_user, size: 50 %>
+        <%= gravatar_for current_user, size: 150 %>
         <%= current_user.name %>
       </h1>
-        Department: <%= current_user.department.name %></br>
-	Supervisor: <%= link_to @supervisor.name, user_path(@supervisor.id) %>
+</br>
+       <strong> Department:</strong> <%= link_to  current_user.department.name, department_path(current_user.department) %></br></br>
+       <strong>Supervisor:</strong> <%= link_to @supervisor.name, user_path(@supervisor.id) %>
 
     <% if current_user.supervisor.present? %>
-      <% if current_user.supervisor == true %></br></br>
-          <h4>Direct Reports</h4></br>
+      <% if current_user.supervisor == true %>
+</br>
+</br>
+</br>
+</br>
+
 
  <% @direct_reports.each do |direct_report| %>
 
@@ -39,6 +46,9 @@
     <% end %>
 
 </div>
+
+
+
 
 
 

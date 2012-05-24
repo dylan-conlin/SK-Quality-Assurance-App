@@ -1,15 +1,10 @@
 SampleApp::Application.routes.draw do
 
   resources :issues
-
   resources :gmps
-
   resources :foreign_objects
-
   resources :tunneltemps
-
   resources :packagings
-
   resources :celebrities
 
   resources :users do
@@ -25,6 +20,7 @@ SampleApp::Application.routes.draw do
   resources :infractions
       
   root to: 'static_pages#home'
+
 
   match '/signup',  to: 'users#new'
   match '/signin',  to: 'sessions#new'

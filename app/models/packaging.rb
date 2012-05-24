@@ -8,4 +8,28 @@ class Packaging < ActiveRecord::Base
  validates_numericality_of :case_count, :greater_than_or_equal_to => 0
  validates_numericality_of :case_weight, :greater_than_or_equal_to => 0
 
+include PgSearch
+
+pg_search_scope :search,
+
+                :against => [
+                  :description, 
+                  :corrective_action,
+                  :workorder],
+
+                :associated_against => {
+                  :user               => [:name]
+
+
+             } 
+
+def self.text_search(query)
+  if query.present?
+    search(query)
+  else
+    scoped
+  end
+end
+
+
 end

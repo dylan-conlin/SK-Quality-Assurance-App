@@ -1,13 +1,10 @@
 class PackagingsController < ApplicationController
   before_filter :signed_in_user, only: :index
   before_filter :admin_user,     only: :destroy
-
+  helper_method :sort_column, :sort_direction
 
   def index
-    respond_to do |format|
-      format.html 
-      format.json { render json: PackagingsDatatable.new(view_context) }
-    end
+    @packagings = Packaging.order(sort_column + " " + sort_direction).text_search(params[:query]).paginate(:per_page => 5, :page => params[:page])
   end
 
   # GET /packagings/1
@@ -87,4 +84,13 @@ private
     def admin_user
       redirect_to(root_path) unless current_user.admin?
     end
+
+  def sort_column
+    Issue.column_names.include?(params[:sort]) ? params[:sort] : "created_at"
+  end
+  
+  def sort_direction
+    %w[asc desc].include?(params[:direction]) ?  params[:direction] : "desc"
+  end
+
 end

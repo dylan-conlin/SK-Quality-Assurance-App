@@ -3,11 +3,3 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 
-jQuery ->
-
-  $('#packagings').dataTable
-     sPaginationType: "full_numbers"
-     bJQueryUI: false
-     bProcessing: true
-     bServerSide: true
-     sAjaxSource: $('#packagings').data('source')
