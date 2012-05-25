@@ -1,12 +1,12 @@
-<%= form_for @packaging, :html => {:class => 'form-horizontal' } do |f| %>
+<%= form_for @packaging do |f| %>
  
 <legend>Packaging Check</legend>
     <%= f.label "Workorder" %>
     <%= f.text_field :workorder, :input_html => { :class => "span6" } %>       
 
     <%= f.label "Item Number" %>
-    <%= f.collection_select :item_id, Item.all, :id, :number, :include_blank => true %>
 
+    <%= f.collection_select :item_id, Item.all, :id, :number, :include_blank => true %>
 <div class="alert alert-error">
 Only check items that fail! If there are no issues, leave checkbox unchecked.
 </div>
