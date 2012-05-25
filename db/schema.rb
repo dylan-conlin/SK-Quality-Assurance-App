@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120518185520) do
+ActiveRecord::Schema.define(:version => 20120525160540) do
 
   create_table "celebrities", :force => true do |t|
     t.string   "name"
@@ -61,6 +61,13 @@ ActiveRecord::Schema.define(:version => 20120518185520) do
     t.datetime "photo_updated_at"
   end
 
+  create_table "items", :force => true do |t|
+    t.string   "number"
+    t.string   "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
   create_table "microposts", :force => true do |t|
     t.string   "content"
     t.integer  "user_id"
@@ -73,7 +80,6 @@ ActiveRecord::Schema.define(:version => 20120518185520) do
   create_table "packagings", :force => true do |t|
     t.integer  "user_id"
     t.string   "workorder"
-    t.string   "item_number"
     t.boolean  "individual_label_placement"
     t.boolean  "individual_label_legibility"
     t.boolean  "individual_seal_integrity"
@@ -88,6 +94,7 @@ ActiveRecord::Schema.define(:version => 20120518185520) do
     t.text     "comments"
     t.datetime "created_at",                    :null => false
     t.datetime "updated_at",                    :null => false
+    t.integer  "item_id"
   end
 
   create_table "relationships", :force => true do |t|

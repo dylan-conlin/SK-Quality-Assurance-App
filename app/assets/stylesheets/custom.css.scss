@@ -234,6 +234,14 @@ aside {
 }
 
 
+.scrollable {
+ width: 940px !important;
+ overflow: auto;
+ overflow-x: scroll; 
+ overflow-y: hidden;
+}
+
+
 .pretty th .current {
   padding-right: 12px;
   background-repeat: no-repeat;

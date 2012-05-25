@@ -28,12 +28,12 @@ include PgSearch
 
 pg_search_scope :search,
 
-                :against => [
+                  :against => [
                   :description, 
                   :corrective_action,
                   :workorder],
 
-                :associated_against => {
+                  :associated_against => {
                   :user               => [:name],
                   :department         => [:name],
                   :gmp                => [:name],

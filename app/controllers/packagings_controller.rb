@@ -85,12 +85,12 @@ private
       redirect_to(root_path) unless current_user.admin?
     end
 
-  def sort_column
-    Issue.column_names.include?(params[:sort]) ? params[:sort] : "created_at"
-  end
-  
-  def sort_direction
-    %w[asc desc].include?(params[:direction]) ?  params[:direction] : "desc"
-  end
+    def sort_column
+      Issue.column_names.include?(params[:sort]) ? params[:sort] : "created_at"
+    end
+
+    def sort_direction
+      %w[asc desc].include?(params[:direction]) ?  params[:direction] : "desc"
+    end
 
 end

@@ -1,5 +1,7 @@
 SampleApp::Application.routes.draw do
 
+  resources :items
+
   resources :issues
   resources :gmps
   resources :foreign_objects

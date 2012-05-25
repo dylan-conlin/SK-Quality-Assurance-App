@@ -1,56 +1,101 @@
+<div class="scrollable">
 <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered pretty">
 
-<thead>
   <tr>
-
     <th><%= sortable "created_at", "Date" %></th>
     <th><%= sortable "user_id", "User" %></th>   
     <th><%= sortable "workorder", "Workorder" %></th>   
-    <th><%= sortable "item_number", "Item Number" %></th>   
-    <th><%= sortable "individual_label_placement", "Individual Label Placement" %></th>   
-    <th><%= sortable "individual_label_legibility", "individual label legibility" %></th>
-    <th><%= sortable "individual_seal_integrity", "individual seal integrity" %></th>
-    <th><%= sortable "individual_label_accuracy", "individual label accuracy" %></th>
-    <th><%= sortable "individual_general_appearance", "individual general appearance" %></th>
-    <th><%= sortable "master_label_placement", "master label placement" %></th>
-    <th><%= sortable "master_label_legibility", "master label legibility" %></th>
-    <th><%= sortable "master_tape_glue", "master tape glue" %></th>
-    <th><%= sortable "master_case_appearance", "master case appearance" %></th>
-    <th><%= sortable "case_count", "case count" %></th>
-    <th><%= sortable "case_weight", "case weight" %></th>
-    <th><%= sortable "comments", "comments" %></th> 
+    <th>Item</th>   
+    <th>Individual Label Placement</th>   
+    <th>individual label legibility</th>
+    <th>individual seal integrity</th>
+    <th>individual label accuracy</th>
+    <th>individual general appearance</th>
+    <th>master label placement</th>
+    <th>master label legibility</th>
+    <th>master tape glue</th>
+    <th>master case appearance</th>
+    <th>case count</th>
+    <th>case weight</th>
+    <th>comments</th> 
     <% if current_user.admin == true %>	
     <th>Admin</th>
     <% end %>
   </tr>
-</thead>
 
-<tbody>
+
 <% @packagings.each do |packaging| %>
   <tr>
     <td><%= packaging.created_at.strftime("%c") %></td>
     <td><%= gravatar_for packaging.user, size: 52 %></br>
         <%= link_to packaging.user.name, packaging.user %></td>
     <td><%= packaging.workorder %></td>
-    <td><%= packaging.item_number %></td>
-    <td><%= packaging.individual_label_placement %></td>
-    <td><%= packaging.individual_label_legibility %></td>
-    <td><%= packaging.individual_seal_integrity %></td>
-    <td><%= packaging.individual_label_accuracy %></td>
+    <td><%= packaging.item.number %></td>
 
-    <td><%= packaging.individual_general_appearance %></td>
-    <td><%= packaging.master_label_placement %></td>
-    <td><%= packaging.master_label_legibility %></td>
-    <td><%= packaging.master_tape_glue %></td>
-    <td><%= packaging.master_case_appearance %></td>
+    <% if packaging.individual_label_placement == true %>
+    <td><span class="label label-important">Fail</span></td>
+    <% else %>
+    <td><span class="label label-success">Pass</span></td>
+    <% end %>
+
+    <% if packaging.individual_label_legibility == true %>
+    <td><span class="label label-important">Fail</span></td>
+    <% else %>
+    <td><span class="label label-success">Pass</span></td>
+    <% end %>
+
+    <% if packaging.individual_seal_integrity == true %>
+    <td><span class="label label-important">Fail</span></td>
+    <% else %>
+    <td><span class="label label-success">Pass</span></td>
+    <% end %>
+
+    <% if packaging.individual_label_accuracy == true %>
+    <td><span class="label label-important">Fail</span></td>
+    <% else %>
+    <td><span class="label label-success">Pass</span></td>
+    <% end %>
+
+    <% if packaging.individual_general_appearance == true %>
+    <td><span class="label label-important">Fail</span></td>
+    <% else %>
+    <td><span class="label label-success">Pass</span></td>
+    <% end %>
+
+    <% if packaging.master_label_placement == true %>
+    <td><span class="label label-important">Fail</span></td>
+    <% else %>
+    <td><span class="label label-success">Pass</span></td>
+    <% end %>
+
+    <% if packaging.master_label_legibility == true %>
+    <td><span class="label label-important">Fail</span></td>
+    <% else %>
+    <td><span class="label label-success">Pass</span></td>
+    <% end %>
+
+    <% if packaging.master_tape_glue == true %>
+    <td><span class="label label-important">Fail</span></td>
+    <% else %>
+    <td><span class="label label-success">Pass</span></td>
+    <% end %>
+
+    <% if packaging.master_case_appearance == true %>
+    <td><span class="label label-important">Fail</span></td>
+    <% else %>
+    <td><span class="label label-success">Pass</span></td>
+    <% end %>
+
     <td><%= packaging.case_count %></td>
     <td><%= packaging.case_weight %></td>
     <td><%= packaging.comments %></td>
+    
+
+
          <% if current_user.admin == true %>	
         <td>
 	     <div class="btn-group">
 	       <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-
 		 <span class="caret"></span>
 	       </a>
 	       <ul class="dropdown-menu">
@@ -62,9 +107,8 @@
 	     </div>
         </td>
 	 <% end %>
-
   </tr>
 <% end %>
-</tbody>
 </table>
+</div>
 <%= will_paginate @packagings %>
