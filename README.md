@@ -1,5 +1,7 @@
-# Ruby on Rails Tutorial: sample application
+# Quality Assurance [food industry]: sample application
 
-This is the sample application for
-[*Ruby on Rails Tutorial: Learn Rails by Example*](http://railstutorial.org/)
-by [Michael Hartl](http://michaelhartl.com/).
+demo: http://skfoodgroup.herokuapp.com
+
+This is a sample application for a food QA department. So far, it includes user authentication, issue tracking, and a few other CRUD resources.
+
+- Dylan Conlin
