@@ -1,5 +1,6 @@
-desc "Imports a CSV file into an ActiveRecord table"
-task :csv_model_import, :filename, :model, :needs => :environment do |task,args|
+
+
+task :csv_model_import, [:filename, :model] => [:environment] do |task,args|
   lines = File.new(args[:filename]).readlines
   header = lines.shift.strip
   keys = header.split(',')
@@ -12,3 +13,4 @@ task :csv_model_import, :filename, :model, :needs => :environment do |task,args|
     Module.const_get(args[:model]).create(params)
   end
 end
+
