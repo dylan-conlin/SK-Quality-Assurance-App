@@ -1,522 +1,206 @@
 number,description
-123587,Maple Pancakes, Sausage  18/cs
-123588,Sausage Scramble  18/cs
+11009260,Sample HamEggCheddar
+11009261,Sample BaconEggGouda
+11010010,Sample Vegetarian La
+11017416,Sample Veg Labaccia 
+11017984,Sample Bacon Lab CAN
+11019027,Chicken Wrap 32/cs 
+11019030,Sample Chicken Wrap 
+11020154,RstdTom&Mozz Panini 
+11020155,Ham & Swiss Panini 2
+11020156,Tuna Melt Panini 24/
+123127,Double Hamburger  12
+123128,Cheeseburger  12/cs
+123300,Sausage Scramble Bow
+123301,Bacon Scramble Bowl 
+123304,Chicken Teriyaki Bow
+123310,Sausag Scrmble Bowl 
+123311,Bacon Scrmble  Bowl 
+123314,Chicken Teriyaki Bow
+123315,Ham Scramble Bowl 6 
+123412,Double Cheeseburger 
+123497,Hickory Rib Sandwich
+123586,Bacon Cheeseburger 1
+123587,"Maple Pancakes, Saus"
+123588,Sausage Scramble  18
 123589,Bacon Scramble 18/cs
-123590,Mini Pancakes and Syrup  18/cs
-85000,Ham Cheese Double Wedge 48/cs
-85001,Turkey Cheese Dbl Wedge 48/cs
-85005,Turkey & Cheese Kaiser 36/cs
-85006,Ham & Cheese Kaiser 36/cs
+123590,Mini Pancakes and Sy
+123591,Mini Waffles and Syr
+123592,French Toast and Syr
+123594,Ham & Cheese Double 
+123595, Egg Salad Double We
+123596,Chicken Salad Dble W
+123597,Turkey Cheese Dbl We
+123598,Ham & Cheese Hoagie 
+123599,Turkey Cheese Hoagie
+123600,Ham & Turkey Hoagie 
+123601,Tuna Salad Double We
+123602,OP Chcken Salad Tpl 
+123603,OP Tuna Salad Tpl We
+123604,Egg Salad Triple Wed
+123605,Trkey Cheese Triple 
+123606,Ham Cheese Triple We
+123607,"OP Dbl Wdge Turk,Sws"
+123608,OP King Sub Trkey & 
+123609,OP King Sub Ham & Ch
+123610,OP King Sub Italian 
+123616,"OP Saus,Egg,Chse Muf"
+123617,"OP Saus,Egg,Chs Bisc"
+123618,"OP Bacn,Egg,Chs Bisc"
+123619,"OP Can Bac,Egg Ch Mu"
+123625,Mini Corn Dogs with 
+123626,Popcorn Chckn w Ketc
+123627,Chicken Cheddar w Ke
+123628,Sausage and Cheese M
+123701,Tuna Salad Double Wd
+123707,"OP Db Wge Trk,Sws,Ha"
+124100,"Sausage, Egg, Cheese"
+124101,"Can Bac,Egg,Cheese M"
+124102,Sausag Scrmble Bowl 
+124103,Bacon Scrmble  Bowl 
+125000,Polish Sausage Bague
+125001,Bacn Egg Cheese Bagu
+125002,Cheesy Beef Baguetta
+125003,Nathans Baguetta 24/
+125004,Pepperoni Baguetta 2
+125100,Polish Saus Baguetta
+125101,Bacn Egg Chse Bagtta
+125102,Cheesy Beef Baguetta
+125104,Pepperoni Baguetta 2
+154117,King Sub Turkey & Ch
+154118,King Sub Ham & Chees
+163737,"Dbl Wdge Turk,Swiss,"
+164730,Triple Wedge Ham Che
+164741,Triple Wedge Egg Sal
+164761,Trple Wdge Chicken S
+164765,Triple Wedge Tuna Sa
+164766,Triple Wdge Trkey Ch
+19137,Cheeseburger Angus 2
+19151,Hebrew National Hot 
+19152,Plain Bagel Cream Ch
+19156,Ham & Swiss Wheat Ci
+19157,Sausage Egg & Cheese
+19158,Chick Brst Wht Kais 
+19160,Orange Chicken Bowl 
+19161,Sausage Breakfast Bo
+19162,Enchilada - Sonora S
+19163,Buffalo Chicken Wing
+19164,Pulled Pork Sandwich
+19165,Vegan Burger w/BBQ 2
+19167,Enchilada - Sonora S
+19233,Turkey & Swiss Hoagi
+19589,Bacon Egg Gouda Laba
+19591,Sausage Egg Cheddar 
+19594,Vegetarian Labaccia 
+19595,Egg White Wrap w/Spi
+19596,RF Turkey Bacon 24/c
+19597,Ham Egg Cheddar Lab 
+19607,Sausage Egg Muff 24/
+19608,Bacon Egg Gouda Lab 
+19613,Spinach  Wrap 32/cs 
+19614,RF Turkey Bacon  24/
+19615,Ham Egg Cheddar Lab 
+19616,Vegetarian Labaccia 
+19650,Ham & Swiss Panini 2
+19651,RstdTom&Mozz Panini 
+19652,Santa Fe Chck Panini
+19653,Tuna Panini 24/cs CA
+83457,Poorboy Sub 8/cs
+85000,Ham Cheese Double We
+85001,Turkey Cheese Dbl We
 85007,Hamburger 36/cs
-123587,Maple Pancakes, Sausage  18/cs
-123588,Sausage Scramble  18/cs
-11009260,Sample HamEggCheddar Lab 32/cs
-11009261,Sample BaconEggGouda Lab 32/cs
-11010010,Sample Vegetarian Lab 32/cs
-11019027,Chicken Wrap 32/cs 
-11019030,Sample Chicken Wrap 32/cs 
-11020154,RstdTom&Mozz Panini 24/cs 
-11020155,Ham & Swiss Panini 24/cs 
-11020156,Tuna Melt Panini 24/cs 
-19589,Bacon Egg Gouda Labaccia 32/cs
-19591,Sausage Egg Cheddar Muff 24/cs
-19594,Vegetarian Labaccia 32/cs
-19595,Egg White Wrap w/Spinach 32/cs
-19596,RF Turkey Bacon 24/cs
-19597,Ham Egg Cheddar Lab 32/cs
-19137,Cheeseburger Angus 20/cs
-19151,Hebrew National Hot Dog 20/cs
-19152,Plain Bagel Cream Cheese 24/cs
-19156,Ham & Swiss Wheat Ciab 20/cs
-19157,Sausage Egg & Cheese Muf 20/cs
-19160,Orange Chicken Bowl 12/cs
-19161,Sausage Breakfast Bowl 12/cs
-19162,Enchilada - Sonora Style 12/cs
-19163,Buffalo Chicken Wings 18/cs
-19164,Pulled Pork Sandwich 20/cs
-19165,Vegan Burger w/BBQ 20/cs
-19233,Turkey & Swiss Hoagie 20/cs
-19137,Cheeseburger Angus 20/cs
-19151,Hebrew National Hot Dog 20/cs
-19152,Plain Bagel Cream Cheese 24/cs
-19156,Ham & Swiss Wheat Ciab 20/cs
-19157,Sausage Egg & Cheese Muf 20/cs
-19160,Orange Chicken Bowl 12/cs
-19161,Sausage Breakfast Bowl 12/cs
-19162,Enchilada - Sonora Style 12/cs
-19163,Buffalo Chicken Wings 18/cs
-19164,Pulled Pork Sandwich 20/cs
-19165,Vegan Burger w/BBQ 20/cs
-19233,Turkey & Swiss Hoagie 20/cs
-19137,Cheeseburger Angus 20/cs
-19151,Hebrew National Hot Dog 20/cs
-19152,Plain Bagel Cream Cheese 24/cs
-19156,Ham & Swiss Wheat Ciab 20/cs
-19157,Sausage Egg & Cheese Muf 20/cs
-19160,Orange Chicken Bowl 12/cs
-19161,Sausage Breakfast Bowl 12/cs
-19162,Enchilada - Sonora Style 12/cs
-19163,Buffalo Chicken Wings 18/cs
-19164,Pulled Pork Sandwich 20/cs
-19165,Vegan Burger w/BBQ 20/cs
-19233,Turkey & Swiss Hoagie 20/cs
-19137,Cheeseburger Angus 20/cs
-19151,Hebrew National Hot Dog 20/cs
-19152,Plain Bagel Cream Cheese 24/cs
-19156,Ham & Swiss Wheat Ciab 20/cs
-19157,Sausage Egg & Cheese Muf 20/cs
-19160,Orange Chicken Bowl 12/cs
-19161,Sausage Breakfast Bowl 12/cs
-19162,Enchilada - Sonora Style 12/cs
-19163,Buffalo Chicken Wings 18/cs
-19164,Pulled Pork Sandwich 20/cs
-19165,Vegan Burger w/BBQ 20/cs
-19233,Turkey & Swiss Hoagie 20/cs
-11019027,Chicken Wrap 32/cs 
-11019030,Sample Chicken Wrap 32/cs 
-11020154,RstdTom&Mozz Panini 24/cs 
-11020155,Ham & Swiss Panini 24/cs 
-11020156,Tuna Melt Panini 24/cs 
-19595,Egg White Wrap w/Spinach 32/cs
-19597,Ham Egg Cheddar Lab 32/cs
-11019027,Chicken Wrap 32/cs 
-11019030,Sample Chicken Wrap 32/cs 
-11020154,RstdTom&Mozz Panini 24/cs 
-11020155,Ham & Swiss Panini 24/cs 
-11020156,Tuna Melt Panini 24/cs 
-19595,Egg White Wrap w/Spinach 32/cs
-19597,Ham Egg Cheddar Lab 32/cs
-11019027,Chicken Wrap 32/cs 
-11019030,Sample Chicken Wrap 32/cs 
-11020154,RstdTom&Mozz Panini 24/cs 
-11020155,Ham & Swiss Panini 24/cs 
-11020156,Tuna Melt Panini 24/cs 
-19595,Egg White Wrap w/Spinach 32/cs
-19597,Ham Egg Cheddar Lab 32/cs
-85450,Bacon, Egg,Chs Bisc 12/2x2pk
-85451,Sausage, Egg,Chs Croi 12/2x2pk
-85452,Sausage, Egg,Chs Muf 12/2x2pk
-85453,Sausage, Egg,Chs Bisc 12/2x2pk
-123587,Maple Pancakes, Sausage  18/cs
-123588,Sausage Scramble  18/cs
-123589,Bacon Scramble 18/cs
-123590,Mini Pancakes and Syrup  18/cs
-123591,Mini Waffles and Syrup  18/cs
-123592,French Toast and Syrup  18/cs
-125000,Polish Sausage Baguetta 24/cs
-125001,Bacn Egg Cheese Baguetta 24/cs
-125002,Cheesy Beef Baguetta 24/cs
-123128,Cheeseburger  12/cs
-123412,Double Cheeseburger  12/cs
-123497,Hickory Rib Sandwich  12/cs
-123545,Ham Egg & Cheese Muffin  12/cs
-123555,Sausage Egg Cheese Muffin12/cs
-123594,Ham & Cheese Double Wdge 12/cs
-123595, Egg Salad Double Wedge 12/cs
-123596,Chicken Salad Dble Wdge 12/cs
-123597,Turkey Cheese Dbl Wedge 12/cs
-123598,Ham & Cheese Hoagie 12/cs
-123599,Turkey Cheese Hoagie 12/cs
-123600,Ham & Turkey Hoagie 12/cs
-123601,Tuna Salad Double Wedge on
-123607,OP Dbl Wdge Turk,Sws,Ham 12/cs
-125000,Polish Sausage Baguetta 24/cs
-125001,Bacn Egg Cheese Baguetta 24/cs
-125002,Cheesy Beef Baguetta 24/cs
-85400,Sausage, Egg,Chs Cro 12/1x4pk
-85401,Sausage, Egg,Chs Bis 12/1x4pk
-85402,Bacon, Egg, Chs Bisc 12/1x4pk
-85403,Ham, Egg, Chs Crois 12/1x4pk
-85410,Sausage, Egg,Chs Cro 12/1x4pk
-85411,Sausage, Egg, Chs Bis 12/1x4pk
-85412,Bacon, Egg,Chs Bisc 12/1x4pk
-85413,Ham, Egg, Chs Crois 12/1x4pk
-85417,Bacon, Egg , Chs Bisc 12/1x4pk
-85418,Sausage, Egg,Chs Bisc 12/1x4pk
-85419,Ham, Egg , Chs Croiss 12/1x4pk
-85420,Saus, Egg , Chs Crois 12/1x4pk
+85300,"Sausage, Egg, Chs Mu"
+85301,"Sausage, Egg,Chs Bis"
+85302,"Bacon, Egg,Chs Bisc "
+85303,"Can Bac,Egg,Chs Muff"
+85304,Sausage Egg Chs Croi
+85305,Ham & Cheese Croissa
+85400,"Sausage, Egg,Chs Cro"
+85401,"Sausage, Egg,Chs Bis"
+85402,"Bacon, Egg, Chs Bisc"
+85403,"Ham, Egg, Chs Crois "
+85410,"Sausage, Egg,Chs Cro"
+85411,"Sausage, Egg, Chs Bi"
+85412,"Bacon, Egg,Chs Bisc "
+85413,"Ham, Egg, Chs Crois "
+85417,"Bacon, Egg , Chs Bis"
+85418,"Sausage, Egg,Chs Bis"
+85419,"Ham, Egg , Chs Crois"
+85420,"Saus, Egg , Chs Croi"
+85421,"Sausage, Egg,Chs Cro"
+85422,"Sausage, Egg,Chs Bis"
+85423,"Ham, Egg, Chs Crois "
+85424,"Sausage, Egg,Chs Cro"
+85425,"Sausage, Egg, Chs Bi"
+85426,"Bacon, Egg,Chs Bisc "
+85427,"Ham, Egg, Chs Crois "
+85428,"Bacon, Egg, Chs Bisc"
+85450,"Bacon, Egg,Chs Bisc "
+85451,"Sausage, Egg,Chs Cro"
+85452,"Sausage, Egg,Chs Muf"
+85453,"Sausage, Egg,Chs Bis"
+85600,"Bacon,Egg,Chs Biscui"
+85601,"Sausage, Egg,Chs Cro"
+85602,"Sausage, Egg,Chs Muf"
+85603,"Sausage, Egg,Chs Bis"
+86000,Msh Stk Ched Lean Pa
+86001,Chkn Msh Spn Lean Pa
+86002,Philly Steak Lean Pa
+86003,Poblano Chkn Lean Pa
+86004,Western Breakfast Pa
+86005,Saus Egg & Cheese Pa
+86600,Chili Hot Dog (Natha
+86601,Chili Hot Dog (Natha
+86602,Beef Hot Dog 12/cs
+86603,Beef Hot Dog Twin Pa
+86604,Jumbo Beef Hot Dog 1
+86605,Jumbo Beef Spicy Dog
+86700,Spinach n' Cheese  W
+86701,SW Style Chken Chor 
+86702,Turkey Saus n' Chse 
+86703,"Brie,Aple,Fig Rais B"
+86704,Thai Chckn & Chili W
+86705,"Turkey,Dijon & Jack "
+86706,Hummus & Cheese Wrap
+86707,Ham & Cheese Baguett
+86708,Roasted Chicken Bagu
+86709,Three Cheese Baguett
+86710,"Brie,Aple,Fig Rais B"
+86711,Thai Chckn & Chili W
+86712,"Turkey,Dijon & Jack "
+86713,Hummus & Cheese Wrap
+87200,"Sausage, Egg Chs Cro"
+87201,"Sausage, Egg,Chs Muf"
+87202,"Bacon, Egg,Chs Bisc "
+87300,"Bacon, Egg,Chs Bisc "
+87301,"Sausage, Egg,Chs Bis"
+87302,Sausage Egg Chs Croi
+87303,Chicken Club Lean Pa
+87304,Chckn Philly Lean Pa
+87305,Chkn Spn Msh Lean Pa
+87306,Phly Stk Chs Lean Pa
+87307,Bcn Egg Pot Chs Bowl
+87308,Hm Egg Pot Chs Bwl 8
+87309,Sg Egg Pot Chs Bwl  
+87500,"Bacon, Egg,Chs Bisc "
+87501,"Sausage, Egg,Chs Bis"
+87502,"Sausage, Egg,Chs Muf"
+87503,"Sausage, Egg,Chs Cro"
+87504,"Ham, Egg, Chs Muff 1"
+87505,"Bcn,Egg,Pot,Chs Bowl"
+87506,"Sg,Egg,Pot,Chs Bwl 8"
+87507,"Hm,Egg,Pot,Chs Bwl 8"
 87600,Angus Burger 12/cs
-87601,Angus Cheeseburger 12/cs
-87602,Angus Bacon Cheeseburger 12/cs
-86700,Spinach n' Cheese  Wrap 32/cs
-86701,SW Style Chken Chor Wrap 32/cs
-86702,Turkey Saus n' Chse Wrap 32/cs
-86703,Brie,Aple,Fig Rais Bread 20/cs
-86704,Thai Chckn & Chili Wrap 28/cs
-86705,Turkey,Dijon & Jack Wrap 28/cs
-86706,Hummus & Cheese Wrap 28/cs
-123128,Cheeseburger  12/cs
-123412,Double Cheeseburger  12/cs
-123555,Sausage Egg Cheese Muffin12/cs
-124100,Sausage, Egg, Cheese Muf 12/cs
-124101,Can Bac,Egg,Cheese Muff 12/cs
-11009260,Sample HamEggCheddar Lab 32/cs
-11009261,Sample BaconEggGouda Lab 32/cs
-11010010,Sample Vegetarian Lab 32/cs
-11019027,Chicken Wrap 32/cs 
-11019030,Sample Chicken Wrap 32/cs 
-11020154,RstdTom&Mozz Panini 24/cs 
-11020155,Ham & Swiss Panini 24/cs 
-11020156,Tuna Melt Panini 24/cs 
-19589,Bacon Egg Gouda Labaccia 32/cs
-19591,Sausage Egg Cheddar Muff 24/cs
-19594,Vegetarian Labaccia 32/cs
-19595,Egg White Wrap w/Spinach 32/cs
-19596,RF Turkey Bacon 24/cs
-19597,Ham Egg Cheddar Lab 32/cs
-19131,Vegan Burger 20/cs
-19137,Cheeseburger Angus 20/cs
-19151,Hebrew National Hot Dog 20/cs
-19152,Plain Bagel Cream Cheese 24/cs
-19154,Italian Hoagie 20/cs
-19156,Ham & Swiss Wheat Ciab 20/cs
-19157,Sausage Egg & Cheese Muf 20/cs
-19158,Chick Brst Wht Kais BBQ 20/cs
-19159,Teriyaki Chicken Bowl 24/cs
-19160,Orange Chicken Bowl 12/cs
-19161,Sausage Breakfast Bowl 12/cs
-19162,Enchilada - Sonora Style 12/cs
-19163,Buffalo Chicken Wings 18/cs
-19164,Pulled Pork Sandwich 20/cs
-19165,Vegan Burger w/BBQ 20/cs
-19233,Turkey & Swiss Hoagie 20/cs
-11017416,Sample Veg Labaccia CAN 32/cs
-19607,Sausage Egg Muff 24/cs CAN
-19608,Bacon Egg Gouda Lab 32/cs CAN
-19613,Spinach  Wrap 32/cs CAN
-19614,RF Turkey Bacon  24/cs CAN
-19615,Ham Egg Cheddar Lab 32/cs CAN
-19616,Vegetarian Labaccia CAN 32/cs
-19650,Ham & Swiss Panini 24/cs CAN
-19651,RstdTom&Mozz Panini 24/cs CAN
-19652,Santa Fe Chck Panini 24/cs CAN
-19653,Tuna Panini 24/cs CAN
-87300,Bacon, Egg,Chs Bisc 8/4pk
-87301,Sausage, Egg,Chs Bisc 8/4pk
-87302,Sausage Egg Chs Crois 8/4pk
-87303,Chicken Club Lean Panini 12/cs
-87304,Chckn Philly Lean Panini 12/cs
-87305,Chkn Spn Msh Lean Panini 12/cs
-87306,Phly Stk Chs Lean Panini 12/cs
-87307,Bcn Egg Pot Chs Bowl 8oz-8/cs
-87308,Hm Egg Pot Chs Bwl 8 oz - 8/cs
-87309,Sg Egg Pot Chs Bwl  8.6oz-8/cs
-123127,Double Hamburger  12/cs
-123128,Cheeseburger  12/cs
-123412,Double Cheeseburger  12/cs
-123497,Hickory Rib Sandwich  12/cs
-123545,Ham Egg & Cheese Muffin  12/cs
-123555,Sausage Egg Cheese Muffin12/cs
-123586,Bacon Cheeseburger 12/cs
-123602,OP Chcken Salad Tpl Wdge 16/cs
-123603,OP Tuna Salad Tpl Wedge16/cs
-123604,Egg Salad Triple Wedge 16/cs
-123605,Trkey Cheese Triple Wdge 16/cs
-123606,Ham Cheese Triple Wedge 16/cs
-123608,OP King Sub Trkey & Chse 15/cs
-123609,OP King Sub Ham & Cheese 15/cs
-83457,Poorboy Sub 8/cs
-11009260,Sample HamEggCheddar Lab 32/cs
-11009261,Sample BaconEggGouda Lab 32/cs
-11010010,Sample Vegetarian Lab 32/cs
-11019027,Chicken Wrap 32/cs 
-11019030,Sample Chicken Wrap 32/cs 
-11020154,RstdTom&Mozz Panini 24/cs 
-11020155,Ham & Swiss Panini 24/cs 
-11020156,Tuna Melt Panini 24/cs 
-19589,Bacon Egg Gouda Labaccia 32/cs
-19591,Sausage Egg Cheddar Muff 24/cs
-19594,Vegetarian Labaccia 32/cs
-19595,Egg White Wrap w/Spinach 32/cs
-19596,RF Turkey Bacon 24/cs
-19597,Ham Egg Cheddar Lab 32/cs
-123128,Cheeseburger  12/cs
-123412,Double Cheeseburger  12/cs
-123497,Hickory Rib Sandwich  12/cs
-123545,Ham Egg & Cheese Muffin  12/cs
-123555,Sausage Egg Cheese Muffin12/cs
-83457,Poorboy Sub 8/cs
-86000,Msh Stk Ched Lean Panini 12/cs
-86001,Chkn Msh Spn Lean Panini 12/cs
-86002,Philly Steak Lean Panini 12/cs
-86003,Poblano Chkn Lean Panini 12/cs
-86004,Western Breakfast Panini 12/cs
-86005,Saus Egg & Cheese Panini 12/cs
-11009260,Sample HamEggCheddar Lab 32/cs
-11009261,Sample BaconEggGouda Lab 32/cs
-19589,Bacon Egg Gouda Labaccia 32/cs
-19591,Sausage Egg Cheddar Muff 24/cs
-19607,Sausage Egg Muff 24/cs CAN
-19608,Bacon Egg Gouda Lab 32/cs CAN
-19613,Spinach  Wrap 32/cs CAN
-19614,RF Turkey Bacon  24/cs CAN
-123497,Hickory Rib Sandwich  12/cs
-125000,Polish Sausage Baguetta 24/cs
-125002,Cheesy Beef Baguetta 24/cs
-154117,King Sub Turkey & Cheese 15/cs
-154118,King Sub Ham & Cheese 15/cs
-163737,Dbl Wdge Turk,Swiss,Ham 16/cs
-164730,Triple Wedge Ham Cheese 16/cs
-164741,Triple Wedge Egg Salad 16/cs
-164761,Trple Wdge Chicken Salad 16/cs
-164765,Triple Wedge Tuna Salad 16/cs
-164766,Triple Wdge Trkey Cheese 16/cs
-125100,Polish Saus Baguetta 24/cs CAN
-125101,Bacn Egg Chse Bagtta 24/cs CAN
-125102,Cheesy Beef Baguetta 24/cs CAN
-11009260,Sample HamEggCheddar Lab 32/cs
-11009261,Sample BaconEggGouda Lab 32/cs
-11010010,Sample Vegetarian Lab 32/cs
-19589,Bacon Egg Gouda Labaccia 32/cs
-19591,Sausage Egg Cheddar Muff 24/cs
-19594,Vegetarian Labaccia 32/cs
-11010010,Sample Vegetarian Lab 32/cs
-11019027,Chicken Wrap 32/cs 
-11019030,Sample Chicken Wrap 32/cs 
-11020154,RstdTom&Mozz Panini 24/cs 
-11020155,Ham & Swiss Panini 24/cs 
-11020156,Tuna Melt Panini 24/cs 
-19589,Bacon Egg Gouda Labaccia 32/cs
-19591,Sausage Egg Cheddar Muff 24/cs
-19594,Vegetarian Labaccia 32/cs
-19595,Egg White Wrap w/Spinach 32/cs
-19596,RF Turkey Bacon 24/cs
-19597,Ham Egg Cheddar Lab 32/cs
-123310,Sausag Scrmble Bowl  6oz-12/cs
-123311,Bacon Scrmble  Bowl 6oz-12/cs
-11009260,Sample HamEggCheddar Lab 32/cs
-11009261,Sample BaconEggGouda Lab 32/cs
-11010010,Sample Vegetarian Lab 32/cs
-11019027,Chicken Wrap 32/cs 
-11019030,Sample Chicken Wrap 32/cs 
-11020154,RstdTom&Mozz Panini 24/cs 
-11020155,Ham & Swiss Panini 24/cs 
-11020156,Tuna Melt Panini 24/cs 
-19589,Bacon Egg Gouda Labaccia 32/cs
-19591,Sausage Egg Cheddar Muff 24/cs
-19594,Vegetarian Labaccia 32/cs
-19595,Egg White Wrap w/Spinach 32/cs
-19596,RF Turkey Bacon 24/cs
-19597,Ham Egg Cheddar Lab 32/cs
-86700,Spinach n' Cheese  Wrap 32/cs
-86701,SW Style Chken Chor Wrap 32/cs
-86702,Turkey Saus n' Chse Wrap 32/cs
-86703,Brie,Aple,Fig Rais Bread 20/cs
-86704,Thai Chckn & Chili Wrap 28/cs
-86705,Turkey,Dijon & Jack Wrap 28/cs
-86706,Hummus & Cheese Wrap 28/cs
-11019027,Chicken Wrap 32/cs 
-123300,Sausage Scramble Bowl 12/cs
-123301,Bacon Scramble Bowl 12/cs
-123304,Chicken Teriyaki Bowl  12/cs
-123310,Sausag Scrmble Bowl  6oz-12/cs
-123311,Bacon Scrmble  Bowl 6oz-12/cs
-123314,Chicken Teriyaki Bowl 6oz12/cs
-123315,Ham Scramble Bowl 6 oz - 12/cs
-123590,Mini Pancakes and Syrup  18/cs
-123591,Mini Waffles and Syrup  18/cs
-123592,French Toast and Syrup  18/cs
-125000,Polish Sausage Baguetta 24/cs
-125003,Nathans Baguetta 24/cs
-125004,Pepperoni Baguetta 24/cs
-19589,Bacon Egg Gouda Labaccia 32/cs
-19591,Sausage Egg Cheddar Muff 24/cs
-19594,Vegetarian Labaccia 32/cs
-19595,Egg White Wrap w/Spinach 32/cs
-19596,RF Turkey Bacon 24/cs
-19597,Ham Egg Cheddar Lab 32/cs
-86604,Jumbo Beef Hot Dog 12/cs
-86605,Jumbo Beef Spicy Dog 12/cs
-85600,Bacon,Egg,Chs Biscuit 12/2x2pk
-85601,Sausage, Egg,Chs Croi 12/2x2pk
-85602,Sausage, Egg,Chs Muff 12/2x2pk
-85603,Sausage, Egg,Chs Bisc 12/2x2pk
-123587,Maple Pancakes, Sausage  18/cs
-123588,Sausage Scramble  18/cs
-11009260,Sample HamEggCheddar Lab 32/cs
-11009261,Sample BaconEggGouda Lab 32/cs
-11010010,Sample Vegetarian Lab 32/cs
-11019027,Chicken Wrap 32/cs 
-11019030,Sample Chicken Wrap 32/cs 
-11020154,RstdTom&Mozz Panini 24/cs 
-11020155,Ham & Swiss Panini 24/cs 
-11020156,Tuna Melt Panini 24/cs 
-19589,Bacon Egg Gouda Labaccia 32/cs
-19591,Sausage Egg Cheddar Muff 24/cs
-19594,Vegetarian Labaccia 32/cs
-19595,Egg White Wrap w/Spinach 32/cs
-19596,RF Turkey Bacon 24/cs
-19597,Ham Egg Cheddar Lab 32/cs
-123587,Maple Pancakes, Sausage  18/cs
-123588,Sausage Scramble  18/cs
-123587,Maple Pancakes, Sausage  18/cs
-123588,Sausage Scramble  18/cs
-123589,Bacon Scramble 18/cs
-123590,Mini Pancakes and Syrup  18/cs
-123591,Mini Waffles and Syrup  18/cs
-123592,French Toast and Syrup  18/cs
-123616,OP Saus,Egg,Chse Muf 12/1x4pk
-123617,OP Saus,Egg,Chs Bisc 12/1x4pk
-123618,OP Bacn,Egg,Chs Bisc 12/1x4pk
-123619,OP Can Bac,Egg Ch Muf 12/1x4pk
-86601,Chili Hot Dog (Nathans) 8/2pk
-86601,Chili Hot Dog (Nathans) 8/2pk
-86603,Beef Hot Dog Twin Pack 8/2pk
-11010010,Sample Vegetarian Lab 32/cs
-11019027,Chicken Wrap 32/cs 
-11019030,Sample Chicken Wrap 32/cs 
-11020154,RstdTom&Mozz Panini 24/cs 
-11020155,Ham & Swiss Panini 24/cs 
-11020156,Tuna Melt Panini 24/cs 
-19589,Bacon Egg Gouda Labaccia 32/cs
-19591,Sausage Egg Cheddar Muff 24/cs
-19594,Vegetarian Labaccia 32/cs
-19595,Egg White Wrap w/Spinach 32/cs
-19596,RF Turkey Bacon 24/cs
-19597,Ham Egg Cheddar Lab 32/cs
-11019027,Chicken Wrap 32/cs 
-19595,Egg White Wrap w/Spinach 32/cs
-123594,Ham & Cheese Double Wdge 12/cs
-123598,Ham & Cheese Hoagie 12/cs
-123609,OP King Sub Ham & Cheese 15/cs
-86603,Beef Hot Dog Twin Pack 8/2pk
-86604,Jumbo Beef Hot Dog 12/cs
-87500,Bacon, Egg,Chs Bisc 12/2x2pk
-87501,Sausage, Egg,Chs Bisc 12/2x2pk
-87502,Sausage, Egg,Chs Muff 12/2x2pk
-87503,Sausage, Egg,Chs Croi 12/2x2pk
-87504,Ham, Egg, Chs Muff 12/2x2pk
-87505,Bcn,Egg,Pot,Chs Bowl 8oz-8/cs
-87506,Sg,Egg,Pot,Chs Bwl 8.6oz-8/cs
-87507,Hm,Egg,Pot,Chs Bwl 8oz - 8/cs
-87500,Bacon, Egg,Chs Bisc 12/2x2pk
-87501,Sausage, Egg,Chs Bisc 12/2x2pk
-87502,Sausage, Egg,Chs Muff 12/2x2pk
-87503,Sausage, Egg,Chs Croi 12/2x2pk
-87504,Ham, Egg, Chs Muff 12/2x2pk
-87505,Bcn,Egg,Pot,Chs Bowl 8oz-8/cs
-87506,Sg,Egg,Pot,Chs Bwl 8.6oz-8/cs
-87507,Hm,Egg,Pot,Chs Bwl 8oz - 8/cs
-123587,Maple Pancakes, Sausage  18/cs
-123588,Sausage Scramble  18/cs
-123589,Bacon Scramble 18/cs
-123590,Mini Pancakes and Syrup  18/cs
-123591,Mini Waffles and Syrup  18/cs
-123592,French Toast and Syrup  18/cs
-11009260,Sample HamEggCheddar Lab 32/cs
-11009261,Sample BaconEggGouda Lab 32/cs
-11010010,Sample Vegetarian Lab 32/cs
-11019027,Chicken Wrap 32/cs 
-11019030,Sample Chicken Wrap 32/cs 
-11020154,RstdTom&Mozz Panini 24/cs 
-11020155,Ham & Swiss Panini 24/cs 
-11020156,Tuna Melt Panini 24/cs 
-19589,Bacon Egg Gouda Labaccia 32/cs
-19591,Sausage Egg Cheddar Muff 24/cs
-19594,Vegetarian Labaccia 32/cs
-19595,Egg White Wrap w/Spinach 32/cs
-19596,RF Turkey Bacon 24/cs
-19597,Ham Egg Cheddar Lab 32/cs
-123587,Maple Pancakes, Sausage  18/cs
-123588,Sausage Scramble  18/cs
-11009260,Sample HamEggCheddar Lab 32/cs
-11009261,Sample BaconEggGouda Lab 32/cs
-11010010,Sample Vegetarian Lab 32/cs
-11019027,Chicken Wrap 32/cs 
-11019030,Sample Chicken Wrap 32/cs 
-11020154,RstdTom&Mozz Panini 24/cs 
-11020155,Ham & Swiss Panini 24/cs 
-11020156,Tuna Melt Panini 24/cs 
-19589,Bacon Egg Gouda Labaccia 32/cs
-19591,Sausage Egg Cheddar Muff 24/cs
-19594,Vegetarian Labaccia 32/cs
-19595,Egg White Wrap w/Spinach 32/cs
-19596,RF Turkey Bacon 24/cs
-19597,Ham Egg Cheddar Lab 32/cs
-86700,Spinach n' Cheese  Wrap 32/cs
-86701,SW Style Chken Chor Wrap 32/cs
-86702,Turkey Saus n' Chse Wrap 32/cs
-86703,Brie,Aple,Fig Rais Bread 20/cs
-86704,Thai Chckn & Chili Wrap 28/cs
-86705,Turkey,Dijon & Jack Wrap 28/cs
-86706,Hummus & Cheese Wrap 28/cs
-86700,Spinach n' Cheese  Wrap 32/cs
-86701,SW Style Chken Chor Wrap 32/cs
-86702,Turkey Saus n' Chse Wrap 32/cs
-86703,Brie,Aple,Fig Rais Bread 20/cs
-86704,Thai Chckn & Chili Wrap 28/cs
-86705,Turkey,Dijon & Jack Wrap 28/cs
-86706,Hummus & Cheese Wrap 28/cs
-51379F,20oz Brick Frozen 40 crate/plt
-FPP20SPF,20oz Foam Polar Pack 45 cs/plt
-11017416,Sample Veg Labaccia CAN 32/cs
-19607,Sausage Egg Muff 24/cs CAN
-19608,Bacon Egg Gouda Lab 32/cs CAN
-19613,Spinach  Wrap 32/cs CAN
-19614,RF Turkey Bacon  24/cs CAN
-19615,Ham Egg Cheddar Lab 32/cs CAN
-19616,Vegetarian Labaccia CAN 32/cs
-19650,Ham & Swiss Panini 24/cs CAN
-19651,RstdTom&Mozz Panini 24/cs CAN
-19652,Santa Fe Chck Panini 24/cs CAN
-19653,Tuna Panini 24/cs CAN
-125000,Polish Sausage Baguetta 24/cs
-125001,Bacn Egg Cheese Baguetta 24/cs
-125002,Cheesy Beef Baguetta 24/cs
-86700,Spinach n' Cheese  Wrap 32/cs
-86701,SW Style Chken Chor Wrap 32/cs
-86702,Turkey Saus n' Chse Wrap 32/cs
-87200,Sausage, Egg Chs Crois 12pk
-87201,Sausage, Egg,Chs Muf 12pk
-87202,Bacon, Egg,Chs Bisc 12pk
-123590,Mini Pancakes and Syrup  18/cs
-123592,French Toast and Syrup  18/cs
-125000,Polish Sausage Baguetta 24/cs
-125001,Bacn Egg Cheese Baguetta 24/cs
-125002,Cheesy Beef Baguetta 24/cs
-123587,Maple Pancakes, Sausage  18/cs
-123588,Sausage Scramble  18/cs
-123589,Bacon Scramble 18/cs
-123590,Mini Pancakes and Syrup  18/cs
-123591,Mini Waffles and Syrup  18/cs
-123592,French Toast and Syrup  18/cs
-125000,Polish Sausage Baguetta 24/cs
-125001,Bacn Egg Cheese Baguetta 24/cs
-125002,Cheesy Beef Baguetta 24/cs
-125003,Nathans Baguetta 24/cs
-125004,Pepperoni Baguetta 24/cs
-86600,Chili Hot Dog (Nathans) 12/cs
-86602,Beef Hot Dog 12/cs
-86603,Beef Hot Dog Twin Pack 8/2pk
-86604,Jumbo Beef Hot Dog 12/cs
-86605,Jumbo Beef Spicy Dog 12/cs
-86602,Beef Hot Dog 12/cs
-86605,Jumbo Beef Spicy Dog 12/cs
-125003,Nathans Baguetta 24/cs
-86600,Chili Hot Dog (Nathans) 12/cs
-86601,Chili Hot Dog (Nathans) 8/2pk
-86602,Beef Hot Dog 12/cs
-86603,Beef Hot Dog Twin Pack 8/2pk
-86604,Jumbo Beef Hot Dog 12/cs
-86605,Jumbo Beef Spicy Dog 12/cs
-85300,Sausage, Egg, Chs Muf 12/1x4pk
-85301,Sausage, Egg,Chs Bisc 12/1x4pk
-85302,Bacon, Egg,Chs Bisc 12/1x4pk
-85303,Can Bac,Egg,Chs Muff 12/1x4pk
-85304,Sausage Egg Chs Crois 6/1x4pk
-85305,Ham & Cheese Croissant 6/1x4pk
-123587,Maple Pancakes, Sausage  18/cs
-123592,French Toast and Syrup  18/cs
-125000,Polish Sausage Baguetta 24/cs
-125003,Nathans Baguetta 24/cs
-85450,Bacon, Egg,Chs Bisc 12/2x2pk
-85451,Sausage, Egg,Chs Croi 12/2x2pk
-85452,Sausage, Egg,Chs Muf 12/2x2pk
-85453,Sausage, Egg,Chs Bisc 12/2x2pk
-86700,Spinach n' Cheese  Wrap 32/cs
-86701,SW Style Chken Chor Wrap 32/cs
-86702,Turkey Saus n' Chse Wrap 32/cs
-86703,Brie,Aple,Fig Rais Bread 20/cs
-86704,Thai Chckn & Chili Wrap 28/cs
-86705,Turkey,Dijon & Jack Wrap 28/cs
-86706,Hummus & Cheese Wrap 28/cs
+87601,Angus Cheeseburger 1
+87602,Angus Bacon Cheesebu
+87603,Chicken Burger 12/cs
+87604,Chicken Cheese Burge
+87605,Chicken Chs Bacon Bu
+87700,"Saus, Egg & Chs Bisc"
+87701,"Bacon, Egg & Chs Bis"
+87702,"Saus, Egg & Chs Croi"
+87703,"Trky, Egg & Chs Muff"
+87800,"Saus, Egg & Chs Bisc"
+87801,"Bacon, Egg & Chs Bis"
+87802,"Saus, Egg & Chs Croi"
+87803,"Saus, Egg & Chs Muff"
