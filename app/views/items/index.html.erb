@@ -1,6 +1,7 @@
 <h1>Listing items</h1>
 
-<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered pretty" >
+<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered pretty" id="prettytable">
+<thead>
   <tr>
     <th>Number</th>
     <th>Description</th>
@@ -8,7 +9,8 @@
     <th></th>
     <th></th>
   </tr>
-
+</thead>
+<tbody>
 <% @items.each do |item| %>
   <tr>
     <td><%= item.number %></td>
@@ -18,6 +20,7 @@
     <td><%= link_to 'Destroy', item, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
+</tbody>
 </table>
 
 <br />
