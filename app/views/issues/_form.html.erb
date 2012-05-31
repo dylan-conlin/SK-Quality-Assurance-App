@@ -6,9 +6,9 @@
     <%= f.input :description %>
     <%= f.input :corrective_action %>
     <%= f.input :department_id, :collection => Department.all(:order => 'name'), :label => 'Department Responsible' %>
-    <%= f.input :gmp_id, :collection => Gmp.all(:order => 'name'), :label => 'GMP'%>
+<div id="select"><%= f.input :gmp_id, :collection => Gmp.all(:order => 'name'), :label => 'GMP' %></div>
     <%= f.input :workorder, :label => 'Workorder associated with this issue?' %>
-    <%= f.input :foreign_object_id, :collection => ForeignObject.all, :label => 'Foreign Object Type' %>
+<div id="fuggy"><%= f.input :foreign_object_id, :collection => ForeignObject.all, :label => 'Foreign Object Type' %></div>
 
     <%= f.file_field :photo, :label => 'Images' %>
 

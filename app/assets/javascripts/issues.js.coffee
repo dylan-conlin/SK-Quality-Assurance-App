@@ -4,6 +4,8 @@
 
 jQuery ->
 
+
+
  $("a.iframe").fancybox({
     'transitionIn'    :    'elastic',
     'transitionOut'    :    'elastic',
@@ -17,5 +19,21 @@ jQuery ->
   });
 
  $("#iframe").fancybox();
+
+ $('#fuggy').hide(); 
+
+ $('#select').change ->
+     gmp = $('#select :selected').text()
+
+     if gmp is 'Foreign Object'
+          $('#fuggy').show(); 
+     else
+	  $('#fuggy').hide(); 
+
+
+
+
+
+
 
 
