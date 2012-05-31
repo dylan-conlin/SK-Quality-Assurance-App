@@ -20,15 +20,17 @@ jQuery ->
 
  $("#iframe").fancybox();
 
- $('#fuggy').hide(); 
+ # show/hide foreign objects dropdown based
+ # on which GMP is selected
 
- $('#select').change ->
-     gmp = $('#select :selected').text()
+ $('#foreign_object_field').hide(); 
+ $('#gmp_select').change ->
+     gmp = $('#gmp_select :selected').text()
 
-     if gmp is 'Foreign Object'
-          $('#fuggy').show(); 
+     if gmp == 'Foreign Object'
+     	$('#foreign_object_field').show();
      else
-	  $('#fuggy').hide(); 
+     	$('#foreign_object_field').hide();
 
 
 
