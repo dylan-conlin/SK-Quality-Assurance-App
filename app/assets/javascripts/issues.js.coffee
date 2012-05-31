@@ -29,8 +29,11 @@ jQuery ->
 
      if gmp == 'Foreign Object'
      	$('#foreign_object_field').show();
+     	$('#foreign_object_field').text('Blood');
      else
-     	$('#foreign_object_field').hide();
+        $('#foreign_object_field').hide();
+
+
 
 
 
