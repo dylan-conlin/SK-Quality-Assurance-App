@@ -1,5 +1,3 @@
-
-
 task :csv_model_import, [:filename, :model] => [:environment] do |task,args|
   lines = File.new(args[:filename]).readlines
   header = lines.shift.strip
@@ -13,4 +11,3 @@ task :csv_model_import, [:filename, :model] => [:environment] do |task,args|
     Module.const_get(args[:model]).create(params)
   end
 end
-

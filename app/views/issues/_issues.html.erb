@@ -27,7 +27,7 @@
     <td><%= gravatar_for issue.user, size: 52 %></br>
         <%= link_to issue.user.name, issue.user %></td>
     <td><%= issue.description %></td>
-    <td><%= issue.corrective_action %></td>
+    <td><p><%= issue.corrective_action %></p></td>
     <td><%= issue.workorder %></td>
     <td><%= issue.department.name %></td>
     <td><%= issue.foreign_object.name %></td>

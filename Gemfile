@@ -16,6 +16,7 @@ gem 'fancybox-rails'
 gem 'pg_search'
 
 
+
 group :development, :test do
   gem 'pg', '0.12.2'
 #  gem 'sqlite3', '1.3.5'

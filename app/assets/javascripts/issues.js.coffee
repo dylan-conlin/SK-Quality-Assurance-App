@@ -2,6 +2,9 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
+
+
+
 jQuery ->
 
 
@@ -19,6 +22,15 @@ jQuery ->
   });
 
  $("#iframe").fancybox();
+
+ $("td").find("p").hide();
+ $("td").click ->
+ 
+   if $("td").find("p").is(":hidden") is true
+     $("td").find("p").show();
+   else
+     $("td").find("p").hide();
+    
 
 
  $('#issue_foreign_object_id').hide();
