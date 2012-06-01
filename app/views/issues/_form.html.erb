@@ -2,12 +2,12 @@
 <%= simple_form_for @issue, :html => {:multipart => true} do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
+  <div class="form-inputs form-inline">
     <%= f.input :description %>
     <%= f.input :corrective_action %>
     <%= f.input :department_id, :collection => Department.all(:order => 'name'), :label => 'Department Responsible' %>
-<div id="gmp_select"><%= f.input :gmp_id, :collection => Gmp.all(:order => 'name'), :label => 'GMP' %></div>
-<div id="foreign_object_field"><%= f.input :foreign_object_id, :collection => ForeignObject.all, :label => 'Foreign Object Type' %></div>
+    <%= f.input :gmp_id, :collection => Gmp.all(:order => 'name'), :label => 'GMP' %>
+    <%= f.input :foreign_object_id, :collection => ForeignObject.all, :label => 'Foreign Object Type' %>
     <%= f.input :workorder, :label => 'Workorder associated with this issue?' %>
 
     <%= f.file_field :photo, :label => 'Images' %>

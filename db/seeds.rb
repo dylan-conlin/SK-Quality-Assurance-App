@@ -22,6 +22,7 @@
 "Rust", 
 "Glass", 
 "Cloth",
+"N/A",
 "Unidentifiable"].each do |foreign_object|
   ForeignObject.find_or_create_by_name(foreign_object)
 end
@@ -144,3 +145,12 @@ end
    :supervisor => false,
    :password => "password",
    :password_confirmation => "password")
+
+    User.create!(:name => "Guest",
+   :email => "guest@skfoodgroup.com",
+   :department_id => 1,
+   :password => "password",
+   :user_id => 1,
+   :supervisor => false,
+   :password_confirmation => "password")
+
