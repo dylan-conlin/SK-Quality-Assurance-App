@@ -1,18 +1,18 @@
-short_name,long_name
-OVENPRIDE,Oven Pride
-STARBUCKS,Starbucks
-AMTRAK,Amtrak
-WINCO,Winco
-GREATLAND,Greatland
-AHOLD,Ahold
-CUMBLND,Cumberland
-JAMBAJUICE,Jamba Juice
-DIRECTPLUS,Direct Plus
-PRICECHP,Price Chopper
-HEB,HEB
-INDERBITZ,Inderbitzin
-NATHANS,Nathans
-MEIJER,Meijer
-PIGGLYWGLY,Piggly Wiggly
-CASHCARRY,CASHCARRY
-WESTERNFAM,Western Family
+short_name,long_name,customer_id
+OVENPRIDE,Oven Pride,1
+STARBUCKS,Starbucks,2
+AMTRAK,Amtrak,3
+WINCO,Winco,4
+GREATLAND,Greatland,5
+AHOLD,Ahold,6
+CUMBLND,Cumberland,7
+JAMBAJUICE,Jamba Juice,8
+DIRECTPLUS,Direct Plus,9
+PRICECHP,Price Chopper,10
+HEB,HEB,11
+INDERBITZ,Inderbitzin,12
+NATHANS,Nathans,13
+MEIJER,Meijer,14
+PIGGLYWGLY,Piggly Wiggly,15
+CASHCARRY,CASHCARRY,16
+WESTERNFAM,Western Family,17
