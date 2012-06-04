@@ -1,5 +1,7 @@
 SampleApp::Application.routes.draw do
 
+  resources :customers
+
   resources :items
 
   resources :issues
