@@ -2,13 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
-
-
-
 jQuery ->
-
-
-
  $("a.iframe").fancybox({
     'transitionIn'    :    'elastic',
     'transitionOut'    :    'elastic',
@@ -16,21 +10,19 @@ jQuery ->
     'speedOut'        :    500,
     'width':100,
     'height':100,
-
     'autoScale':'true',
     'overlayShow'    :    false
   });
 
  $("#iframe").fancybox();
 
- $("td").find("p").hide();
- $("td").click ->
- 
-   if $("td").find("p").is(":hidden") is true
-     $("td").find("p").show();
-   else
-     $("td").find("p").hide();
-    
+# $("td").find("p").hide();
+# $("td").click ->
+# 
+#   if $("td").find("p").is(":hidden") is true
+#     $("td").find("p").show();
+#   else
+#     $("td").find("p").hide();
 
 
  $('#issue_foreign_object_id').hide();

@@ -2,12 +2,11 @@
 <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered pretty" >
   <tr>
     <th><%= sortable "created_at", "Date" %></th>
-    <th>Image</th>
     <th><%= sortable "user_id", "User" %></th>
+    <th>Image</th>
     <th><%= sortable "description", "Description" %></th>
     <th><%= sortable "corrective_action", "Corrective Action" %></th>
     <th><%= sortable "workorder", "Workorder" %></th>
-    <th><%= sortable "department_id", "Department Responsible" %></th>
     <th><%= sortable "foreign_object_id", "Foreign Object Type" %></th>
     <th><%= sortable "gmp_id", "GMP" %></th>
      <% if current_user.admin == true %>	
@@ -18,18 +17,18 @@
 <tbody>
 <% @issues.each do |issue| %>
   <tr>
-    <td><%= issue.created_at.strftime("%c") %></td>
+    <td><%= issue.created_at.strftime("%D %l %P") %></td>
+    <td><%= gravatar_for issue.user, size: 52 %></br>
+        <%= link_to issue.user.name, issue.user %></td>
         <% if issue.photo.file? %>
-    <td><%=link_to image_tag(issue.photo.url(:small)), issue.photo.url, :class => 'iframe', :size => "50x50" %></td>
+    <td><div class="span2"><%=link_to image_tag(issue.photo.url(:small)), issue.photo.url, :class => 'iframe', :size => "50x50" %></div></td>
         <% else %>
     <td>no image</td>
         <% end %>
-    <td><%= gravatar_for issue.user, size: 52 %></br>
-        <%= link_to issue.user.name, issue.user %></td>
-    <td><%= issue.description %></td>
-    <td><p><%= issue.corrective_action %></p></td>
+
+    <td><div class="overflower span3"><%= issue.description %></div></td>
+    <td><div class="overflower span3"><%= issue.corrective_action %></div></td>
     <td><%= issue.workorder %></td>
-    <td><%= issue.department.name %></td>
     <td><%= issue.foreign_object.name %></td>
     <td><%= issue.gmp.name %></td>
          <% if current_user.admin == true %>	
