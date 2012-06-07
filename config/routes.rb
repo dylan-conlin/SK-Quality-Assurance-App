@@ -1,10 +1,17 @@
 SampleApp::Application.routes.draw do
 
+  get "comments/index"
+
+  get "comments/new"
+
   resources :customers
 
   resources :items
+  resources :comments
+  resources :issues do
+    resources :comments
+  end
 
-  resources :issues
   resources :gmps
   resources :foreign_objects
   resources :tunneltemps

@@ -8,12 +8,12 @@ class IssuesController < ApplicationController
 
   def show
     @issue = Issue.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @issue }
-    end
+    @commentable = @issue
+    @comments = @commentable.comments
+    @comment = Comment.new
   end
+
+
 
   # GET /issues/new
   # GET /issues/new.json

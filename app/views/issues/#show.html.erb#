@@ -12,6 +12,7 @@
 
 <p>
   <b>User:</b>
+
   <%= link_to gravatar_for(@issue.user, size: 60), @issue.user %>
 
 </p>

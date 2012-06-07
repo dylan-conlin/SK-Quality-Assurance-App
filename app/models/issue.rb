@@ -5,7 +5,7 @@ class Issue < ActiveRecord::Base
   belongs_to :department
   belongs_to :gmp
   belongs_to :foreign_object
-
+  has_many :comments, as: :commentable
   validates_attachment_size :photo, :less_than => 5.megabytes
 
   validates :department_id, :description, :gmp_id, :user_id, :workorder, :corrective_action, :presence => true
