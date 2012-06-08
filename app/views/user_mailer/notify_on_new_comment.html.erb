@@ -1,5 +1,13 @@
-<%= @commenter %> left on new comment on <%= link_to 'your issue', issue_path(@issue) %>
+<body>
+<p>Hi there,</p></br></br>
 
-"<%= @content %>"
+<p><%= @commenter %> left on new comment on <%= link_to 'this issue', issue_url(@issue) %>:</p></br></br>
 
-<%= link_to 'Reply', issue_path(@issue) %>
+<p>"<%= @content %>"</p></br></br>
+
+<p><%= link_to 'Click to Reply!', issue_url(@issue) %></p></br></br>
+
+<p>Thanks,</p></br></br>
+
+<p>Dylan</p>
+</body>

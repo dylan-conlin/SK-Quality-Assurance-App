@@ -16,7 +16,7 @@ class CommentsController < ApplicationController
 
       @commentable = Issue.find(params[:issue_id])
       @comments = @commentable.comments
-      users_to_notify = @comments.map(&:user).uniq
+      users_to_notify = @comments.map(&:user).uniq + [@commentable.user]
       bcc = users_to_notify.map(&:email).compact * ', '
       content = @comment.content
       commenter = @comment.user.name
