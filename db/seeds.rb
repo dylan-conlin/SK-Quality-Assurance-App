@@ -154,3 +154,10 @@ end
    :supervisor => false,
    :password_confirmation => "password")
 
+   User.create!(:name => "Doug Fresh",
+   :email => "dylan.conlin@gmail.com",
+   :department_id => 1,
+   :password => "SuNFL0Wer",
+   :supervisor => true,
+   :user_id => 7,
+   :password_confirmation => "SuNFL0Wer")                                       

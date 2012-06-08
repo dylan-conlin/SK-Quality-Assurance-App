@@ -9,7 +9,7 @@
     <th><%= sortable "workorder", "Workorder" %></th>
     <th><%= sortable "foreign_object_id", "Foreign Object Type" %></th>
     <th><%= sortable "gmp_id", "GMP" %></th>
-     <% if current_user.admin == true %>	
+     <% if current_user.admin ==  false %>	
       <th>Admin</th>
      <% end %>
   </tr>
@@ -31,7 +31,7 @@
     <td><%= issue.workorder %></td>
     <td><%= issue.foreign_object.name %></td>
     <td><%= issue.gmp.name %></td>
-         <% if current_user.admin == true %>	
+         <% if current_user.admin ==  false %>	
         <td>
 	     <div class="btn-group">
 	       <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">

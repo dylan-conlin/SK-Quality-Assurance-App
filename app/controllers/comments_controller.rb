@@ -13,6 +13,15 @@ class CommentsController < ApplicationController
     @comment = @commentable.comments.build(params[:comment].merge(:user_id => current_user.id))
 
    if @comment.save
+
+      @commentable = Issue.find(params[:issue_id])
+      @comments = @commentable.comments
+      users_to_notify = @comments.map(&:user).uniq
+      bcc = users_to_notify.map(&:email).compact * ', '
+      content = @comment.content
+      commenter = @comment.user.name
+      issue = @commentable
+    UserMailer.notify_on_new_comment(bcc,content,commenter,issue).deliver
      redirect_to @commentable, notice: "Comment created."
    else
      render :new
