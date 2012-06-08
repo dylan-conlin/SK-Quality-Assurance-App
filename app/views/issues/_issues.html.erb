@@ -17,8 +17,7 @@
 <% @issues.each do |issue| %>
   <tr>
     <td><%= issue.created_at.strftime("%D %l %P") %></td>
-    <td><%= gravatar_for issue.user, size: 52 %></br>
-        <%= link_to issue.user.name, issue.user %></td>
+    <td><%= link_to gravatar_for(issue.user, size: 100), issue.user %></td>
         <% if issue.photo.file? %>
     <td><div class="span2"><%=link_to image_tag(issue.photo.url(:small)), issue.photo.url, :class => 'iframe', :size => "50x50" %></div></td>
         <% else %>

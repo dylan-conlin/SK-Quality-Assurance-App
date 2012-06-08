@@ -1,36 +1,75 @@
-<p id="notice"><%= notice %></p>
 <div class="well">
-<p>
-  <b>Department:</b>
-  <%= @issue.department.name %>
-</p>
+<table>
+  <div class="issues_show">
+<tr>
+    <td>
 
-<p>
-  <b>Gmp:</b>
-  <%= @issue.gmp.name %>
-</p>
+      <% if @issue.photo.file? %>
 
-<p>
-  <b>User:</b>
+	<%=link_to image_tag(@issue.photo.url(:small)), @issue.photo.url, :class => 'iframe', :size => "50x50" %>
+      <% else %>
+      <% end %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>Description:</b>
+    </td>
+    <td>
+      <%= @issue.description %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>Corrective Action:</b>
+    </td>
+    <td>
+      <%= @issue.corrective_action %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>Workorder:</b>
+    </td>
+    <td>
+      <%= @issue.workorder %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>Foreign object:</b>
+    </td>
+    <td>
+      <%= @issue.foreign_object.name %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>Added by:</b>
+    </td>
+    <td>
+      <%= link_to @issue.user.name, @issue.user %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>Department Responsible:</b>
+    </td>
+    <td>
+      <%= @issue.department.name %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>GMP:</b>
+    </td>
+    <td>
+      <%= @issue.gmp.name %>
+    </td>
+  </tr>
+</div>
 
-  <%= link_to gravatar_for(@issue.user, size: 60), @issue.user %>
-
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @issue.description %>
-</p>
-
-<p>
-  <b>Workorder:</b>
-  <%= @issue.workorder %>
-</p>
-
-<p>
-  <b>Foreign object:</b>
-  <%= @issue.foreign_object.name %>
-</p>
+</table>
 </div>
 
 <%= link_to 'Edit', edit_issue_path(@issue) %> |
