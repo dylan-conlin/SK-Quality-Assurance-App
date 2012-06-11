@@ -6,17 +6,17 @@
 	<%= link_to gravatar_for(comment.user, size: 60), comment.user %></br>
 	</p>
 	<h6><%= comment.created_at.strftime("%D    ") %></h6>
-</br>
+
+        </br>
+
       </td>
 
       <td class="comments">
 	<div class="span5">
 	<%= simple_format  comment.content %>
 	</div>
-</br>
-
+        </br>
       </td>
-
 
 </tr>
 
