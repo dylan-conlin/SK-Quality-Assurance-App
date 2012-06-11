@@ -6,6 +6,7 @@ class CommentsController < ApplicationController
   def index
     @commentable = Issue.find(params[:issue_id])
     @comments = @commentable.comments
+
   end
 
   def new
