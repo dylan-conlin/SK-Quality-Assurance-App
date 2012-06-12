@@ -241,7 +241,7 @@ aside {
 }
 
 .overflower  {
- height:6em;
+ height:12em;
  overflow:auto;
  }
 
@@ -251,10 +251,14 @@ aside {
 
  }
 
- .issues_show   {
+ .issues_show td {
+   vertical-align:top;
 
- horizontal-align:right;
+ }
 
+
+ .issues_bold {
+   text-align:right;
  }
 
 .pretty th .current {
