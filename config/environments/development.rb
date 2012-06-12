@@ -25,8 +25,8 @@ config.action_mailer.smtp_settings = {
   domain: "http://skfoodgroup.herokuapp.com",
   authentication: "plain",
   enable_starttls_auto: true,
-  user_name: "skfoodgroup@gmail.com",
-  password: "qualitycontrol"
+  user_name: "dylan.conlin@gmail.com",
+  password: "eggboobsmashstink"
 }
 
   # Specify what domain to use for mailer URLs
