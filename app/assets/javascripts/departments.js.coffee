@@ -10,3 +10,4 @@ jQuery ->
      bProcessing: true
      bServerSide: true
      sAjaxSource: $('#departments').data('source')
+       "aaSorting": [[ 3, "desc" ]]
