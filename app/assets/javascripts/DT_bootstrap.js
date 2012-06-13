@@ -118,7 +118,7 @@ $(document).ready(function() {
   	    "sPaginationType": "bootstrap",
             "sScrollX": "100%",
             "bScrollCollapse": false,
-             //this is the default sorting. it's set to sort the date column
+             //this is the default sorting. it's set to sort the first column
 	    "aaSorting": [[ 2, "desc" ]],
 			"oLanguage": {
 			"sLengthMenu": "_MENU_ records per page"

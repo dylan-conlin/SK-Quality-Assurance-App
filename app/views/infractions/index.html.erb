@@ -19,7 +19,7 @@
 <% @infractions.each do |infraction| %>
   <tr>
 
-    <td><%= link_to gravatar_for(infraction.user, size: 100), infraction.user %></td>
+    <td><%= link_to gravatar_for(infraction.user, size: 100), infraction.user %><%= link_to infraction.user.name, infraction.user %></td>
     <td><%= infraction.description %></td>
     <td><%= infraction.date %></td>
     <td><%= link_to 'Show', infraction %></td>
