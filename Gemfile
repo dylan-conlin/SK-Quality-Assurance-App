@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.3'
 gem 'bootstrap-sass', '2.0.0'
 gem 'bcrypt-ruby', '3.0.1'
+gem 'jquery-rails'
 gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.5'
@@ -14,7 +15,6 @@ gem 'jquery-datatables-rails', :git => 'https://github.com/rweng/jquery-datatabl
 gem 'aws-sdk', '~> 1.3.4'
 gem 'fancybox-rails', :git => 'https://github.com/sverigemeny/fancybox-rails'
 gem 'pg_search'
-
 
 
 group :development, :test do
@@ -33,7 +33,7 @@ group :assets do
 
 end
 
-gem 'jquery-rails'
+
 
 group :test do
   gem 'capybara', '1.1.2'

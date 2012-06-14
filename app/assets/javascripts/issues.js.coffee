@@ -3,7 +3,8 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 jQuery ->
- $("a.iframe").fancybox({
+ $('.fancybox').fancybox({
+    'type':'image',
     'transitionIn'    :    'elastic',
     'transitionOut'    :    'elastic',
     'speedIn'        :    500,
@@ -14,7 +15,7 @@ jQuery ->
     'overlayShow'    :    false
   });
 
- $("#iframe").fancybox();
+ $('.fancybox').fancybox();
 
 # $("td").find("p").hide();
 # $("td").click ->

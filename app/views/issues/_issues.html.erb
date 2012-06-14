@@ -19,7 +19,7 @@
     <td><%= issue.created_at.strftime("%D %l %P") %></td>
     <td><%= link_to gravatar_for(issue.user, size: 100), issue.user %></td>
         <% if issue.photo.file? %>
-    <td><div class="span2"><%=link_to image_tag(issue.photo.url(:small)), issue.photo.url, :class => 'iframe', :size => "50x50" %></div></td>
+    <td><%=link_to image_tag(issue.photo.url(:small)), issue.photo.url, :class => 'fancybox' %></td>
         <% else %>
     <td>no image</td>
         <% end %>
