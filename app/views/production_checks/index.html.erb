@@ -1,62 +1,29 @@
 <h1>Listing production checks</h1>
 
-<%= link_to(new_production_check_path, :class => 'btn btn-mini') do %>
-  <i class="icon-plus-sign"></i> Add Check
+<%= form_tag production_checks_path, method: :get do %>
+
+  <%= link_to(new_production_check_path, :class => 'btn btn-mini') do %>
+  <i class="icon-plus-sign"></i> Add Check 
+  <% end %>
+
+  <%= hidden_field_tag :direction, params[:direction] %>
+  <%= hidden_field_tag :sort, params[:sort] %>
+   <p class="pull-right">
+    <%= text_field_tag :query, params[:query] %>
+    <%= submit_tag "Search", name: nil %>
+  </p>
+
+  <div id="packaging"><%= render 'production_checks' %></div>
+
 <% end %>
-</br>
-</br>
-
-<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered pretty" >
-  <tr>
-    <th>User</th>
-    <th>Workorder</th>
-    <th>Label readability</th>
-    <th>Label accuracy</th>
-    <th>Seal integrity</th>
-    <th>Build accuracy</th>
-    <th>Comments</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @production_checks.each do |production_check| %>
-  <tr>
-    <td><%= link_to gravatar_for(production_check.user, size: 100), production_check.user %></td>
-    <td><%= production_check.workorder %></td>
-    <% if production_check.label_readability == true %>
-    <td><span class="label label-important">Fail</span></td>
-    <% else %>
-    <td><span class="label label-success">Pass</span></td>
-    <% end %>
-
-    <% if production_check.label_accuracy == true %>
-    <td><span class="label label-important">Fail</span></td>
-    <% else %>
-    <td><span class="label label-success">Pass</span></td>
-    <% end %>
 
 
-    <% if production_check.seal_integrity == true %>
-    <td><span class="label label-important">Fail</span></td>
-    <% else %>
-    <td><span class="label label-success">Pass</span></td>
-    <% end %>
-
-    <% if production_check.build_accuracy == true %>
-    <td><span class="label label-important">Fail</span></td>
-    <% else %>
-    <td><span class="label label-success">Pass</span></td>
-    <% end %>
 
 
-    <td><%= production_check.comments %></td>
-    <td><%= link_to 'Show', production_check %></td>
-    <td><%= link_to 'Edit', edit_production_check_path(production_check) %></td>
-    <td><%= link_to 'Destroy', production_check, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+
+
+
+
 
 <br />
 

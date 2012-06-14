@@ -1,13 +1,12 @@
 class ProductionChecksController < ApplicationController
+  before_filter :signed_in_user, only: :index
+  before_filter :admin_user,     only: :destroy
+  helper_method :sort_column, :sort_direction
   # GET /production_checks
   # GET /production_checks.json
   def index
-    @production_checks = ProductionCheck.all
+    @production_checks = ProductionCheck.order(sort_column + " " + sort_direction).text_search(params[:query]).paginate(:per_page => 5, :page => params[:page])
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @production_checks }
-    end
   end
 
   # GET /production_checks/1
@@ -80,4 +79,24 @@ class ProductionChecksController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+private
+
+    def correct_user
+      @user = User.find(params[:id])
+      redirect_to(root_path) unless current_user?(@user)
+    end
+
+    def admin_user
+      redirect_to(root_path) unless current_user.admin?
+    end
+
+    def sort_column
+      Issue.column_names.include?(params[:sort]) ? params[:sort] : "created_at"
+    end
+
+    def sort_direction
+      %w[asc desc].include?(params[:direction]) ?  params[:direction] : "desc"
+    end
+
 end

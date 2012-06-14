@@ -3,4 +3,28 @@ class ProductionCheck < ActiveRecord::Base
 
   belongs_to :user
 
+ validates :user_id, :workorder, :presence => true
+include PgSearch
+
+pg_search_scope :search,
+
+                :against => [
+
+                  :comments,
+                  :workorder],
+
+                :associated_against => {
+                  :user               => :name
+
+             } 
+
+def self.text_search(query)
+  if query.present?
+    search(query)
+  else
+    scoped
+  end
+end
+
+
 end
