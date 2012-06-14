@@ -1,5 +1,7 @@
 SampleApp::Application.routes.draw do
 
+  resources :production_checks
+
   get "comments/index"
 
   get "comments/new"

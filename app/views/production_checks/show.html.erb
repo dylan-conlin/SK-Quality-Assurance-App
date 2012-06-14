@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= link_to @production_check.user.name, @production_check.user %>
+</p>
+
+<p>
+  <b>Workorder:</b>
+  <%= @production_check.workorder %>
+</p>
+
+<p>
+  <b>Label readability:</b>
+  <%= @production_check.label_readability %>
+</p>
+
+<p>
+  <b>Label accuracy:</b>
+  <%= @production_check.label_accuracy %>
+</p>
+
+<p>
+  <b>Seal integrity:</b>
+  <%= @production_check.seal_integrity %>
+</p>
+
+<p>
+  <b>Build accuracy:</b>
+  <%= @production_check.build_accuracy %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @production_check.comments %>
+</p>
+
+
+<%= link_to 'Edit', edit_production_check_path(@production_check) %> |
+<%= link_to 'Back', production_checks_path %>

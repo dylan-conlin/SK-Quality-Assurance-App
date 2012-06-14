@@ -1,0 +1,19 @@
+<%= simple_form_for(@production_check) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs form-inline">
+    <%= f.input :workorder %>
+  <div class="alert alert-error">
+  Only check items that fail! If there are no issues, leave checkbox unchecked.
+  </div>
+    <%= f.input :label_readability %>
+    <%= f.input :label_accuracy %>
+    <%= f.input :seal_integrity %>
+    <%= f.input :build_accuracy %>
+    <%= f.input :comments %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
