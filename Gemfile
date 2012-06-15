@@ -12,7 +12,7 @@ gem 'aws-s3'
 gem 'heroku'
 gem 'jquery-datatables-rails', :git => 'https://github.com/rweng/jquery-datatables-rails'
 gem 'aws-sdk', '~> 1.3.4'
-gem 'fancybox-rails', :git => 'https://github.com/sverigemeny/fancybox-rails'
+gem 'fancybox-rails'
 gem 'pg_search'
 
 

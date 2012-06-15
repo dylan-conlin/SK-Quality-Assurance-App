@@ -2,19 +2,29 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
-jQuery ->
+$(document).ready ->
 
- $('a.iframe').fancybox({
-   'transitionIn'    :    'elastic',
-   'transitionOut'    :    'elastic',
-   'speedIn'        :    100,
-   'speedOut'        :    200,
-   'width':100,
-   'height':100,
-   'autoScale':'true',
-   'overlayShow'    :    false
-   });
- $("#iframe").fancybox();
+  $("a.iframe").fancybox(
+    transitionIn: 'elastic'
+    transitionOut: 'elastic'
+    speedIn: 400
+    speedOut: 200
+    overlayShow: true
+    overlayOpacity: 0.5
+    overlayColor: '#333'
+    changeSpeed: 100
+    changeFade: 200
+    hideOnContentClick: true
+    titlePosition: 'over'
+    onComplete: ->
+      $("#fancybox-wrap").hover ->
+        $("#fancybox-title").fadeIn()
+      , ->
+        $("#fancybox-title").fadeOut()
+  )
+
+
+
 
  $('#issue_foreign_object_id').hide();
  $('label[for=issue_foreign_object_id], input#issue_foreign_object_id').hide();

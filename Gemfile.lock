@@ -5,13 +5,6 @@ GIT
     jquery-datatables-rails (1.10.0)
       jquery-rails
 
-GIT
-  remote: https://github.com/sverigemeny/fancybox-rails
-  revision: 17db886581f38fbcd4b0ac0349fc9493554ee261
-  specs:
-    fancybox-rails (0.1.4)
-      railties (>= 3.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -88,6 +81,8 @@ GEM
       railties (>= 3.0.0)
     faker (1.0.1)
       i18n (~> 0.4)
+    fancybox-rails (0.1.4)
+      railties (>= 3.1.0)
     ffi (1.0.11)
     growl (1.0.3)
     guard (1.0.3)
@@ -98,7 +93,7 @@ GEM
     guard-spork (0.3.2)
       guard (>= 0.8.4)
       spork (>= 0.8.4)
-    heroku (2.27.1)
+    heroku (2.27.2)
       heroku-api (~> 0.2.5)
       launchy (>= 0.3.2)
       netrc (~> 0.7.4)
@@ -242,7 +237,7 @@ DEPENDENCIES
   coffee-rails
   factory_girl_rails (= 1.4.0)
   faker (= 1.0.1)
-  fancybox-rails!
+  fancybox-rails
   growl (= 1.0.3)
   guard-rspec (= 0.5.5)
   guard-spork (= 0.3.2)
