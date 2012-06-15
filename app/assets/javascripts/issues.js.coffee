@@ -3,28 +3,18 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 jQuery ->
- $('.fancybox').fancybox({
-    'type':'image',
-    'transitionIn'    :    'elastic',
-    'transitionOut'    :    'elastic',
-    'speedIn'        :    500,
-    'speedOut'        :    500,
-    'width':100,
-    'height':100,
-    'autoScale':'true',
-    'overlayShow'    :    false
-  });
 
- $('.fancybox').fancybox();
-
-# $("td").find("p").hide();
-# $("td").click ->
-# 
-#   if $("td").find("p").is(":hidden") is true
-#     $("td").find("p").show();
-#   else
-#     $("td").find("p").hide();
-
+ $('a.iframe').fancybox({
+   'transitionIn'    :    'elastic',
+   'transitionOut'    :    'elastic',
+   'speedIn'        :    100,
+   'speedOut'        :    200,
+   'width':100,
+   'height':100,
+   'autoScale':'true',
+   'overlayShow'    :    false
+   });
+ $("#iframe").fancybox();
 
  $('#issue_foreign_object_id').hide();
  $('label[for=issue_foreign_object_id], input#issue_foreign_object_id').hide();
