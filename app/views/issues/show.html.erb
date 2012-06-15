@@ -12,11 +12,12 @@
 <tr>
     <% if @issue.photo.file? %>
     <td class="span3 issues_bold">
+
+    </td>
+    <td>
 	<%=link_to image_tag(@issue.photo.url(:small)), @issue.photo.url, :class => 'iframe', :size => "50x50" %>
       <% else %>
       <% end %>
-    </td>
-    <td>
     </td>
 </tr>
 
