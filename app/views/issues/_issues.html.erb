@@ -11,7 +11,7 @@
     <th><%= sortable "foreign_object_id", "Foreign Object Type" %></th>
 
     <th>Comments</th>
-
+    <th>Edit</th>
   </tr>
 </thead>
 <tbody>
@@ -29,10 +29,10 @@
     <td><div class="overflower span2"><%= issue.corrective_action %></div></td>
     <td><%= issue.workorder %></td>
     <td><%= issue.foreign_object.name %></td>
-        <td><div class="overflower span2">
+    <td><div class="overflower span2">
 	    comments (<%= link_to issue.comments.count, issue_path(issue)%>)
-        </div></td>
-
+    </div></td>
+    <td><%= link_to 'Edit', edit_issue_path(issue) %></td>
   </tr>
 <% end %>
 </tbody>
