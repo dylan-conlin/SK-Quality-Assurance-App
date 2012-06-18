@@ -2,7 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
-$(document).ready ->
+jQuery ->
 
   $("a.iframe").fancybox(
     transitionIn: 'elastic'
@@ -24,6 +24,7 @@ $(document).ready ->
   )
 
 
+
   $('#issue_foreign_object_id').hide();
   $('label[for=issue_foreign_object_id], input#issue_foreign_object_id').hide();
   $('#issue_gmp_id').change ->
@@ -36,4 +37,4 @@ $(document).ready ->
      else
        $('#issue_foreign_object_id').hide();
        $('label[for=issue_foreign_object_id], input#issue_foreign_object_id').hide();
-       $('#issue_foreign_object_id').val('17');
+       $('#issue_foreign_object_id').val('16');
