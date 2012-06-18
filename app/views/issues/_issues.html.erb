@@ -12,6 +12,9 @@
 
     <th>Comments</th>
     <th>Edit</th>
+    <% if current_user.admin == true %>
+    <th>Delete</th>
+    <% end %>
   </tr>
 </thead>
 <tbody>
@@ -33,6 +36,9 @@
 	    comments (<%= link_to issue.comments.count, issue_path(issue)%>)
     </div></td>
     <td><%= link_to 'Edit', edit_issue_path(issue) %></td>
+    <% if current_user.admin == true %>
+    <td><%= link_to 'Delete', issue, confirm: 'Are you sure?', method: :delete %></td>
+    <% end %>
   </tr>
 <% end %>
 </tbody>
