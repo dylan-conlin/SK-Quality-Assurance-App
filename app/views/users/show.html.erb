@@ -1,12 +1,14 @@
 <% provide(:title, @user.name) %>
 <div class="row">
-  <aside class="span4">
+  <aside class="span6">
     <section>
       <h1>
         <%= gravatar_for @user, size: 150 %>
         <%= @user.name %>
       </h1>
 </br>
+
+       <address><strong>Contact: </strong><a href="mailto:#"><%= @user.email %></a></address>
        <strong> Department:</strong> <%= link_to  @user.department.name, department_path(@user.department) %></br></br>
        <strong>Supervisor:</strong> <%= link_to @supervisor.name, user_path(@supervisor.id) %>
 
@@ -17,6 +19,7 @@
 </br>
 </br>
 
+<h3>Direct Reports</h3></br>
 
  <% @direct_reports.each do |direct_report| %>
 
