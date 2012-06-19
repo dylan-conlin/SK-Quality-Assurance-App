@@ -12,30 +12,7 @@
        <strong> Department:</strong> <%= link_to  @user.department.name, department_path(@user.department) %></br></br>
        <strong>Supervisor:</strong> <%= link_to @supervisor.name, user_path(@supervisor.id) %>
 
-    <% if @user.supervisor.present? %>
-      <% if @user.supervisor == true %>
-</br>
-</br>
-</br>
-</br>
 
-<h3>Direct Reports</h3></br>
-
- <% @direct_reports.each do |direct_report| %>
-
-  <% if direct_report.supervisor == true %>
- <a href="<%= user_path(direct_report)%>" id="example" class="btn btn-info" rel="popover" data-content="<%= direct_report.name %>" data-original-title="<%= direct_report.name %>"><%= gravatar_for direct_report, size: 35 %> </a>          
-   <% else %>
- <a href="<%= user_path(direct_report)%>" id="example" class="btn" rel="popover" data-content="<%= direct_report.name %>" data-original-title="<%= direct_report.name %>"><%= gravatar_for direct_report, size: 35 %> </a>          
-  <% end %>
-        <% end %>
-
-      <% else %>
-        <p>no direct reports</p>
-      <% end %>
-    <% else %>
-
-    <% end %>
 
 </div>
 
