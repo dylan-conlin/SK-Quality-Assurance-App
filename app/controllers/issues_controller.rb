@@ -41,7 +41,6 @@ class IssuesController < ApplicationController
       flash[:success] = "Issue created!"
       redirect_to issues_url
     else
-
        render action: "new"
     end
   end

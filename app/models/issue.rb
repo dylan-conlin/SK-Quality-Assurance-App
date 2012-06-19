@@ -12,8 +12,6 @@ class Issue < ActiveRecord::Base
   validates :department_id, :description, :gmp_id, :user_id, :corrective_action, :presence => true
 
 
-
-
   has_attached_file :photo,
      :styles => { :small => "300x300>" },
      :storage => :s3,
@@ -48,6 +46,14 @@ def self.text_search(query)
     scoped
   end
 end
+
+before_save :strip_spaces
+
+private
+
+ def strip_spaces
+   workorder.gsub!(" ", "")
+ end
 
 
 end
