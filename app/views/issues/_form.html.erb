@@ -2,7 +2,7 @@
 <%= simple_form_for @issue, :html => {:multipart => true} do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs form-inline">
+  <div class="form-inputs form-inline offset3">
     <%= f.input :description %>
     <%= f.input :corrective_action %>
     <%= f.input :department_id, :collection => Department.all(:order => 'name'), :label => 'Department Responsible' %>

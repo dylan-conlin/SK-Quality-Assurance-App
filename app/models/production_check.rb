@@ -26,5 +26,12 @@ def self.text_search(query)
   end
 end
 
+before_save :strip_spaces
+
+private
+
+ def strip_spaces
+   workorder.gsub!(" ", "")
+ end
 
 end

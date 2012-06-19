@@ -18,7 +18,8 @@
 <% @production_checks.each do |production_check| %>
   <tr>
     <td><%= production_check.created_at.strftime("%D %r") %></td>
-    <td><%= link_to gravatar_for(production_check.user, size: 100), production_check.user %></td>
+    <td><%= link_to gravatar_for(production_check.user, size: 100), production_check.user %></br>
+        <%= link_to production_check.user.name, production_check.user %></td>
     <td><%= production_check.workorder %></td>
     <% if production_check.label_readability == true %>
     <td><span class="label label-important">Fail</span></td>

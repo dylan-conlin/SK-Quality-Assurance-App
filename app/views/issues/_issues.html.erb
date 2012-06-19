@@ -9,12 +9,8 @@
     <th><%= sortable "corrective_action", "Corrective Action" %></th>
     <th><%= sortable "workorder", "Workorder" %></th>
     <th><%= sortable "foreign_object_id", "Foreign Object Type" %></th>
-
-    <th>Comments</th>
-    <th>Edit</th>
-    <% if current_user.admin == true %>
-    <th>Delete</th>
-    <% end %>
+    <th>Chat</th>
+    <th>Admin</th>
   </tr>
 </thead>
 <tbody>
@@ -23,24 +19,37 @@
     <td><%= issue.created_at.strftime("%D %l %P") %></td>
     <td><%= link_to gravatar_for(issue.user, size: 100), issue.user %></br>
         <%= link_to issue.user.name, issue.user %></td>
-  
       <% if issue.photo.file? %>
     <td><div class="span2"><%=link_to image_tag(issue.photo.url(:small)), issue.photo.url, :class => 'iframe' %></div></td>
         <% else %>
     <td>no image</td>
         <% end %>
 
-    <td><div class="overflower span2"><%= issue.description %></div></td>
-    <td><div class="overflower span2"><%= issue.corrective_action %></div></td>
+    <td><div class="issues_overflower span2"><%= issue.description %></div></td>
+    <td><div class="issues_overflower span3"><%= issue.corrective_action %></div></td>
     <td><%= issue.workorder %></td>
-    <td><%= issue.foreign_object.name %></td>
-    <td><div class="overflower span2">
-	    comments (<%= link_to issue.comments.count, issue_path(issue)%>)
+    <td><div class="span1"><%= issue.foreign_object.name %></div></td>
+    <td><div class="span1">
+	    (<%= link_to issue.comments.count, issue_path(issue)%>)
     </div></td>
-    <td><%= link_to 'Edit', edit_issue_path(issue) %></td>
-    <% if current_user.admin == true %>
-    <td><%= link_to 'Delete', issue, confirm: 'Are you sure?', method: :delete %></td>
-    <% end %>
+
+        <td>
+	     <div class="btn-group">
+	       <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+
+		 <span class="caret"></span>
+	       </a>
+	       <ul class="dropdown-menu">
+		 <!-- dropdown menu links -->
+		       <%= link_to 'Edit', edit_issue_path(issue) %>
+		       <%= link_to 'Delete', issue, confirm: 'Are you sure?', method: :delete %>
+		
+	       </ul>
+	     </div>
+        </td>
+
+
+
   </tr>
 <% end %>
 </tbody>
