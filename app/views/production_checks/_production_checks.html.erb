@@ -46,7 +46,7 @@
     <% end %>
 
 
-    <td><%= production_check.comments %></td>
+    <td><div class="overflower span2"><%= production_check.comments %></div></td>
     <td><%= link_to 'Show', production_check %></td>
     <td><%= link_to 'Edit', edit_production_check_path(production_check) %></td>
     <% if current_user.admin == true %>	

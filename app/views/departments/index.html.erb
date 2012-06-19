@@ -21,9 +21,11 @@
    <% @departments.each do |department| %>
   <tr>
     <td><%= department.name %></td>
-    <td><%= link_to 'Show', department %></td>
-    <td><%= link_to 'Edit', edit_department_path(department) %></td>
-    <td><%= link_to 'Destroy', department, confirm: 'Are you sure?', method: :delete %></td>
+    <% if current_user.admin = true %>
+      <td><%= link_to 'Show', department %></td>
+      <td><%= link_to 'Edit', edit_department_path(department) %></td>
+      <td><%= link_to 'Destroy', department, confirm: 'Are you sure?', method: :delete %></td>
+    <% end %>
   </tr>
 <% end %>
   </tbody>
