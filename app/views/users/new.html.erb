@@ -19,7 +19,10 @@
 
       <%= f.label "What department are you in?" %>
       <%= f.collection_select :department_id, Department.all, :id, :name, :include_blank => true %>
-
+    
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    
       <%= f.label "Who is your direct supervisor? (leave blank if yours isn't listed)" %>
       <%= f.collection_select :user_id, User.where(:supervisor => true), :id, :name, :include_blank => true %>
 
