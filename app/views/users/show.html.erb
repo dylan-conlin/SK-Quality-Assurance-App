@@ -1,18 +1,29 @@
 <% provide(:title, @user.name) %>
 <div class="row">
   <aside class="span6 well">
-    <section>
+
+
+        <%= gravatar_for @user, size: 150 %>  
+  <section>
       <h1>
-        <%= gravatar_for @user, size: 150 %>
-        <%= @user.name %>
+	<%= @user.name %>
       </h1>
+  
       <h6><%= @user.title %></h6>
+
 </br>
 
-       <address><strong>Contact: </strong><a href="mailto:#"><%= @user.email %></a></address>
-       <strong> Department:</strong> <%= link_to  @user.department.name, department_path(@user.department) %></br></br>
-       <strong>Supervisor:</strong> <%= link_to @supervisor.name, user_path(@supervisor.id) %>
-
+       
+       <strong> Department:</strong> <%= link_to  @user.department.name, department_path(@user.department) %></br>
+       <strong>Supervisor:</strong> <%= link_to @supervisor.name, user_path(@supervisor.id) %></br>
+       
+<% if @user.hire_date == nil %>
+<% else %>
+<strong>Employed for:</strong> 
+<%= distance_of_time_in_words_to_now(@user.hire_date, include_seconds = false) %>
+<% end %>
+<address><strong>Contact: </strong><a href="mailto:#"><%= @user.email %></a></address>
+  </section>
 
 
 </div>
