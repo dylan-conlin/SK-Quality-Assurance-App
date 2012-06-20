@@ -23,8 +23,12 @@
 
        <strong> Department:</strong> <%= link_to  current_user.department.name, department_path(current_user.department) %></br>
        <strong>Supervisor:</strong> <%= link_to @supervisor.name, user_path(@supervisor.id) %></br>
-       <strong>Employed for:</strong> <%= distance_of_time_in_words_to_now(current_user.hire_date, include_seconds = false) %>
-       <address><strong>Contact: </strong><a href="mailto:#"><%= current_user.email %></a></address>
+<% if current_user.hire_date == nil %>
+<% else %>
+<strong>Employed for:</strong> 
+<%= distance_of_time_in_words_to_now(current_user.hire_date, include_seconds = false) %>
+<% end %>
+<address><strong>Contact: </strong><a href="mailto:#"><%= current_user.email %></a></address>
   </section>
 </div>
 <% else %>
