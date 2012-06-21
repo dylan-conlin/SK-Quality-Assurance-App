@@ -9,10 +9,6 @@
     <th>Build accuracy</th>
     <th><%= sortable "comments", "Comments" %></th>   
     <th></th>
-    <th></th>
-    <% if current_user.admin == true %>	
-    <th></th>
-    <% end %>
   </tr>
 
 <% @production_checks.each do |production_check| %>
@@ -47,12 +43,24 @@
     <% end %>
 
 
-    <td><div class="overflower span2"><%= production_check.comments %></div></td>
-    <td><%= link_to 'Show', production_check %></td>
-    <td><%= link_to 'Edit', edit_production_check_path(production_check) %></td>
-    <% if current_user.admin == true %>	
-    <td><%= link_to 'Destroy', production_check, confirm: 'Are you sure?', method: :delete %></td>
-    <% end %>
+    <td><div class="issues_overflower span4"><%= production_check.comments %></div></td>
+    <td>
+	     <div class="btn-group">
+	       <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+
+		 <span class="caret"></span>
+	       </a>
+	       <ul class="dropdown-menu">
+		 <!-- dropdown menu links -->
+		       <%= link_to 'Edit', edit_production_check_path(production_check) %>
+		       <%= link_to 'Delete', production_check, confirm: 'Are you sure?', method: :delete %>
+		
+	       </ul>
+	     </div>
+    </td>
+
+
+
 
   </tr>
 <% end %>
