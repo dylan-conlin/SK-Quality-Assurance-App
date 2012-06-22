@@ -66,18 +66,18 @@ SampleApp::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
 # Don't care if the mailer can't send
-config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.raise_delivery_errors = true
 
 # Change mail delvery to either :smtp, :sendmail, :file, :test
-config.action_mailer.delivery_method = :smtp
-config.action_mailer.smtp_settings = {
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
   address: "smtp.gmail.com",
   port: 587,
   domain: "http://skfoodgroup.herokuapp.com",
   authentication: "plain",
   enable_starttls_auto: true,
-  user_name: "skfoodgroup@gmail.com",
-  password: "qualitycontrol"
+  user_name: "dylan.conlin@gmail.com",
+  password: "eggboobsmashstink"
 }
 
 # Specify what domain to use for mailer URLs

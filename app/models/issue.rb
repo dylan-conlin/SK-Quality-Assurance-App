@@ -20,7 +20,14 @@ class Issue < ActiveRecord::Base
      :path => "/:style/:id/:filename",
      :convert_options => { :all => "-auto-orient" }
 
-
+def notify_on_new_comment(comment)
+  @comment = comment
+  users_to_notify = comments.map(&:user).uniq + [@commentable.user]
+  bcc = users_to_notify.map(&:email).compact * ', '
+  content = @comment.content
+  commenter = @comment.user.name
+  issue = @commentable
+end
 
 
 include PgSearch
@@ -46,6 +53,10 @@ def self.text_search(query)
     scoped
   end
 end
+
+
+
+
 
 before_save :strip_spaces
 
