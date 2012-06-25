@@ -14,14 +14,16 @@ class CommentsController < ApplicationController
   end
 
   def create
+
     @comment = @commentable.comments.build(params[:comment].merge(:user_id => current_user.id))
 
    if @comment.save
 
       @commentable = Issue.find(params[:issue_id])
       @comments = @commentable.comments
-      users_to_notify = @comments.map(&:user).uniq + [@commentable.user]
-      bcc = users_to_notify.map(&:email).compact * ', '
+      picked_users = User.find(params[:user_ids])
+      # users_to_notify = @comments.map(&:user).uniq + [@commentable.user] + picked_users
+      bcc = picked_users.map(&:email).compact * ', '
       content = @comment.content
       commenter = @comment.user.name
       issue = @commentable
