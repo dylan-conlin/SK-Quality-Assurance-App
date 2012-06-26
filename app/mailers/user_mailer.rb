@@ -22,12 +22,10 @@ class UserMailer < ActionMailer::Base
       @content = content
       @commenter = commenter
       @issue = issue
-       mail to: bcc,
-       subject: "New comment on your issue"
+       mail( to: bcc,
+       subject: commenter + " left a comment on your issue")
 
 
-
-      # ...
     end
 
     

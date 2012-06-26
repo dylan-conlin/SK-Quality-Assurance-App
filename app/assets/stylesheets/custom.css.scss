@@ -270,6 +270,8 @@ aside {
    text-align:right;
  }
 
+
+
 .pretty th .current {
   padding-right: 12px;
   background-repeat: no-repeat;
@@ -289,3 +291,17 @@ aside {
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	}
+
+.mycomments ul {
+    width: 700px;
+    list-style:none;
+}
+
+.comments li {
+    width:180px;
+    height:20px;
+    margin:1px 0 0 0;
+    padding:0 20px 0 0;
+    line-height:15px;
+    float:left;
+}

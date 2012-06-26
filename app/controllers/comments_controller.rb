@@ -21,9 +21,13 @@ class CommentsController < ApplicationController
 
       @commentable = Issue.find(params[:issue_id])
       @comments = @commentable.comments
-      picked_users = User.find(params[:user_ids])
-      # users_to_notify = @comments.map(&:user).uniq + [@commentable.user] + picked_users
-      bcc = picked_users.map(&:email).compact * ', '
+      if params[:user_ids].nil?
+        picked_users = User.find(current_user.id)
+        bcc = picked_users.email
+      else 
+        picked_users = User.find(params[:user_ids])
+        bcc = picked_users.map(&:email).compact * ', '
+      end
       content = @comment.content
       commenter = @comment.user.name
       issue = @commentable

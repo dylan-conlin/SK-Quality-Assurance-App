@@ -16,17 +16,19 @@
 
 
 
-<p>Email this comment to the following users:</p>
+<p><strong>Email this comment to the following users:</strong></p>
 
-  <div class="field">
-    <% User.all.each do |user| %>
-      <% checked_users = @commentable.comments.map(&:user).uniq + [@commentable.user] %>
-      <%= check_box_tag "user_ids[]", user.id, checked_users.include?(user) %>
-      <%= user.name %></br>
-    <% end %>
-  </div>
-
-
+<ul style="list-style:none;" class="comments">
+      <% User.all.each do |user| %>
+     <li class="comments">
+	<% checked_users = @commentable.comments.map(&:user).uniq + [@commentable.user] %>
+	<%= check_box_tag "user_ids[]", user.id, checked_users.include?(user) %>
+	<%= user.name %></br>
+     </li>
+      <% end %>
+</ul>
+</br>
+</br>
   <div class="actions">
     <%= f.submit %>
   </div>
