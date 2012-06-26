@@ -25,7 +25,7 @@ class CommentsController < ApplicationController
         picked_users = User.find(current_user.id)
         bcc = picked_users.email
       else 
-        picked_users = User.find(params[:user_ids])
+        picked_users = User.find(params[:user_ids] + [current_user.id]) 
         bcc = picked_users.map(&:email).compact * ', '
       end
       content = @comment.content
