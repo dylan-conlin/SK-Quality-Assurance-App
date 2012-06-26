@@ -12,9 +12,26 @@
 
     <%= f.file_field :photo, :label => 'Images' %>
 
- </div>
+</br>
+</br>
+
+<p><strong>Email this issue to the following users:</strong></p>
+
+<ul style="list-style:none;" class="comments">
+      <% User.all.each do |user| %>
+     <li class="comments">
+	<%= check_box_tag "user_ids[]", user.id %>
+	<%= user.name %></br>
+     </li>
+      <% end %>
+</ul>
+</br>
+</br>
+
 
   <div class="form-actions">
     <%= f.button :submit %>
   </div>
 <% end %>
+
+ </div>

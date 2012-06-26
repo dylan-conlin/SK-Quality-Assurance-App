@@ -14,18 +14,16 @@ class CommentsController < ApplicationController
   end
 
   def create
-
     @comment = @commentable.comments.build(params[:comment].merge(:user_id => current_user.id))
-
    if @comment.save
-
       @commentable = Issue.find(params[:issue_id])
       @comments = @commentable.comments
       if params[:user_ids].nil?
         picked_users = User.find(current_user.id)
         bcc = picked_users.email
       else 
-        picked_users = User.find(params[:user_ids] + [current_user.id]) 
+        all_users = params[:user_ids].pop(current_user.id)
+        picked_users = User.find(all_users).uniq
         bcc = picked_users.map(&:email).compact * ', '
       end
       content = @comment.content
@@ -37,7 +35,6 @@ class CommentsController < ApplicationController
      render :new
    end
   end
- 
 
 private
 

@@ -1,0 +1,100 @@
+<body>
+
+<p>Hi there,</p></br></br>
+<p><%= @issue.user.name %> would like you to review the following issue:</p>
+
+<table class="issues_show">
+
+<tr>
+    <% if @issue.photo.file? %>
+    <td class="span3 issues_bold">
+
+    </td>
+    <td>
+	<%=link_to image_tag(@issue.photo.url(:small)), @issue.photo.url, :class => 'iframe', :size => "50x50" %>
+      <% else %>
+      <% end %>
+    </td>
+</tr>
+
+<tr>
+    <td class="issues_bold">
+
+      <b>Description:</b>
+
+    </td>
+    <td>
+      <%= @issue.description %></br></br>
+    </td>
+</tr>
+
+<tr>
+    <td class="issues_bold">
+      <b>Corrective Action:</b>
+    </td>
+    <td>
+      <%= @issue.corrective_action %></br></br>
+    </td>
+</tr>
+
+<tr>
+    <td class="issues_bold">
+      <b>Workorder:</b>
+    </td>
+    <td>
+      <%= @issue.workorder %>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="issues_bold">
+      <b>Foreign object:</b>
+    </td>
+    <td>
+      <%= @issue.foreign_object.name %>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="issues_bold">
+      <b>Added by:</b>
+    </td>
+    <td>
+      <%= @issue.user.name %>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="issues_bold">
+      <b>Department Responsible:</b>
+    </td>
+    <td>
+      <%= @issue.department.name %>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="issues_bold">
+      <b>GMP:</b>
+    </td>
+    <td>
+      <%= @issue.gmp.name %>
+    </td>
+  </tr>
+
+</table>
+</div>
+</br>
+</br>
+<%= link_to 'Comment on this issue', issue_url(@issue) %> 
+</br>
+</br>
+
+
+
+  <p>Thanks,</p></br></br>
+
+  <p>Dylan Conlin</p>
+
+</body>
+

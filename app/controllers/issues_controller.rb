@@ -38,8 +38,20 @@ class IssuesController < ApplicationController
   def create
     @issue = current_user.issues.build(params[:issue])
     if @issue.save
-      flash[:success] = "Issue created!"
-      redirect_to issues_url
+      if params[:user_ids].nil?
+      
+      else
+        @selected_users = User.find(params[:user_ids])
+        bcc = @selected_users.map(&:email).compact * ', '
+
+        description = @issue.description
+        user = @issue.user
+        issue = @issue
+
+        UserMailer.notify_on_new_issue(bcc,description,user,issue).deliver
+      end
+        flash[:success] = "Issue created!"
+        redirect_to issues_url
     else
        render action: "new"
     end
@@ -54,6 +66,19 @@ class IssuesController < ApplicationController
 
     respond_to do |format|
       if @issue.update_attributes(params[:issue])
+      
+          if params[:user_ids].nil?
+
+          else
+            @selected_users = User.find(params[:user_ids])
+            bcc = @selected_users.map(&:email).compact * ', '
+
+            description = @issue.description
+            user = @issue.user
+            issue = @issue
+
+            UserMailer.notify_on_new_issue(bcc,description,user,issue).deliver
+          end
         format.html { redirect_to @issue, notice: 'Issue was successfully updated.' }
         format.json { head :no_content }
       else
