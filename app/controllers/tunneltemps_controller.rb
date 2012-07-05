@@ -1,5 +1,5 @@
 class TunneltempsController < ApplicationController
-  before_filter :signed_in_user, only: [:index, :edit, :update]
+  before_filter :signed_in_user, only: [:index, :edit, :show, :update, :destroy]
   before_filter :admin_user,     only: :destroy
 
   # GET /tunneltemps

@@ -1,6 +1,6 @@
 class CustomersController < ApplicationController
   before_filter :signed_in_user, 
-                only: [:index, :edit, :update, :destroy]
+                only: [:index, :edit, :update, :show, :destroy]
 
   before_filter :admin_user,     only: :destroy
   # GET /customers

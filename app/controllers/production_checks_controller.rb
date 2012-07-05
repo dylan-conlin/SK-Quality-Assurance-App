@@ -1,6 +1,5 @@
 class ProductionChecksController < ApplicationController
-  before_filter :signed_in_user, only: :index
-  before_filter :admin_user,     only: :destroy
+  before_filter :signed_in_user, only: [:index, :edit, :show, :update, :destroy]
   helper_method :sort_column, :sort_direction
   # GET /production_checks
   # GET /production_checks.json

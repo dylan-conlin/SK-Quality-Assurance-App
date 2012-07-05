@@ -3,7 +3,6 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 jQuery ->
-
   $("a.iframe").fancybox(
     transitionIn: 'elastic'
     transitionOut: 'elastic'
@@ -22,8 +21,6 @@ jQuery ->
       , ->
         $("#fancybox-title").fadeOut()
   )
-
-
 
   $('#issue_foreign_object_id').hide();
   $('label[for=issue_foreign_object_id], input#issue_foreign_object_id').hide();
