@@ -29,7 +29,8 @@ class CommentsController < ApplicationController
       content = @comment.content
       commenter = @comment.user.name
       issue = @commentable
-    UserMailer.notify_on_new_comment(bcc,content,commenter,issue).deliver
+     comments = @comments
+    UserMailer.notify_on_new_comment(bcc,content,commenter,issue,comments).deliver
      redirect_to @commentable, notice: "Comment created."
    else
      render :new

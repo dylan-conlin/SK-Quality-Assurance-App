@@ -17,7 +17,8 @@ class UserMailer < ActionMailer::Base
       mail to: user.email, subject: "above temp!"
     end
 
-    def notify_on_new_comment(bcc,content,commenter,issue)
+    def notify_on_new_comment(bcc,content,commenter,issue,comments)
+      @comments = comments
       @bcc = bcc
       @content = content
       @commenter = commenter

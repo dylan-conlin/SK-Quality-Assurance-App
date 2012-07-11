@@ -1,15 +1,107 @@
 <body>
-  <p>Hi there,</p></br></br>
   <p><%= @commenter %> left a new comment on <%= link_to 'this issue', issue_url(@issue) %>:</p></br></br></br>
 
-  <p>"<%= @content %>"</p></br></br>
 
-  <p><%= link_to 'Click to Reply!', issue_url(@issue) %></p></br></br>
+<table class="issues_show">
 
-  <p>If you have any questions or concerns, please let us know.</p></br></br>
+<tr>
+    <% if @issue.photo.file? %>
+    <td class="span3 issues_bold">
 
-  <p>Thanks,</p></br></br>
+    </td>
+    <td>
+	<%=link_to image_tag(@issue.photo.url(:small)), @issue.photo.url, :class => 'iframe', :size => "50x50" %>
+      <% else %>
+      <% end %>
+    </td>
+</tr>
 
-  <p>Dylan Conlin</p>
+<tr>
+    <td class="issues_bold">
+
+      <b>Description:</b>
+
+    </td>
+    <td>
+      <%= @issue.description %></br></br>
+    </td>
+</tr>
+
+<tr>
+    <td class="issues_bold">
+      <b>Corrective Action:</b>
+    </td>
+    <td>
+      <%= @issue.corrective_action %></br></br>
+    </td>
+</tr>
+
+<tr>
+    <td class="issues_bold">
+      <b>Workorder:</b>
+    </td>
+    <td>
+      <%= @issue.workorder %>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="issues_bold">
+      <b>Foreign object:</b>
+    </td>
+    <td>
+      <%= @issue.foreign_object.name %>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="issues_bold">
+      <b>Added by:</b>
+    </td>
+    <td>
+      <%= @issue.user.name %>
+    </td>
+  </tr>
+
+
+</table>
+</div>
+</br>
+</br>
+
+</br>
+</br>
+
+
 
 </body>
+<h2>Comments</h2>
+
+<table>
+  <% @comments.each do |comment| %>
+<tr>
+      <td class="comments">
+
+	<%= link_to comment.user.name, user_url(comment.user) %></br>
+
+	<%= comment.created_at.strftime("%D    ") %>
+
+      </td>
+
+
+      <td class="comments">
+	<div class="span5">
+	<%=  comment.content %>
+
+	</div>
+        </br>
+      </td>
+
+</tr>
+
+  <% end %>
+</br>
+
+</table>
+</br></br>
+<%= link_to 'Click to Reply >>', issue_url(@issue) %>
