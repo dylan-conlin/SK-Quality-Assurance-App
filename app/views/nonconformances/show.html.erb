@@ -10,8 +10,57 @@
   <%= @nonconformance.reason %>
 </p>
 
-
 <%= link_to 'Edit', edit_nonconformance_path(@nonconformance) %> |
 <%= link_to 'Back', nonconformances_path %>
+
+
+<table>
+  <tr>
+    <th>Nonconformance</th>
+    <th>User</th>
+    <th>Workorder</th>
+    <th>Lot</th>
+    <th>Sublot</th>
+    <th>Quantity</th>
+    <th>Units</th>
+    <th>Location</th>
+    <th>Labor</th>
+    <th>Labor units</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @nonconformance.instances.each do |instance| %>
+  <tr>
+    <td><%= instance.nonconformance.reason %></td>
+    <td><%= instance.user.name %></td>
+    <td><%= instance.workorder %></td>
+    <td><%= instance.lot %></td>
+    <td><%= instance.sublot %></td>
+    <td><%= instance.quantity %></td>
+    <td><%= instance.units %></td>
+    <td><%= instance.location %></td>
+    <td><%= instance.labor %></td>
+    <td><%= instance.labor_units %></td>
+    <td><%= instance.user_id %></td>
+    <td><%= link_to 'Show', instance %></td>
+    <td><%= link_to 'Edit', edit_instance_path(instance) %></td>
+    <td><%= link_to 'Destroy', instance, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Instance', new_nonconformance_instance_path(@nonconformance) %>
+
+
+
+
+
+
+
 
 

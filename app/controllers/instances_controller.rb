@@ -24,8 +24,9 @@ class InstancesController < ApplicationController
   # GET /instances/new
   # GET /instances/new.json
   def new
+    @nonconformance = Nonconformance.find(params[:nonconformance_id])
     @instance = Instance.new
-
+    
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @instance }
@@ -41,10 +42,10 @@ class InstancesController < ApplicationController
   # POST /instances.json
   def create
     @instance = Instance.new(params[:instance])
-
+    @nonconformance = Nonconformance.find(params[:nonconformance_id])    
     respond_to do |format|
       if @instance.save
-        format.html { redirect_to @instance, notice: 'Instance was successfully created.' }
+        format.html { redirect_to [@nonconformance, @instance], notice: 'Instance was successfully created.' }
         format.json { render json: @instance, status: :created, location: @instance }
       else
         format.html { render action: "new" }

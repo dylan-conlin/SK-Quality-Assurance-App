@@ -1,12 +1,9 @@
 SampleApp::Application.routes.draw do
 
 
-
-
-
-  resources :nonconformances 
-  resources :instances
-
+  resources :nonconformances do
+    resources :instances
+  end
 
   resources :production_checks
 
