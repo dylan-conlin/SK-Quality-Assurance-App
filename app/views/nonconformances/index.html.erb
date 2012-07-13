@@ -1,0 +1,28 @@
+<h1>Listing nonconformances</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Item</th>
+    <th>Reason</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @nonconformances.each do |nonconformance| %>
+  <tr>
+
+    <td><%= nonconformance.user.name %></td>
+    <td><%= nonconformance.item.number %></td>
+    <td><%= nonconformance.reason %></td>
+    <td><%= link_to 'Show', nonconformance %></td>
+    <td><%= link_to 'Edit', edit_nonconformance_path(nonconformance) %></td>
+    <td><%= link_to 'Destroy', nonconformance, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Nonconformance', new_nonconformance_path %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120710214246) do
+ActiveRecord::Schema.define(:version => 20120713202841) do
 
   create_table "celebrities", :force => true do |t|
     t.string   "name"
@@ -70,6 +70,21 @@ ActiveRecord::Schema.define(:version => 20120710214246) do
     t.datetime "updated_at",  :null => false
   end
 
+  create_table "instances", :force => true do |t|
+    t.integer  "nonconformance_id"
+    t.integer  "user_id"
+    t.string   "workorder"
+    t.string   "lot"
+    t.string   "sublot"
+    t.integer  "quantity"
+    t.string   "units"
+    t.string   "location"
+    t.integer  "labor"
+    t.string   "labor_units"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
   create_table "issues", :force => true do |t|
     t.integer  "department_id"
     t.integer  "gmp_id"
@@ -103,6 +118,14 @@ ActiveRecord::Schema.define(:version => 20120710214246) do
   end
 
   add_index "microposts", ["user_id", "created_at"], :name => "index_microposts_on_user_id_and_created_at"
+
+  create_table "nonconformances", :force => true do |t|
+    t.integer  "user_id"
+    t.text     "reason"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "item_id"
+  end
 
   create_table "packagings", :force => true do |t|
     t.integer  "user_id"
