@@ -1,8 +1,8 @@
 development:
   adapter: postgresql
-  database: mydb
-  username: dconlin # replace this with your own user name
-  password: SuNFL0Wer # replace this with your own password
+  database: postgresql
+  username:  # replace this with your own user name
+  password:  # replace this with your own password
   host: localhost
   encoding: UTF8
   pool: 5
@@ -12,9 +12,9 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: mydb
+  database: postgres
   pool: 5
-  username: dconlin
-  password: SuNFL0Wer
+  username: 
+  password: 
 
 

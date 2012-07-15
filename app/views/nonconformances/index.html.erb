@@ -1,28 +1,41 @@
 <h1>Listing nonconformances</h1>
 
-<table>
+  <%= link_to(new_nonconformance_path, :class => 'btn btn-mini') do %>
+  <i class="icon-plus-sign"></i> New Nonconformance
+  <% end %></br></br>
+
+<%= link_to "view open ncs", :status => "Open" %>|<%= link_to "view in process  ncs", :status => "In Process" %>
+
+</br>
+</br>
+<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="prettytable">
   <tr>
-    <th>User</th>
-    <th>Item</th>
-    <th>Reason</th>
-    <th></th>
-    <th></th>
+    <th><%= sortable "item_id", "Item" %></th>
+    <th><%= sortable "reason", "Reason" %></th>
+    <th><%= sortable "created_at", "Created" %></th>
+    <th><%= sortable "status", "Status" %></th>
+
     <th></th>
   </tr>
 
 <% @nonconformances.each do |nonconformance| %>
+
   <tr>
 
-    <td><%= nonconformance.user.name %></td>
-    <td><%= nonconformance.item.number %></td>
-    <td><%= nonconformance.reason %></td>
-    <td><%= link_to 'Show', nonconformance %></td>
-    <td><%= link_to 'Edit', edit_nonconformance_path(nonconformance) %></td>
+
+    <td><%= nonconformance.item.number %>&nbsp<%= nonconformance.item.description %></td>
+    <td><%= link_to nonconformance.reason, nonconformance %></td>
+    <td><%= nonconformance.created_at.strftime("%D %l %P") %></td> 
+    <td><%= nonconformance.status %></td>
     <td><%= link_to 'Destroy', nonconformance, confirm: 'Are you sure?', method: :delete %></td>
+
   </tr>
+
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Nonconformance', new_nonconformance_path %>
+<%= will_paginate @nonconformances %>
+
+

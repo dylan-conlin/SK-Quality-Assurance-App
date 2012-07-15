@@ -1,9 +1,19 @@
 
 class NonconformancesController < ApplicationController
-  # GET /nonconformances
-  # GET /nonconformances.json
+  before_filter :signed_in_user, 
+                only: [:index, :edit, :show, :update, :destroy]
+
+  helper_method :sort_column, :sort_direction
+
+
   def index
-    @nonconformances = Nonconformance.all
+    @nonconformances = Nonconformance.order(sort_column + " " + sort_direction).paginate(:per_page => 5, :page => params[:page])
+    if params[:status] == "Open"
+      @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 5, :page => params[:page])
+    elsif params[:status] == "In Process"
+      @nonconformances = Nonconformance.in_process.order(sort_column + " " + sort_direction).paginate(:per_page => 5, :page => params[:page])
+    end
+
 
     respond_to do |format|
       format.html # index.html.erb
@@ -41,8 +51,8 @@ class NonconformancesController < ApplicationController
   # POST /nonconformances
   # POST /nonconformances.json
   def create
-    @nonconformance = Nonconformance.new(params[:nonconformance])
 
+    @nonconformance = current_user.nonconformances.build(params[:nonconformance])
     respond_to do |format|
       if @nonconformance.save
         format.html { redirect_to @nonconformance, notice: 'Nonconformance was successfully created.' }
@@ -81,4 +91,25 @@ class NonconformancesController < ApplicationController
       format.json { head :no_content }
     end
   end
+private
+  def sort_column
+    Nonconformance.column_names.include?(params[:sort]) ? params[:sort] : "created_at"
+  end
+  
+  def sort_direction
+    %w[asc desc].include?(params[:direction]) ?  params[:direction] : "desc"
+  end
+
+  private
+
+    def correct_user
+      @user = User.find(params[:id])
+      redirect_to(root_path) unless current_user?(@user)
+    end
+
+    def admin_user
+      redirect_to(root_path) unless current_user.admin?
+    end
+
+
 end

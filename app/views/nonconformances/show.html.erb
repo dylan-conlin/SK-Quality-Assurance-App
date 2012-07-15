@@ -1,22 +1,22 @@
+<div class="well">
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>User:</b>
-  <%= @nonconformance.user_id %>
+  <b>Item:</b>
+  <%= @nonconformance.item.number %>&nbsp<%= @nonconformance.item.description %>
 </p>
-
 <p>
   <b>Reason:</b>
-  <%= @nonconformance.reason %>
+  <%= @nonconformance.reason %>&nbsp(<%= link_to 'Edit', edit_nonconformance_path(@nonconformance) %>)
 </p>
 
-<%= link_to 'Edit', edit_nonconformance_path(@nonconformance) %> |
-<%= link_to 'Back', nonconformances_path %>
 
 
-<table>
+</br>
+</br>
+<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="prettytable">
   <tr>
-    <th>Nonconformance</th>
+
     <th>User</th>
     <th>Workorder</th>
     <th>Lot</th>
@@ -34,8 +34,8 @@
 
 <% @nonconformance.instances.each do |instance| %>
   <tr>
-    <td><%= instance.nonconformance.reason %></td>
-    <td><%= instance.user.name %></td>
+
+    <td><%= link_to instance.user.name, instance.user %></td>
     <td><%= instance.workorder %></td>
     <td><%= instance.lot %></td>
     <td><%= instance.sublot %></td>
@@ -45,19 +45,19 @@
     <td><%= instance.labor %></td>
     <td><%= instance.labor_units %></td>
     <td><%= instance.user_id %></td>
-    <td><%= link_to 'Show', instance %></td>
-    <td><%= link_to 'Edit', edit_instance_path(instance) %></td>
-    <td><%= link_to 'Destroy', instance, confirm: 'Are you sure?', method: :delete %></td>
+
+
+
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Instance', new_nonconformance_instance_path(@nonconformance) %>
+<%= link_to 'Add', new_nonconformance_instance_path(@nonconformance) %>
+</div>
 
-
-
+<%= link_to 'Back', nonconformances_path %>
 
 
 
