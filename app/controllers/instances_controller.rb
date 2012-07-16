@@ -25,19 +25,19 @@ class InstancesController < ApplicationController
   # GET /instances/new.json
   def new
     @nonconformance = current_user.nonconformances.find(params[:nonconformance_id])
-    @instance = @nonconformance.instances.build :user_id => current_user.id
+#    @instance = @nonconformance.instances.build :user_id => current_user.id
+    @instance = Instance.new
+    @instance.assets.build 
+
+ end
 
 
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @instance }
-    end
-  end
-
-  # GET /instances/1/edit
+ 
   def edit
     @instance = Instance.find(params[:id])
+#    4.times { @instance.assets.build }
+
   end
 
   # POST /instances

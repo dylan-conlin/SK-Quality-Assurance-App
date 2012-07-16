@@ -35,7 +35,7 @@
 <% @nonconformance.instances.each do |instance| %>
   <tr>
 
-    <td><%= link_to instance.user.name, instance.user %></td>
+    <td><%= instance.user_id %></td>
     <td><%= instance.workorder %></td>
     <td><%= instance.lot %></td>
     <td><%= instance.sublot %></td>

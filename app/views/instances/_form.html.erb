@@ -1,4 +1,4 @@
-<%= simple_form_for [@nonconformance, @instance] do |f| %>
+<%= simple_form_for [@nonconformance, @instance], :html => {:multipart => true} do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
@@ -15,6 +15,14 @@
     <%= f.input :labor_units %>
     <%= f.input :user_id %>
   </div>
+
+  <% f.fields_for :assets do |asset| %>
+
+
+      <%= asset.file_field :asset %>
+
+
+ <% end %>
 
   <div class="form-actions">
     <%= f.button :submit %>
