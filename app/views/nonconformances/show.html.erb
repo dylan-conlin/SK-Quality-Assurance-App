@@ -1,4 +1,4 @@
-<div class="well">
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -46,7 +46,36 @@
     <td><%= instance.labor_units %></td>
     <td><%= instance.user_id %></td>
 
+      <% if instance.asset.file? %>
+    <td><div class="span2"><%=link_to image_tag(instance.asset.url(:small)), instance.asset.url, :class => 'iframe' %></div></td>
+        <% else %>
+    <td>no image</td>
+        <% end %>
 
+      <% if instance.asset2.file? %>
+    <td><div class="span2"><%=link_to image_tag(instance.asset2.url(:small)), instance.asset2.url, :class => 'iframe' %></div></td>
+        <% else %>
+    <td>no image</td>
+        <% end %>
+
+      <% if instance.asset3.file? %>
+    <td><div class="span2"><%=link_to image_tag(instance.asset3.url(:small)), instance.asset3.url, :class => 'iframe' %></div></td>
+        <% else %>
+    <td>no image</td>
+        <% end %>
+
+      <% if instance.asset4.file? %>
+    <td><div class="span2"><%=link_to image_tag(instance.asset4.url(:small)), instance.asset4.url, :class => 'iframe' %></div></td>
+        <% else %>
+    <td>no image</td>
+        <% end %>
+
+    <td>	
+
+		       
+<%= link_to 'Edit', edit_nonconformance_instance_path(@nonconformance,instance) %>|
+<%= link_to 'Delete', nonconformance_instance_path(@nonconformance,instance), confirm: 'Are you sure?', method: :delete %>
+    </td>
 
   </tr>
 <% end %>
@@ -55,7 +84,7 @@
 <br />
 
 <%= link_to 'Add', new_nonconformance_instance_path(@nonconformance) %>
-</div>
+
 
 <%= link_to 'Back', nonconformances_path %>
 

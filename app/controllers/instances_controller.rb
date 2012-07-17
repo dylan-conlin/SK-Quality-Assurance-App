@@ -25,9 +25,9 @@ class InstancesController < ApplicationController
   # GET /instances/new.json
   def new
     @nonconformance = current_user.nonconformances.find(params[:nonconformance_id])
-#    @instance = @nonconformance.instances.build :user_id => current_user.id
-    @instance = Instance.new
-    @instance.assets.build 
+    @instance = @nonconformance.instances.build :user_id => current_user.id
+
+
 
  end
 
@@ -36,7 +36,7 @@ class InstancesController < ApplicationController
  
   def edit
     @instance = Instance.find(params[:id])
-#    4.times { @instance.assets.build }
+
 
   end
 
@@ -60,11 +60,12 @@ class InstancesController < ApplicationController
   # PUT /instances/1
   # PUT /instances/1.json
   def update
+
     @instance = Instance.find(params[:id])
 
     respond_to do |format|
       if @instance.update_attributes(params[:instance])
-        format.html { redirect_to @instance, notice: 'Instance was successfully updated.' }
+        format.html { redirect_to [@instance], notice: 'Instance was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -76,11 +77,12 @@ class InstancesController < ApplicationController
   # DELETE /instances/1
   # DELETE /instances/1.json
   def destroy
+    @nonconformance = current_user.nonconformances.find(params[:nonconformance_id])    
     @instance = Instance.find(params[:id])
     @instance.destroy
 
     respond_to do |format|
-      format.html { redirect_to instances_url }
+      format.html { redirect_to @nonconformance }
       format.json { head :no_content }
     end
   end

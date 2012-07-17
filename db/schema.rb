@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120716044254) do
+ActiveRecord::Schema.define(:version => 20120717044637) do
 
   create_table "assets", :force => true do |t|
     t.string   "asset_file_name"
@@ -84,8 +84,24 @@ ActiveRecord::Schema.define(:version => 20120716044254) do
     t.string   "location"
     t.integer  "labor"
     t.string   "labor_units"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+    t.string   "asset_file_name"
+    t.string   "asset_content_type"
+    t.integer  "asset_file_size"
+    t.datetime "asset_updated_at"
+    t.string   "asset2_file_name"
+    t.string   "asset2_content_type"
+    t.integer  "asset2_file_size"
+    t.datetime "asset2_updated_at"
+    t.string   "asset3_file_name"
+    t.string   "asset3_content_type"
+    t.integer  "asset3_file_size"
+    t.datetime "asset3_updated_at"
+    t.string   "asset4_file_name"
+    t.string   "asset4_content_type"
+    t.integer  "asset4_file_size"
+    t.datetime "asset4_updated_at"
   end
 
   create_table "issues", :force => true do |t|

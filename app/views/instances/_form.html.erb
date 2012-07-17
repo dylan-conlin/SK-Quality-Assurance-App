@@ -14,15 +14,11 @@
     <%= f.input :labor %>
     <%= f.input :labor_units %>
     <%= f.input :user_id %>
+    <%= f.file_field :asset %>
+    <%= f.file_field :asset2 %>
+    <%= f.file_field :asset3 %>
+    <%= f.file_field :asset4 %>
   </div>
-
-  <% f.fields_for :assets do |asset| %>
-
-
-      <%= asset.file_field :asset %>
-
-
- <% end %>
 
   <div class="form-actions">
     <%= f.button :submit %>
