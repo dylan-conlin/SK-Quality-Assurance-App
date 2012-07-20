@@ -1,6 +1,8 @@
 SampleApp::Application.routes.draw do
 
 
+  resources :audits
+
   resources :nonconformances do
     resources :instances
   end

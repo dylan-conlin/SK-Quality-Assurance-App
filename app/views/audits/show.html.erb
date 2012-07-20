@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= link_to @audit.user.name, @audit.user %>
+</p>
+
+
+<p>
+  <b>Dishwasher:</b>
+    <%= @audit.dishwasher %>
+    <small><%= @audit.dishwasher_time.strftime("%a%l:%M %P") %></small>
+</p>
+
+<p>
+  <b>Cutting tools:</b>
+  <%= @audit.cutting_tools %>
+</p>
+
+<p>
+  <b>Tunnel temperature:</b>
+  <%= @audit.tunnel_temperature %>
+</p>
+
+<p>
+  <b>Sanitizer:</b>
+  <%= @audit.sanitizer %>
+</p>
+
+<p>
+  <b>Data collection:</b>
+  <%= @audit.data_collection %>
+</p>
+
+<p>
+  <b>Mps:</b>
+  <%= @audit.mps %>
+</p>
+
+<p>
+  <b>Metal detection:</b>
+  <%= @audit.metal_detection %>
+</p>
+
+
+<%= link_to 'Edit', edit_audit_path(@audit) %> |
+<%= link_to 'Back', audits_path %>

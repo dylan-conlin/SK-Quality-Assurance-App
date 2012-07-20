@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
   has_many :nonconformances
   has_many :production_checks
   has_many :comments
+  has_many :audits
   has_many :infractions, dependent: :destroy
   has_many :microposts, dependent: :destroy
   has_many :relationships, foreign_key: "follower_id", dependent: :destroy
