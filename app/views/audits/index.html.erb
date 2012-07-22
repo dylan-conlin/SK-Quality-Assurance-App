@@ -1,0 +1,42 @@
+<h3>Food Safety System Audits</h3></br>
+
+<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered pretty" >
+  <tr>
+    <th>Date</th>
+    <th>User</th>
+    <th>Dishwasher</th>
+    <th>Dishwasher Time</th>
+    <th>Cutting tools</th>
+    <th>Tunnel temperature</th>
+    <th>Sanitizer</th>
+    <th>Data collection</th>
+    <th>Mps</th>
+    <th>Metal detection</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @audits.each do |audit| %>
+  <tr>
+    <td><%= audit.created_at.strftime("%D %l %P") %></td>
+    <td><%= link_to gravatar_for(audit.user, size: 100), audit.user %></br>
+        <%= link_to audit.user.name, audit.user %></td>
+    <td><%= audit.dishwasher %><small><%= audit.dishwasher_time.strftime("%a%l:%M%P") %></small></td>
+    <td><%= audit.dishwasher_time.strftime("%a @%l:%M %P") %></td> 
+    <td><%= audit.cutting_tools %></td>
+    <td><%= audit.tunnel_temperature %></td>
+    <td><%= audit.sanitizer %></td>
+    <td><%= audit.data_collection %></td>
+    <td><%= audit.mps %></td>
+    <td><%= audit.metal_detection %></td>
+    <td><%= link_to 'Show', audit %></td>
+    <td><%= link_to 'Edit', edit_audit_path(audit) %></td>
+    <td><%= link_to 'Destroy', audit, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Audit', new_audit_path %>
