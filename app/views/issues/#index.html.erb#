@@ -1,8 +1,9 @@
 <%= form_tag issues_path, method: :get do %>
 
   <%= link_to(new_issue_path, :class => 'btn btn-mini') do %>
-  <i class="icon-plus-sign"></i> New Issue 
+  <i class="icon-plus-sign"></i> New Nonconformance 
   <% end %>
+
 
   <%= hidden_field_tag :direction, params[:direction] %>
   <%= hidden_field_tag :sort, params[:sort] %>

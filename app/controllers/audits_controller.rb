@@ -1,8 +1,14 @@
 class AuditsController < ApplicationController
-  # GET /audits
-  # GET /audits.json
+  before_filter :signed_in_user, 
+                only: [:index, :edit, :show, :update, :destroy]
+
+  helper_method :sort_column, :sort_direction
+
+
+
   def index
-    @audits = Audit.all
+    @audits = Audit.order(sort_column + " " + sort_direction).text_search(params[:query]).paginate(:per_page => 15, :page => params[:page])
+
 
     respond_to do |format|
       format.html # index.html.erb
@@ -81,4 +87,26 @@ class AuditsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+private
+
+  def sort_column
+    Audit.column_names.include?(params[:sort]) ? params[:sort] : "created_at"
+  end
+  
+  def sort_direction
+    %w[asc desc].include?(params[:direction]) ?  params[:direction] : "desc"
+  end
+
+
+
+    def correct_user
+      @user = User.find(params[:id])
+      redirect_to(root_path) unless current_user?(@user)
+    end
+
+    def admin_user
+      redirect_to(root_path) unless current_user.admin?
+    end
+
 end

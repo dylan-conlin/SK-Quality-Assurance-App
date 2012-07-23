@@ -1,0 +1,58 @@
+<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered pretty" >
+  <tr>
+
+    <th><%= sortable "created_at", "Date" %></th>
+    <th><%= sortable "user_id", "User" %></th>
+    <th><%= sortable "dishwasher" %></th>
+    <th><%= sortable "cutting_tools", "Cutting tools" %></th>
+    <th><%= sortable "tunnel_temperature", "Tunnel temperature" %></th>
+    <th><%= sortable "sanitizer", "Sanitizer" %></th>
+    <th><%= sortable "data_collection", "Data Collection" %></th>
+    <th><%= sortable "mps", "MPS" %></th>
+    <th><%= sortable "metal_detection", "Metal Detection" %></th>
+    <th>Admin</th>
+
+
+  </tr>
+
+<% @audits.each do |audit| %>
+  <tr>
+    <td><%= audit.created_at.strftime("%D %l %P") %></td>
+    <td><%= link_to gravatar_for(audit.user, size: 100), audit.user %></br>
+        <%= link_to audit.user.name, audit.user %></td>
+    <td><%= audit.dishwasher %><small class="timestamp"></br><%= audit.dishwasher_time.strftime("%a%l:%M%P") %></small></td>
+    <td><%= audit.cutting_tools %><small class="timestamp"></br><%= audit.cutting_tools_time.strftime("%a%l:%M%P") %></small></td>
+    <td><%= audit.tunnel_temperature %><small class="timestamp"></br><%= audit.tunnel_temperature_time.strftime("%a%l:%M%P") %></small></td>
+    <td><%= audit.sanitizer %><small class="timestamp"></br><%= audit.sanitizer_time.strftime("%a%l:%M%P") %></small></td>
+    <td><%= audit.data_collection %><small class="timestamp"></br><%= audit.data_collection_time.strftime("%a%l:%M%P") %></small></td>
+    <td><%= audit.mps %><small class="timestamp"></br><%= audit.mps_time.strftime("%a%l:%M%P") %></small></td>
+    <td><%= audit.metal_detection %><small class="timestamp"></br><%= audit.metal_detection_time.strftime("%a%l:%M%P") %></small></td>
+
+    <td>
+	     <div class="btn-group">
+	       <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+
+		 <span class="caret"></span>
+	       </a>
+	       <ul class="dropdown-menu">
+		 <!-- dropdown menu links -->
+		 
+
+
+
+
+
+		       <%= link_to 'Show', audit %>
+		       <%= link_to 'Edit', edit_audit_path(audit) %>
+		       <%= link_to 'Destroy', audit, confirm: 'Are you sure?', method: :delete %>		
+	       </ul>
+	     </div>
+    </td>
+
+
+
+  </tr>
+<% end %>
+</table>
+
+<br />

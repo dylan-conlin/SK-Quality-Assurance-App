@@ -15,31 +15,37 @@
 <p>
   <b>Cutting tools:</b>
   <%= @audit.cutting_tools %>
+  <small><%= @audit.cutting_tools_time.strftime("%a%l:%M %P") %></small>
 </p>
 
 <p>
   <b>Tunnel temperature:</b>
   <%= @audit.tunnel_temperature %>
+  <small><%= @audit.tunnel_temperature_time.strftime("%a%l:%M %P") %></small>
 </p>
 
 <p>
   <b>Sanitizer:</b>
   <%= @audit.sanitizer %>
+  <small><%= @audit.sanitizer_time.strftime("%a%l:%M %P") %></small>
 </p>
 
 <p>
   <b>Data collection:</b>
   <%= @audit.data_collection %>
+  <small><%= @audit.data_collection_time.strftime("%a%l:%M %P") %></small>
 </p>
 
 <p>
   <b>Mps:</b>
   <%= @audit.mps %>
+  <small><%= @audit.mps_time.strftime("%a%l:%M %P") %></small>
 </p>
 
 <p>
   <b>Metal detection:</b>
   <%= @audit.metal_detection %>
+  <small><%= @audit.metal_detection_time.strftime("%a%l:%M %P") %></small>
 </p>
 
 

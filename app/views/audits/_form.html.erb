@@ -1,17 +1,29 @@
-<%= simple_form_for(@audit) do |f| %>
+<%= simple_form_for(@audit, :html => { :class => 'form-horizontal' }) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
+  <div class="form-inputs ">
 
-    <%= f.input :dishwasher %>
-    <%= f.input :dishwasher_time, :as => :datetime, :input_html => { :class => 'date_picker' } %>
+    <%= f.input :dishwasher, :wrapper_html => { :class => 'span6' }, :hint => 'Is the label clearly printed and easily readable?' %>
+    <%= f.input :dishwasher_time, :discard_year => true, :discard_month => true, :ampm => true, :label => false %>
 
-    <%= f.input :cutting_tools %>
-    <%= f.input :tunnel_temperature %>
-    <%= f.input :sanitizer %>
-    <%= f.input :data_collection %>
-    <%= f.input :mps %>
-    <%= f.input :metal_detection %>
+    <%= f.input :cutting_tools, :wrapper_html => { :class => 'span6' } %>
+    <%= f.input :cutting_tools_time, :label => false, :discard_year => true, :discard_month => true, :ampm => true %>
+
+    <%= f.input :tunnel_temperature, :wrapper_html => { :class => 'span6' } %>
+    <%= f.input :tunnel_temperature_time, :label => false, :discard_year => true, :discard_month => true, :ampm => true %>
+
+    <%= f.input :sanitizer, :wrapper_html => { :class => 'span6' } %>
+    <%= f.input :sanitizer_time, :discard_year => true, :label => false, :discard_month => true, :ampm => true %>
+
+    <%= f.input :data_collection, :wrapper_html => { :class => 'span6' } %>
+    <%= f.input :data_collection_time, :discard_year => true, :label => false, :discard_month => true, :ampm => true %>
+
+    <%= f.input :mps, :wrapper_html => { :class => 'span6' } %>
+    <%= f.input :mps_time, :discard_year => true, :discard_month => true, :label => false, :ampm => true %>
+
+    <%= f.input :metal_detection, :wrapper_html => { :class => 'span6' } %>
+    <%= f.input :metal_detection_time, :discard_year => true, :label => false, :discard_month => true, :ampm => true %>
+
   </div>
 
   <div class="form-actions">

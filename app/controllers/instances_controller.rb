@@ -60,7 +60,7 @@ class InstancesController < ApplicationController
   # PUT /instances/1
   # PUT /instances/1.json
   def update
-
+W
     @instance = Instance.find(params[:id])
 
     respond_to do |format|
