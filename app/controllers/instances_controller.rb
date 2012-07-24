@@ -64,9 +64,12 @@ class InstancesController < ApplicationController
 
     @instance = Instance.find(params[:id])
     @nonconformance = Nonconformance.find(@instance.nonconformance_id)
+
+
     respond_to do |format|
       if @instance.update_attributes(params[:instance])
-        redirect_to @nonconformance
+        
+        format.html { redirect_to nonconformances_url, notice: 'Your instance was successfully updated!' }
 
         format.json { head :no_content }
       else

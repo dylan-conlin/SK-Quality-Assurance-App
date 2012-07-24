@@ -9,8 +9,9 @@ scope :in_process, where(:status => "In Process")
 belongs_to :user
 belongs_to :item
 has_many :instances, dependent: :destroy
+accepts_nested_attributes_for :instances, allow_destroy: true
 
-accepts_nested_attributes_for :instances
+
 
 private
     def set_status
