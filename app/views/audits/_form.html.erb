@@ -1,28 +1,37 @@
 <%= simple_form_for(@audit, :html => { :class => 'form-horizontal' }) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs ">
+  <div class="form-inputs">
 
-    <%= f.input :dishwasher, :wrapper_html => { :class => 'span6' }, :hint => 'Is the label clearly printed and easily readable?' %>
+    <%= f.input :dishwasher, :wrapper_html => { :class => 'span6' }, :hint => 'Wash cycle is above 140 F and rinse cycle is above 180 F?' %>
     <%= f.input :dishwasher_time, :discard_year => true, :discard_month => true, :ampm => true, :label => false %>
 
-    <%= f.input :cutting_tools, :wrapper_html => { :class => 'span6' } %>
+    <%= f.input :cutting_tools, :wrapper_html => { :class => 'span6' }, :hint => 'All tools listed on QA-F40 cutting tools form are signed out and accounted for.  QA-F40 form can be found and is easy to understand.' %>
     <%= f.input :cutting_tools_time, :label => false, :discard_year => true, :discard_month => true, :ampm => true %>
 
-    <%= f.input :tunnel_temperature, :wrapper_html => { :class => 'span6' } %>
+    <%= f.input :tunnel_temperature, :wrapper_html => { :class => 'span6' }, :hint => 'QA-F71 Tunnel Temp Chart is being filled out hourly for each active tunnel. All bread exiting tunnel should be 28 F and below.', :label => 'Tunnel Temperatures' %>
     <%= f.input :tunnel_temperature_time, :label => false, :discard_year => true, :discard_month => true, :ampm => true %>
 
-    <%= f.input :sanitizer, :wrapper_html => { :class => 'span6' } %>
+    <%= f.input :sanitizer, :wrapper_html => { :class => 'span6' }, :hint => 'Sanitzer is available and has the correct concentration. Slicers are recording chemical concentrations on QA-F26 Slicing Report at the beginning, middle, and end of their shift. Slicing boot dip (100 to 400 ppm) and downstairs bootwash (between 600 and 800 ppm) are checked 2 times per shift.' %>
     <%= f.input :sanitizer_time, :discard_year => true, :label => false, :discard_month => true, :ampm => true %>
 
-    <%= f.input :data_collection, :wrapper_html => { :class => 'span6' } %>
+    <%= f.input :data_collection, :wrapper_html => { :class => 'span6' }, :hint => 'FG information is recorded every half hour. Component information is collected twice per shift for spinach wraps and every hour for SBUX paninis and Jamba Juice wraps.' %>
     <%= f.input :data_collection_time, :discard_year => true, :label => false, :discard_month => true, :ampm => true %>
 
-    <%= f.input :mps, :wrapper_html => { :class => 'span6' } %>
+    <%= f.input :mps, :wrapper_html => { :class => 'span6' }, :hint => 'All product is being built according to the MPS.  Processes or builds that are not compliant with the MPS are brought to QAs attention', :label => 'MPS' %>
     <%= f.input :mps_time, :discard_year => true, :discard_month => true, :label => false, :ampm => true %>
 
-    <%= f.input :metal_detection, :wrapper_html => { :class => 'span6' } %>
+    <%= f.input :metal_detection, :wrapper_html => { :class => 'span6' }, :hint => 'The QA-F55 Metal Detection log is being filled out hourly for all active lines.  Foreign metal is recorded on the QA-F07 Food Safety Issue Log' %>
     <%= f.input :metal_detection_time, :discard_year => true, :label => false, :discard_month => true, :ampm => true %>
+
+    <%= f.input :map, :wrapper_html => { :class => 'span6' }, :hint => 'glob' %>
+    <%= f.input :map_time, :discard_year => true, :label => false, :discard_month => true, :ampm => true %>
+
+    <%= f.input :packaging, :wrapper_html => { :class => 'span6' }, :hint => 'glob' %>
+    <%= f.input :packaging_time, :discard_year => true, :label => false, :discard_month => true, :ampm => true %>
+
+    <%= f.input :gmp, :wrapper_html => { :class => 'span6' }, :hint => 'glob' %>
+    <%= f.input :gmp_time, :discard_year => true, :label => false, :discard_month => true, :ampm => true %>
 
   </div>
 

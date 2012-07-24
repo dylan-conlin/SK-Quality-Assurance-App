@@ -71,7 +71,7 @@ class NonconformancesController < ApplicationController
 
     respond_to do |format|
       if @nonconformance.update_attributes(params[:nonconformance])
-        format.html { redirect_to @nonconformance, notice: 'Nonconformance was successfully updated.' }
+        format.html { redirect_to nonconformances_path, notice: 'Nonconformance was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

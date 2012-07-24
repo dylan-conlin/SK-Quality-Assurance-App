@@ -2,6 +2,7 @@ class InstancesController < ApplicationController
   # GET /instances
   # GET /instances.json
   def index
+
     @instances = Instance.all
 
     respond_to do |format|
@@ -13,6 +14,7 @@ class InstancesController < ApplicationController
   # GET /instances/1
   # GET /instances/1.json
   def show
+
     @instance = Instance.find(params[:id])
 
     respond_to do |format|
@@ -27,15 +29,14 @@ class InstancesController < ApplicationController
     @nonconformance = current_user.nonconformances.find(params[:nonconformance_id])
     @instance = @nonconformance.instances.build :user_id => current_user.id
 
-
-
  end
 
 
 
  
   def edit
-    @instance = Instance.find(params[:id])
+
+   @instance = Instance.find(params[:id])
 
 
   end
@@ -60,12 +61,13 @@ class InstancesController < ApplicationController
   # PUT /instances/1
   # PUT /instances/1.json
   def update
-W
-    @instance = Instance.find(params[:id])
 
+    @instance = Instance.find(params[:id])
+    @nonconformance = Nonconformance.find(@instance.nonconformance_id)
     respond_to do |format|
       if @instance.update_attributes(params[:instance])
-        format.html { redirect_to [@instance], notice: 'Instance was successfully updated.' }
+        redirect_to @nonconformance
+
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

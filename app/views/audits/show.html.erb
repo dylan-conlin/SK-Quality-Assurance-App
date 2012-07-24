@@ -9,45 +9,62 @@
 <p>
   <b>Dishwasher:</b>
     <%= @audit.dishwasher %>
-    <small><%= @audit.dishwasher_time.strftime("%a%l:%M %P") %></small>
+    <small><%= @audit.dishwasher_time.strftime("%a %l:%M %P") %></small>
 </p>
 
 <p>
   <b>Cutting tools:</b>
   <%= @audit.cutting_tools %>
-  <small><%= @audit.cutting_tools_time.strftime("%a%l:%M %P") %></small>
+  <small><%= @audit.cutting_tools_time.strftime("%a %l:%M %P") %></small>
 </p>
 
 <p>
   <b>Tunnel temperature:</b>
   <%= @audit.tunnel_temperature %>
-  <small><%= @audit.tunnel_temperature_time.strftime("%a%l:%M %P") %></small>
+  <small><%= @audit.tunnel_temperature_time.strftime("%a %l:%M %P") %></small>
 </p>
 
 <p>
   <b>Sanitizer:</b>
   <%= @audit.sanitizer %>
-  <small><%= @audit.sanitizer_time.strftime("%a%l:%M %P") %></small>
+  <small><%= @audit.sanitizer_time.strftime("%a %l:%M %P") %></small>
 </p>
 
 <p>
   <b>Data collection:</b>
   <%= @audit.data_collection %>
-  <small><%= @audit.data_collection_time.strftime("%a%l:%M %P") %></small>
+  <small><%= @audit.data_collection_time.strftime("%a %l:%M %P") %></small>
 </p>
 
 <p>
   <b>Mps:</b>
   <%= @audit.mps %>
-  <small><%= @audit.mps_time.strftime("%a%l:%M %P") %></small>
+  <small><%= @audit.mps_time.strftime("%a %l:%M %P") %></small>
 </p>
 
 <p>
   <b>Metal detection:</b>
   <%= @audit.metal_detection %>
-  <small><%= @audit.metal_detection_time.strftime("%a%l:%M %P") %></small>
+  <small><%= @audit.metal_detection_time.strftime("%a %l:%M %P") %></small>
 </p>
 
+<p>
+  <b>MAP:</b>
+  <%= @audit.map %>
+  <small><%= @audit.map_time.strftime("%a %l:%M %P") %></small>
+</p>
+
+<p>
+  <b>Packaging:</b>
+  <%= @audit.packaging %>
+  <small><%= @audit.packaging_time.strftime("%a %l:%M %P") %></small>
+</p>
+
+<p>
+  <b>GMPs:</b>
+  <%= @audit.gmp %>
+  <small><%= @audit.gmp_time.strftime("%a %l:%M %P") %></small>
+</p>
 
 <%= link_to 'Edit', edit_audit_path(@audit) %> |
 <%= link_to 'Back', audits_path %>

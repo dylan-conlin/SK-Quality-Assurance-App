@@ -1,10 +1,19 @@
 <h1>Listing nonconformances</h1>
 
+
+
+
+
+
+
+
+
   <%= link_to(new_nonconformance_path, :class => 'btn btn-mini') do %>
   <i class="icon-plus-sign"></i> New Nonconformance
   <% end %></br></br>
-
-<%= link_to "view open ncs", :status => "Open" %>|<%= link_to "view in process  ncs", :status => "In Process" %>
+<% open_ncs = Nonconformance.open.count %>
+<% in_process = Nonconformance.in_process.count %>
+<div class="pull-right"><%= link_to "Open (#{open_ncs})", :status => "Open" %> | <%= link_to "In Process (#{in_process})", :status => "In Process" %></div>
 
 </br>
 </br>
@@ -14,7 +23,7 @@
     <th><%= sortable "reason", "Reason" %></th>
     <th><%= sortable "created_at", "Created" %></th>
     <th><%= sortable "status", "Status" %></th>
-
+    
     <th></th>
   </tr>
 
@@ -26,7 +35,15 @@
     <td><%= nonconformance.item.number %>&nbsp<%= nonconformance.item.description %></td>
     <td><%= link_to nonconformance.reason, nonconformance %></td>
     <td><%= nonconformance.created_at.strftime("%D %l %P") %></td> 
-    <td><%= nonconformance.status %></td>
+
+<td><%= form_for nonconformance, :remote => true do |f| %>
+  <%= f.select :status, [['Open'],['In Process']], {}, {:onChange => 'this.form.submit();' } %>
+
+      <% end %></td>
+
+
+
+      
     <td><%= link_to 'Destroy', nonconformance, confirm: 'Are you sure?', method: :delete %></td>
 
   </tr>
