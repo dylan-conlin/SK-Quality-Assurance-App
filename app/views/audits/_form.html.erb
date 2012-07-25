@@ -24,13 +24,13 @@
     <%= f.input :metal_detection, :wrapper_html => { :class => 'span6' }, :hint => 'The QA-F55 Metal Detection log is being filled out hourly for all active lines.  Foreign metal is recorded on the QA-F07 Food Safety Issue Log' %>
     <%= f.input :metal_detection_time, :discard_year => true, :label => false, :discard_month => true, :ampm => true %>
 
-    <%= f.input :map, :wrapper_html => { :class => 'span6' }, :hint => 'glob' %>
+    <%= f.input :map, :wrapper_html => { :class => 'span6' }, :hint => 'Tiro machine operator is recording gas percentages on QA-F16 on an hourly basis. Gas analyzer is calibrated.', :label => 'MAP' %>
     <%= f.input :map_time, :discard_year => true, :label => false, :discard_month => true, :ampm => true %>
 
-    <%= f.input :packaging, :wrapper_html => { :class => 'span6' }, :hint => 'glob' %>
+    <%= f.input :packaging, :wrapper_html => { :class => 'span6' }, :hint => 'Product packaging is in compliance with customer specs. Packaging Checks are performed hourly.' %>
     <%= f.input :packaging_time, :discard_year => true, :label => false, :discard_month => true, :ampm => true %>
 
-    <%= f.input :gmp, :wrapper_html => { :class => 'span6' }, :hint => 'glob' %>
+    <%= f.input :gmp, :wrapper_html => { :class => 'span6' }, :hint => 'SK employees are in compliance with the HR-P03 GMP list.', :label => 'GMP' %>
     <%= f.input :gmp_time, :discard_year => true, :label => false, :discard_month => true, :ampm => true %>
 
   </div>
