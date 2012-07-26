@@ -2,7 +2,7 @@
 <%= simple_form_for @issue, :html => {:multipart => true} do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs form-inline offset3">
+  <div class="form-inputs form-inline offset1">
     <%= f.input :description %>
     <%= f.input :corrective_action %>
     <%= f.input :department_id, :collection => Department.all(:order => 'name'), :label => 'Department Responsible' %>
@@ -18,44 +18,44 @@
 <h3>Email this issue to the following users:</h3>
 
 <!-- <ul style="list-style:none;" class="comments"> -->
-
-<div class="row-fluid">
+</br>
+<div class="container-fluid">
   <% Department.all.each do |department| %>
-
-    <% if department.users.count > 0 %>
-
-      <div class="span4">
-	   <p>
-	     <div class="well">
-	       <strong>
-
-	       
-	       <%= department.name %>
-	       </strong>
-
-	     <% department.users.each do |user|%> 
-	     
-	     <div class="row">
-	      &nbsp&nbsp&nbsp&nbsp<%= check_box_tag "user_ids[]", user.id %>
-	      <%= user.name %>
-	      <div class="timestamp">
-		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= user.title %>
-              </div>
-	      </div>
-
-	     <% end %>
-	     </p>
-	     </div>
-      </div>
-
-    <% end %>
+  
+  <% if department.users.count > 0 %>
+  
+  <div class="span4">
+    <div class="well">
+      <ol>
+      <strong>
+	<%= department.name %>
+      </strong>
+      <ol>
+	<% department.users.each do |user|%> 
+	
+	<div class="row">
+	  
+	  <%= check_box_tag "user_ids[]", user.id %>
+	  <%= user.name %>
+	  <div class="timestamp"><%= user.title%></div>	
+	  
+	</div>
+	
+	<% end %>
+	
+      </ol>
+      </ol>
+    </div>
+  </div>
+  
+  <% end %>
   <% end %>
 </div>
 
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+<div class="form-actions">
+  <%= f.button :submit %>
+</div>
 <% end %>
 
 
