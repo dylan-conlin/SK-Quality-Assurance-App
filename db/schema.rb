@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120723185249) do
+ActiveRecord::Schema.define(:version => 20120725193442) do
 
   create_table "assets", :force => true do |t|
     t.string   "asset_file_name"
@@ -246,6 +246,7 @@ ActiveRecord::Schema.define(:version => 20120723185249) do
     t.boolean  "supervisor"
     t.string   "title"
     t.date     "hire_date"
+    t.boolean  "nc_admin"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

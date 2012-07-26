@@ -1,6 +1,7 @@
 <h1>Listing nonconformances</h1>
 
-<%= current_user.department.name %>
+
+
 
   <%= link_to(new_nonconformance_path, :class => 'btn btn-mini') do %>
   <i class="icon-plus-sign"></i> New Nonconformance
@@ -26,11 +27,12 @@
      show instances (<%= nonconformance.instances.count %>)
      </button>
 
+     <% if current_user.nc_admin == true %>
+       <%= form_for nonconformance, :remote => true do |f| %>
+       <div class="disabled"><%= f.select :status, [['Open'],['In Process']], {}, {:onChange => 'this.form.submit();' } %><div class="timestamp">this field is only visible to nc admins</div></div>
 
-     <%= form_for nonconformance, :remote => true do |f| %>
-     <%= f.select :status, [['Open'],['In Process']], {}, {:onChange => 'this.form.submit();' } %>
-      <% end %>
-
+       <% end %>
+     <% end %>
 
 <div class="timestamp pull-left">created on <%= nonconformance.created_at.strftime("%D at about %l %P") %> by <%= link_to nonconformance.user.name, nonconformance.user %></div>
 
