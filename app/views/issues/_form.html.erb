@@ -15,18 +15,42 @@
 </br>
 </br>
 
-<p><strong>Email this issue to the following users:</strong></p>
+<h3>Email this issue to the following users:</h3>
 
-<ul style="list-style:none;" class="comments">
-      <% User.all.each do |user| %>
-     <li class="comments">
-	<%= check_box_tag "user_ids[]", user.id %>
-	<%= user.name %></br>
-     </li>
-      <% end %>
-</ul>
-</br>
-</br>
+<!-- <ul style="list-style:none;" class="comments"> -->
+
+<div class="row-fluid">
+  <% Department.all.each do |department| %>
+
+    <% if department.users.count > 0 %>
+
+      <div class="span4">
+	   <p>
+	     <div class="well">
+	       <strong>
+
+	       
+	       <%= department.name %>
+	       </strong>
+
+	     <% department.users.each do |user|%> 
+	     
+	     <div class="row">
+	      &nbsp&nbsp&nbsp&nbsp<%= check_box_tag "user_ids[]", user.id %>
+	      <%= user.name %>
+	      <div class="timestamp">
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= user.title %>
+              </div>
+	      </div>
+
+	     <% end %>
+	     </p>
+	     </div>
+      </div>
+
+    <% end %>
+  <% end %>
+</div>
 
 
   <div class="form-actions">
@@ -34,4 +58,4 @@
   </div>
 <% end %>
 
- </div>
+
