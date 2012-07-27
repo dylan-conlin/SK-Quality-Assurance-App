@@ -36,10 +36,7 @@ class InstancesController < ApplicationController
  
   def edit
     @nonconformance = current_user.nonconformances.find(params[:nonconformance_id])
-    @instance = @nonconformance.instances.build :user_id => current_user.id
-
-
-
+    @instance = Instance.find(params[:id])
 
   end
 
