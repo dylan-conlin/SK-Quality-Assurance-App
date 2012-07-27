@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Number:</b>
+  <%= @component.number %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @component.status %>
+</p>
+
+<p>
+  <b>Sk description:</b>
+  <%= @component.sk_description %>
+</p>
+
+<p>
+  <b>Supplier number:</b>
+  <%= @component.supplier_number %>
+</p>
+
+<p>
+  <b>Minimum po quantity:</b>
+  <%= @component.minimum_po_quantity %>
+</p>
+
+<p>
+  <b>Purchase unit:</b>
+  <%= @component.purchase_unit %>
+</p>
+
+<p>
+  <b>Stock unit:</b>
+  <%= @component.stock_unit %>
+</p>
+
+<p>
+  <b>Pur stk conversion:</b>
+  <%= @component.pur_stk_conversion %>
+</p>
+
+<p>
+  <b>Price per stock unit:</b>
+  <%= @component.price_per_stock_unit %>
+</p>
+
+<p>
+  <b>Price per purchase unit:</b>
+  <%= @component.price_per_purchase_unit %>
+</p>
+
+<p>
+  <b>Supplier:</b>
+  <%= @component.supplier_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_component_path(@component) %> |
+<%= link_to 'Back', components_path %>

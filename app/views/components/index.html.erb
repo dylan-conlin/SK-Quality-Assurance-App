@@ -1,0 +1,44 @@
+<h1>Listing components</h1>
+
+<table>
+  <tr>
+    <th>Number</th>
+    <th>Status</th>
+    <th>Sk description</th>
+    <th>Supplier number</th>
+    <th>Minimum po quantity</th>
+    <th>Purchase unit</th>
+    <th>Stock unit</th>
+    <th>Pur stk conversion</th>
+    <th>Price per stock unit</th>
+    <th>Price per purchase unit</th>
+    <th>Supplier</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @components.each do |component| %>
+<% @supplier = Supplier.find(component.supplier_id)%>
+  <tr>
+    <td><%= component.number %></td>
+    <td><%= component.status %></td>
+    <td><%= component.sk_description %></td>
+    <td><%= component.supplier_number %></td>
+    <td><%= component.minimum_po_quantity %></td>
+    <td><%= component.purchase_unit %></td>
+    <td><%= component.stock_unit %></td>
+    <td><%= component.pur_stk_conversion %></td>
+    <td><%= component.price_per_stock_unit %></td>
+    <td><%= component.price_per_purchase_unit %></td>
+    <td><%= @supplier.name %></td>
+    <td><%= link_to 'Show', component %></td>
+    <td><%= link_to 'Edit', edit_component_path(component) %></td>
+    <td><%= link_to 'Destroy', component, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Component', new_component_path %>

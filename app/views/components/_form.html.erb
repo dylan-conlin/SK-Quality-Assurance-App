@@ -1,0 +1,33 @@
+<%= simple_form_for(@component) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+
+    <%= f.input :number %>
+
+    <%= f.input :status %>
+
+    <%= f.input :sk_description %>
+
+    <%= f.input :supplier_number %>
+
+    <%= f.input :minimum_po_quantity %>
+
+    <%= f.input :purchase_unit %>
+
+    <%= f.input :stock_unit %>
+
+    <%= f.input :pur_stk_conversion %>
+
+    <%= f.input :price_per_stock_unit %>
+
+    <%= f.input :price_per_purchase_unit %>
+
+    <%= f.input :supplier_id %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

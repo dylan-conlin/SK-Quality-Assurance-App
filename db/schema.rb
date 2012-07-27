@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120725193442) do
+ActiveRecord::Schema.define(:version => 20120727215233) do
 
   create_table "assets", :force => true do |t|
     t.string   "asset_file_name"
@@ -65,6 +65,23 @@ ActiveRecord::Schema.define(:version => 20120725193442) do
   end
 
   add_index "comments", ["commentable_id", "commentable_type"], :name => "index_comments_on_commentable_id_and_commentable_type"
+
+  create_table "components", :force => true do |t|
+    t.string   "number"
+    t.string   "status"
+    t.string   "sk_description"
+    t.string   "supplier_number"
+    t.string   "minimum_po_quantity"
+    t.string   "purchase_unit"
+    t.string   "stock_unit"
+    t.integer  "pur_stk_conversion"
+    t.decimal  "price_per_stock_unit"
+    t.decimal  "price_per_purchase_unit"
+    t.integer  "supplier_id"
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+    t.string   "supplier_description"
+  end
 
   create_table "customers", :force => true do |t|
     t.string   "short_name"
@@ -174,10 +191,11 @@ ActiveRecord::Schema.define(:version => 20120725193442) do
   create_table "nonconformances", :force => true do |t|
     t.integer  "user_id"
     t.text     "reason"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
     t.integer  "item_id"
     t.string   "status"
+    t.integer  "component_id"
   end
 
   create_table "packagings", :force => true do |t|
@@ -222,6 +240,12 @@ ActiveRecord::Schema.define(:version => 20120725193442) do
   add_index "relationships", ["followed_id"], :name => "index_relationships_on_followed_id"
   add_index "relationships", ["follower_id", "followed_id"], :name => "index_relationships_on_follower_id_and_followed_id", :unique => true
   add_index "relationships", ["follower_id"], :name => "index_relationships_on_follower_id"
+
+  create_table "suppliers", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "tunneltemps", :force => true do |t|
     t.integer  "user_id"

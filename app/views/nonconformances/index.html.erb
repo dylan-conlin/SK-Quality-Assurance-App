@@ -18,8 +18,26 @@
 <div class="well">
 
 
-      <%= link_to "(edit)", edit_nonconformance_path(nonconformance), :class => "pull-right" %>
-      <h3><%= nonconformance.item.number %>&nbsp<%= nonconformance.item.description %></h3>
+<div class="alert alert-success span1 pull-left"><%= number_to_currency(nonconformance.instances.sum { |p| p.quantity * nonconformance.component.price_per_purchase_unit }) %></div>
+
+<% nonconformance.instances.each do |instance| %>
+      <% if instance.asset.file? %>
+    <div class="span2 pull-right"><%=link_to image_tag(instance.asset.url(:small)), instance.asset.url, :class => 'iframe' %></div>
+        <% else %>
+
+        <% end %>
+	 <% if instance.asset2.file? %>
+    <div class="span2 pull-right"><%=link_to image_tag(instance.asset2.url(:small)), instance.asset2.url, :class => 'iframe' %></div>
+        <% else %>
+
+        <% end %>
+
+
+<% end %>
+
+
+      <%= link_to "(edit)", edit_nonconformance_path(nonconformance), :class => "pull-right" %></br></br></br>
+      <h3><%= nonconformance.component.number %>&nbsp<%= nonconformance.component.sk_description %></h3>
       </br>
       <p><%= nonconformance.reason %></p>
    <%= link_to "Add new instance", new_nonconformance_instance_path(nonconformance), :class => "btn pull-right" %>

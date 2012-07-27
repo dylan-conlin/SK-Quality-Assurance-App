@@ -9,13 +9,13 @@
     <%= f.input :nonconformance_id %>
     <%= f.input :user_id %>
     <%= f.input :workorder %>
-    <%= f.input :lot %>
-    <%= f.input :sublot %>
-    <%= f.input :quantity %>
-    <%= f.input :units %>
-    <%= f.input :location %>
-    <%= f.input :labor %>
-    <%= f.input :labor_units %>
+    <%= f.input :lot, :label => "SK lot number" %>
+    <%= f.input :sublot, :label => "SK sublot number" %>
+    <%= f.input :quantity, :label => "quantity (in " + @nonconformance.component.purchase_unit + "'s)" %>
+
+    <%= f.input :location, :label => "Location NC was found" %>
+    <%= f.input :labor, :label => "labor (in hours)" %>
+
     <%= f.input :user_id %>
     <%= f.file_field :asset %>
     <%= f.file_field :asset2 %>

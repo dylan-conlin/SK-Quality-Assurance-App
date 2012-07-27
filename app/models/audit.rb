@@ -3,6 +3,7 @@ class Audit < ActiveRecord::Base
 
 belongs_to :user
 
+validates  :cutting_tools, :data_collection, :dishwasher, :metal_detection, :mps, :sanitizer, :tunnel_temperature, :map, :gmp, :packaging, length: { maximum: 500 }
 
 
 include PgSearch
