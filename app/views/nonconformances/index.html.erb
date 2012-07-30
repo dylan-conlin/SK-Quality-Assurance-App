@@ -17,14 +17,15 @@
 <div>
   
   <div class="container-fluid well row">
-    <span class="pull-left label label-success">
+    <div class=" alert alert-success">
       <%= number_to_currency(nonconformance.instances.sum { |p| p.quantity * nonconformance.component.price_per_purchase_unit + p.labor * nonconformance.labor_cost }) %>
-    </span>
-</br></br>
+    </div>
+
 <div class="span5">
   <h3><%= nonconformance.component.number %>&nbsp<%= nonconformance.component.sk_description %></h3>
        </br>
   <p><%= nonconformance.reason %>&nbsp<%= link_to "(edit)", edit_nonconformance_path(nonconformance), :class => "" %></p>
+
   <% if current_user.nc_admin == true %>
   <%= form_for nonconformance, :remote => true do |f| %>
   <div class="disabled">
@@ -143,15 +144,7 @@
 
 
 
-
-
-
 <% end %>
-
-
-
-
-
 
 
 
