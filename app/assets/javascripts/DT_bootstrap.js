@@ -1,3 +1,5 @@
+
+
 /* Default class modification */
 $.extend( $.fn.dataTableExt.oStdClasses, {
 	"sWrapper": "dataTables_wrapper form-inline"
@@ -97,33 +99,10 @@ $.extend( $.fn.dataTableExt.oPagination, {
 /* Table initialisation */
 $(document).ready(function() {
 	$('#prettytable').dataTable( {
-	    "sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
-  	    "sPaginationType": "bootstrap",
-            "sScrollX": "100%",
-            "bScrollCollapse": false,
-             //this is the default sorting. it's set to sort the first column
-	    "aaSorting": [[ 0, "desc" ]],
-			"oLanguage": {
+		"sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
+		"sPaginationType": "bootstrap",
+		"oLanguage": {
 			"sLengthMenu": "_MENU_ records per page"
-
 		}
-
-	} );
-
-} );
-
-$(document).ready(function() {
-	$('#prettytableinfractions').dataTable( {
-	    "sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
-  	    "sPaginationType": "bootstrap",
-            "sScrollX": "100%",
-            "bScrollCollapse": false,
-             //this is the default sorting. it's set to sort the first column
-	    "aaSorting": [[ 2, "desc" ]],
-			"oLanguage": {
-			"sLengthMenu": "_MENU_ records per page"
-
-		}
-
 	} );
 } );
