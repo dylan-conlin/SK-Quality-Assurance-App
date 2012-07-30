@@ -15,7 +15,8 @@
   <tr>
     <td><%= @production_check.created_at.strftime("%D %r") %></td>
 
-    <td><%= link_to @production_check.user.name, @production_check.user %></td>
+
+    <td><%= @production_check.user.name %></td>
     <td><%= @production_check.workorder %></td>
 
     <% if @production_check.label_readability == true %>
