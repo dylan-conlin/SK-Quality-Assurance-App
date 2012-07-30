@@ -3,4 +3,6 @@ class Supplier < ActiveRecord::Base
 
 has_many :components
 
+  validates_uniqueness_of :name, :allow_blank => false
+
 end

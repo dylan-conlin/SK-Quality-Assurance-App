@@ -22,11 +22,11 @@
     <th>Lot</th>
     <th>Sublot</th>
     <th>Quantity</th>
-
+    <th>Units</th>
     <th>Location</th>
     <th>Labor</th>
-
-    <th>Stocker</th>
+    <th>Labor units</th>
+    <th>User</th>
     <th></th>
     <th></th>
     <th></th>
@@ -40,11 +40,11 @@
     <td><%= instance.lot %></td>
     <td><%= instance.sublot %></td>
     <td><%= instance.quantity %></td>
-
+    <td><%= instance.units %></td>
     <td><%= instance.location %></td>
     <td><%= instance.labor %></td>
-
-    <td><%= instance.stocker_id %></td>
+    <td><%= instance.labor_units %></td>
+    <td><%= instance.user_id %></td>
 
       <% if instance.asset.file? %>
     <td><div class="span2"><%=link_to image_tag(instance.asset.url(:small)), instance.asset.url, :class => 'iframe' %></div></td>

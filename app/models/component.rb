@@ -3,5 +3,5 @@ class Component < ActiveRecord::Base
 
 belongs_to :supplier
 has_many :nonconformances
-
+validates_uniqueness_of :number, :allow_blank => false
 end

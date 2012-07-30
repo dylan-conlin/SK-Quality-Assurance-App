@@ -1,6 +1,6 @@
 development:
   adapter: postgresql
-  database: mydb
+  database: postgresql
   username:  # replace this with your own user name
   password:  # replace this with your own password
   host: localhost

@@ -3,6 +3,9 @@ class User < ActiveRecord::Base
   has_secure_password
   has_many :issues
   has_many :nonconformances
+  
+  has_many :instances
+
   has_many :production_checks
   has_many :comments
   has_many :audits
