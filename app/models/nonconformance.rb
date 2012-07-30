@@ -1,3 +1,4 @@
+
 class Nonconformance < ActiveRecord::Base
   attr_accessible :reason, :user_id, :component_id, :status, :instances_attributes
   before_create :set_status, :set_labor_cost
@@ -19,6 +20,6 @@ private
     end
 
     def set_labor_cost
-      self.labor_cost = 15.50
+      self.labor_cost = 15.2
     end
 end

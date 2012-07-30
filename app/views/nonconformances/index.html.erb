@@ -1,44 +1,47 @@
-<h1>Listing nonconformances</h1>
 
-
-
-
-<%= link_to(new_nonconformance_path, :class => 'btn btn-mini') do %>
-<i class="icon-plus-sign"></i> New Nonconformance
-<% end %></br></br>
-<% open_ncs = Nonconformance.open.count %>
-<% in_process = Nonconformance.in_process.count %>
-<div class="pull-right"><%= link_to "Open (#{open_ncs})", :status => "Open" %> | <%= link_to "In Process (#{in_process})", :status => "In Process" %></div>
-
-</br>
-</br>
-
+<div class="row" style="display:inline;">
+  <%= link_to(new_nonconformance_path, :class => 'btn btn-mini') do %>
+  <i class="icon-plus-sign"></i> New Nonconformance
+  <% end %>
+      </br>
+      <% open_ncs = Nonconformance.open.count %>
+      <% in_process = Nonconformance.in_process.count %>
+      <div class="pull-right"><%= link_to "Open (#{open_ncs})", :status => "Open" %> | <%= link_to "In Process (#{in_process})", :status => "In Process" %></div>
+      
+    </br>
+    
+    
+</div>
 <% @nonconformances.each do |nonconformance| %>
 
-<div class="container-fluid">
-
+<div>
+  
   <div class="container-fluid well row">
-      <span class="label label-success pull-right">
-	Total Cost:<%= number_to_currency(nonconformance.instances.sum { |p| p.quantity * nonconformance.component.price_per_purchase_unit + p.labor * nonconformance.labor_cost }) %>
-      </span>
-    <div class="span4">
-      <h3><%= nonconformance.component.number %>&nbsp<%= nonconformance.component.sk_description %></h3>
+    <span class="pull-left label label-success">
+      <%= number_to_currency(nonconformance.instances.sum { |p| p.quantity * nonconformance.component.price_per_purchase_unit + p.labor * nonconformance.labor_cost }) %>
+    </span>
+</br></br>
+<div class="span5">
+  <h3><%= nonconformance.component.number %>&nbsp<%= nonconformance.component.sk_description %></h3>
        </br>
-      <p><%= nonconformance.reason %>&nbsp<%= link_to "(edit)", edit_nonconformance_path(nonconformance), :class => "" %></p>
-      <% if current_user.nc_admin == true %>
-      <%= form_for nonconformance, :remote => true do |f| %>
-      <div class="disabled">
-	<%= f.select :status, [['Open'],['In Process']], {}, {:onChange => 'this.form.submit();' } %>
-	<div class="timestamp">
-	  this field is only visible to nc admins
-	</div>
-      </div>
-      <% end %>
-      <% end %>
+  <p><%= nonconformance.reason %>&nbsp<%= link_to "(edit)", edit_nonconformance_path(nonconformance), :class => "" %></p>
+  <% if current_user.nc_admin == true %>
+  <%= form_for nonconformance, :remote => true do |f| %>
+  <div class="disabled">
+    <%= f.select :status, [['Open'],['In Process']], {}, {:onChange => 'this.form.submit();' } %>
+    <div class="timestamp">
+      this field is only visible to nc admins
     </div>
+  </div>
+  <% end %>
+  <% end %>
 
 
-    <div class="well offset4 ">
+     <div class="timestamp pull-left">
+  created on <%= nonconformance.created_at.strftime("%D at about %l %P") %> by <%= link_to nonconformance.user.name, nonconformance.user %>
+      </div>
+</div>
+    <div class="well">
       <% nonconformance.instances.each do |instance| %>
       <% if instance.asset.file? %>
 
@@ -63,11 +66,6 @@
       </div>
       <%= link_to "Add new instance", new_nonconformance_instance_path(nonconformance), :class => "btn btn-primary span2" %>&nbsp
     </div>      
-    <div class="timestamp pull-left">
-	created on <%= nonconformance.created_at.strftime("%D at about %l %P") %> by <%= link_to nonconformance.user.name, nonconformance.user %>
-      </div>
-
-
 
     
   </div>    

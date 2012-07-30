@@ -1,6 +1,6 @@
 development:
   adapter: postgresql
-  database: postgresql
+  database: mydb
   username:  # replace this with your own user name
   password:  # replace this with your own password
   host: localhost
@@ -12,7 +12,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: postgres
+  database: mydb
   pool: 5
   username: 
   password: 

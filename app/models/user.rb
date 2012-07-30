@@ -1,11 +1,9 @@
 class User < ActiveRecord::Base
-  attr_accessible :name, :email, :password, :password_confirmation, :department_id, :user_id, :supervisor, :title, :hire_date
+  attr_accessible :name, :email, :password, :password_confirmation, :department_id, :user_id, :supervisor, :title, :hire_date, :receives_production_check_alert
   has_secure_password
   has_many :issues
   has_many :nonconformances
-  
   has_many :instances
-
   has_many :production_checks
   has_many :comments
   has_many :audits
@@ -27,7 +25,7 @@ class User < ActiveRecord::Base
   validates :email, presence: true, format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
   validates :password, length: { minimum: 6 }
-  validates :password_confirmation, presence: true
+  validates :password_confirmation, presence: true 
   validates :user_id, presence: true
   validates :department_id, presence: true
   default_scope order: 'name ASC'

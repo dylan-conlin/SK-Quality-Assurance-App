@@ -4,6 +4,7 @@ class ProductionChecksController < ApplicationController
   # GET /production_checks
   # GET /production_checks.json
   def index
+
     @production_checks = ProductionCheck.order(sort_column + " " + sort_direction).text_search(params[:query]).paginate(:per_page => 5, :page => params[:page])
 
   end
@@ -42,7 +43,13 @@ class ProductionChecksController < ApplicationController
 
     respond_to do |format|
       if @production_check.save
-        format.html { redirect_to @production_check, notice: 'Production check was successfully created.' }
+        if [@production_check.label_readability, 
+            @production_check.label_accuracy,
+            @production_check.seal_integrity,
+            @production_check.build_accuracy].include? true
+          UserMailer.production_check_alert(User.where(:receives_production_check_alert => true),@production_check).deliver
+        end
+        format.html { redirect_to production_checks_path, notice: 'Production check was successfully created.' }
         format.json { render json: @production_check, status: :created, location: @production_check }
       else
         format.html { render action: "new" }

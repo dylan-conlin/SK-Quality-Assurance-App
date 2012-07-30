@@ -9,12 +9,16 @@ class UserMailer < ActionMailer::Base
 
     def signup_confirmation(user)
       @user = user
+      
       mail to: user.email, subject: "Sign Up Confirmation"
     end
 
-    def above_temp(user)
-      @user = user
-      mail to: user.email, subject: "above temp!"
+    def production_check_alert(users,production_check)
+      @users = users
+      @production_check = production_check
+
+      mail to: @users.map {|user| user.email}, subject: "production check alert; WO: #{@production_check.workorder}"
+
     end
 
     def notify_on_new_comment(bcc,content,commenter,issue,comments)

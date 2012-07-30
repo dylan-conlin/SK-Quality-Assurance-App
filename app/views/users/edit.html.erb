@@ -10,6 +10,8 @@
     <%= f.input :hire_date, :input_html => { :class => "span6" } %>
     <%= f.input :user_id, :collection => User.where(:supervisor => true), :label => 'Who is your direct supervisor?', :input_html => { :class => "span6" }%>
     <%= f.input :supervisor, :label => 'Do you have any direct reports?' %>
+    would you like to receive production check alerts?
+    <%= f.check_box :receives_production_check_alert %>
   <div class="form-actions">
     <%= f.submit "Save changes", :class => "btn btn-large btn-primary" %>
   </div>
