@@ -12,6 +12,9 @@ class NonconformancesController < ApplicationController
           @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 5, :page => params[:page])
     elsif ["Logistics"].include?(current_user.department.name)
           @nonconformances = Nonconformance.in_process.order(sort_column + " " + sort_direction).paginate(:per_page => 5, :page => params[:page])
+    else   
+          @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 5, :page => params[:page])
+
     end
 
     if params[:status] == "Open"
