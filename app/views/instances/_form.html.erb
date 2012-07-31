@@ -16,7 +16,9 @@
     <%= f.collection_select :stocker_id, User.all, :id, :name, :include_blank => false %></br></br>
 
     <% if current_user.nc_admin == true %>
-      fuckstick
+      
+
+    fuckstick
     <% end %>
     <h4>images</h4></br>
     <%= f.file_field :asset %></br>

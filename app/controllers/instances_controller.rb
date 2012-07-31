@@ -26,13 +26,13 @@ class InstancesController < ApplicationController
   # GET /instances/new
   # GET /instances/new.json
   def new
-    @nonconformance = current_user.nonconformances.find(params[:nonconformance_id])
+    @nonconformance = Nonconformance.find(params[:nonconformance_id])
     @instance = @nonconformance.instances.build
  end
 
  
   def edit
-    @nonconformance = current_user.nonconformances.find(params[:nonconformance_id])
+    @nonconformance = Nonconformance.find(params[:nonconformance_id])
     @instance = Instance.find(params[:id])
 
   end
@@ -40,7 +40,7 @@ class InstancesController < ApplicationController
   # POST /instances
   # POST /instances.json
   def create
-    @nonconformance = current_user.nonconformances.find(params[:nonconformance_id])    
+    @nonconformance = Nonconformance.find(params[:nonconformance_id])    
     @instance = @nonconformance.instances.build(params[:instance].merge(:user_id => current_user.id))
 
 
