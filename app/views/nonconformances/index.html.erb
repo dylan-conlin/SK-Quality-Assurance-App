@@ -86,6 +86,9 @@
 	<th>Location</th>
 	<th>Labor</th>
 	<th>RTS by</th>
+	<th>Supplier Lot</th>
+	<th>PO Number</th>
+	<th>Receipt Date</th>
       </tr>
       
       
@@ -106,7 +109,9 @@
 	<td><%= instance.location %></td>
 	<td><%= instance.labor %> hrs</td>
 	<td><%= link_to instance.stocker.name, instance.stocker %></td>
-	
+	<td><%= instance.supplier_lot %></td>
+	<td><%= instance.po_number %></td>
+	<td><%= instance.receipt_date %></td>
 	<td><div class="span5">	
 	<% if instance.asset.file? %>
         <%=link_to image_tag(instance.asset.url(:small)), instance.asset.url, :class => 'iframe' %>
@@ -145,8 +150,6 @@
 
 
 <% end %>
-
-
 
 <%= will_paginate @nonconformances %>
 

@@ -1,131 +1,130 @@
-name
-SYSFOO
-KENLAN
-BELMAR
-ULINE
-LABBAK
-BRABRO
-MICFOO
-PATCUD
-SCHFOO
-WELLFAR
-MIKFOO
-JONDAI
-CONFOO
-SUMPAC
-UNIFOO
-KINCOM
-UNIWOR
-PLASUP
-DPINOR
-RELWES
-JENTUR
-SUPFAR
-ALPFOO
-PACCHEE
-JETLAB
-OMEPRO
-NATSTE
-STUBAK
-LANUNI
-INLPAC
-SARFOO
-CLOFOO
-NORSID
-MCCFOO
-ECHLAK
-RALFRO
-GEOPAC
-TEMINL
-DAMBAK
-HARFOO
-BAKCRA
-DOTFOO
-HEIFOO
-THEPAC
-KELCOM
-HORFOO
-GOLSTA
-ROSPAC
-TILCOU
-LONSTA
-GAIBAK
-CARKIT
-BEEBEE
-ROTILA
-ROSCIT
-CURFOO
-PLYPOU
-BURFOO
-PRASTA
-NAVIND
-WCPSOL
-VENFOO
-REDSER
-HOURAE
-CREBAK
-BRUPAC
-PILPRI
-KRAFOO
-SARTOT
-OTTFOO
-PROPOR
-NATFAM
-TWOCHE
-ALPBAK
-FRESCA
-PALBRO
-RISSUN
-SARLEE
-SANBAR
-CMFOOD
-GOGBAK
-HEMFOO
-BAGCRA
-FRESTA
-BUTFAR
-VANDRU
-SUNFOO
-OLASPI
-FOOMAT
-LEEKUM
-AMEROL
-WHITOQ
-TRIMED
-CRALAB
-INNASI
-G2LAB
-SEVFOO
-LABTEC
-NESUSA
-AIRNCN
-LITKEN
-TRIFOO
-DIEWAT
-INTSAF
-BUNLIV
-SUTCOM
-CANFOO
-USFOOD
-INDDIS
-HEABAK
-VIDJET
-AIRLIQ
-CALFOO
-BAKUSA
-MAPNOR
-MICDAC
-SEABAG
-AMYKIT
-TRECOR
-GRAING
-FORPAC
-MCMCAR
-PROFAB
-MULSOU
-STAPLES
-CHDIST
-CRYICE
-NELJAM
-WESCOM
-flunky
+name,link_id,long_name,contact_name,contact_email
+SYSFOO,1,Hormel Financial Services,,
+KENLAN,2,Landsberg,,
+BELMAR,3,,,
+ULINE,4,,,
+LABBAK,5,La Brea Bakery,Kristina Dermody,KDermody@labreabakery.com
+BRABRO,6,Brakebush Bros.,,
+MICFOO,7,Michael Foods,John Wunderl,John.Wunderl@michaelfoods.com
+PATCUD,8,Patrick Cudahy,John Zimmer,johnzimmer@patrickcudahy.com
+SCHFOO,9,Schreiber Foods Inc.,Melissa Brady,Melissa.Brady@schreiberfoods.com
+WELLFAR,10,Wellshire Farms Inc.,,
+MIKFOO,11,,,
+JONDAI,12,Jones Dairy Farm,Bryon Coleman,bryonc@jonesdairyfarm.com
+CONFOO,13,Conagra Food Ingredients,,
+SUMPAC,14,Summit Packaging Inc.,,
+UNIFOO,15,,,
+KINCOM,16,Kings Command,,
+UNIWOR,17,Unisource Worldwide,Dave Presba,dave.presba@unisourcelink.com
+PLASUP,18,,,
+DPINOR,19,Dpi Northwest,,
+RELWES,20,Relm West,Nancy Williams,nwilliams@relmwest.com
+JENTUR,21,Jennie-O Turkey,Karl Kaufmann,kgkaufman@j-ots.com
+SUPFAR,22,Supherb Farms,Mike Brem,mbrem@supherbfarms.com
+ALPFOO,23,,,
+PACCHEE,24,Pacific Cheese,,
+JETLAB,25,Jet City Label,,
+OMEPRO,26,,,
+NATSTE,27,,,
+STUBAK,28,Stuyvers Bakery,Zahwil Dossa,dossa@stuyversbakestudio.com
+LANUNI,29,Lantmannen Unibake Usa Inc.,,
+INLPAC,30,Inline Packaging,,
+SARFOO,31,Sargento Foods,,
+CLOFOO,32,Cloverdale Foods Company,,
+NORSID,33,North Side Foods Corp.,John Zimmer,johnzimmer@patrickcudahy.com
+MCCFOO,34,Mccain Foods Usa,Peggy Davies,peggy.davies@mccain.com
+ECHLAK,35,Echo Lake Foods,Scott Hall,shall@echolakefoods.com
+RALFRO,36,Ralcorp Frozen Bakery Products,,
+GEOPAC,37,,,
+TEMINL,38,Temple Inland,Ryan Trout,RyanTrout@templeinland.com
+DAMBAK,39,Damascus Bakery,David Mafoud,DAVID@damascusbakery.com
+HARFOO,40,Harvest Food Group,John Vanek,john@harvestfoodgroup.com
+BAKCRA,41,Bake Crafters Food Company,,
+DOTFOO,42,Sara Lee Foods,,
+HEIFOO,43,,,
+THEPAC,44,Thermo Pac, LLC,,
+KELCOM,45,Kellogg Company,,
+HORFOO,46,Hormel Financial Services,,
+GOLSTA,47,Gold Standard Baking Inc.,,
+ROSPAC,48,Rose Packing Company Inc.,,
+TILCOU,49,Tillamook County Creamery,Steve Kallen,skallen@tillamookcheese.com
+LONSTA,50,,,
+GAIBAK,51,Franz Family Bakeries,,
+CARKIT,52,,,
+BEEBEE,53,Bee Bee Que,,
+ROTILA,54,Rotellas Italian Bakery,,
+ROSCIT,55,Rose City Printing & Packaging,Kathryn Rautenbach,krautenbach@rcpp.com
+CURFOO,56,Curlys Foods,John Zimmer,johnzimmer@patrickcudahy.com
+PLYPOU,57,Plymouth Poultry ,,
+BURFOO,58,Burry Foodservice,Gerard Mitchell,Gerard.Mitchell@BurryFoods.com
+PRASTA,59,Prairie State Impressions,Graham Redding,g.redding@psglabels.com
+NAVIND,60,Navis Industries,Scott Griffith,scott@navisfilms.com
+WCPSOL,61,WCP Solutions,Susan Maas,smaas@wcpc.com
+VENFOO,62,,,
+REDSER,63,,,
+HOURAE,64,,,
+CREBAK,65,,,
+BRUPAC,66,Bruce Pac Meat Product Designers,Wayne Shervey,wshervey@brucepac.com
+PILPRI,67,Pilgrims Pride Corp,,
+KRAFOO,68,Kraft Food Ingredients,,
+SARTOT,69,Saroni Total Food Ingredients,,
+OTTFOO,70,Ott Food Products LLC,,
+PROPOR,71,,,
+NATFAM,72,Nathans Famous,,
+TWOCHE,73,,,
+ALPBAK,74,Alpha Baking,,
+FRESCA,75,Fresca,Kip Losey,klosey@frescamex.com
+PALBRO,76,Pallet Brothers,,
+RISSUN,77,Rising Sun Farms,,
+SARLEE,78,Sara Lee Foods,,
+SANBAR,79,Santa Barbara Bay Foods,Michael Monteferrante,Michael.Monteferrante@futurefoodbrands.com
+CMFOOD,80,C&M Foods,,
+GOGBAK,81,,,
+HEMFOO,82,HemplerS Food Group,Stephen Bates,Stephen.Bates@hemplers.com
+BAGCRA,83,,,
+FRESTA,84,Fresh Start Gourmet LLC,,
+BUTFAR,85,Butterball Farms,,
+VANDRU,86,Van Drunen Farms,Tim Zylstra,tzylstra@vandrunen.com
+SUNFOO,87,Sundown Foods USA,,
+OLASPI,88,OLAM Spice & Ingredients,Caitlin Griffin,Caitlin.Griffin@olamnet.com
+FOOMAT,89,Food Match,Nancy Lazara,nancy@foodmatch.com
+LEEKUM,90,Lee Kum Kee,Ray Wall,ray.wall@lkkusa.com
+AMEROL,91,American Roland,Scott Smolar,Scott.Smolar@rolandfood.com
+WHITOQ,92,White Toque,Didier Hevin,d.hevin@whitetoque.com
+TRIMED,93,Tribe Mediterannean,Steve Berman,s.berman@tribehummus.com
+CRALAB,94,Craftsman Label,John Bolan,jbolan@craftsmanlabel.com
+INNASI,95,InnovAsians Cuisine,Bill Schlobohm,bill.schlobohm@mac.com
+G2LAB,96,G2 Labels,David Frederick,dfrederick@g2labels.com
+SEVFOO,97,Seven Foods,,
+LABTEC,98,,,
+NESUSA,99,,,
+AIRNCN,100,,,
+LITKEN,101,,,
+TRIFOO,102,,,
+DIEWAT,103,Dietz & Watson,,
+INTSAF,104,,,
+BUNLIV,105,,,
+SUTCOM,106,The Suter Company,,
+CANFOO,107,,,
+USFOOD,108,US Food Service,,
+INDDIS,109,Inderbitzin Distributors. Inc.,,
+HEABAK,110,,,
+VIDJET,111,Videojet Technologies Inc.,Tammy Troche,Tammy.Troche@videojet.com
+AIRLIQ,112,,,
+CALFOO,113,,,
+BAKUSA,114,Bakemark USA,,
+MAPNOR,115,,,
+MICDAC,116,,,
+SEABAG,117,Seattle Bagel Bakery,A.J. Ghambari,aj@getboiled.com
+AMYKIT,118,Amys Kitchen Inc.,,
+TRECOR,119,Tegrant Corporation,,
+GRAING,120,,,
+FORPAC,121,,,
+MCMCAR,122,,,
+PROFAB,123,,,
+MULSOU,124,,,
+STAPLES,125,,,
+CHDIST,126,,,
+CRYICE,127,,,
+NELJAM,128,,,
+WESCOM,129,,,

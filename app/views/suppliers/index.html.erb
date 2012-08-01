@@ -1,9 +1,14 @@
 <h1>Listing suppliers</h1>
 
+
 <table>
   <tr>
     <th>ID</th>
     <th>Name</th>
+    <th>Long Name</th>
+    <th>Contact</th>
+    <th>Email</th>
+    <th>Link ID</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,6 +18,10 @@
   <tr>
     <td><%= supplier.id %></td>
     <td><%= supplier.name %></td>
+    <td><%= supplier.long_name %></td>
+    <td><%= supplier.contact_name %></td>
+    <td><%= supplier.contact_email %></td>
+    <td><%= supplier.link_id %></td>
     <td><%= link_to 'Show', supplier %></td>
     <td><%= link_to 'Edit', edit_supplier_path(supplier) %></td>
     <td><%= link_to 'Destroy', supplier, confirm: 'Are you sure?', method: :delete %></td>
