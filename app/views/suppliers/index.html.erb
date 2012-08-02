@@ -1,52 +1,31 @@
 <h1>Listing suppliers</h1>
 
-
-
+<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="prettytable">
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Long Name</th>
+    <th>Contact Name</th>
+    <th>Contact Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+</thead>
+<tbody>
 <% @suppliers.each do |supplier| %>
-
-<div class="container">  
-
-    <%= supplier.name %> 
-    <%= supplier.long_name %> 
-    <%= supplier.contact_name %> 
-    <address><a href="mailto:#"><%= supplier.contact_email %></a></address> 
-    <%= link_to 'Show', supplier %> 
-    <%= link_to 'Edit', edit_supplier_path(supplier) %> 
-    <%= link_to 'Destroy', supplier, confirm: 'Are you sure?', method: :delete %> 
-
-
-
-
-  <div class="container">
-    <p>
-      <h3>Item List</h3>
-      <% supplier.components.each do |component| %>
-      
-      
-      <ol><%= component.number %>: <%= component.sk_description %></ol>
-      <% end %>
-    </p>
-  </div>
-  <p>
-    
-    <% supplier.nonconformances.each do |nonconformance| %>
-    <div class="container">
-      <h3>NC List</h3>
-      <ol><%= nonconformance.component.number %>: <%= nonconformance.component.sk_description %></ol>
-      <p><%= nonconformance.reason %></p>
-    </div>
-    
-    <% end %>
-</div>
-</p>
-
-
-
-
-
-
+  <tr>
+    <td><%= supplier.name %></td>
+    <td><%= supplier.long_name %></td>
+    <td><%= supplier.contact_name %></td>
+    <td><address><a href="mailto:#"><%= supplier.contact_email %></a></address> </td>
+    <td><%= link_to 'Show', supplier %></td>
+    <td><%= link_to 'Edit', edit_supplier_path(supplier) %></td>
+    <td><%= link_to 'Destroy', supplier, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
 <% end %>
-
+</tbody>
+</table>
 
 <br />
 
