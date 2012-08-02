@@ -31,7 +31,7 @@
     
     <% supplier.nonconformances.each do |nonconformance| %>
     <div class="container">
-      <h3>NC List</h3>
+      <h3>NC List</h3> 
       <ol><%= nonconformance.component.number %>: <%= nonconformance.component.sk_description %></ol>
       <p><%= nonconformance.reason %></p>
     </div>
