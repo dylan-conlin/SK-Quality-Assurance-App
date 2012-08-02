@@ -1,15 +1,40 @@
+<div class="container-fluid well">
 <p id="notice"><%= notice %></p>
+<%= @supplier.long_name %> </br>
+<%= @supplier.name %> </br>
 
+<%= @supplier.contact_name %> </br>
+<address><a href="mailto:#"><%= @supplier.contact_email %></a></address> 
 <p>
-  <b>Name:</b>
-    <%= @supplier.long_name %>(<%= @supplier.name %>)
-    <%= @supplier.contact_name %>, <%= @supplier.contact_email %>
-    <% @supplier.components.each do |component| %>
-
-    <p><%= component.number %>: <%= component.sk_description %></p>
-    <% end %>
-</p>
-
-
 <%= link_to 'Edit', edit_supplier_path(@supplier) %> |
 <%= link_to 'Back', suppliers_path %>
+</p>
+<div>
+<div class="span5">
+  
+  <h3>Items</h3></br>
+  
+  <% @supplier.components.each do |component| %>
+  <ul>
+    <%= link_to component.number + ": " + component.sk_description, component %>
+  </ul>
+  <% end %>
+  
+</div>
+
+<div class="offset5">
+  
+  <h3>Nonconformances</h3></br>
+  <% @supplier.nonconformances.each do |nonconformance| %>
+  <ul>
+    <%= link_to nonconformance.component.number + " " + nonconformance.component.sk_description, nonconformance %>
+  </ul>
+  
+  <% end %>
+</div>
+</div>
+</div>
+
+
+
+
