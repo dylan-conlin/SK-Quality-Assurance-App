@@ -34,7 +34,23 @@
 
            <% end %>
 	  </li>
-            <!-- <li><%= link_to "Nonconformances", nonconformances_path %></li> -->
+
+
+	  <li id="fat-menu" class="dropdown">
+	    <a class=" dropdown-toggle" data-toggle="dropdown" href="#">
+	      Nonconformances<span class="caret"></span>
+            </a>
+              <ul class="dropdown-menu">
+            <li><%= link_to "Nonconformances", nonconformances_path %></li>
+                <li class="divider"></li>
+            <li><%= link_to "Suppliers", suppliers_path %></li>
+            <li><%= link_to "Components", components_path %></li>
+              </ul>
+	     </li> 
+
+
+
+
             <li><%= link_to "Packaging", packagings_path %></li>
 
             <li><%= link_to "Production Checks", production_checks_path %></li>
