@@ -1,9 +1,19 @@
 Hi <%= @user.name %>,
 
-Thanks for signing up!
+I just created an account for you in the QA web app! Now you can receive quality email alerts relevant to you and your department.
 
-<%= user_url(@user) %>
+Here's the link to the app: http://skfoodgroup.herokuapp.com
 
+and here are your login credentials:
+
+username: <%= @user.email %>
+password: password
+
+(don't forget to reset your password under settings at the top right!)
+
+Just how much you interact with this application is up to you; if you're interested, take a look around!
+
+Thanks,
 --
 Dylan Conlin, Quality Assurance Supervisor
 dylan.conlin@skfoodgroup.com | 1-503-272-1639

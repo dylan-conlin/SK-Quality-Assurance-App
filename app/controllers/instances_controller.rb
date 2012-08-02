@@ -47,7 +47,7 @@ class InstancesController < ApplicationController
 
     respond_to do |format|
       if @instance.save
-        format.html { redirect_to nonconformances_path, notice: 'Instance was successfully created.' }
+        format.html { redirect_to nonconformance_path(@nonconformance), notice: 'Instance was successfully created.' }
         format.json { render json: @instance, status: :created, location: @instance }
       else
         format.html { render action: "new" }

@@ -9,18 +9,18 @@ class NonconformancesController < ApplicationController
   def index
 
     if ["Quality Assurance", "Production"].include?(current_user.department.name)
-          @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 5, :page => params[:page])
+          @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
     elsif ["Logistics"].include?(current_user.department.name)
-          @nonconformances = Nonconformance.in_process.order(sort_column + " " + sort_direction).paginate(:per_page => 5, :page => params[:page])
+          @nonconformances = Nonconformance.in_process.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
     else   
-          @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 5, :page => params[:page])
+          @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
 
     end
 
     if params[:status] == "Open"
-      @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 5, :page => params[:page])
+      @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
     elsif params[:status] == "In Process"
-      @nonconformances = Nonconformance.in_process.order(sort_column + " " + sort_direction).paginate(:per_page => 5, :page => params[:page])
+      @nonconformances = Nonconformance.in_process.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
     end
 
 

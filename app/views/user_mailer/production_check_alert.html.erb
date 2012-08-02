@@ -1,55 +1,143 @@
-<table border="1">
-  <tr>
-    <th>Check Time</th>
-    <th>Checked By</th>   
-    <th>Workorder</th>   
-    <th>Label readability</th>
-    <th>Label accuracy</th>
-    <th>Seal integrity</th>
-    <th>Build accuracy</th>
-    <th>Comments</th>   
+<table style="border:1px solid #98bf21">
+  <tr style="font-size:1em;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;">
+    <th style="font-size:1.1em;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#A7C942;
+color:#ffffff;">Check Time</th>
+    <th style="font-size:1.1em;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#A7C942;
+color:#ffffff;">Checked By</th>   
+    <th style="font-size:1.1em;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#A7C942;
+color:#ffffff;">Workorder</th>   
+    <th style="font-size:1.1em;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#A7C942;
+color:#ffffff;">Label readability</th>
+    <th style="font-size:1.1em;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#A7C942;
+color:#ffffff;">Label accuracy</th>
+    <th style="font-size:1.1em;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#A7C942;
+color:#ffffff;">Seal integrity</th>
+    <th style="font-size:1.1em;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#A7C942;
+color:#ffffff;">Build accuracy</th>
+    <th style="font-size:1.1em;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#A7C942;
+color:#ffffff;">Comments</th>   
 
   </tr>
 
 
   <tr>
-    <td><%= @production_check.created_at.strftime("%D %r") %></td>
+    <td style="font-size:1em;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;"><%= @production_check.created_at.strftime("%D %r") %></td>
 
 
-    <td><%= @production_check.user.name %></td>
-    <td><%= @production_check.workorder %></td>
+    <td style="font-size:1em;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;"><%= @production_check.user.name %></td>
+    <td style="font-size:1em;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;"><%= @production_check.workorder %></td>
 
     <% if @production_check.label_readability == true %>
-    <td>Fail</td>
+    <td style="font-size:1em;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;">Fail</td>
     <% else %>
-    <td>Pass</td>
+    <td style="font-size:1em;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;">Pass</td>
     <% end %>
 
     <% if @production_check.label_accuracy == true %>
-    <td>Fail</td>
+    <td style="font-size:1em;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;">Fail</td>
     <% else %>
-    <td>Pass</td>
+    <td style="font-size:1em;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;">Pass</td>
     <% end %>
 
 
     <% if @production_check.seal_integrity == true %>
-    <td>Fail</td>
+    <td style="font-size:1em;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;">Fail</td>
     <% else %>
-    <td>Pass</td>
+    <td style="font-size:1em;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;">Pass</td>
     <% end %>
 
     <% if @production_check.build_accuracy == true %>
-    <td>Fail</td>
+    <td style="font-size:1em;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;">Fail</td>
     <% else %>
-    <td>Pass</td>
+    <td style="font-size:1em;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;">Pass</td>
     <% end %>
 
 
-    <td><%= @production_check.comments %></td>
+    <td style="font-size:1em;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;"><%= @production_check.comments %></td>
 
 
 </table>
+</br>
+</br>
+<p style="color:gray;">
+  Production checks are performed once every 20 minutes per active workorder. 
+  The following qualities are reviewed:
+  <ul style="color:gray;">
 
+    <li>
+      <strong>Label Readability:</strong> Is the label clearly printed and easily readable?
+    </li>
 
+    <li>
+      <strong>Label Accuracy:</strong> Is the content on the label correct? Is the label date correct?
+    </li>
 
+    <li>
+    <strong>Seal Integrity:</strong> Does the package hold air when softly squeezed? Are the seals free of foreign material?
+    </li>
+
+    <li>
+    <strong>Build Accuracy:</strong> Is the product built correctly? Does it contain the correct components in the proper proportions?
+    </li>
+
+  </ul>
+</p>
 

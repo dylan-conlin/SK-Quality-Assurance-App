@@ -1,96 +1,130 @@
+<div>
+  <div class="nonconformance-summary">
 
-<p id="notice"><%= notice %></p>
+      <div class="span1">
+	<%= number_to_currency(@nonconformance.instances.sum { |p|
+	p.quantity * @nonconformance.component.price_per_purchase_unit
+	+ p.labor * @nonconformance.labor_cost }) %>
+      </div>
 
-<p>
-  <b>Component:</b>
-  <%= @nonconformance.component.number %>&nbsp<%= @nonconformance.component.sk_description %>
-</p>
-<p>
-  <b>Reason:</b>
-  <%= @nonconformance.reason %>&nbsp(<%= link_to 'Edit', edit_nonconformance_path(@nonconformance) %>)
-</p>
+      <div class="span9">
+      <h3><%= @nonconformance.component.number + ": " +
+      @nonconformance.component.sk_description
+      %></h3>
+
+    </div>
+  </div>        
+
+      <p>
+	<div class="offset1">
+	  <%= @nonconformance.reason %>
+	  </br></br>
+	  <% if current_user.nc_admin == true %>
+	  <%= form_for @nonconformance, :remote => true do |f| %>
+
+	  <%= f.select :status, [['Open'],['In Process']], {}, {:onChange =>
+	  'this.for m.submit();' } %>
+	  <div class="timestamp">
+	    this field is only visible to nc admins
+	  </div>
+	  
+	  <% end %>
+	  <% end %>
+
+	  <h4>Instances</h4>
+	  <%= link_to "Add new instance", new_nonconformance_instance_path(@nonconformance), :class => "btn btn-primary span2 pull-right" %>&nbsp
+
+	  <div class="scrollable">
+	    <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered">
+	      <tr>
+
+		<th>Created on</th>
+		<th>Created by</th>
+		<th>Workorder</th>
+		<th>SK Component Lot</th>
+		<th>SK Component Sublot</th>
+		<th>Quantity</th>
+		<th>Location</th>
+		<th>Labor</th>
+		<th>RTS by</th>
+		<th>Supplier Lot</th>
+		<th>PO Number</th>
+		<th>Receipt Date</th>
+	      </tr>
+	      
+	      
+	      
+	      
+	      <% @nonconformance.instances.each do |instance| %>
+	      
+	      
+	      <tr>
+
+		<td><%= instance.created_at.strftime("%D %l %P") %></td>
+		<td><%= link_to instance.user.name, instance.user %></td>
+		<td><%= instance.workorder %></td>
+		<td><%= instance.lot %></td>
+		<td><%= instance.sublot %></td>
+		<td><%= instance.quantity %> <%= instance.nonconformance.component.purchase_unit %></td>
+
+		<td><%= instance.location %></td>
+		<td><%= instance.labor %> hrs</td>
+		<td><%= link_to instance.stocker.name, instance.stocker %></td>
+		<td><%= instance.supplier_lot %></td>
+		<td><%= instance.po_number %></td>
+		<td><%= instance.receipt_date %></td>
+		<td><div class="span5">	
+		    <% if instance.asset.file? %>
+		    <%=link_to image_tag(instance.asset.url(:small)), instance.asset.url, :class => 'iframe' %>
+		    <% else %>
+
+		    <% end %>
+
+		    <% if instance.asset2.file? %>
+		    <%=link_to image_tag(instance.asset2.url(:small)), instance.asset2.url, :class => 'iframe' %>
+		    <% else %>
+
+		    <% end %>
+
+		    <% if instance.asset3.file? %>
+		    <%=link_to image_tag(instance.asset3.url(:small)), instance.asset3.url, :class => 'iframe' %>
+		    <% else %>
+
+		    <% end %>
+
+		    <% if instance.asset4.file? %>
+		    <%=link_to image_tag(instance.asset4.url(:small)), instance.asset4.url, :class => 'iframe' %>
+
+		    <% else %>
+		    <% end %>
+		  </div>
+		</td>
+		<td>	
+		  <%= link_to "edit", edit_nonconformance_instance_path(@nonconformance, instance) %>
+		</td>
+	      </tr>
+	      <% end %>
+	    </table>
+	  </div>
+	</div>
 
 
 
-</br>
-</br>
-<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="prettytable">
-  <tr>
 
-    <th>User</th>
-    <th>Workorder</th>
-    <th>Lot</th>
-    <th>Sublot</th>
-    <th>Quantity</th>
-
-    <th>Location</th>
-    <th>Labor</th>
-
-    <th>Stocker</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @nonconformance.instances.each do |instance| %>
-  <tr>
-
-    <td><%= instance.user_id %></td>
-    <td><%= instance.workorder %></td>
-    <td><%= instance.lot %></td>
-    <td><%= instance.sublot %></td>
-    <td><%= instance.quantity %></td>
-
-    <td><%= instance.location %></td>
-    <td><%= instance.labor %></td>
-
-    <td><%= instance.stocker_id %></td>
-
-      <% if instance.asset.file? %>
-    <td><div class="span2"><%=link_to image_tag(instance.asset.url(:small)), instance.asset.url, :class => 'iframe' %></div></td>
-        <% else %>
-    <td>no image</td>
-        <% end %>
-
-      <% if instance.asset2.file? %>
-    <td><div class="span2"><%=link_to image_tag(instance.asset2.url(:small)), instance.asset2.url, :class => 'iframe' %></div></td>
-        <% else %>
-    <td>no image</td>
-        <% end %>
-
-      <% if instance.asset3.file? %>
-    <td><div class="span2"><%=link_to image_tag(instance.asset3.url(:small)), instance.asset3.url, :class => 'iframe' %></div></td>
-        <% else %>
-    <td>no image</td>
-        <% end %>
-
-      <% if instance.asset4.file? %>
-    <td><div class="span2"><%=link_to image_tag(instance.asset4.url(:small)), instance.asset4.url, :class => 'iframe' %></div></td>
-        <% else %>
-    <td>no image</td>
-        <% end %>
-
-    <td>	
-
-		       
-<%= link_to 'Edit', edit_nonconformance_instance_path(@nonconformance,instance) %>|
-<%= link_to 'Delete', nonconformance_instance_path(@nonconformance,instance), confirm: 'Are you sure?', method: :delete %>
-    </td>
-
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'Add', new_nonconformance_instance_path(@nonconformance) %>
-
-
-
-<%= link_to 'Back', nonconformances_path %>
+	</div>      
 
 
 
 
+	</div>
+      </p>
 
+      <div class="timestamp pull-right">
+	<%= time_ago_in_words(@nonconformance.created_at) %> ago by
+	<%= link_to @nonconformance.user.name, @nonconformance.user %>
+      </div>    
+
+
+
+</div>    
 
