@@ -28,6 +28,7 @@ class InstancesController < ApplicationController
   def new
     @nonconformance = Nonconformance.find(params[:nonconformance_id])
     @instance = @nonconformance.instances.build
+    
  end
 
  

@@ -22,7 +22,9 @@
 </thead>
 <tbody>
 <% @components.each do |component| %>
-<% @supplier = Supplier.find(component.supplier_id)%>
+<% @supplier = Supplier.find(component.supplier_id) %>
+
+
   <tr>
     <td><%= component.number %></td>
     <td><%= component.status %></td>
@@ -34,7 +36,7 @@
     <td><%= component.pur_stk_conversion %></td>
     <td><%= component.price_per_stock_unit %></td>
     <td><%= component.price_per_purchase_unit %></td>
-    <td><%= @supplier.name %></td>
+    <td><%= @supplier.name %>
     <td><%= link_to 'Show', component %></td>
     <td><%= link_to 'Edit', edit_component_path(component) %></td>
     <td><%= link_to 'Destroy', component, confirm: 'Are you sure?', method: :delete %></td>

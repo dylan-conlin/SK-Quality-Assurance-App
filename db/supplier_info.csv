@@ -1,4 +1,4 @@
-name,link_id,long_name,contact_name,contact_email
+name,id,long_name,contact_name,contact_email
 SYSFOO,1,Hormel Financial Services,,
 KENLAN,2,Landsberg,,
 BELMAR,3,,,

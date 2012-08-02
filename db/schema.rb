@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120801002948) do
+ActiveRecord::Schema.define(:version => 20120801220135) do
 
   create_table "assets", :force => true do |t|
     t.string   "asset_file_name"
@@ -77,10 +77,11 @@ ActiveRecord::Schema.define(:version => 20120801002948) do
     t.integer  "pur_stk_conversion"
     t.decimal  "price_per_stock_unit"
     t.decimal  "price_per_purchase_unit"
-    t.integer  "supplier_id"
     t.datetime "created_at",              :null => false
     t.datetime "updated_at",              :null => false
     t.string   "supplier_description"
+    t.integer  "supplier_id"
+    t.integer  "link_id"
   end
 
   create_table "customers", :force => true do |t|
@@ -248,12 +249,11 @@ ActiveRecord::Schema.define(:version => 20120801002948) do
 
   create_table "suppliers", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
     t.string   "long_name"
     t.string   "contact_name"
     t.string   "contact_email"
-    t.integer  "link_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "tunneltemps", :force => true do |t|

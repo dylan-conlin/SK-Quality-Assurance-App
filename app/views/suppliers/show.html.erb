@@ -2,7 +2,12 @@
 
 <p>
   <b>Name:</b>
-  <%= @supplier.name %>
+    <%= @supplier.long_name %>(<%= @supplier.name %>)
+    <%= @supplier.contact_name %>, <%= @supplier.contact_email %>
+    <% @supplier.components.each do |component| %>
+
+    <p><%= component.number %>: <%= component.sk_description %></p>
+    <% end %>
 </p>
 
 

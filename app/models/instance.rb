@@ -1,6 +1,7 @@
 class Instance < ActiveRecord::Base
   attr_accessible :labor, :labor_units, :location, :lot, :nonconformance_id, :quantity, :sublot, :units, :user_id, :user_id, :workorder, :asset, :asset2, :asset3, :asset4, :stocker_id, :supplier_lot, :po_number, :receipt_date
 
+  belongs_to :supplier
   belongs_to :nonconformance
   before_create :set_supplier_lot, :set_po_number
   belongs_to :user

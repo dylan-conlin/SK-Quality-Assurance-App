@@ -6,7 +6,7 @@ class Nonconformance < ActiveRecord::Base
 scope :open, where(:status => "Open")
 scope :in_process, where(:status => "In Process")
 
-
+belongs_to :supplier
 belongs_to :user
 belongs_to :component
 has_many :instances, dependent: :destroy
