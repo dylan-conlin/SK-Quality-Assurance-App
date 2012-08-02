@@ -18,10 +18,7 @@ class UsersController < ApplicationController
     else
       @supervisor = User.find(params[:id])
     end
-    
-
     @direct_reports = User.where(:user_id => @user.id)
-
   end
 
   def new
