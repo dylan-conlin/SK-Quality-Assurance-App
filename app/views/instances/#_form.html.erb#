@@ -1,0 +1,31 @@
+<%= simple_form_for [@nonconformance, @instance], :html => {:multipart => true} do |f| %>
+  <%= f.error_notification %>
+
+
+  <div class="offset4">
+  <div class="form-inputs">
+
+    <%= f.input :workorder %>
+    <%= f.input :lot, :label => "SK lot number" %>
+    <%= f.input :sublot, :label => "SK sublot number" %>
+    <%= f.input :quantity, :label => "quantity (in " + @nonconformance.component.purchase_unit + "'s)" %>
+
+    <%= f.input :location, :label => "Location NC was found" %>
+    <%= f.input :labor, :label => "labor (in hours)" %>
+    <div>*RTS by</div></br>
+    <%= f.collection_select :stocker_id, User.all, :id, :name, :include_blank => false %></br></br>
+
+    <% if current_user.nc_admin == true %>
+      <%= f.input :supplier_lot %>
+      <%= f.input :po_number %>
+      <%= f.input :receipt_date, :discard_year => false, :discard_month => false, :ampm => true %>
+    <% end %>
+
+
+  </div>
+  </div>
+  <div class="form-actions">
+    <%= f.button :submit, :class => "offset4" %>
+  </div>
+
+<% end %>

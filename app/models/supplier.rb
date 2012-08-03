@@ -5,6 +5,6 @@ class Supplier < ActiveRecord::Base
   has_many :nonconformances, :through => :components
 
 
-  validates_uniqueness_of :name, :allow_blank => false
+ # validates_uniqueness_of :name, :allow_blank => false
 
 end

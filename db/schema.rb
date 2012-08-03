@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120802014409) do
+ActiveRecord::Schema.define(:version => 20120803233534) do
 
   create_table "assets", :force => true do |t|
     t.string   "asset_file_name"
@@ -97,6 +97,13 @@ ActiveRecord::Schema.define(:version => 20120802014409) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "documents", :force => true do |t|
+    t.string   "name"
+    t.text     "content"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "foreign_objects", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
@@ -128,24 +135,8 @@ ActiveRecord::Schema.define(:version => 20120802014409) do
     t.string   "location"
     t.integer  "labor"
     t.string   "labor_units"
-    t.datetime "created_at",          :null => false
-    t.datetime "updated_at",          :null => false
-    t.string   "asset_file_name"
-    t.string   "asset_content_type"
-    t.integer  "asset_file_size"
-    t.datetime "asset_updated_at"
-    t.string   "asset2_file_name"
-    t.string   "asset2_content_type"
-    t.integer  "asset2_file_size"
-    t.datetime "asset2_updated_at"
-    t.string   "asset3_file_name"
-    t.string   "asset3_content_type"
-    t.integer  "asset3_file_size"
-    t.datetime "asset3_updated_at"
-    t.string   "asset4_file_name"
-    t.string   "asset4_content_type"
-    t.integer  "asset4_file_size"
-    t.datetime "asset4_updated_at"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
     t.integer  "stocker_id"
     t.string   "supplier_lot"
     t.string   "po_number"
@@ -166,6 +157,7 @@ ActiveRecord::Schema.define(:version => 20120802014409) do
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
+    t.decimal  "score"
   end
 
   create_table "items", :force => true do |t|
@@ -188,17 +180,32 @@ ActiveRecord::Schema.define(:version => 20120802014409) do
   create_table "nonconformances", :force => true do |t|
     t.integer  "user_id"
     t.text     "reason"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
     t.string   "status"
     t.integer  "component_id"
     t.decimal  "labor_cost"
+    t.string   "photo_1_file_name"
+    t.string   "photo_1_content_type"
+    t.integer  "photo_1_file_size"
+    t.datetime "photo_1_updated_at"
+    t.string   "photo_2_file_name"
+    t.string   "photo_2_content_type"
+    t.integer  "photo_2_file_size"
+    t.datetime "photo_2_updated_at"
+    t.string   "photo_3_file_name"
+    t.string   "photo_3_content_type"
+    t.integer  "photo_3_file_size"
+    t.datetime "photo_3_updated_at"
+    t.string   "photo_4_file_name"
+    t.string   "photo_4_content_type"
+    t.integer  "photo_4_file_size"
+    t.datetime "photo_4_updated_at"
   end
 
   create_table "packagings", :force => true do |t|
     t.integer  "user_id"
     t.string   "workorder"
-    t.string   "item_number"
     t.boolean  "individual_label_placement"
     t.boolean  "individual_label_legibility"
     t.boolean  "individual_seal_integrity"
@@ -278,5 +285,31 @@ ActiveRecord::Schema.define(:version => 20120802014409) do
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["remember_token"], :name => "index_users_on_remember_token"
+
+  create_table "users_table", :id => false, :force => true do |t|
+    t.integer "id"
+    t.text    "name"
+  end
+
+  create_table "versions", :force => true do |t|
+    t.integer  "versioned_id"
+    t.string   "versioned_type"
+    t.integer  "user_id"
+    t.string   "user_type"
+    t.string   "user_name"
+    t.text     "modifications"
+    t.integer  "number"
+    t.integer  "reverted_from"
+    t.string   "tag"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "versions", ["created_at"], :name => "index_versions_on_created_at"
+  add_index "versions", ["number"], :name => "index_versions_on_number"
+  add_index "versions", ["tag"], :name => "index_versions_on_tag"
+  add_index "versions", ["user_id", "user_type"], :name => "index_versions_on_user_id_and_user_type"
+  add_index "versions", ["user_name"], :name => "index_versions_on_user_name"
+  add_index "versions", ["versioned_id", "versioned_type"], :name => "index_versions_on_versioned_id_and_versioned_type"
 
 end

@@ -1,11 +1,18 @@
-
 <%= simple_form_for(@nonconformance) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
 
     <%= f.collection_select :component_id, Component.all, :id,
-    :number, :include_blank => false %> <%= f.input :reason %>
+    :number, :include_blank => false %> 
+    <%= f.input :reason %>
+
+    <h4>images</h4></br>
+    <%= f.file_field :photo_1 %></br>
+    <%= f.file_field :photo_2 %></br>
+    <%= f.file_field :photo_3 %></br>
+    <%= f.file_field :photo_4 %></br>
+
 
 
   <div class="form-actions">

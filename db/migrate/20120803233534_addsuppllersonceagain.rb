@@ -1,6 +1,5 @@
-class CreateSuppliers < ActiveRecord::Migration
-  
-  def change
+class Addsuppllersonceagain < ActiveRecord::Migration
+  def up
     create_table :suppliers do |t|
       t.string :name
       t.string :long_name
@@ -10,4 +9,6 @@ class CreateSuppliers < ActiveRecord::Migration
     end
   end
 
+  def down
+  end
 end

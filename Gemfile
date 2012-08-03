@@ -14,6 +14,7 @@ gem 'jquery-datatables-rails', :git => 'https://github.com/rweng/jquery-datatabl
 gem 'aws-sdk', '~> 1.3.4'
 gem 'fancybox-rails'
 gem 'pg_search'
+gem 'prawn'
 
 
 group :development, :test do

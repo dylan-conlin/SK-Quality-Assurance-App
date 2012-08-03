@@ -38,8 +38,14 @@ class NonconformancesController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @nonconformance }
+      format.pdf do
+        pdf = NonconformancePdf.new(@nonconformance, view_context)
+        send_data pdf.render, filename: "SK Food Group Nonconformance Report: #{@nonconformance.component.supplier_description}  #{@nonconformance.created_at.strftime("%D")}.pdf", type: "application/pdf"
+      end
     end
   end
+
+
 
   # GET /nonconformances/new
   # GET /nonconformances/new.json

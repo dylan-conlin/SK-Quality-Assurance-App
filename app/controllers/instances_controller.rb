@@ -67,7 +67,7 @@ class InstancesController < ApplicationController
     respond_to do |format|
       if @instance.update_attributes(params[:instance])
         
-        format.html { redirect_to nonconformances_url, notice: 'Your instance was successfully updated!' }
+        format.html { redirect_to nonconformance_path(@nonconformance), notice: 'Your instance was successfully updated!' }
 
         format.json { head :no_content }
       else
