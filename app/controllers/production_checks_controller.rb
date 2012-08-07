@@ -5,7 +5,41 @@ class ProductionChecksController < ApplicationController
   # GET /production_checks.json
   def index
 
+
     @production_checks = ProductionCheck.order(sort_column + " " + sort_direction).text_search(params[:query]).paginate(:per_page => 5, :page => params[:page])
+
+    @checks_per_wo_count = ProductionCheck.last_3_months.group(:workorder).count 
+
+    @label_readability_stats = Hash.new(0) 
+    @label_accuracy_stats = Hash.new(0) 
+    @seal_integrity_stats = Hash.new(0) 
+    @build_accuracy_stats = Hash.new(0) 
+
+    @label_readability_pass_count = ProductionCheck.last_3_months.where(:label_readability => false).group(:workorder).count 
+    @label_readability_pass_count.each {|key, count| @label_readability_stats[key] = (@label_readability_stats[key] + count).to_f } 
+    @checks_per_wo_count.each {|key, count| @label_readability_stats[key] = (@label_readability_stats[key] / count).to_f } 
+    @label_readability_stats.each {|key, count| @label_readability_stats[key] = @label_readability_stats[key] * 100 } 
+    @label_accuracy_pass_count = ProductionCheck.last_3_months.where(:label_accuracy => false).group(:workorder).count 
+
+
+
+    @label_accuracy_pass_count = ProductionCheck.last_3_months.where(:label_accuracy => false).group(:workorder).count 
+    @label_accuracy_pass_count.each {|key, count| @label_accuracy_stats[key] = (@label_accuracy_stats[key] + count).to_f } 
+    @checks_per_wo_count.each {|key, count| @label_accuracy_stats[key] = (@label_accuracy_stats[key] / count).to_f } 
+    @label_accuracy_stats.each {|key, count| @label_accuracy_stats[key] = @label_accuracy_stats[key] * 100 } 
+    
+
+    @seal_integrity_pass_count = ProductionCheck.last_3_months.where(:seal_integrity => false).group(:workorder).count 
+    @seal_integrity_pass_count.each {|key, count| @seal_integrity_stats[key] = (@seal_integrity_stats[key] + count).to_f } 
+    @checks_per_wo_count.each {|key, count| @seal_integrity_stats[key] = (@seal_integrity_stats[key] / count).to_f } 
+    @seal_integrity_stats.each {|key, count| @seal_integrity_stats[key] = @seal_integrity_stats[key] * 100 } 
+    
+
+    @build_accuracy_pass_count = ProductionCheck.last_3_months.where(:build_accuracy => false).group(:workorder).count 
+    @build_accuracy_pass_count.each {|key, count| @build_accuracy_stats[key] = (@build_accuracy_stats[key] + count).to_f } 
+    @checks_per_wo_count.each {|key, count| @build_accuracy_stats[key] = (@build_accuracy_stats[key] / count).to_f } 
+    @build_accuracy_stats.each {|key, count| @build_accuracy_stats[key] = @build_accuracy_stats[key] * 100 } 
+    
 
   end
 

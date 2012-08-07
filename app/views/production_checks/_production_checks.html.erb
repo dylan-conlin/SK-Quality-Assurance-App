@@ -1,11 +1,14 @@
 
 
+
+
 <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered pretty" >
   <tr>
     <th><%= sortable "created_at", "Date" %></th>
     <th><%= sortable "user_id", "User" %></th>   
     <th><%= sortable "workorder", "Workorder" %></th>   
     <th>Label readability</th>
+
     <th>Label accuracy</th>
     <th>Seal integrity</th>
     <th>Build accuracy</th>
@@ -20,30 +23,59 @@
     <td><%= link_to gravatar_for(production_check.user, size: 100), production_check.user %></br>
         <%= link_to production_check.user.name, production_check.user %></td>
     <td><%= production_check.workorder %></td>
-
+    
     <% if production_check.label_readability == true %>
-    <td><span class="label label-important">Fail</span></td>
+    <td><span class="label label-important">Fail</span></br></br>
+      <% unless @checks_per_wo_count[production_check.workorder].nil? %>
+      <div class="timestamp"><%= number_to_percentage(@label_readability_stats[production_check.workorder], :precision => 0)%> compliance</br> 
+	(<%= @label_readability_pass_count[production_check.workorder]%>/<%= @checks_per_wo_count[production_check.workorder] %> pass)</div></td>
+      <% end %>
     <% else %>
-    <td><span class="label label-success">Pass</span></td>
+    <td><span class="label label-success">Pass</span></br></br>
+      <% unless @checks_per_wo_count[production_check.workorder].nil? %>
+          <div class="timestamp"><%= number_to_percentage(@label_readability_stats[production_check.workorder], :precision => 0)%> compliance</br> 
+	(<%= @label_readability_pass_count[production_check.workorder]%>/<%= @checks_per_wo_count[production_check.workorder] %> pass)</div></td>
+      <% end %>
     <% end %>
-
+    
     <% if production_check.label_accuracy == true %>
-    <td><span class="label label-important">Fail</span></td>
-    <% else %>
-    <td><span class="label label-success">Pass</span></td>
+    <td><span class="label label-important">Fail</span></br></br>
+      <% unless @checks_per_wo_count[production_check.workorder].nil? %>
+      <div class="timestamp"><%= number_to_percentage(@label_accuracy_stats[production_check.workorder], :precision => 0)%> compliance</br> 
+	(<%= @label_accuracy_pass_count[production_check.workorder]%>/<%= @checks_per_wo_count[production_check.workorder] %> pass)</div></td>
     <% end %>
-
+    <% else %>
+    <td><span class="label label-success">Pass</span></br></br>
+      <% unless @checks_per_wo_count[production_check.workorder].nil? %>
+      <div class="timestamp"><%= number_to_percentage(@label_accuracy_stats[production_check.workorder], :precision => 0)%> compliance</br> 
+	(<%= @label_accuracy_pass_count[production_check.workorder]%>/<%= @checks_per_wo_count[production_check.workorder] %> pass)</div></td>
+    <% end %>
+    <% end %>
 
     <% if production_check.seal_integrity == true %>
-    <td><span class="label label-important">Fail</span></td>
-    <% else %>
-    <td><span class="label label-success">Pass</span></td>
+    <td><span class="label label-important">Fail</span></br></br>
+      <% unless @checks_per_wo_count[production_check.workorder].nil? %>
+      <div class="timestamp"><%= number_to_percentage(@seal_integrity_stats[production_check.workorder], :precision => 0)%> compliance</br> 
+	(<%= @seal_integrity_pass_count[production_check.workorder]%>/<%= @checks_per_wo_count[production_check.workorder] %> pass)</div></td>
     <% end %>
-
-    <% if production_check.build_accuracy == true %>
-    <td><span class="label label-important">Fail</span></td>
     <% else %>
-    <td><span class="label label-success">Pass</span></td>
+    <td><span class="label label-success">Pass</span></br></br>
+      <% unless @checks_per_wo_count[production_check.workorder].nil? %>      <div class="timestamp"><%= number_to_percentage(@seal_integrity_stats[production_check.workorder], :precision => 0)%> compliance</br> 
+	(<%= @seal_integrity_pass_count[production_check.workorder]%>/<%= @checks_per_wo_count[production_check.workorder] %> pass)</div></td>
+    <% end %>
+    <% end %>
+    <% if production_check.build_accuracy == true %>
+    <td><span class="label label-important">Fail</span></br></br>
+      <% unless @checks_per_wo_count[production_check.workorder].nil? %>
+      <div class="timestamp"><%= number_to_percentage(@build_accuracy_stats[production_check.workorder], :precision => 0)%> compliance</br> 
+	(<%= @build_accuracy_pass_count[production_check.workorder]%>/<%= @checks_per_wo_count[production_check.workorder] %> pass)</div></td>
+    <% end %>
+    <% else %>
+    <td><span class="label label-success">Pass</span></br></br>
+      <% unless @checks_per_wo_count[production_check.workorder].nil? %>
+      <div class="timestamp"><%= number_to_percentage(@build_accuracy_stats[production_check.workorder], :precision => 0)%> compliance</br> 
+	(<%= @build_accuracy_pass_count[production_check.workorder]%>/<%= @checks_per_wo_count[production_check.workorder] %> pass)</div></td>
+    <% end %>
     <% end %>
 
 

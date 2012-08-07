@@ -4,8 +4,11 @@ class ProductionCheck < ActiveRecord::Base
   belongs_to :user
 
  
- validates :user_id, :workorder, :presence => true
+validates :user_id, :workorder, :presence => true
 include PgSearch
+
+scope :last_3_months, lambda { where("created_at >= :date", :date => 3.months.ago) } 
+
 
 pg_search_scope :search,
 
