@@ -20,6 +20,7 @@
 	<div class="offset1">
 	  <%= @nonconformance.reason %>
 	  </br></br>
+
 	  <% if current_user.nc_admin == true %>
 	  <%= form_for @nonconformance, :remote => true do |f| %>
 
@@ -28,6 +29,8 @@
 	  <div class="timestamp">
 	    this field is only visible to nc admins
 	  </div>
+	  <% end %>
+	  <% end %>
 	  </br>
 	  <div class="row-fluid">
 
@@ -68,8 +71,7 @@
 	    <%= time_ago_in_words(@nonconformance.created_at) %> ago by
 	    <%= link_to @nonconformance.user.name, @nonconformance.user %>
 	  </div>    	  
-	  <% end %>
-	  <% end %>
+
 <%= link_to "Edit", edit_nonconformance_path %> | <%= link_to 'Delete',
 	  @nonconformance, confirm: 'Are you sure? This will delete
 	  all associated instances on this nonconformance as well.',

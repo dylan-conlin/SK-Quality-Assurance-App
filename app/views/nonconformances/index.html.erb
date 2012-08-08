@@ -39,7 +39,7 @@
     </div>
     
       <div class="timestamp pull-right">
-	<%= time_ago_in_words(nonconformance.created_at) %> ago by <%= link_to nonconformance.user.name, nonconformance.user %>
+	created <%= time_ago_in_words(nonconformance.created_at) %> ago by <%= link_to nonconformance.user.name, nonconformance.user %>
       </div>    
     
     
