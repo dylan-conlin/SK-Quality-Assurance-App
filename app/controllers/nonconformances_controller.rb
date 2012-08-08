@@ -70,7 +70,7 @@ class NonconformancesController < ApplicationController
     @nonconformance = current_user.nonconformances.build(params[:nonconformance])
     respond_to do |format|
       if @nonconformance.save
-        format.html { redirect_to nonconformances_path, notice: 'Nonconformance was successfully created.' }
+        format.html { redirect_to @nonconformance, notice: 'Nonconformance was successfully created.' }
         format.json { render json: @nonconformance, status: :created, location: @nonconformance }
       else
         format.html { render action: "new" }
@@ -86,7 +86,7 @@ class NonconformancesController < ApplicationController
 
     respond_to do |format|
       if @nonconformance.update_attributes(params[:nonconformance])
-        format.html { redirect_to nonconformances_path, notice: 'Nonconformance was successfully updated.' }
+        format.html { redirect_to @nonconformance, notice: 'Nonconformance was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

@@ -30,28 +30,36 @@
 	    this field is only visible to nc admins
 	  </div>
 	  </br>
-	  <div class="">
-	  <div class="well">
+	  <div class="row-fluid">
+
 	    <% if @nonconformance.photo_1.file? %>
+	  <div class="well span2">
 	    <%=link_to image_tag(@nonconformance.photo_1.url(:small)), @nonconformance.photo_1.url, :class => 'iframe' %>
+	  </div>
 	    <% else %>
 	    <% end %>
 
 	    <% if @nonconformance.photo_2.file? %>
+	  <div class="well span2">
 	    <%=link_to image_tag(@nonconformance.photo_2.url(:small)), @nonconformance.photo_2.url, :class => 'iframe' %>
+	  </div>
 	    <% else %>
 	    <% end %>
 
 	    <% if @nonconformance.photo_3.file? %>
+	  <div class="well span2">
 	    <%=link_to image_tag(@nonconformance.photo_3.url(:small)), @nonconformance.photo_3.url, :class => 'iframe' %>
+	  </div>
 	    <% else %>
 	    <% end %>
 
 	    <% if @nonconformance.photo_4.file? %>
+	  <div class="well span2">
 	    <%=link_to image_tag(@nonconformance.photo_4.url(:small)), @nonconformance.photo_4.url, :class => 'iframe' %>
+	  </div>
 	    <% else %>
 	    <% end %>
-	  </div>
+
 	  </div>
 
 
@@ -63,7 +71,7 @@
 	  </div>    	  
 	  <% end %>
 	  <% end %>
-	  <p><%= link_to "back", nonconformances_path %> | <%= link_to "edit", edit_nonconformance_path %></p>
+	  <p><%= link_to "back", nonconformances_path %> | <%= link_to "edit", edit_nonconformance_path %> | <%= link_to 'Delete', @nonconformance, confirm: 'Are you sure? This will delete all associated instances on this nonconformance as well.', method: :delete %></p>
 	  </div>
 	</div>
   </div>
@@ -124,7 +132,7 @@
 
 
 		<td>	
-		  <%= link_to "edit", edit_nonconformance_instance_path(@nonconformance, instance) %>
+		  <%= link_to "edit", edit_nonconformance_instance_path(@nonconformance, instance) %> |
 		  <%= link_to 'Delete', nonconformance_instance_path(@nonconformance,instance), confirm: 'Are you sure?', method: :delete %>
 
 		</td>
