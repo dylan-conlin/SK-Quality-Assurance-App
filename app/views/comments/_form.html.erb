@@ -15,21 +15,47 @@
   </div>
 
 
+<h3>Email this comment to the following users:</h3>
 
-<p><strong>Email this comment to the following users:</strong></p>
-
-<ul style="list-style:none;" class="comments">
-      <% User.all.each do |user| %>
-     <li class="comments">
-	<% checked_users = @commentable.comments.map(&:user).uniq + [@commentable.user] %>
+<!-- <ul style="list-style:none;" class="comments"> -->
+</br>
+<div class="container-fluid">
+  <% Department.all.each do |department| %>
+  
+  <% if department.users.count > 0 %>
+  
+  <div class="span4">
+    <div class="well">
+      <ol>
+      <strong>
+	<%= department.name %>
+      </strong>
+      <ol>
+	<% department.users.each do |user|%> 
+	
+	<div class="row">
+	<% checked_users = @commentable.comments.map(&:user).uniq + [@commentable.user] %>	  
 	<%= check_box_tag "user_ids[]", user.id, checked_users.include?(user) %>
-	<%= user.name %></br>
-     </li>
-      <% end %>
-</ul>
-</br>
-</br>
-  <div class="actions">
-    <%= f.submit %>
+	  <%= user.name %>
+	  <div class="timestamp"><%= user.title%></div>	
+	  
+	</div>
+	
+	<% end %>
+	
+      </ol>
+      </ol>
+    </div>
   </div>
+  
+  <% end %>
+  <% end %>
+</div>
+
+
+<div class="form-actions">
+  <%= f.button :submit %>
+</div>
 <% end %>
+
+

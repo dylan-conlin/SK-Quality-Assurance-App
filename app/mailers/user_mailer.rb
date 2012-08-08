@@ -28,7 +28,7 @@ class UserMailer < ActionMailer::Base
       @commenter = commenter
       @issue = issue
        mail( to: bcc,
-       subject: commenter + " left a comment on your issue")
+       subject: "re: " + @issue.short_description)
 
 
     end
