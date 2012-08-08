@@ -70,7 +70,7 @@
 	  </div>    	  
 	  <% end %>
 	  <% end %>
-	  <p><%= link_to "back", nonconformances_path %> | <%= link_to "edit", edit_nonconformance_path %> | <%= link_to 'Delete', @nonconformance, confirm: 'Are you sure? This will delete all associated instances on this nonconformance as well.', method: :delete %></p>
+	  <p><i class="icon-arrow-left"></i><%= link_to "back", nonconformances_path %> | <%= link_to "edit", edit_nonconformance_path %> | <%= link_to 'Delete', @nonconformance, confirm: 'Are you sure? This will delete all associated instances on this nonconformance as well.', method: :delete %></p>
 	  </div>
 	</div>
   </div>
@@ -82,7 +82,6 @@
 	<div class="offset1">
 
 
-	  <%= link_to "Add new instance", new_nonconformance_instance_path(@nonconformance), :class => "btn btn-primary  pull-left" %>&nbsp
 
 	  </br>
 	  </br>
@@ -129,17 +128,40 @@
 
 
 
+        <td>
+	     <div class="btn-group">
+	       <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
 
-		<td>	
-		  <%= link_to "edit", edit_nonconformance_instance_path(@nonconformance, instance) %> |
+		 <span class="caret"></span>
+	       </a>
+	       <ul class="dropdown-menu">
+		 <!-- dropdown menu links -->
+		  <%= link_to "Edit", edit_nonconformance_instance_path(@nonconformance, instance) %> 
 		  <%= link_to 'Delete', nonconformance_instance_path(@nonconformance,instance), confirm: 'Are you sure?', method: :delete %>
+		
+	       </ul>
+	     </div>
+        </td>
 
-		</td>
+
+
+
+
+
 	      </tr>
 	      <% end %>
 	    </table>
 	  </div>
-<p><%= link_to "Download NC report (PDF)", nonconformance_path(@nonconformance, format: "pdf") %></p>
+	  <%= link_to "Add new instance", new_nonconformance_instance_path(@nonconformance), :class => "btn btn-primary  pull-right" %>&nbsp
+
+  <%= link_to nonconformance_path(@nonconformance, format: "pdf"),
+  :class => "btn pull-left" do %>
+  <i class="icon-download"></i> Download PDF 
+  <% end %>
+
+
+
+
 	</div>
 
 

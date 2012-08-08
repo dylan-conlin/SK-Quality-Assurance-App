@@ -3,7 +3,7 @@ class Instance < ActiveRecord::Base
 
   belongs_to :supplier
   belongs_to :nonconformance
-  before_create :set_supplier_lot, :set_po_number
+  before_create :set_supplier_lot, :set_po_number, :set_receipt_date
   belongs_to :user
   belongs_to :stocker, :class_name => 'User', :foreign_key => 'stocker_id'
  
@@ -22,7 +22,10 @@ class Instance < ActiveRecord::Base
     def set_po_number
       self.po_number = "Pending"
     end
-
+    
+    def set_receipt_date
+      self.receipt_date = Time.now
+    end
 
   
 
