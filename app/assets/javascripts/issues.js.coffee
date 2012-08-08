@@ -22,6 +22,8 @@ jQuery ->
         $("#fancybox-title").fadeOut()
   )
 
+
+
   $('#issue_foreign_object_id').hide();
   $('label[for=issue_foreign_object_id], input#issue_foreign_object_id').hide();
   $('#issue_gmp_id').change ->

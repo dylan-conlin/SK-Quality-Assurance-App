@@ -33,13 +33,14 @@ class UserMailer < ActionMailer::Base
 
     end
 
-    def notify_on_new_issue(bcc,description,user,issue)
+    def notify_on_new_issue(bcc,description,user,issue,short_description)
       @bcc = bcc
       @description = description
       @user = user
       @issue = issue
+      @short_description = short_description
        mail( to: bcc,
-       subject: user.name + " would like you to know:")
+       subject: @short_description)
 
 
     end

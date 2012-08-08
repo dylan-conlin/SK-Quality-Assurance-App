@@ -1,5 +1,5 @@
 class Issue < ActiveRecord::Base
-  attr_accessible :department_id, :description, :foreign_object_id, :gmp_id, :user_id, :workorder, :corrective_action, :photo
+  attr_accessible :department_id, :description, :foreign_object_id, :gmp_id, :user_id, :workorder, :corrective_action, :photo, :short_description
 
   belongs_to :user
   belongs_to :department
@@ -9,8 +9,9 @@ class Issue < ActiveRecord::Base
 
   validates_attachment_size :photo, :less_than => 5.megabytes
 
-  validates :department_id, :description, :gmp_id, :user_id, :corrective_action, :presence => true
-
+  validates :department_id, :short_description, :description, :gmp_id, :user_id, :corrective_action, :presence => true
+  
+  validates :short_description, length: { maximum: 50 }
 
   has_attached_file :photo,
      :styles => { :small => "300x300>" },

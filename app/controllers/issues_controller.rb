@@ -44,11 +44,12 @@ class IssuesController < ApplicationController
         @selected_users = User.find(params[:user_ids])
         bcc = @selected_users.map(&:email).compact * ', '
 
+        short_description = @issue.short_description
         description = @issue.description
         user = @issue.user
         issue = @issue
 
-        UserMailer.notify_on_new_issue(bcc,description,user,issue).deliver
+        UserMailer.notify_on_new_issue(bcc,description,user,issue,short_description).deliver
       end
         flash[:success] = "Issue created!"
         redirect_to issues_url

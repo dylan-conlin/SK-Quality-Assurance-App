@@ -3,12 +3,13 @@
   <%= f.error_notification %>
 
   <div class="form-inputs form-inline offset1">
-    <%= f.input :description %>
-    <%= f.input :corrective_action %>
-    <%= f.input :department_id, :collection => Department.all(:order => 'name'), :label => 'Department Responsible' %>
-    <%= f.input :gmp_id, :collection => Gmp.all(:order => 'name'), :label => 'GMP' %>
-    <%= f.input :foreign_object_id, :collection => ForeignObject.all, :label => 'Foreign Object Type' %>
-    <%= f.input :workorder, :label => 'Workorder associated with this issue?' %>
+    <%= f.input :short_description, :input_html => { :class => 'span6' }, :hint => "Short descriptions are used as the subject line should you choose to email your issue." %>
+    <%= f.input :description, :input_html => { :class => 'span6' }  %>
+    <%= f.input :corrective_action, :input_html => { :class => 'span6' }  %>
+    <%= f.input :department_id, :collection => Department.all(:order => 'name'), :label => 'Department Responsible', :input_html => { :class => 'span6' }  %>
+    <%= f.input :gmp_id, :collection => Gmp.all(:order => 'name'), :label => 'GMP', :input_html => { :class => 'span6' }  %>
+    <%= f.input :foreign_object_id, :collection => ForeignObject.all, :label => 'Foreign Object Type', :input_html => { :class => 'span6' }  %>
+    <%= f.input :workorder, :label => 'Workorder associated with this issue?', :input_html => { :class => 'span6' }  %>
 
     <%= f.file_field :photo, :label => 'Images' %>
 
