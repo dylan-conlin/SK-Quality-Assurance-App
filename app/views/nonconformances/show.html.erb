@@ -1,11 +1,9 @@
 <div>
   <div class="nonconformance-show">
 
-      <div class="span1">
+      <div class="span1 green">
+	<%= number_to_currency(@nonconformance.instances.sum { |p| p.quantity * @nonconformance.component.price_per_purchase_unit + p.labor * @nonconformance.labor_cost }) %>
 
-	<%= number_to_currency(@nonconformance.instances.sum { |p|
-	p.quantity * @nonconformance.component.price_per_purchase_unit
-	+ p.labor * @nonconformance.labor_cost }) %>
       </div>
 
       <div class="span10">
