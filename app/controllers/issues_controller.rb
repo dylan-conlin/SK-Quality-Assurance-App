@@ -10,6 +10,7 @@ class IssuesController < ApplicationController
 
   def show
     @issue = Issue.find(params[:id])
+    Issue.increment_counter("views", @issue.id)
     @commentable = @issue
     @comments = @commentable.comments
     @comment = Comment.new

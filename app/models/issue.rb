@@ -1,5 +1,5 @@
 class Issue < ActiveRecord::Base
-  attr_accessible :department_id, :description, :foreign_object_id, :gmp_id, :user_id, :workorder, :corrective_action, :photo, :short_description
+  attr_accessible :department_id, :description, :foreign_object_id, :gmp_id, :user_id, :workorder, :corrective_action, :photo, :short_description, :views
 
   belongs_to :user
   belongs_to :department
@@ -8,6 +8,8 @@ class Issue < ActiveRecord::Base
   has_many :comments, as: :commentable, dependent: :destroy
 
   validates_attachment_size :photo, :less_than => 5.megabytes
+
+  before_create :set_views
 
   validates :department_id, :short_description, :description, :gmp_id, :user_id, :corrective_action, :presence => true
   
@@ -65,6 +67,10 @@ private
 
  def strip_spaces
    workorder.gsub!(" ", "")
+ end
+
+ def set_views
+   self.views = 0
  end
 
 

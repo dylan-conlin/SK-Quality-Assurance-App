@@ -8,6 +8,9 @@
     <th><%= sortable "workorder", "Workorder" %></th>
     <th><%= sortable "foreign_object_id", "Foreign Object Type" %></th>
     <th>Chat</th>
+    <% if current_user.admin == true %>
+    <th><%= sortable "views", "Views" %></th>
+    <% end %>
     <th>Admin</th>
 
   </tr>
@@ -30,9 +33,12 @@
     <td><div class="span1"><%= issue.foreign_object.name %></div></td>
     <td><div class="span1">
 	    (<%= link_to issue.comments.count, issue_path(issue)%>)
+	    
     </div></td>
-
-        <td>
+    <% if current_user.admin = true %>
+    <td><%= issue.views %></td>
+    <% end %>
+    <td>
 	     <div class="btn-group">
 	       <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
 
