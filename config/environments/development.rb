@@ -17,17 +17,29 @@ SampleApp::Application.configure do
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = true
 
-# Change mail delvery to either :smtp, :sendmail, :file, :test
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-  address: "smtp.gmail.com",
-  port: 587,
-  domain: "http://skfoodgroup.herokuapp.com",
-  authentication: "plain",
-  enable_starttls_auto: true,
-  user_name: "skfoodgroup@gmail.com",
-  password: "qualitycontrol"
+# # Change mail delvery to either :smtp, :sendmail, :file, :test
+#   config.action_mailer.delivery_method = :smtp
+#   config.action_mailer.smtp_settings = {
+#   address: "smtp.gmail.com",
+#   port: 587,
+#   domain: "http://skfoodgroup.herokuapp.com",
+#   authentication: "plain",
+#   enable_starttls_auto: true,
+#   user_name: "skfoodgroup@gmail.com",
+#   password: "qualitycontrol"
+# }
+
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.perform_deliveries = true
+config.action_mailer.smtp_settings = {
+     :authentication => :plain,
+     :address => "smtp.mailgun.org",
+     :port => 587,
+     :domain => "skfoodgroup.mailgun.org",
+     :user_name => "postmaster@skfoodgroup.mailgun.org",
+     :password => "9s4-m8cs1t76"
 }
+
 
   # Specify what domain to use for mailer URLs
   config.action_mailer.default_url_options = {host: "localhost:3000"}

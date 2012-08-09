@@ -1,11 +1,6 @@
 class UserMailer < ActionMailer::Base
-  default from: "from@example.com"
 
-  # Subject can be set in your I18n file at config/locales/en.yml
-  # with the following lookup:
-  #
-  #   en.user_mailer.signup_confirmation.subject
-  #
+
 
     def signup_confirmation(user)
       @user = user
@@ -21,26 +16,34 @@ class UserMailer < ActionMailer::Base
 
     end
 
-    def notify_on_new_comment(bcc,content,commenter,issue,comments)
+    def notify_on_new_comment(bcc,content,comment,issue,comments)
       @comments = comments
       @bcc = bcc
       @content = content
-      @commenter = commenter
+      @comment = comment
       @issue = issue
-       mail( to: bcc,
-       subject: "re: " + @issue.short_description)
+      email_with_name = "#{@comment.user.name} <#{@comment.user.email}>"
+       mail( reply_to: @comment.user.email,
+             from: email_with_name,
+             to: bcc,
+             subject: "re: " + @issue.short_description)
 
 
     end
 
     def notify_on_new_issue(bcc,description,user,issue,short_description)
+
+
       @bcc = bcc
       @description = description
       @user = user
       @issue = issue
       @short_description = short_description
-       mail( to: bcc,
-       subject: @short_description)
+      email_with_name = "#{@user.name} <#{@user.email}>"
+       mail( reply_to: @user.email,
+             from: email_with_name,
+             to: bcc,
+             subject: @short_description)
 
 
     end

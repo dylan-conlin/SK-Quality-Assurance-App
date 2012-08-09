@@ -1,5 +1,5 @@
 <body>
-  <p><%= @commenter %> left a new comment on <%= link_to 'this issue', issue_url(@issue) %>:</p></br></br></br>
+  <p><%= link_to @comment.user.name, user_url(@comment.user) %> left a new comment on <%= link_to 'this issue', issue_url(@issue) %>:</p></br></br></br>
 
 
 <table class="issues_show">
@@ -59,7 +59,7 @@
       <b>Added by:</b>
     </td>
     <td>
-      <%= @issue.user.name %>
+      <%= link_to @issue.user.name, user_url(@issue.user) %>
     </td>
   </tr>
 
@@ -96,14 +96,17 @@
 	</div>
         </br>
       </td>
-
+</br>
+</br>
+</br>
 </tr>
 
   <% end %>
 </br>
 
 </table>
-</br></br>
-<%= link_to 'Click to Reply >>', issue_url(@issue) %>
+</br>
+</br>
+<p><%= link_to 'Reply to this comment', issue_url(@issue) %></p>
 
 
