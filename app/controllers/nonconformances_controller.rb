@@ -5,27 +5,28 @@ class NonconformancesController < ApplicationController
 
   helper_method :sort_column, :sort_direction
 
-
-
-
-
-
-
   def index
 
-    if ["Quality Assurance", "Production"].include?(current_user.department.name)
-          @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
-    elsif ["Logistics"].include?(current_user.department.name)
-          @nonconformances = Nonconformance.in_process.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
-    else   
-          @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
+    # if ["Quality Assurance", "Production"].include?(current_user.department.name)
+    #   @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
+    # elsif ["Logistics"].include?(current_user.department.name)
+    #   @nonconformances = Nonconformance.in_process.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
+    # else   
+    #   @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
+      
+    # end
 
-    end
+    @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
 
     if params[:status] == "Open"
       @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
-    elsif params[:status] == "In Process"
-      @nonconformances = Nonconformance.in_process.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
+    elsif params[:status] == "Waiting on Supplier"
+      @nonconformances = Nonconformance.waiting_on_supplier.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
+      if params[:limit] == "overdue"
+          @nonconformances = Nonconformance.waiting_on_supplier.overdue.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
+      end
+    elsif params[:status] == "Closed"
+      @nonconformances = Nonconformance.closed.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
     end
 
 
@@ -33,6 +34,7 @@ class NonconformancesController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @nonconformances }
     end
+
   end
 
   # GET /nonconformances/1
@@ -91,13 +93,21 @@ class NonconformancesController < ApplicationController
 
     respond_to do |format|
       if @nonconformance.update_attributes(params[:nonconformance])
-        if @nonconformance.status == "In Process"
+
+        if @nonconformance.status == "Waiting on Supplier"
           @nonconformance.notification_date = Time.now
           @nonconformance.save
-        else 
+        elsif @nonconformance.status == "Open"
           @nonconformance.notification_date = nil
           @nonconformance.save
+        elsif @nonconformance.status == "Closed"
+          @nonconformance.close_date = Time.now
+          @nonconformance.save
+        else 
+          @nonconformance.close_date = nil
+          @nonconformance.save
         end
+
           format.html { redirect_to @nonconformance, notice: 'Nonconformance was successfully updated.' }
           format.json { head :no_content }
       else

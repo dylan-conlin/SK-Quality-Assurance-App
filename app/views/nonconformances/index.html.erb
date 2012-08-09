@@ -1,14 +1,45 @@
-
 <div class="row" style="display:inline;">
   <%= link_to(new_nonconformance_path, :class => 'btn btn-mini') do %>
   <i class="icon-plus-sign"></i> New Nonconformance
   <% end %>
       </br>
+      </br>
+      </br>
+
       <% open_ncs = Nonconformance.open.count %>
-      <% in_process = Nonconformance.in_process.count %>
-      <div class="pull-right"><%= link_to "Open (#{open_ncs})", :status => "Open" %> | <%= link_to "Waiting on supplier (#{in_process})", :status => "In Process" %></div>
+      <% waiting_on_supplier = Nonconformance.waiting_on_supplier.count %>
+      <% closed = Nonconformance.closed.count %>
+      <div class="pull-right"><%= link_to "Open (#{open_ncs})", :status => "Open" %> | <%= link_to "Waiting on supplier (#{waiting_on_supplier})", :status => "Waiting on Supplier" %> | <%= link_to "Closed (#{closed})", :status => "Closed" %></div>
     </br>
+
+    <%= link_to "overdue", nonconformances_path(params.merge(:limit => 'overdue')) %>
+
 </div>
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#home">Open</a></li>
+  <li><%= link_to "overdue", '#fart' %></li>
+  <li><a href="#messages">Messages</a></li>
+  <li>Settings</li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="home">...</div>
+  <div class="tab-pane" id="profile">Aenean consequat</div>
+  <div class="tab-pane" id="messages">...</div>
+  <div class="tab-pane" id="settings">...</div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:first').tab('show');
+  })
+</script>
+
+
+
+
+
 
 
 <% @nonconformances.each do |nonconformance| %>
@@ -16,33 +47,50 @@
 <div>
   <div class="nonconformance-summary">
 
-      <div class="span2 green">
+      <div class="span2">
+	<div class="alert alert-success">
 	<strong>
 	<%= number_to_currency(nonconformance.instances.sum { |p| p.quantity * nonconformance.component.price_per_purchase_unit + p.labor * nonconformance.labor_cost }) %>
 	</strong>
+	</div>
+
+	<% if nonconformance.notification_date != nil %>
+	<div class="alert alert-info">
+	  <p>
+	    sent <%= time_ago_in_words(nonconformance.notification_date) %> ago
+	  </p>
+	</div>
+	<% end %>
+
+	<% if nonconformance.close_date != nil %>
+	<div class="alert alert-error">
+	  <p>
+	    closed <%= time_ago_in_words(nonconformance.close_date) %> ago
+	  </p>
+	</div>
+	<% end %>
+
       </div>
 
+      <div class="span9">
+
+	  <h3><%= link_to nonconformance.component.number + ": " + nonconformance.component.sk_description, nonconformance %></h3></br>
+	  <p><%= nonconformance.reason %></p>
+
+      </div>
+      <div class="span11">
+      <div class="row">
+	<div class="timestamp pull-right">
+	  created <%= time_ago_in_words(nonconformance.created_at) %> ago by <%= link_to nonconformance.user.name, nonconformance.user %>
+	</div>    
+       </div>
 
 
-    <div class="span9">
-      <h3><%= link_to nonconformance.component.number + ": " + nonconformance.component.sk_description, nonconformance %></h3>
-      
+
+      </div>
       
 
       
-      
-      <p><%= nonconformance.reason %></p>
-      
-      
-      
-
-    </div>
-    
-      <div class="timestamp pull-right">
-	created <%= time_ago_in_words(nonconformance.created_at) %> ago by <%= link_to nonconformance.user.name, nonconformance.user %>
-      </div>    
-    
-    
   </div>    
 </div>
 
