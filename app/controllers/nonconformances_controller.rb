@@ -6,6 +6,11 @@ class NonconformancesController < ApplicationController
   helper_method :sort_column, :sort_direction
 
 
+
+
+
+
+
   def index
 
     if ["Quality Assurance", "Production"].include?(current_user.department.name)
@@ -86,13 +91,21 @@ class NonconformancesController < ApplicationController
 
     respond_to do |format|
       if @nonconformance.update_attributes(params[:nonconformance])
-        format.html { redirect_to @nonconformance, notice: 'Nonconformance was successfully updated.' }
-        format.json { head :no_content }
+        if @nonconformance.status == "In Process"
+          @nonconformance.notification_date = Time.now
+          @nonconformance.save
+        else 
+          @nonconformance.notification_date = nil
+          @nonconformance.save
+        end
+          format.html { redirect_to @nonconformance, notice: 'Nonconformance was successfully updated.' }
+          format.json { head :no_content }
       else
         format.html { render action: "edit" }
         format.json { render json: @nonconformance.errors, status: :unprocessable_entity }
       end
     end
+
   end
 
   # DELETE /nonconformances/1

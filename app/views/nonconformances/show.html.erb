@@ -1,6 +1,8 @@
 <div>
   <div class="nonconformance-show">
-
+    <% if @nonconformance.notification_date != nil %>
+    <div class="alert alert-info">This NC was sent to the supplier <%= time_ago_in_words(@nonconformance.notification_date) %> ago</div>
+    <% end %>
       <div class="span1 green">
 	<strong>
 	<%= number_to_currency(@nonconformance.instances.sum { |p| p.quantity * @nonconformance.component.price_per_purchase_unit + p.labor * @nonconformance.labor_cost }) %>
@@ -24,7 +26,7 @@
 	  <% if current_user.nc_admin == true %>
 	  <%= form_for @nonconformance, :remote => true do |f| %>
 
-	  <%= f.select :status, [['Open'],['In Process']], {}, {:onChange =>
+	  <%= f.select :status, [['Open'],['Waiting on Supplier'],['Closed'],], {}, {:onChange =>
 	  'this.form.submit();' } %>
 	  <div class="timestamp">
 	    this field is only visible to nc admins
@@ -160,10 +162,17 @@
 	  </div>
 	  <%= link_to "Add new instance", new_nonconformance_instance_path(@nonconformance), :class => "btn btn-primary  pull-right" %>&nbsp
 
+
   <%= link_to nonconformance_path(@nonconformance, format: "pdf"),
   :class => "btn pull-left" do %>
   <i class="icon-download"></i> Download PDF 
   <% end %>
+  </br>
+  </br>
+  </br>
+<address><a href="mailto: <%= @nonconformance.component.supplier.contact_email %>?subject=..."><%= @nonconformance.component.supplier.contact_email %></a></address> 
+
+
 
   </br>
   </br>

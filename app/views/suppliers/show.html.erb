@@ -4,7 +4,7 @@
 <%= @supplier.name %> </br>
 
 <%= @supplier.contact_name %> </br>
-<address><a href="mailto:#"><%= @supplier.contact_email %></a></address> 
+<address><a href="mailto: <%= @supplier.contact_email %>?subject=Hi there!"><%= @supplier.contact_email %></a></address> 
 <p>
 <%= link_to 'Edit', edit_supplier_path(@supplier) %> |
 <%= link_to 'Back', suppliers_path %>

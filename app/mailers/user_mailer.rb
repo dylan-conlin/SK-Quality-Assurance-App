@@ -45,6 +45,10 @@ class UserMailer < ActionMailer::Base
 
     end
 
-    
+    def send_nc_report(recipient)
+      @recipient = recipient
+
+      mail( to: @recipient, subject: "New account information")
+    end
 
 end

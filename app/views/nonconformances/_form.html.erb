@@ -6,7 +6,7 @@
     <%= f.collection_select :component_id, Component.all, :id,
     :number, :include_blank => false %> 
     <%= f.input :reason %>
-
+    <%= f.input :credit_number %>
 
     <h4>images</h4></br>
     <%= f.file_field :photo_1 %></br>

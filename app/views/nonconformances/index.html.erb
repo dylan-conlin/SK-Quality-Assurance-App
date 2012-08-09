@@ -6,7 +6,7 @@
       </br>
       <% open_ncs = Nonconformance.open.count %>
       <% in_process = Nonconformance.in_process.count %>
-      <div class="pull-right"><%= link_to "Open (#{open_ncs})", :status => "Open" %> | <%= link_to "In Process (#{in_process})", :status => "In Process" %></div>
+      <div class="pull-right"><%= link_to "Open (#{open_ncs})", :status => "Open" %> | <%= link_to "Waiting on supplier (#{in_process})", :status => "In Process" %></div>
     </br>
 </div>
 
