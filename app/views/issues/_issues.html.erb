@@ -27,7 +27,7 @@
     <td>no image</td>
         <% end %>
 
-    <td><div class="issues_overflower span2"><%= issue.description %></div></td>
+    <td><div class="issues_overflower span2"><%= link_to issue.description, issue %></div></td>
     <td><div class="issues_overflower span3"><%= issue.corrective_action %></div></td>
     <td><%= issue.workorder %></td>
     <td><div class="span1"><%= issue.foreign_object.name %></div></td>
