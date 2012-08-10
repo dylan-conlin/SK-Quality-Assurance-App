@@ -34,29 +34,39 @@
            <% end %>
 	  </li>
 
-
-	  <li id="fat-menu" class="dropdown">
+	  
+	  <li  class="dropdown">
 	    <a class=" dropdown-toggle" data-toggle="dropdown" href="#">
-	      Nonconformances<span class="caret"></span>
+	      Quality Assurance<span class="caret"></span>
             </a>
-              <ul class="dropdown-menu">
-            <li><%= link_to "Nonconformances", nonconformances_path %></li>
-                <li class="divider"></li>
-            <li><%= link_to "Suppliers", suppliers_path %></li>
-            <li><%= link_to "Components", components_path %></li>
-              </ul>
-	     </li> 
+            <ul class="dropdown-menu">
+	      
+              <li><%= link_to "Issues", issues_path %></li>
+              <li><%= link_to "Audits", audits_path %></li>
+              <li><%= link_to "Production Checks", production_checks_path %></li>
+              <li><%= link_to "Packaging", packagings_path %></li>
+	      
+           <% if current_user.admin == true %>
+	      
+              <li class="nav nav-list">Nonconformance<b class="caret"></b>
+                <ul class="dropdown-menu">
+		  <li><%= link_to "Nonconformances", nonconformances_path %></li>
+		  <li class="divider"></li>
+		  <li><%= link_to "Suppliers", suppliers_path %></li>		
+		  <li><%= link_to "Components", components_path %></li>
+                  
+                </ul>        
+              </li>
+	   <% end %>
 
+            </ul>
+	      
+	  </li> 	         
+	  
 
+</li> 
 
-
-            <li><%= link_to "Packaging", packagings_path %></li>
-
-            <li><%= link_to "Production Checks", production_checks_path %></li>
-            <li><%= link_to "Audits", audits_path %></li>
-            <li><%= link_to "Issues", issues_path %></li>
-
-
+<li class="divider-vertical"></li>
       <li id="fat-menu" class="dropdown">
 	    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
               <%= gravatar_for current_user, size: 25 %><%=  current_user.email %>

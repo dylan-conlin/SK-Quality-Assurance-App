@@ -30,6 +30,6 @@ jQuery ->
   $('#nonconformance_component_name').autocomplete
       source: $('#nonconformance_component_name').data('autocomplete-source')
     
-  $("#myTab a").click (e) ->
-    e.preventDefault()
-    $(this).tab "show"
+
+
+

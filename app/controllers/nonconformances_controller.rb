@@ -96,11 +96,14 @@ class NonconformancesController < ApplicationController
 
         if @nonconformance.status == "Waiting on Supplier"
           @nonconformance.notification_date = Time.now
+          @nonconformance.close_date = nil
           @nonconformance.save
         elsif @nonconformance.status == "Open"
           @nonconformance.notification_date = nil
+          @nonconformance.close_date = nil
           @nonconformance.save
         elsif @nonconformance.status == "Closed"
+          @nonconformance.notification_date = Time.now
           @nonconformance.close_date = Time.now
           @nonconformance.save
         else 

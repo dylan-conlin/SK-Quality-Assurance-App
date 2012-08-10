@@ -1,44 +1,51 @@
 <div class="row" style="display:inline;">
-  <%= link_to(new_nonconformance_path, :class => 'btn btn-mini') do %>
+<div class="pull-right">  <%= link_to(new_nonconformance_path, :class => 'btn btn-mini') do %>
   <i class="icon-plus-sign"></i> New Nonconformance
-  <% end %>
-      </br>
-      </br>
-      </br>
+  <% end %></div>
+
 
       <% open_ncs = Nonconformance.open.count %>
       <% waiting_on_supplier = Nonconformance.waiting_on_supplier.count %>
       <% closed = Nonconformance.closed.count %>
-      <div class="pull-right"><%= link_to "Open (#{open_ncs})", :status => "Open" %> | <%= link_to "Waiting on supplier (#{waiting_on_supplier})", :status => "Waiting on Supplier" %> | <%= link_to "Closed (#{closed})", :status => "Closed" %></div>
-    </br>
 
-    <%= link_to "overdue", nonconformances_path(params.merge(:limit => 'overdue')) %>
+
 
 </div>
 
-<ul class="nav nav-tabs" id="myTab">
-  <li class="active"><a href="#home">Open</a></li>
-  <li><%= link_to "overdue", '#fart' %></li>
-  <li><a href="#messages">Messages</a></li>
-  <li>Settings</li>
-</ul>
- 
-<div class="tab-content">
-  <div class="tab-pane active" id="home">...</div>
-  <div class="tab-pane" id="profile">Aenean consequat</div>
-  <div class="tab-pane" id="messages">...</div>
-  <div class="tab-pane" id="settings">...</div>
+
+
+
+<div class="tabbable"> 
+  <ul class="nav nav-tabs" id="pageloaders">
+    <% if params[:status] == "Open" %>
+    <li class='active'><%= link_to "Open (#{open_ncs})", :status => "Open", :data => {:toggle=>"tab"} %></li>
+    <% elsif params.has_key?(:status) == false %>
+    <li class='active'><%= link_to "Open (#{open_ncs})", :status => "Open", :data => {:toggle=>"tab"} %></li>
+    <% else %>
+   <li class=''><%= link_to "Open (#{open_ncs})", :status => "Open", :data => {:toggle=>"tab"} %></li>
+    <% end %>
+
+    <li class="<%= 'active' if params[:status] == 'Waiting on Supplier' %>"><%= link_to "Waiting on supplier (#{waiting_on_supplier})", :status => "Waiting on Supplier", :data => {:toggle=>"tab"} %></li>
+
+    <li    <li class="<%= 'active' if params[:status] == 'Closed' %>"><%= link_to "Closed (#{closed})", :status => "Closed", :data => {:toggle=>"tab"} %></li>
+  </ul>
+  
+<% if params[:status] == 'Waiting on Supplier' %>
+
+<%= link_to "Filter by Overdue", nonconformances_path(params.merge(:limit => 'overdue')), :class => 'btn btn-small' %>
+<% end %>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+      <p></p>
+    </div>
+    <div class="tab-pane" id="tab2">
+      <p></p>
+    </div>
+    <div class="tab-pane" id="tab3">
+      <p></p>
+    </div>
+  </div>
 </div>
- 
-<script>
-  $(function () {
-    $('#myTab a:first').tab('show');
-  })
-</script>
-
-
-
-
 
 
 
@@ -48,26 +55,30 @@
   <div class="nonconformance-summary">
 
       <div class="span2">
-	<div class="alert alert-success">
+	<div class="green">
 	<strong>
 	<%= number_to_currency(nonconformance.instances.sum { |p| p.quantity * nonconformance.component.price_per_purchase_unit + p.labor * nonconformance.labor_cost }) %>
 	</strong>
 	</div>
 
 	<% if nonconformance.notification_date != nil %>
-	<div class="alert alert-info">
+	<div class="show-grid">
 	  <p>
 	    sent <%= time_ago_in_words(nonconformance.notification_date) %> ago
 	  </p>
 	</div>
 	<% end %>
 
+
 	<% if nonconformance.close_date != nil %>
-	<div class="alert alert-error">
+	<div class="show-grid">
 	  <p>
 	    closed <%= time_ago_in_words(nonconformance.close_date) %> ago
 	  </p>
 	</div>
+
+
+
 	<% end %>
 
       </div>
