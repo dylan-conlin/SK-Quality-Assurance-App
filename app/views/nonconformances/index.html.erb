@@ -3,33 +3,26 @@
   <i class="icon-plus-sign"></i> New Nonconformance
   <% end %></div>
 
-
-      <% open_ncs = Nonconformance.open.count %>
-      <% waiting_on_supplier = Nonconformance.waiting_on_supplier.count %>
-      <% closed = Nonconformance.closed.count %>
-
-
-
 </div>
 
-:status => <%= params[:status] %></br>
-:limit => <%= params[:limit] %>
+
+
 
 
 <div class="tabbable"> 
   <ul class="nav nav-tabs" id="pageloaders">
     <% if params[:status] == "Open" %>
-    <li class='active'><%= link_to "Open (#{open_ncs})", :status => "Open", :data => {:toggle=>"tab"} %></li>
+    <li class='active'><%= link_to "Open (#{@nonconformances.count})", :status => "Open", :data => {:toggle=>"tab"} %></li>
     <% elsif params.has_key?(:status) == false %>
-    <li class='active'><%= link_to "Open (#{open_ncs})", :status => "Open", :data => {:toggle=>"tab"} %></li>
+    <li class='active'><%= link_to "Open (#{@nonconformances.count})", :status => "Open", :data => {:toggle=>"tab"} %></li>
     <% else %>
-   <li class=''><%= link_to "Open (#{open_ncs})", :status => "Open", :data => {:toggle=>"tab"} %></li>
+   <li class=''><%= link_to "Open (#{@nonconformances.count})", :status => "Open", :data => {:toggle=>"tab"} %></li>
     <% end %>
 
 
-    <li class="<%= 'active' if params[:status] == 'Waiting on Supplier' %>"><%= link_to "Waiting on supplier (#{waiting_on_supplier})", :status => "Waiting on Supplier", :data => {:toggle=>"tab"} %></li>
+    <li class="<%= 'active' if params[:status] == 'Waiting on Supplier' %>"><%= link_to "Waiting on supplier (#{@nonconformances.count})", :status => "Waiting on Supplier", :data => {:toggle=>"tab"} %></li>
 
-    <li class="<%= 'active' if params[:status] == 'Closed' %>"><%= link_to "Closed (#{closed})", :status => "Closed", :data => {:toggle=>"tab"} %></li>
+    <li class="<%= 'active' if params[:status] == 'Closed' %>"><%= link_to "Closed (#{@nonconformances.count})", :status => "Closed", :data => {:toggle=>"tab"} %></li>
   </ul>
 
 
@@ -150,7 +143,7 @@
 </br>    
 
 
-<%= will_paginate @nonconformances %>
+
 
 
 

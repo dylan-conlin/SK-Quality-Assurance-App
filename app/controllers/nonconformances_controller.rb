@@ -16,23 +16,20 @@ class NonconformancesController < ApplicationController
       
     # end
 
-    @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
+  @
 
-    if params[:status] == "Open"
-      @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
-    elsif params[:status] == "Waiting on Supplier"
-      @nonconformances = Nonconformance.waiting_on_supplier.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
-      if params[:limit] == "overdue"
-          @nonconformances = Nonconformance.waiting_on_supplier.overdue.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
+  @nonconformances = Nonconformance.open
+
+    if params[:status] == 'Waiting on Supplier' 
+      @nonconformances = Nonconformance.waiting_on_supplier
+      
+      if params[:limit] == 'overdue' 
+        @nonconformances = Nonconformance.waiting_on_supplier.overdue
       end
-    elsif params[:status] == "Closed"
-      @nonconformances = Nonconformance.closed.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
     end
 
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @nonconformances }
+    if params[:status] == 'Closed'
+      @nonconformances = Nonconformance.closed
     end
 
   end
