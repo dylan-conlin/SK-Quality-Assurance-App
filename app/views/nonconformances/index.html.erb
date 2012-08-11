@@ -12,7 +12,8 @@
 
 </div>
 
-
+:status => <%= params[:status] %></br>
+:limit => <%= params[:limit] %>
 
 
 <div class="tabbable"> 
@@ -25,15 +26,40 @@
    <li class=''><%= link_to "Open (#{open_ncs})", :status => "Open", :data => {:toggle=>"tab"} %></li>
     <% end %>
 
+
     <li class="<%= 'active' if params[:status] == 'Waiting on Supplier' %>"><%= link_to "Waiting on supplier (#{waiting_on_supplier})", :status => "Waiting on Supplier", :data => {:toggle=>"tab"} %></li>
 
-    <li    <li class="<%= 'active' if params[:status] == 'Closed' %>"><%= link_to "Closed (#{closed})", :status => "Closed", :data => {:toggle=>"tab"} %></li>
+    <li class="<%= 'active' if params[:status] == 'Closed' %>"><%= link_to "Closed (#{closed})", :status => "Closed", :data => {:toggle=>"tab"} %></li>
   </ul>
-  
-<% if params[:status] == 'Waiting on Supplier' %>
 
-<%= link_to "Filter by Overdue", nonconformances_path(params.merge(:limit => 'overdue')), :class => 'btn btn-small' %>
-<% end %>
+
+  <% if params[:status] == 'Waiting on Supplier' %>
+  <div class="btn-group" data-toggle="buttons-radio">
+    <% if params.has_key?(:limit) == true %>
+    <button class="btn">
+      <%= link_to "Show all", :status => "Waiting on Supplier" %>
+    </button>
+    <button class="btn active">
+      <%= link_to "Filter by Overdue", nonconformances_path(params.merge(:limit => 'overdue')) %>
+    </button>
+    <% end %>
+    <% if params.has_key?(:limit) == false %>
+    <button class="btn active">
+      <%= link_to "Show all", :status => "Waiting on Supplier" %>
+    </button>
+    <button class="btn">
+      <%= link_to "Filter by Overdue", nonconformances_path(params.merge(:limit => 'overdue')) %>
+    </button>
+    <% end %>
+  </div>
+  <% else %>
+  </br>
+  <% end %>
+  
+
+
+
+
   <div class="tab-content">
     <div class="tab-pane active" id="tab1">
       <p></p>
@@ -88,6 +114,16 @@
 	  <h3><%= link_to nonconformance.component.number + ": " + nonconformance.component.sk_description, nonconformance %></h3></br>
 	  <p><%= nonconformance.reason %></p>
 
+	  <% if current_user.nc_admin == true %>
+	  <%= form_for nonconformance, :remote => true do |f| %>
+
+	  <%= f.select :status, [['Open'],['Waiting on Supplier'],['Closed'],], {}, {:onChange =>
+	  'this.form.submit();' } %>
+	  <div class="timestamp">
+	    this field is only visible to nc admins
+	  </div>
+	  <% end %>
+	  <% end %>
       </div>
       <div class="span11">
       <div class="row">

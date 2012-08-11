@@ -111,8 +111,22 @@ class NonconformancesController < ApplicationController
           @nonconformance.save
         end
 
+        if request.path_parameters[:action] == "show"
+
+
           format.html { redirect_to @nonconformance, notice: 'Nonconformance was successfully updated.' }
           format.json { head :no_content }
+
+        else
+
+          format.html {
+          redirect_to(nonconformances_path(params[:status])) }
+
+
+
+        end
+
+
       else
         format.html { render action: "edit" }
         format.json { render json: @nonconformance.errors, status: :unprocessable_entity }
