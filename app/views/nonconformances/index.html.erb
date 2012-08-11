@@ -16,6 +16,13 @@
 :limit => <%= params[:limit] %>
 
 
+
+
+
+
+
+
+
 <div class="tabbable"> 
   <ul class="nav nav-tabs" id="pageloaders">
     <% if params[:status] == "Open" %>
@@ -116,6 +123,7 @@
 
 	  <% if current_user.nc_admin == true %>
 	  <%= form_for nonconformance, :remote => true do |f| %>
+
 
 	  <%= f.select :status, [['Open'],['Waiting on Supplier'],['Closed'],], {}, {:onChange =>
 	  'this.form.submit();' } %>
