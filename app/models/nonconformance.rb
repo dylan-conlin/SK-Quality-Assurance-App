@@ -1,13 +1,13 @@
 
 class Nonconformance < ActiveRecord::Base
-  attr_accessible :reason, :user_id, :component_id, :status, :instances_attributes, :photo_1, :photo_2, :photo_3, :photo_4, :letter, :recipient, :notification_date, :credit_number, :close_date
+  attr_accessible :reason, :user_id, :component_id, :status, :instances_attributes, :photo_1, :photo_2, :photo_3, :photo_4, :letter, :recipient, :notification_date, :credit_number, :close_date, :days_until_due
 
 before_create :set_status, :set_labor_cost, :set_letter
 
 scope :open, where(:status => "Open")
 scope :waiting_on_supplier, where(:status => "Waiting on Supplier")
-scope :recent, lambda { where('notification_date >= ?', Time.current - 1.week) }
-scope :overdue, lambda { where('notification_date < ?', Time.current - 1.week) }
+ scope :recent, lambda { where('notification_date >= ?', Time.current - 1.hour) }
+ scope :overdue, lambda { where('notification_date < ?', Time.current - 1.hour) }
 scope :closed, where(:status => "Closed")
 
 belongs_to :supplier

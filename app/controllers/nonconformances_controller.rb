@@ -16,21 +16,32 @@ class NonconformancesController < ApplicationController
       
     # end
 
-  @
+    if params.has_key?(:status) == false
+    @nonconformances = Nonconformance.open
+    end
 
-  @nonconformances = Nonconformance.open
+    if params[:status]
+    @nonconformances = Nonconformance.where(:status => (params[:status]))
+    end
 
-    if params[:status] == 'Waiting on Supplier' 
-      @nonconformances = Nonconformance.waiting_on_supplier
+    if params[:limit]
+    @nonconformances = Nonconformance.where(:status => (params[:status])).overdue
+    end
+
+
+
+
+#     if params[:status] == 'Waiting on Supplier' 
+#       @nonconformances = Nonconformance.where(:status => (params[:status]))
       
-      if params[:limit] == 'overdue' 
-        @nonconformances = Nonconformance.waiting_on_supplier.overdue
-      end
-    end
+#       if params[:limit] == 'overdue' 
+#         @nonconformances = Nonconformance.waiting_on_supplier.overdue
+#       end
+#     end
 
-    if params[:status] == 'Closed'
-      @nonconformances = Nonconformance.closed
-    end
+#     if params[:status] == 'Closed'
+#       @nonconformances = Nonconformance.closed
+#     end
 
   end
 
@@ -87,6 +98,7 @@ class NonconformancesController < ApplicationController
   # PUT /nonconformances/1.json
   def update
     @nonconformance = Nonconformance.find(params[:id])
+    my_status = @nonconformance.status
 
     respond_to do |format|
       if @nonconformance.update_attributes(params[:nonconformance])
@@ -108,22 +120,12 @@ class NonconformancesController < ApplicationController
           @nonconformance.save
         end
 
-        if request.path_parameters[:action] == "show"
-
-
-          format.html { redirect_to @nonconformance, notice: 'Nonconformance was successfully updated.' }
-          format.json { head :no_content }
-
-        else
 
           format.html {
-          redirect_to(nonconformances_path(params[:status])) }
+          redirect_to(nonconformances_path(:status => my_status)) }
 
 
-
-        end
-
-
+      
       else
         format.html { render action: "edit" }
         format.json { render json: @nonconformance.errors, status: :unprocessable_entity }

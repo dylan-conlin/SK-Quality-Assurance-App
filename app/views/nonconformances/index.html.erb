@@ -12,17 +12,17 @@
 <div class="tabbable"> 
   <ul class="nav nav-tabs" id="pageloaders">
     <% if params[:status] == "Open" %>
-    <li class='active'><%= link_to "Open (#{@nonconformances.count})", :status => "Open", :data => {:toggle=>"tab"} %></li>
+    <li class='active'><%= link_to "Open (#{Nonconformance.open.count})", :status => "Open", :data => {:toggle=>"tab"} %></li>
     <% elsif params.has_key?(:status) == false %>
-    <li class='active'><%= link_to "Open (#{@nonconformances.count})", :status => "Open", :data => {:toggle=>"tab"} %></li>
+    <li class='active'><%= link_to "Open (#{Nonconformance.open.count})", :status => "Open", :data => {:toggle=>"tab"} %></li>
     <% else %>
-   <li class=''><%= link_to "Open (#{@nonconformances.count})", :status => "Open", :data => {:toggle=>"tab"} %></li>
+   <li class=''><%= link_to "Open (#{Nonconformance.open.count})", :status => "Open", :data => {:toggle=>"tab"} %></li>
     <% end %>
 
 
-    <li class="<%= 'active' if params[:status] == 'Waiting on Supplier' %>"><%= link_to "Waiting on supplier (#{@nonconformances.count})", :status => "Waiting on Supplier", :data => {:toggle=>"tab"} %></li>
+    <li class="<%= 'active' if params[:status] == 'Waiting on Supplier' %>"><%= link_to "Waiting on supplier (#{Nonconformance.waiting_on_supplier.count})", :status => "Waiting on Supplier", :data => {:toggle=>"tab"} %></li>
 
-    <li class="<%= 'active' if params[:status] == 'Closed' %>"><%= link_to "Closed (#{@nonconformances.count})", :status => "Closed", :data => {:toggle=>"tab"} %></li>
+    <li class="<%= 'active' if params[:status] == 'Closed' %>"><%= link_to "Closed (#{Nonconformance.closed.count})", :status => "Closed", :data => {:toggle=>"tab"} %></li>
   </ul>
 
 
