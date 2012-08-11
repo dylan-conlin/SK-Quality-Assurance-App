@@ -16,24 +16,37 @@ class NonconformancesController < ApplicationController
       
     # end
 
-    @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
-    
-    if params[:status] == "Open"
-      @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
-    elsif params[:status] == "Waiting on Supplier"
-      @nonconformances = Nonconformance.waiting_on_supplier.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
-      if params[:limit] == "overdue"
-        @nonconformances = Nonconformance.waiting_on_supplier.overdue.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
-      end
-    elsif params[:status] == "Closed"
-      @nonconformances = Nonconformance.closed.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
-    end
+
+
     
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @nonconformances }
+    if params.has_key?(:status) == false
+    @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
     end
+
+    if params[:status]
+    @nonconformances = Nonconformance.where(:status => (params[:status])).order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
+    end
+
+
+    if params[:limit]
+    @nonconformances = Nonconformance.where(:status => (params[:status])).overdue.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
+    end
+
+
+
+
+#     if params[:status] == 'Waiting on Supplier' 
+#       @nonconformances = Nonconformance.where(:status => (params[:status]))
+      
+#       if params[:limit] == 'overdue' 
+#         @nonconformances = Nonconformance.waiting_on_supplier.overdue
+#       end
+#     end
+
+#     if params[:status] == 'Closed'
+#       @nonconformances = Nonconformance.closed
+#     end
 
   end
 
@@ -90,6 +103,7 @@ class NonconformancesController < ApplicationController
   # PUT /nonconformances/1.json
   def update
     @nonconformance = Nonconformance.find(params[:id])
+    my_status = @nonconformance.status
 
     respond_to do |format|
       if @nonconformance.update_attributes(params[:nonconformance])
@@ -111,22 +125,12 @@ class NonconformancesController < ApplicationController
           @nonconformance.save
         end
 
-        if request.path_parameters[:action] == "show"
-
-
-          format.html { redirect_to @nonconformance, notice: 'Nonconformance was successfully updated.' }
-          format.json { head :no_content }
-
-        else
 
           format.html {
-          redirect_to(nonconformances_path(params[:status])) }
+          redirect_to(nonconformances_path(:status => my_status)) }
 
 
-
-        end
-
-
+      
       else
         format.html { render action: "edit" }
         format.json { render json: @nonconformance.errors, status: :unprocessable_entity }
