@@ -2,7 +2,8 @@
 class Nonconformance < ActiveRecord::Base
   attr_accessible :reason, :user_id, :component_id, :status, :instances_attributes, :photo_1, :photo_2, :photo_3, :photo_4, :letter, :recipient, :notification_date, :credit_number, :close_date, :days_until_due
 
-before_create :set_status, :set_labor_cost, :set_letter
+before_create :set_status, :set_labor_cost, :set_letter, :set_days_until_due
+
 
 scope :open, where(:status => "Open")
 scope :waiting_on_supplier, where(:status => "Waiting on Supplier")
@@ -58,6 +59,10 @@ accepts_nested_attributes_for :instances, allow_destroy: true
 private
     def set_status
       self.status = "Open"
+    end
+
+    def set_days_until_due
+      self.days_until_due = 7
     end
 
     def set_labor_cost
