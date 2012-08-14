@@ -5,8 +5,8 @@
   <thead>
     <tr>
       <th>Name</th>
+
      <% if current_user.admin == true %>	
-      <th>Receives Production Check Alerts?</th>
       <th>Admin</th>
      <% end %>
     </tr>
@@ -14,23 +14,11 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= gravatar_for user, size: 52 %></br>
-            <%= link_to user.name, user %></td>
-
-	    <% if current_user.admin == true %>
-	    <%= form_for user, :remote => true do |f| %>
-	    <td><div class="disabled">
-	      <%= f.select :receives_production_check_alert, [[true],[false]], {}, {:onChange => 'this.form.submit();' } %>
-	    </div></td>
-	    <% end %>
-	    <% end %>
-
-
-	    <% if user.receives_production_check_alert == nil %>
-	    <td>No</td>
-	    <% elsif user.receives_production_check_alert == true %>
-	    <td>Yes</td>
-	    <% end %>
+        <td><div class="span1"><%= gravatar_for user, size: 52 %></div>
+            <div class="offset1 span3"><%= link_to user.name, user %>
+	    <%= user.department.name %>
+	    <%= user.title %></div></td>
+	
          <% if current_user.admin == true %>	
         <td>
 	     <div class="btn-group">
@@ -46,7 +34,6 @@
 	     </div>
         </td>
 	 <% end %>
-        
        </tr>
     <% end %>
   </tbody>
