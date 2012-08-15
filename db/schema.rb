@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120811222236) do
+ActiveRecord::Schema.define(:version => 20120814161044) do
 
   create_table "assets", :force => true do |t|
     t.string   "asset_file_name"
@@ -319,5 +319,23 @@ ActiveRecord::Schema.define(:version => 20120811222236) do
   add_index "versions", ["user_id", "user_type"], :name => "index_versions_on_user_id_and_user_type"
   add_index "versions", ["user_name"], :name => "index_versions_on_user_name"
   add_index "versions", ["versioned_id", "versioned_type"], :name => "index_versions_on_versioned_id_and_versioned_type"
+
+  create_table "waste_captures", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "component_id"
+    t.string   "workorder"
+    t.decimal  "quantity"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "wastes", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "component_id"
+    t.string   "workorder"
+    t.decimal  "quantity"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
 
 end

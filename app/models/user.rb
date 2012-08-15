@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   has_many :issues
   has_many :nonconformances
   has_many :instances
+  has_many :waste_captures
   has_many :production_checks
   has_many :comments
   has_many :audits

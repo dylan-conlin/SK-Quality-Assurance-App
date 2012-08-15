@@ -2,6 +2,8 @@ SampleApp::Application.routes.draw do
 
 
 
+  resources :waste_captures
+
   resources :components
 
   resources :suppliers

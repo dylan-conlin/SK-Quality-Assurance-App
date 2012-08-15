@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @waste_capture.user_id %>
+</p>
+
+<p>
+  <b>Component:</b>
+  <%= @waste_capture.component_id %>
+</p>
+
+<p>
+  <b>Workorder:</b>
+  <%= @waste_capture.workorder %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @waste_capture.quantity %>
+</p>
+
+
+<%= link_to 'Edit', edit_waste_capture_path(@waste_capture) %> |
+<%= link_to 'Back', waste_captures_path %>

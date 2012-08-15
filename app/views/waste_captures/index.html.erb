@@ -1,0 +1,29 @@
+<h1>Listing waste_captures</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Component</th>
+    <th>Workorder</th>
+    <th>Quantity</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @waste_captures.each do |waste_capture| %>
+  <tr>
+    <td><%= waste_capture.user_id %></td>
+    <td><%= waste_capture.component_id %></td>
+    <td><%= waste_capture.workorder %></td>
+    <td><%= waste_capture.quantity %></td>
+    <td><%= link_to 'Show', waste_capture %></td>
+    <td><%= link_to 'Edit', edit_waste_capture_path(waste_capture) %></td>
+    <td><%= link_to 'Destroy', waste_capture, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Waste capture', new_waste_capture_path %>
