@@ -27,7 +27,9 @@
   <h3>Nonconformances</h3></br>
   <% @supplier.nonconformances.each do |nonconformance| %>
   <ul>
-    <%= link_to nonconformance.component.number + " " + nonconformance.component.sk_description, nonconformance %>
+    <%= link_to nonconformance.component.number + " " + nonconformance.component.sk_description, nonconformance %> ID:<%= nonconformance.id %>
+    <p><%= nonconformance.reason %></p>
+    
   </ul>
   
   <% end %>

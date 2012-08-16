@@ -111,7 +111,7 @@
 
       <div class="span9">
 
-	  <h3><%= link_to nonconformance.component.number + ": " + nonconformance.component.sk_description, nonconformance %></h3></br>
+	  <h3><%= link_to nonconformance.component.number + ": " + nonconformance.component.sk_description, nonconformance %> ID:<%= nonconformance.id %></h3></br>
 	  <p><%= nonconformance.reason %></p>
 
 	  <% if current_user.nc_admin == true %>
