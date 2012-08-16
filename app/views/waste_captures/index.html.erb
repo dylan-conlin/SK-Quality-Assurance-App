@@ -1,6 +1,6 @@
 <h1>Listing waste_captures</h1>
 
-<table>
+<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered pretty">
   <tr>
     <th>User</th>
     <th>Component</th>
@@ -13,8 +13,8 @@
 
 <% @waste_captures.each do |waste_capture| %>
   <tr>
-    <td><%= waste_capture.user_id %></td>
-    <td><%= waste_capture.component_id %></td>
+    <td><%= waste_capture.user.name %></td>
+    <td><%= waste_capture.component.number %></td>
     <td><%= waste_capture.workorder %></td>
     <td><%= waste_capture.quantity %></td>
     <td><%= link_to 'Show', waste_capture %></td>

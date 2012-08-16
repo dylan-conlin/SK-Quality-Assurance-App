@@ -3,8 +3,7 @@
 
   <div class="form-inputs">
 
-    <%= f.collection_select :component_id, Component.all, :id,
-    :number, :include_blank => false %> 
+    <%= f.association :component, :label_method => lambda { |component| "#{component.number} | #{component.sk_description}" } %>
     <%= f.input :reason %>
     <%= f.input :credit_number %>
     <%= f.input :days_until_due %>

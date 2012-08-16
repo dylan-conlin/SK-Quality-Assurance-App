@@ -23,7 +23,7 @@
 
     <%= f.input :price_per_purchase_unit %>
 
-    <%= f.input :supplier_id %>
+    <%= f.association :supplier, :label_method => lambda { |supplier| "#{supplier.name} | #{supplier.long_name}" } %>
 
   </div>
 
