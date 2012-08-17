@@ -56,5 +56,17 @@
 </p>
 
 
+<p>
+  <b>Components:</b>
+<ul>
+  <% @component.items.each do |item| %>
+    <li><%= item.number %></li>
+  <% end %>
+</ul>
+</p>
+
+
+
+
 <%= link_to 'Edit', edit_component_path(@component) %> |
 <%= link_to 'Back', components_path %>

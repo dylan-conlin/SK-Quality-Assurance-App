@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120814161044) do
+ActiveRecord::Schema.define(:version => 20120817223115) do
 
   create_table "assets", :force => true do |t|
     t.string   "asset_file_name"
@@ -82,6 +82,8 @@ ActiveRecord::Schema.define(:version => 20120814161044) do
     t.string   "supplier_description"
     t.integer  "supplier_id"
     t.integer  "link_id"
+    t.integer  "item_id"
+    t.integer  "components_items_id"
   end
 
   create_table "customers", :force => true do |t|
@@ -162,12 +164,30 @@ ActiveRecord::Schema.define(:version => 20120814161044) do
     t.integer  "views"
   end
 
+  create_table "item_components", :force => true do |t|
+    t.integer  "item_id"
+    t.integer  "subrecipe_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "item_types", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "items", :force => true do |t|
     t.string   "number"
     t.string   "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
     t.integer  "customer_id"
+    t.integer  "item_id"
+    t.integer  "components_items_id"
+    t.integer  "component_id"
+    t.integer  "subrecipe_id"
+    t.integer  "item_type_id"
   end
 
   create_table "microposts", :force => true do |t|
@@ -242,6 +262,14 @@ ActiveRecord::Schema.define(:version => 20120814161044) do
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
     t.integer  "recipient_id"
+  end
+
+  create_table "recipes", :force => true do |t|
+    t.integer  "component_id"
+    t.integer  "subrecipe_id"
+    t.integer  "item_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "relationships", :force => true do |t|

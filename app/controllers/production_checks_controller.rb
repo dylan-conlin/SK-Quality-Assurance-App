@@ -17,8 +17,10 @@ class ProductionChecksController < ApplicationController
 
     @label_readability_pass_count = ProductionCheck.last_3_months.where(:label_readability => false).group(:workorder).count 
     @label_readability_pass_count.each {|key, count| @label_readability_stats[key] = (@label_readability_stats[key] + count).to_f } 
+
     @checks_per_wo_count.each {|key, count| @label_readability_stats[key] = (@label_readability_stats[key] / count).to_f } 
     @label_readability_stats.each {|key, count| @label_readability_stats[key] = @label_readability_stats[key] * 100 } 
+
     @label_accuracy_pass_count = ProductionCheck.last_3_months.where(:label_accuracy => false).group(:workorder).count 
 
 

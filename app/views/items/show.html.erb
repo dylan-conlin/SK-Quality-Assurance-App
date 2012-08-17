@@ -10,6 +10,33 @@
   <%= @item.description %>
 </p>
 
+<p>
+  <b>Type:</b>
+  <%= @item.item_type.name %>
+</p>
+
+<p>
+  <b>Components:</b>
+<ul>
+    <td><%  @item.components.each do |component| %>
+     <p><%= component.number %></p>
+  <% end %></td>
+</ul>
+</p>
+
+
+<p>
+  <b>Subrecipes:</b>
+<ul>
+    <td><% @item.subrecipes.each do |subrecipe| %>
+     <p><%= subrecipe.number %></p>
+  <% end %></td>
+</ul>
+</p>
+
+
+
+
 
 <%= link_to 'Edit', edit_item_path(@item) %> |
 <%= link_to 'Back', items_path %>

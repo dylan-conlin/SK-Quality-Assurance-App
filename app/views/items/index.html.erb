@@ -13,8 +13,13 @@
 <tbody>
 <% @items.each do |item| %>
   <tr>
+    <td><%= item.id %></td>
     <td><%= item.number %></td>
     <td><%= item.description %></td>
+    <td><%  item.components.each do |component| %>
+     <p><%= component.number %></p>
+  <% end %></td>
+    <td><%= item.item_type.name %></td>
     <td><%= link_to 'Show', item %></td>
     <td><%= link_to 'Edit', edit_item_path(item) %></td>
     <td><%= link_to 'Destroy', item, confirm: 'Are you sure?', method: :delete %></td>

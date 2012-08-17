@@ -4,6 +4,14 @@
   <div class="form-inputs">
     <%= f.input :number %>
     <%= f.input :description %>
+    <%= f.association :item_type %>
+
+    <%= f.association :components, :collection => Item.where(:item_type_id => 3 ), :include_blank => true, :label_method => lambda { |component| "#{component.number} #{component.description}" } %>
+
+    <%= f.association :subrecipes, :collection => Item.where(:item_type_id => 2 ), :include_blank => true, :label_method => lambda { |subrecipe| "#{subrecipe.number} #{subrecipe.description}" } %> 
+
+  
+
   </div>
 
   <div class="form-actions">

@@ -25,6 +25,8 @@
 
     <%= f.association :supplier, :label_method => lambda { |supplier| "#{supplier.name} | #{supplier.long_name}" } %>
 
+    <%= f.association :items, :include_blank => true, :label_method => lambda { |item| "#{item.number} | #{item.description}" } %>
+
   </div>
 
   <div class="form-actions">
