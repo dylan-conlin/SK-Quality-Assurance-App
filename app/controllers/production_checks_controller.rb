@@ -5,9 +5,7 @@ class ProductionChecksController < ApplicationController
   # GET /production_checks.json
   def index
 
-
     @production_checks = ProductionCheck.order(sort_column + " " + sort_direction).text_search(params[:query]).paginate(:per_page => 5, :page => params[:page])
-
 
   end
 

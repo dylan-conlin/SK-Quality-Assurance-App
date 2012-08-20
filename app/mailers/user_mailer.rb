@@ -11,11 +11,22 @@ class UserMailer < ActionMailer::Base
     def production_check_alert(users,production_check)
       @users = users
       @production_check = production_check
-      email_with_name = "#{@production_check.user.name} <#{@production_check.user.email}>"
+
+        if @production_check.label_readability == true
+          @subject = "Label Readability"
+        elsif @production_check.label_accuracy == true
+          @subject = "Label Accuracy"
+        elsif @production_check.seal_integrity == true
+          @subject = "Seal Integrity"
+        elsif @production_check.build_accuracy == true
+          @subject = "Build Accuracy"
+        end
+
+      email_with_name = "Quality Assurance <#{@production_check.user.email}>"
       mail( reply_to: @production_check.user.email,
             from: email_with_name,
             to: @users.map {|user| user.email}, 
-            subject: "production check alert; WO: #{@production_check.workorder}")
+            subject: "#{@subject} concern: WO #{@production_check.workorder}")
     end
 
     def notify_on_new_comment(bcc,content,comment,issue,comments)

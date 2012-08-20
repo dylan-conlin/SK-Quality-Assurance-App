@@ -15,8 +15,10 @@ class NonconformancePdf < Prawn::Document
     move_down 40
     corrective_action
     move_down 40
-    start_new_page
-    images
+    if @nonconformance.photo_1.file? or @nonconformance.photo_2.file? or @nonconformance.photo_3.file? or @nonconformance.photo_4.file?
+      start_new_page
+      images
+    end
   end
 
   def nonconformance_letter
@@ -50,7 +52,7 @@ class NonconformancePdf < Prawn::Document
 
 
   def nonconformance_id
-    text "Nonconforming Product Report", size: 24, style: :bold
+    text "Nonconforming Product Report ID:" + "#{@nonconformance.id}", size: 24, style: :bold
     move_down 30
     text "<b>Date:</b> " + Time.now.strftime("%D").to_s, :inline_format => true
     move_down 10

@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Workorder Number:</b>
+  <%= @workorder.number %>
+</p>
+
+<p>
+  <b>Line:</b>
+  <%= @workorder.line.number %> <%= @workorder.line.description %>
+</p>
+
+<p>
+  <b>Item:</b>
+  <%= @workorder.item.number %> <%= @workorder.item.description %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @workorder.status %>
+</p>
+
+<p>
+  <b>Scheduled run date:</b>
+  <%= @workorder.scheduled_run_date %>
+</p>
+
+<p>
+  <b>Scheduled quantity:</b>
+  <%= @workorder.scheduled_quantity %>
+</p>
+
+<p>
+  <b>Amount produced:</b>
+  <%= @workorder.amount_produced %>
+</p>
+
+<p>
+  <b>Start time:</b>
+  <%= @workorder.start_time %>
+</p>
+
+<p>
+  <b>Special equipment:</b>
+  <%= @workorder.special_equipment %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @workorder.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_workorder_path(@workorder) %> |
+<%= link_to 'Back', workorders_path %>

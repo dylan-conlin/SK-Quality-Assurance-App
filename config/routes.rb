@@ -2,6 +2,10 @@ SampleApp::Application.routes.draw do
 
 
 
+  resources :workorders
+
+  resources :lines
+
   resources :item_types
 
   resources :waste_captures

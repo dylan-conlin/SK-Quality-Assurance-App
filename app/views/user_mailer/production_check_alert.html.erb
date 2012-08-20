@@ -70,56 +70,74 @@ padding:3px 7px 2px 7px;"><%= @production_check.workorder %></td>
 
     <td style="font-size:1em;
 border:1px solid #98bf21;
-padding:3px 7px 2px 7px;"><%= @production_check.label_readability_pf %>
-</br>
-<%= ProductionCheck.label_readability_pass_count[@production_check.workorder] == nil ? 0 : ProductionCheck.label_readability_pass_count[@production_check.workorder]  %>/<%= ProductionCheck.checks_per_wo_count[@production_check.workorder] %>
-</br>
-(pass/total)    
+padding:3px 7px 2px 7px;">
+
+<%= @production_check.label_readability_pf %>
+<br/>
+
+<p style="color:gray;">
+WO summary:<br/>
+<%= ProductionCheck.label_readability_pass_count[@production_check.workorder] == nil ? 0 : ProductionCheck.label_readability_pass_count[@production_check.workorder]  %>/<%= ProductionCheck.checks_per_wo_count[@production_check.workorder] %><br/>
+(pass/total checks)<br/>
+</p>
 </td>
 
 
     <td style="font-size:1em;
 border:1px solid #98bf21;
-padding:3px 7px 2px 7px;"><%= @production_check.label_accuracy_pf %>
-</br>
-    <%= ProductionCheck.label_accuracy_pass_count[@production_check.workorder] == nil ? 0 : ProductionCheck.label_accuracy_pass_count[@production_check.workorder] %>/<%= ProductionCheck.checks_per_wo_count[@production_check.workorder] %>
-</br>
-(pass/total)    
+padding:3px 7px 2px 7px;">
+<%= @production_check.label_accuracy_pf %><br/>
+<p style="color:gray;">
+WO summary:<br/>
+    <%= ProductionCheck.label_accuracy_pass_count[@production_check.workorder] == nil ? 0 : ProductionCheck.label_accuracy_pass_count[@production_check.workorder] %>/<%= ProductionCheck.checks_per_wo_count[@production_check.workorder] %><br/>
+
+(pass/total checks)<br/>
+</p>
 </td>
 
 
 
     <td style="font-size:1em;
 border:1px solid #98bf21;
-padding:3px 7px 2px 7px;"><%= @production_check.seal_integrity_pf %>
-</br>
-    <%= ProductionCheck.seal_integrity_pass_count[@production_check.workorder] == nil ? 0 : ProductionCheck.seal_integrity_pass_count[@production_check.workorder] %>/<%= ProductionCheck.checks_per_wo_count[@production_check.workorder] %>
-</br>
-(pass/total)    
+padding:3px 7px 2px 7px;">
+<%= @production_check.seal_integrity_pf %><br/>
+<p style="color:gray;">
+WO summary:<br/>
+<%= ProductionCheck.seal_integrity_pass_count[@production_check.workorder] == nil ? 0 : ProductionCheck.seal_integrity_pass_count[@production_check.workorder] %>/<%= ProductionCheck.checks_per_wo_count[@production_check.workorder] %><br/>
+
+(pass/total checks)<br/>
+</p>
 </td>
 
 
     <td style="font-size:1em;
 border:1px solid #98bf21;
-padding:3px 7px 2px 7px;"><%= @production_check.build_accuracy_pf %>
-</br>
+padding:3px 7px 2px 7px;"><%= @production_check.build_accuracy_pf %><br/>
+<p style="color:gray;">
+WO summary:<br/>
     <%= ProductionCheck.build_accuracy_pass_count[@production_check.workorder] == nil ? 0 : ProductionCheck.build_accuracy_pass_count[@production_check.workorder] %>/<%= ProductionCheck.checks_per_wo_count[@production_check.workorder] %>
-</br>
-(pass/total)    
+<br/>
+(pass/total checks)<br/>
+</p>
 </td>
 
 
     <td style="font-size:1em;
 border:1px solid #98bf21;
-padding:3px 7px 2px 7px;"><%= @production_check.comments %></td>
+padding:3px 7px 2px 7px;">
+<%= @production_check.comments %>
 
 
 </table>
 </br>
 </br>
 <p style="color:gray;">
-  Production checks are performed once every 20 minutes per active workorder. 
-  The following qualities are reviewed:
+</br></br>
+  
+
+Production checks are performed by QA once every 20 minutes per active workorder.<br/>
+Five sandwiches are randomly sampled at the end of the line before entering packaging.<br/>
+The following qualities are reviewed for each item:<br/>
   <ul style="color:gray;">
 
     <li>

@@ -1,0 +1,32 @@
+<%= simple_form_for(@workorder) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+
+    <%= f.input :number, :label => 'Workorder number' %>
+
+    <%= f.association :line, :label_method => lambda { |line| "#{line.number} #{line.description}" } %>
+
+    <%= f.association :item, :label_method => lambda { |item| "#{item.number} #{item.description}" } %>
+
+
+    <%= f.input :status %>
+
+    <%= f.input :scheduled_run_date %>
+
+    <%= f.input :scheduled_quantity %>
+
+    <%= f.input :amount_produced %>
+
+    <%= f.input :start_time %>
+
+    <%= f.input :special_equipment %>
+
+    <%= f.input :notes %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

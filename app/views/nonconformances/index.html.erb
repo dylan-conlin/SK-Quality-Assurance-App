@@ -5,17 +5,6 @@
 
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
 <div class="tabbable"> 
   <ul class="nav nav-tabs" id="pageloaders">
     <% if params[:status] == "Open" %>
@@ -42,6 +31,7 @@
     <button class="btn active">
       <%= link_to "Filter by Overdue", nonconformances_path(params.merge(:limit => 'overdue')) %>
     </button>
+    <div class="offset4">Now showing all NCs older than a week</div>
     <% end %>
     <% if params.has_key?(:limit) == false %>
     <button class="btn active">
