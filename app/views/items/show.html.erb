@@ -11,32 +11,58 @@
 </p>
 
 <p>
+  <b>Customer:</b>
+  <%= @item.customer.long_name %>
+</p>
+
+<p>
   <b>Type:</b>
   <%= @item.item_type.name %>
 </p>
 
-<p>
-  <b>Components:</b>
+
+
+<% @recipes = Recipe.where(:component_id => @item.id ) %>
+<% if @recipes.count < 1 %>
+This item does not act as a component in any other builds
+</br>
+</br>
+<% else %>
+This item is used in the following builds:
+</br>
+</br>
 <ul>
-    <td><%  @item.components.each do |component| %>
-     <p><%= component.number %></p>
-  <% end %></td>
+<% @recipes.each do |recipe| %>
+<li><%= link_to recipe.item.number + ' ' +  recipe.item.description, recipe.item %></li>
+<% end %>
 </ul>
-</p>
+<% end %>
 
 
-<p>
-  <b>Subrecipes:</b>
-<ul>
-    <td><% @item.subrecipes.each do |subrecipe| %>
-     <p><%= subrecipe.number %></p>
-  <% end %></td>
-</ul>
-</p>
+<% unless @item.recipes.count < 1 %>
 
-
-
-
-
+   <h3>Components:</h3>
+   </br>
+   <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered pretty">
+     <tr>
+       <th>Item</th>
+       <th>Description</th>
+       <th>Total Weight</th>
+     </tr>
+     
+     <% @item.recipes.each do |recipe| %>
+     
+     <tr>
+       <td><%= link_to recipe.component.number, recipe.component %></td>
+       <td><%= recipe.component.description %></td>
+       <td><%= recipe.weight %></td>
+     </tr>
+     <% end %>
+   </table>
+   
+<% end %>
+   
+   
+   
 <%= link_to 'Edit', edit_item_path(@item) %> |
 <%= link_to 'Back', items_path %>

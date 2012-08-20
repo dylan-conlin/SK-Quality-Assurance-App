@@ -5,14 +5,19 @@
     <%= f.input :number %>
     <%= f.input :description %>
     <%= f.association :item_type %>
+    <%= f.association :customer, :label_method => lambda { |customer| "#{customer.long_name}" } %>
 
-    <%= f.association :components, :collection => Item.where(:item_type_id => 3 ), :include_blank => true, :label_method => lambda { |component| "#{component.number} #{component.description}" } %>
+  </div>
 
-    <%= f.association :subrecipes, :collection => Item.where(:item_type_id => 2 ), :include_blank => true, :label_method => lambda { |subrecipe| "#{subrecipe.number} #{subrecipe.description}" } %> 
+  <%= f.fields_for :recipes do |builder| %>
+    <%= render 'recipe_fields', f: builder %>
+  <% end %>
+
+
 
   
 
-  </div>
+ <%= link_to_add_fields "Add Item", f, :recipes %>
 
   <div class="form-actions">
     <%= f.button :submit %>

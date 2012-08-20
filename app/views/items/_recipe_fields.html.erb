@@ -1,0 +1,31 @@
+
+<fieldset>
+
+<div class="span3">
+
+      <%= f.collection_select :component_id, Item.all, :id, :number_and_description %>
+</div>
+
+<div class="span3">
+
+      <%= f.input :weight, :label => false %>
+</div>
+
+      <%= f.hidden_field :_destroy %>
+
+      
+      <%= link_to "X", '#', class: "btn btn-danger remove_fields" %>
+
+
+
+</fieldset>
+
+
+
+
+
+
+
+
+
+
