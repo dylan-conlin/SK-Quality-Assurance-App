@@ -20,60 +20,35 @@
         <%= link_to production_check.user.name, production_check.user %></td>
     <td><%= production_check.workorder %></td>
     
-    <% if production_check.label_readability == true %>
-    <td><span class="label label-important">Fail</span></br></br>
-      <% unless @checks_per_wo_count[production_check.workorder].nil? %>
-      <div class="timestamp"><%= number_to_percentage(@label_readability_stats[production_check.workorder], :precision => 0)%> compliance</br> 
-	(<%= @label_readability_pass_count[production_check.workorder]%>/<%= @checks_per_wo_count[production_check.workorder] %> pass)</div></td>
-      <% end %>
-    <% else %>
-    <td><span class="label label-success">Pass</span></br></br>
-      <% unless @checks_per_wo_count[production_check.workorder].nil? %>
-          <div class="timestamp"><%= number_to_percentage(@label_readability_stats[production_check.workorder], :precision => 0)%> compliance</br> 
-	(<%= @label_readability_pass_count[production_check.workorder]%>/<%= @checks_per_wo_count[production_check.workorder] %> pass)</div></td>
-      <% end %>
-    <% end %>
-    
-    <% if production_check.label_accuracy == true %>
-    <td><span class="label label-important">Fail</span></br></br>
-      <% unless @checks_per_wo_count[production_check.workorder].nil? %>
-      <div class="timestamp"><%= number_to_percentage(@label_accuracy_stats[production_check.workorder], :precision => 0)%> compliance</br> 
-	(<%= @label_accuracy_pass_count[production_check.workorder]%>/<%= @checks_per_wo_count[production_check.workorder] %> pass)</div></td>
-    <% end %>
-    <% else %>
-    <td><span class="label label-success">Pass</span></br></br>
-      <% unless @checks_per_wo_count[production_check.workorder].nil? %>
-      <div class="timestamp"><%= number_to_percentage(@label_accuracy_stats[production_check.workorder], :precision => 0)%> compliance</br> 
-	(<%= @label_accuracy_pass_count[production_check.workorder]%>/<%= @checks_per_wo_count[production_check.workorder] %> pass)</div></td>
-    <% end %>
-    <% end %>
+    <td><%= production_check.label_readability_pf %>
+</br>
+</br>
 
-    <% if production_check.seal_integrity == true %>
-    <td><span class="label label-important">Fail</span></br></br>
-      <% unless @checks_per_wo_count[production_check.workorder].nil? %>
-      <div class="timestamp"><%= number_to_percentage(@seal_integrity_stats[production_check.workorder], :precision => 0)%> compliance</br> 
-	(<%= @seal_integrity_pass_count[production_check.workorder]%>/<%= @checks_per_wo_count[production_check.workorder] %> pass)</div></td>
-    <% end %>
-    <% else %>
-    <td><span class="label label-success">Pass</span></br></br>
-      <% unless @checks_per_wo_count[production_check.workorder].nil? %>      <div class="timestamp"><%= number_to_percentage(@seal_integrity_stats[production_check.workorder], :precision => 0)%> compliance</br> 
-	(<%= @seal_integrity_pass_count[production_check.workorder]%>/<%= @checks_per_wo_count[production_check.workorder] %> pass)</div></td>
-    <% end %>
-    <% end %>
-    <% if production_check.build_accuracy == true %>
-    <td><span class="label label-important">Fail</span></br></br>
-      <% unless @checks_per_wo_count[production_check.workorder].nil? %>
-      <div class="timestamp"><%= number_to_percentage(@build_accuracy_stats[production_check.workorder], :precision => 0)%> compliance</br> 
-	(<%= @build_accuracy_pass_count[production_check.workorder]%>/<%= @checks_per_wo_count[production_check.workorder] %> pass)</div></td>
-    <% end %>
-    <% else %>
-    <td><span class="label label-success">Pass</span></br></br>
-      <% unless @checks_per_wo_count[production_check.workorder].nil? %>
-      <div class="timestamp"><%= number_to_percentage(@build_accuracy_stats[production_check.workorder], :precision => 0)%> compliance</br> 
-	(<%= @build_accuracy_pass_count[production_check.workorder]%>/<%= @checks_per_wo_count[production_check.workorder] %> pass)</div></td>
-    <% end %>
-    <% end %>
-
+<%= ProductionCheck.label_readability_pass_count[production_check.workorder] == nil ? 0 : ProductionCheck.label_readability_pass_count[production_check.workorder]  %>/<%= ProductionCheck.checks_per_wo_count[production_check.workorder] %>
+</br>
+(pass/total)    
+</td>
+    <td><%= production_check.label_accuracy_pf %>
+</br>
+</br>
+    <%= ProductionCheck.label_accuracy_pass_count[production_check.workorder] == nil ? 0 : ProductionCheck.label_accuracy_pass_count[production_check.workorder] %>/<%= ProductionCheck.checks_per_wo_count[production_check.workorder] %>
+</br>
+(pass/total)    
+    </td>
+    <td><%= production_check.seal_integrity_pf %>
+</br>
+</br>
+    <%= ProductionCheck.seal_integrity_pass_count[production_check.workorder] == nil ? 0 : ProductionCheck.seal_integrity_pass_count[production_check.workorder] %>/<%= ProductionCheck.checks_per_wo_count[production_check.workorder] %>
+</br>
+(pass/total)    
+    </td>
+    <td><%= production_check.build_accuracy_pf %>
+</br>
+</br>
+    <%= ProductionCheck.build_accuracy_pass_count[production_check.workorder] == nil ? 0 : ProductionCheck.build_accuracy_pass_count[production_check.workorder] %>/<%= ProductionCheck.checks_per_wo_count[production_check.workorder] %>
+</br>
+(pass/total)    
+    </td>
 
     <td><div class="issues_overflower span4"><%= production_check.comments %></div></td>
     <td>
