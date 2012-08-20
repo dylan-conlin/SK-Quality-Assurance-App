@@ -7,6 +7,9 @@
       <th>Name</th>
 
      <% if current_user.admin == true %>	
+<th>production check alerts?</th>
+<th>NC admin?</th>
+<th>is admin?</th>
       <th>Admin</th>
      <% end %>
     </tr>
@@ -20,6 +23,13 @@
 	    <%= user.title %></div></td>
 	
          <% if current_user.admin == true %>	
+	 <td>
+
+	  <%= user.receives_production_check_alert %>
+
+         </td>
+	 <td><%= user.nc_admin %></td>
+	 <td><%= user.admin %></td>
         <td>
 	     <div class="btn-group">
 	       <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
