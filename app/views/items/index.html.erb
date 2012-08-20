@@ -6,6 +6,7 @@
     <th>Number</th>
     <th>Description</th>
     <th>Type</th>
+    <th>Customer</th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,10 +18,8 @@
 
     <td><%= item.number %></td>
     <td><%= item.description %></td>
-
-
-
     <td><%= item.item_type.name %></td>
+    <td><%= item.customer.long_name %></td>
     <td><%= link_to 'Show', item %></td>
     <td><%= link_to 'Edit', edit_item_path(item) %></td>
     <td><%= link_to 'Destroy', item, confirm: 'Are you sure?', method: :delete %></td>

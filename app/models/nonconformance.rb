@@ -7,8 +7,8 @@ before_create :set_status, :set_labor_cost, :set_letter, :set_days_until_due
 
 scope :open, where(:status => "Open")
 scope :waiting_on_supplier, where(:status => "Waiting on Supplier")
- scope :recent, lambda { where('notification_date >= ?', Time.current - 1.hour) }
- scope :overdue, lambda { where('notification_date < ?', Time.current - 1.hour) }
+ scope :recent, lambda { where('notification_date >= ?', Time.current - 1.week) }
+ scope :overdue, lambda { where('notification_date < ?', Time.current - 1.week) }
 scope :closed, where(:status => "Closed")
 
 belongs_to :supplier
