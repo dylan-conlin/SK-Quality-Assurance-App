@@ -1,7 +1,7 @@
 class Instance < ActiveRecord::Base
   attr_accessible :labor, :labor_units, :location, :lot, :nonconformance_id, :quantity, :sublot, :units, :user_id, :user_id, :workorder, :stocker_id, :supplier_lot, :po_number, :receipt_date
 
-  before_create :set_receipt_date
+#  before_create :set_receipt_date
 
   belongs_to :supplier
   belongs_to :nonconformance
@@ -24,9 +24,9 @@ class Instance < ActiveRecord::Base
     #   self.po_number = "Pending"
     # end
     
-    def set_receipt_date
-      self.receipt_date = Time.now
-    end
+    # def set_receipt_date
+    #   self.receipt_date = Time.now
+    # end
 
   
 
