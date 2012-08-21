@@ -1,8 +1,8 @@
 class WasteCapture < ActiveRecord::Base
-  attr_accessible :component_id, :quantity, :user_id, :workorder
+  attr_accessible :quantity, :user_id, :workorder_id, :item_id
 
   belongs_to :user
-  belongs_to :component
-
+  belongs_to :workorder
+  belongs_to :item
 
 end

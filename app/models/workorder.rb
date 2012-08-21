@@ -3,5 +3,6 @@ class Workorder < ActiveRecord::Base
 
   belongs_to :item
   belongs_to :line
+  has_many :waste_captures
 
 end

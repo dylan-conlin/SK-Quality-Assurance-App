@@ -3,9 +3,14 @@
 
   <div class="form-inputs">
 
-    <%= f.association :component, :label => "What item are you making?", :label_method => lambda { |component| "#{component.number} | #{component.sk_description}" } %>
-    <%= f.input :workorder %>
-    <%= f.input :quantity, :label => "Quantity consumed" %>
+
+    <%= f.association :workorder, :label_method => lambda { |workorder| "#{workorder.number} | #{workorder.item.description}" } %> 
+
+
+    <%= f.association :item, :label_method => lambda { |item| "#{item.number} | #{item.description}" } %> 
+
+
+    <%= f.input :quantity, :label => "Quantity in lbs" %>
   </div>
   <div class="form-actions">
     <%= f.button :submit %>

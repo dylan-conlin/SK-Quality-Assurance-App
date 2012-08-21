@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120820192017) do
+ActiveRecord::Schema.define(:version => 20120820215512) do
 
   create_table "assets", :force => true do |t|
     t.string   "asset_file_name"
@@ -358,11 +358,11 @@ ActiveRecord::Schema.define(:version => 20120820192017) do
 
   create_table "waste_captures", :force => true do |t|
     t.integer  "user_id"
-    t.integer  "component_id"
-    t.string   "workorder"
     t.decimal  "quantity"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.integer  "workorder_id"
+    t.integer  "item_id"
   end
 
   create_table "wastes", :force => true do |t|
