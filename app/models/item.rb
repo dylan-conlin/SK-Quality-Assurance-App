@@ -6,10 +6,13 @@ class Item < ActiveRecord::Base
   has_many :nonconformances
   belongs_to :item_type
   belongs_to :customer
+  
   has_many :workorders
+  has_many :lines, :through => :workorders
+
   has_many :waste_captures, :through => :workorders
 
-  has_many :lines, :through => :workorders
+  
   
   has_many :recipes, dependent: :destroy
   has_many :subrecipes, :through => :recipes

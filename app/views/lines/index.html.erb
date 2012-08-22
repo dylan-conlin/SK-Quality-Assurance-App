@@ -1,25 +1,31 @@
 <h1>Listing lines</h1>
 
-<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered pretty" >
-  <tr>
-    <th>Number</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+
+
 
 <% @lines.each do |line| %>
+
+<h3><%= line.description %></h3>
+<br/>
+<table cellpadding="0" cellspacing="0" border="0" class="table  table-bordered pretty" >
+<% line.workorders.each do |workorder| %>
+
   <tr>
-    <td><%= line.number %></td>
-    <td><%= line.description %></td>
-    <td><%= link_to 'Show', line %></td>
-    <td><%= link_to 'Edit', edit_line_path(line) %></td>
-    <td><%= link_to 'Destroy', line, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= workorder.item.number %> <%= workorder.item.description %></td>
+    <td><%= workorder.number %></td>
+    <td><%= workorder.status %></td>
+    <td><%= workorder.scheduled_quantity %></td>
   </tr>
+
 <% end %>
+
 </table>
 
+
+    <%= link_to 'edit', edit_line_path(line)  %>
+<br/>
+<br/>
+<% end %>
 <br />
 
 <%= link_to 'New Line', new_line_path %>

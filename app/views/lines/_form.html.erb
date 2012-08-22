@@ -2,12 +2,17 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-
     <%= f.input :number %>
-
     <%= f.input :description %>
-
   </div>
+
+<%= f.fields_for :workorders do |builder| %>
+  <%= render 'workorder_fields', f: builder %>
+<% end %>
+
+  <%= link_to_add_fields "Add workorder", f, :workorders %>
+
+
 
   <div class="form-actions">
     <%= f.button :submit %>

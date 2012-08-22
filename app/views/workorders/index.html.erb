@@ -4,9 +4,10 @@
 
   <tr>
     <th>Number</th>
-    <th>Line</th>
+
     <th>Item</th>
     <th>Status</th>
+    <th>Line</th>
     <th>Scheduled run date</th>
     <th>Scheduled quantity</th>
     <th>Amount produced</th>
@@ -21,10 +22,10 @@
 <% @workorders.each do |workorder| %>
   <tr>
     <td><%= workorder.number %></td>
-    <td><%= link_to workorder.line.number + ' ' + workorder.line.description, workorder.line %></td>
+
     <td><%= link_to workorder.item.number + ' ' + workorder.item.description, workorder.item %></td>
     <td><%= workorder.status %></td>
-    <td><%= workorder.scheduled_run_date %></td>
+    <td><%= workorder.line.description %></td>
     <td><%= workorder.scheduled_quantity %></td>
     <td><%= workorder.amount_produced %></td>
     <td><%= workorder.start_time %></td>

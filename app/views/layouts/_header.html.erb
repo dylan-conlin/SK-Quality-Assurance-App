@@ -14,7 +14,25 @@
         <ul class="nav pull-right">
           <% if signed_in? %>
 
+	  <% if current_user.admin == true %>
+
+	  <li id="fat-menu" class="dropdown">
+	    <a class=" dropdown-toggle" data-toggle="dropdown" href="#">
+	      Development<span class="caret"></span>
+            </a>
+              <ul class="dropdown-menu">
+		<li><%= link_to "Workorders", workorders_path %></li>
+		<li><%= link_to "Lines", lines_path %></li>
+		<li><%= link_to "Waste Tracking", waste_captures_path %></li>
+                <li><%= link_to "Items", items_path %></li>
+              </ul>
+	  </li>
+
+	  <% end %>
+
            <% if current_user.supervisor == true %>
+
+
 
 	  <li id="fat-menu" class="dropdown">
 	    <a class=" dropdown-toggle" data-toggle="dropdown" href="#">
@@ -25,7 +43,7 @@
 		<li><%= link_to "Add User", new_user_path %></li>
 		<li><%= link_to "Tunnel Temps", tunneltemps_path %></li>
                 <li class="divider"></li>
-                <li><%= link_to "Items", items_path %></li>
+
                 <li><%= link_to "Departments", departments_path %></li>
 		<li><%= link_to "Foreign Objects", foreign_objects_path %></li>
                 <li><%= link_to "GMPs", gmps_path %></li>
@@ -35,16 +53,6 @@
 	  </li>
 
 
-	  <li  class="dropdown">
-	    <a class=" dropdown-toggle" data-toggle="dropdown" href="#">
-	      Production<span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-	      
-              <li><%= link_to "Waste Tracking", waste_captures_path %></li>
-
-            </ul>        
-	    </li>	  
 
 	  <li  class="dropdown">
 	    <a class=" dropdown-toggle" data-toggle="dropdown" href="#">

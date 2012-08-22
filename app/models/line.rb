@@ -1,10 +1,11 @@
 class Line < ActiveRecord::Base
-  attr_accessible :description, :number
+  attr_accessible :description, :number, :workorders_attributes
 
-  has_many :items
-
-  has_many :bookings
-  has_many :workorders, :through => :bookings
   
+  
+  has_many :workorders
+  has_many :items, :through => :workorders
+
+  accepts_nested_attributes_for :workorders, allow_destroy: true
 
 end
