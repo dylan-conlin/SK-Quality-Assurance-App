@@ -21,16 +21,16 @@ class NonconformancesController < ApplicationController
     
 
     if params.has_key?(:status) == false
-    @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
+    @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 20, :page => params[:page])
     end
 
     if params[:status]
-    @nonconformances = Nonconformance.where(:status => (params[:status])).order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
+    @nonconformances = Nonconformance.where(:status => (params[:status])).order(sort_column + " " + sort_direction).paginate(:per_page => 20, :page => params[:page])
     end
 
 
     if params[:limit]
-    @nonconformances = Nonconformance.where(:status => (params[:status])).overdue.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
+    @nonconformances = Nonconformance.where(:status => (params[:status])).overdue.order(sort_column + " " + sort_direction).paginate(:per_page => 20, :page => params[:page])
     end
 
 
