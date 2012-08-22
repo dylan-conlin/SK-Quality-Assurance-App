@@ -3,6 +3,7 @@ class Workorder < ActiveRecord::Base
 
   belongs_to :item
 
+  has_many :bookings
   has_many :lines, :through => :bookings
 
   has_many :waste_captures
