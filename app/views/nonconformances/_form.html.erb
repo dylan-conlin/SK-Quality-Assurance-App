@@ -38,6 +38,7 @@
       <%= f.file_field :photo_2 %>
     </div>
 
+
     <div class='well'>
       <% if @nonconformance.photo_3.file? %>
       
@@ -45,7 +46,7 @@
       
       <% else %>
       <% end %>
-    <%= f.check_box(:delete_photo_3) %> remove<br/>
+      <%= f.check_box(:delete_photo_3) %> remove<br/>
       <%= f.file_field :photo_3 %>
     </div>
     <div class='well'>
@@ -55,10 +56,10 @@
       
       <% else %>
       <% end %>
-    <%= f.check_box(:delete_photo_4) %> remove<br/>
+      <%= f.check_box(:delete_photo_4) %> remove<br/>
       <%= f.file_field :photo_4 %>
     </div>
-
+    
     
 
 

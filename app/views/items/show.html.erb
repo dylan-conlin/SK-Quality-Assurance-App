@@ -12,12 +12,12 @@
 
 <p>
   <b>Customer:</b>
-  <%= @item.customer.long_name %>
+  <%= @item.customer_id %>
 </p>
 
 <p>
   <b>Type:</b>
-  <%= @item.item_type.name %>
+  <%= @item.item_type.try(:name) %>
 </p>
 
 

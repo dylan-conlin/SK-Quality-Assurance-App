@@ -3,8 +3,23 @@
 
   <div class="form-inputs">
     <%= f.input :number %>
+
+
+
     <%= f.input :description %>
-    <%= f.association :item_type %>
+    <%= f.input :category %>
+    <%= f.input :status %>
+    <%= f.input :case_pack %>
+    <%= f.input :case_weight %>
+    <%= f.input :case_weight_unit %>
+    <%= f.input :usda_bug_required %>
+    <%= f.input :purchase_to_stock_conversion %>
+    <%= f.input :purchase_unit %>
+    <%= f.input :stock_unit %>
+    <%= f.association :supplier, :label_method => lambda { |supplier| "#{supplier.name}" } %>
+  
+
+
     <%= f.association :customer, :label_method => lambda { |customer| "#{customer.long_name}" } %>
 
   </div>

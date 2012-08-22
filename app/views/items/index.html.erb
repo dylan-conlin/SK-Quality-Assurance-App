@@ -5,8 +5,18 @@
   <tr>
     <th>Number</th>
     <th>Description</th>
-    <th>Type</th>
-    <th>Customer</th>
+    <th>category </th>
+    <th>status </th>
+    <th>case pack </th>
+    <th>case weight </th>
+    <th>case weight unit </th>
+    <th>usda bug required </th>
+    <th>purchase to stock conversion </th>
+    <th>purchase unit </th>
+    <th>stock unit </th>
+    <th>supplier id </th>
+    <th>item type </th>
+    <th>customer id </th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,8 +27,18 @@
   <tr>
     <td><%= item.number %></td>
     <td><%= item.description %></td>
-    <td><%= item.item_type.name %></td>
-    <td><%= item.customer.long_name %></td>
+    <td><%= item.category %></td>
+    <td><%= item.status %></td>
+    <td><%= item.case_pack %></td>
+    <td><%= item.case_weight %></td>
+    <td><%= item.case_weight_unit %></td>
+    <td><%= item.usda_bug_required %></td>
+    <td><%= item.purchase_to_stock_conversion %></td>
+    <td><%= item.purchase_unit %></td>
+    <td><%= item.stock_unit %></td>
+    <td><%= item.supplier_id %></td>
+    <td><%= item.item_type.try(:name) %></td>
+    <td><%= item.customer_id %></td>
     <td><%= link_to 'Show', item %></td>
     <td><%= link_to 'Edit', edit_item_path(item) %></td>
     <td><%= link_to 'Destroy', item, confirm: 'Are you sure?', method: :delete %></td>

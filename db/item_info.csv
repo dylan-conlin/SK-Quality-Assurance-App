@@ -1,5 +1,1743 @@
-number,description,customer_id
-123587,"Maple Pancakes, Sausage  18/cs",1
-123587,"Maple Pancakes, Sausage  18/cs",1
-123587,"Maple Pancakes, Sausage  18/cs",1
-123587,"Maple Pancakes, Sausage  18/cs",1
+number,description,category,status,case_pack,case_weight,case_weight_unit,usda_bug_required,purchase_to_stock_conversion,purchase_unit,stock_unit,customer_id,supplier_id
+0350,Roll Focaccia Panini,BR,Active,100,18.2,LBS,No,100,CS,EA,10000,361
+0351,Ham Blk Frst Log Unslcd Panini,PR,Obsolete,,31,LBS,No,1,LB,LB,10000,362
+0352,Spread Pesto No Nut ,SA,Active,480,32,LBS,No,480,PL,OZ,10000,363
+0355,Cheese Mozzarella 1.3 Oz,DA,Active,222,18.85,LBS,No,222,CS,EA,10000,366
+0354,Flatbread Grilled 6x6 3 Oz,BR,Obsolete,120,25.17,LBS,No,120,CS,EA,10000,365
+0356,Cheese Swiss Sliced .75 Oz,DA,Active,396,19.5,LBS,No,396,CS,EA,10000,367
+0357,Cheese Pepper Jack .75 Oz,DA,Active,396,19.8,LBS,No,396,CS,EA,10000,368
+0358,Chicken Artisan Rst Slcng Log,PR,Active,39,42,LBS,No,1,LB,LB,10000,369
+0365,Ham Log Cured 3.5 Inch SBUX,PR,Active,48,49.84,LBS,No,1,LB,LB,10000,377
+0359,Spread Cream Chs Green Chili,SA,Active,480,31.03,LBS,No,480,CS,OZ,10000,370
+0367,Butter French Herb .4 Oz,SA,Obsolete,1,25,LBS,No,1,EA,EA,10000,379
+0369,Squash ButtrNut IQF 3/4in Dice,VE,Obsolete,800,55,LBS,No,800,CS,OZ,10000,381
+0370,Asparagus Tips IQF Roasted 1in,VE,Obsolete,800,55,LBS,No,800,CS,OZ,10000,382
+0374,Lbl Saus Scramble Bowl Lid,PK,Active,1000,35.05,LBS,No,1000,RL,EA,10000,386
+0375,Lbl Bacon Scramble Bowl Lid,PK,Active,1000,35.05,LBS,No,1000,RL,EA,10000,387
+0376,Lbl Chckn Teriyaki Bowl Lid,PK,Active,1000,35.05,LBS,No,1000,RL,EA,10000,388
+0366,Egg Patty Ham&Ched 4 Oz CF,PR,Obsolete,72,19,LBS,No,72,CS,EA,10000,378
+0377,Lbl Saus Scramble Bowl Bottom,PK,Active,2000,35.05,LBS,No,2000,RL,EA,10000,389
+0368,Apple Wedge Roasted Simplot,VE,Obsolete,240,16.25,LBS,No,240,CS,OZ,10000,380
+0378,Lbl Bacon Scramble Bowl Bottom,PK,Active,2000,35.05,LBS,No,2000,RL,EA,10000,390
+0379,Lbl Chckn Teriyaki Bowl Bottom,PK,Active,2000,35.05,LBS,No,2000,RL,EA,10000,391
+0371,Sweet Potato Medley Roasted,VE,Active,240,17,LBS,No,240,CS,OZ,10000,383
+0372,Bowl Round Anchor 12 Oz,PK,Active,500,16.1,LBS,No,500,CS,EA,10000,384
+0373,Lid Round Anchor 12 Oz,PK,Active,500,9.75,LBS,No,500,CS,EA,10000,385
+0380,Box Master Cash n Carry 12 Pk,PK,Active,26,9.9,LBS,No,1,EA,EA,10000,392
+0381,Lbl Master C&C Saus Croiss 5x7,PK,Active,850,12.55,LBS,No,850,RL,EA,10000,393
+0382,Lbl Master C&C Saus Muffin 5x7,PK,Active,850,12.55,LBS,No,850,RL,EA,10000,394
+0383,Lbl Master C&C Bacon Bisc 5x7,PK,Active,850,12.55,LBS,No,850,RL,EA,10000,395
+0384,Ham Log Cured 6 Inch SBUX,PR,Active,1,37.84,LBS,No,1,LB,LB,10000,396
+0386,Tomatoes Roasted Wedges in Oil,SA,Active,400,25,LBS,No,400,CS,OZ,10000,398
+0387,Potato Popcorn 6-5 Lb,VE,Active,480,30,LBS,No,480,CS,OZ,10000,399
+0388,Bowl Round Sabert 5in 12 Oz,PK,Active,500,14.33,LBS,No,500,CS,EA,10000,400
+0389,Lid Round Sabert for 0388,PK,Active,500,8.67,LBS,No,500,CS,EA,10000,401
+0391,Lbl OP Bcn Scramble Bowl Lid,PK,Active,1000,35.05,LBS,No,1000,RL,EA,10000,403
+0392,Lbl OP Bcn Scramble Bowl Btm,PK,Active,1000,35.05,LBS,No,1000,RL,EA,10000,404
+0385,Box Master WF 6-4PK HCC,PK,Active,25,13.25,LBS,No,1,EA,EA,10000,397
+0393,Lbl OP Chicken Teri Bowl Lid,PK,Active,1000,35.05,LBS,No,1000,RL,EA,10000,405
+0394,Lbl OP Chick Teri Bowl Btm,PK,Active,1000,35.05,LBS,No,1000,RL,EA,10000,406
+0403,Ctn PrcChop SECB 4 Pk Zipper,PK,Active,360,47.3,LBS,No,1,EA,EA,10000,415
+0404,Ctn PrcChop SECC 4 Pk Zipper,PK,Active,360,47.3,LBS,No,1,EA,EA,10000,416
+0390,Box Master OP Scramble Bowls,PK,Active,27,9.9,LBS,No,1,EA,EA,10000,402
+0405,Ctn PrcChop Panini Chick Club,PK,Active,350,29.24,LBS,No,1,EA,EA,10000,417
+0406,Ctn PrcChop Panini Chik Philly,PK,Active,350,29.24,LBS,No,1,EA,EA,10000,418
+0407,Ctn PrcChop Panini Chik Spin,PK,Active,350,29.24,LBS,No,1,EA,EA,10000,419
+0408,Ctn PrcChop Panini Philly Stk,PK,Active,350,29.24,LBS,No,1,EA,EA,10000,420
+0420,Pepper Bell Yellow Rstd IQF,VE,Active,720,45,LBS,No,720,CS,OZ,10000,431
+0431,Turkey Breast Uncured Smoked,PR,Active,19,19,LBS,No,1,LB,LB,10000,441
+0522,Film Tiro Vienna Beef Hot Dog,PK,Active,15603,52.15,LBS,No,15603,RL,IMP,10000,533
+0557,Film Fuji PP DBL CheeseBurger,PK,Active,1560,55.2,LBS,No,1560.000842,LB,IN,10000,536
+0561,Film Fuji PP Hickory Rib 15 in,PK,Active,2179,55,LBS,No,2179,LB,IN,10000,539
+0579,Cheese Cheddar Sharp Sliced,DA,Obsolete,384,12.9,LBS,No,384,CS,EA,10000,541
+0401,Film BOPP Fuji 16 in Web,PK,Active,1,61.2,LBS,No,12,FT,IN,10000,413
+0402,Ctn PrcChop BECB 4 Pk Zipper,PK,Active,360,47.3,LBS,No,1,EA,EA,10000,414
+0628,Beef Hamburger Patty 2 oz,PR,Active,320,40,LBS,No,320,CS,EA,10000,542
+0636,Cheese Swiss Economy Loaf,DA,Active,17,18.2,LBS,No,17,CS,LB,10000,543
+1701,Bun Sourdough Dip Pill,BR,Active,72,17.3,LBS,No,72,CS,EA,10000,
+1601,Kaiser Vegan 4 In 16-6 Ea,BR,Obsolete,96,19.8,LBS,No,96,CS,EA,10000,
+1684,Muffin English Plain 2.15 oz,BR,Obsolete,144,24,LBS,No,144,CS,EA,10000,
+1685,Roll Pioneer 6 in 12-6 Ea,BR,Active,72,15.7,LBS,No,72,CS,EA,10000,
+0409,Ctn PrcChop Bowl BEC 8 Oz,PK,Active,325,27.45,LBS,No,1,EA,EA,10000,421
+0411,Ctn PrcChop Bowl HECP 8 Oz,PK,Active,325,27.45,LBS,No,1,EA,EA,10000,422
+0412,Ctn PrcChop Bowl CECP 8 Oz,PK,Active,325,27.45,LBS,No,1,EA,EA,10000,423
+1686,Roll Sub Hinged 11in 6-6 ea,BR,Active,36,17.5,LBS,No,36,CS,EA,10000,
+1688,Kaiser Plain 4 in 12-6 Ea,BR,Active,72,11,LBS,No,72,CS,EA,10000,
+0415,Ctn 2x2PK BacEggChsBisc Meijer,PK,Active,300,31,LBS,No,1,EA,EA,10000,426
+0416,Ctn 2x2PK SauEggChsCroi Meijer,PK,Active,300,31,LBS,No,1,EA,EA,10000,427
+0417,Ctn 2x2PK SauEggChsMuff Meijer,PK,Active,300,31,LBS,No,1,EA,EA,10000,428
+0418,Ctn 2x2PK SauEggChsBisc Meijer,PK,Active,300,31,LBS,No,1,EA,EA,10000,429
+0419,Sausage Italian Chick Crumble,PR,Active,30,32,LBS,No,30,CS,LB,10000,430
+1690,Bun Hamburger Sesame 4 IN ,BR,Active,72,14.7,LBS,No,72,CS,EA,10000,
+1693,Loaf Pullman Wheat 5/8in Slced,BR,Active,228,21,LBS,No,228,CS,EA,10000,
+0422,Egg CF LS Insrt Fold Egg White,PR,Active,180,20.225,LBS,No,180,CS,EA,10000,433
+0423,Zucchini Diced Rstd IQF,VE,Active,640,42,LBS,No,640,CS,OZ,10000,434
+1695,Loaf Pullman White 5/8 in SL,BR,Active,228,21.5,LBS,No,228,CS,EA,10000,
+1696,Loaf Pullman White 3/4 In,BR,Active,192,20.4,LBS,No,192,CS,EA,10000,
+0426,Spread Cream Cheese Fig,SA,Active,480,31.03,LBS,No,480,CS,OZ,10000,436
+0427,Egg LS Patty Scrambled 1.67 oz,PR,Active,168,18.635,LBS,No,168,CS,EA,10000,437
+0428,Chicken Seas Ckd Strips,PR,Active,30,32,LBS,No,30,CS,LB,10000,438
+0429,Flatbread Flax Rollup Perf,BR,Active,72,10,LBS,No,72,CS,EA,10000,439
+0430,Flatbread Garden Rollup Perf,BR,Active,72,10,LBS,No,72,CS,EA,10000,440
+1699,Bun Hamburger Sesame,BR,Active,72,14.7,LBS,No,72,CS,EA,10000,
+0432,Onion Sliced Balsamico,VE,Active,528.6,39.5,LBS,No,528.6,CS,OZ,10000,442
+0433,Egg LS Patty Frittata Cheese,PR,Active,200,23.4,LBS,No,200,CS,EA,10000,443
+0434,Egg LS Frittata Chs&Veg 1.75Z,PR,Active,200,22.7,LBS,No,200,CS,EA,10000,444
+1703,Bun Steak Sliced 6 in ,BR,Active,72,18.5,LBS,No,72,CS,EA,10000,
+0436,Thai Sweet Chili Sauce,SA,Active,468,34.326,LBS,No,468,CS,OZ,10000,446
+0437,Bamboo Shoot Strips,VE,Active,618,43,LBS,No,618,CS,OZ,10000,447
+0438,Carrot Strips Julienne,VE,Active,528,39,LBS,No,528,CS,OZ,10000,448
+0439,Cheese Mont Jack Slcd .67 Oz,DA,Active,648,28,LBS,No,648,CS,EA,10000,449
+0440,Dairy Base Bulk,SA,Active,480,31.03,LBS,No,480,CS,OZ,10000,450
+0441,Loaf Pullman Cinnamon Raisin,BR,Active,280,24.2916,LBS,No,280,CS,EA,10000,451
+1796,Bagel Plain NY Style,BR,Active,60,18.1,LBS,No,60,CS,EA,10000,
+1798,Roll Hoagie Sesame Seeded 6in,BR,Active,72,18.4,LBS,No,72,CS,EA,10000,
+0444,Cheese Pepperjack Slcd .75 Oz,DA,Obsolete,512,25.5,LBS,No,512,CS,EA,10000,453
+0445,Spread Hummus,SA,Active,576,38,LBS,No,576,CS,OZ,10000,454
+1813,Focaccia Tomato Small,BR,Obsolete,80,14,LBS,No,80,CS,EA,10000,
+1814,French Braided Small,BR,Obsolete,72,13,LBS,No,72,CS,EA,10000,
+1824,Roll Totem 3x6 In 12-6 Ea,BR,Active,72,15.8,LBS,No,72,CS,EA,10000,
+0449,Shrink Band Anchor Bowl,PK,Active,4000,13,LBS,No,4000,CS,EA,10000,458
+0450,Sauce Orange 12-2 Lb,SA,Active,384,25.5,LBS,No,384,CS,OZ,10000,459
+0451,Rice Veg Fried 12-2 Lb,VE,Active,384,25.5,LBS,No,384,CS,OZ,10000,460
+0452,Rice Jasmine Brown 12-2 Lb,VE,Active,384,25.5,LBS,No,384,CS,OZ,10000,461
+0453,Tortilla Corn White 4.5 Inch,BR,Active,768,32,LBS,No,768,CS,EA,10000,462
+0454,Film BOPP Fuji 13.5 In Web,PK,Active,12,37,LBS,No,12,FT,IN,10000,463
+0455,Sauce Enchilada La Vic 6/#10,SA,Active,612,38.25,LBS,No,612,CS,OZ,10000,465
+0456,Chicken Bnls Wing Sesame Brd,PR,Active,30,33,LBS,No,30,CS,LB,10000,466
+1481,Roll French Braided Sliced,BR,Obsolete,,0,,,72,CS,EA,10000,
+1482,Ciabatta Pillow Loaf,BR,Obsolete,,0,,,64,CS,EA,10000,
+1495,Focaccia Sundried Tomato,BR,Obsolete,,0,,,80,CS,EA,10000,
+0460,Beef Patty Angus 4.0 OZ,PR,Active,160,41.5,LBS,No,160,CS,EA,10000,471
+1687,Kaiser Corn Dusted 4.5 in ,BR,Active,,0,,No,72,CS,EA,10000,
+1692,Loaf Pullman Rye Swirl 5/8,BR,Obsolete,,0,,,228,CS,EA,10000,
+1694,Loaf Pullman Wheat 3/4 sliced,BR,Obsolete,,0,,,192,CS,EA,10000,
+1700,Bun Onion,BR,Obsolete,,0,,,72,CS,EA,10000,
+1750,Muffin English Original 80T,BR,Obsolete,,0,,,80,CS,EA,10000,
+1752,Muffin English Original 80T,BR,Obsolete,,0,,No,80,CS,EA,10000,
+0467,Ctn 2x2PK BECB PigWig,PK,Active,300,32.52,LBS,No,1,EA,EA,10000,478
+0468,Ctn 2x2PK SECB PigWig,PK,Active,300,32.52,LBS,No,1,EA,EA,10000,479
+0469,Ctn 2x2PK SECM PigWig,PK,Active,300,32.52,LBS,No,1,EA,EA,10000,480
+0470,Muffin Eng Orig 3z 80T Unslicd,BR,Active,80,13,LBS,No,80,CS,EA,10000,481
+0471,Ctn 2x2PK SECC PigWig,PK,Active,300,32.52,LBS,No,1,EA,EA,10000,482
+0472,Ctn 2x2PK HECM PigWig,PK,Active,300,32.52,LBS,No,1,EA,EA,10000,483
+0473,Ctn Bowl BEPC PigWig,PK,Active,325,27.45,LBS,No,1,EA,EA,10000,484
+0474,Ctn Bowl SEPC PigWig,PK,Active,325,27.45,LBS,No,1,EA,EA,10000,485
+0475,Muffin Eng MG 3z 80T Unslicd,BR,Active,80,12.9,LBS,No,80,CS,EA,10000,486
+1757,Muffin English Multigrain 80T,BR,Obsolete,,0,,No,80,CS,EA,10000,
+1799,Loaf Pullman Sourdough 7/16 in,BR,Obsolete,,0,,,228,CS,EA,10000,
+1807,Roll Totem 3x12 In 6-6 Ea,BR,Obsolete,,0,,,36,CS,EA,10000,
+1821,Flat Whole Wheat Lavash 7x9,BR,Obsolete,,0,,,72,CS,EA,10000,
+0443,Cheese Brie Sliced .705 Oz,DA,Active,150,7.3,LBS,No,150,CS,EA,10000,
+0481,Ctn 4Pk SECB A&P 87700,PK,Active,360,47.3,LBS,No,1,EA,EA,10000,492
+0482,Ctn 4Pk BECB A&P 87701,PK,Active,360,47.3,LBS,No,1,EA,EA,10000,493
+0483,Ctn 4Pk SECC A&P 87702,PK,Active,360,47.3,LBS,No,1,EA,EA,10000,494
+0484,Ctn 4Pk TSECM A&P 87703,PK,Active,360,47.3,LBS,No,1,EA,EA,10000,495
+0485,Muffin Eng Whl Wheat 2 Oz,BR,Active,144,19.52,LBS,No,144,CS,EA,10000,496
+0486,Sausage Turkey 1.4 Oz,PR,Active,114,10.7,LBS,No,114,CS,EA,10000,497
+0487,Egg White Patty 3 Inch 1.3 Oz,PR,Active,153,13.953,LBS,No,153,CS,EA,10000,498
+0488,Cheese Mont Jack Loaf 6-5Lb,DA,Active,30,31,LBS,No,30,CS,LB,10000,499
+0489,Cheese Pepperjack Loaf 2-5 Lb,DA,Active,10,11,LBS,No,10,CS,LB,10000,500
+0490,Ctn 4Pk SECB Weis 87800,PK,Active,360,47.3,LBS,No,1,EA,EA,10000,501
+0491,Ctn 4Pk BECB Weis 87801,PK,Active,360,47.3,LBS,No,1,EA,EA,10000,502
+0492,Ctn 4Pk SECC Weis 87802,PK,Active,360,47.3,LBS,No,1,EA,EA,10000,503
+0493,Ctn 4Pk SECM Weis 87803,PK,Active,360,47.3,LBS,No,1,EA,EA,10000,504
+0494,Carrot Strips Julienn No Sugar,VE,Active,528,37.258,LBS,No,528,CS,OZ,10000,505
+1426,Cheese Cheddar White Mild Loaf,DA,Active,40,41.2,LBS,,40,CS,LB,10000,
+1427,Cheese American Processed .43z,DA,Active,736,20.9,LBS,No,736,CS,EA,10000,
+1446,Cheese Provolone Sliced .5 Oz,DA,Active,384,13.3,LBS,,384,CS,EA,10000,
+1467,Cheese Havarti Sliced Dofino,DA,Obsolete,192,12.9,LBS,No,192,CS,EA,10000,
+1489,Cheese Mozzarella Sliced .5 Oz,DA,Obsolete,320,11,LBS,No,320,CS,EA,10000,
+1714,Cheese Feta Crumbled,DA,Active,20,21.8,LBS,No,20,CS,LB,10000,
+0501,Sauce Honey Grade A 4-12 Lb,SA,Active,768,50.3,LBS,No,768,CS,OZ,10000,512
+0502,Ham BF Smoked Uncured Natural,PR,Active,22.5,24.2,LBS,No,1,LB,LB,10000,513
+0503,Chicken Smoked Uncured Natural,PR,Active,39,41,LBS,No,1,LB,LB,10000,514
+0504,Cheese Havarti Loaf 1-9.5 Lb,DA,Active,9.5,10,LBS,No,9.5,CS,LB,10000,515
+0505,Baguette Wht 7.5in Sliced,BR,Active,80,13.5,LBS,No,80,CS,EA,10000,516
+0506,Cheese Jarlsberg Loaf 2-12 Lb,DA,Active,24,25,LBS,No,24,CS,LB,10000,517
+0507,Film Fuji Baguette Ham,PK,Active,5500,49,LBS,No,5500,RL,IMP,10000,518
+1770,Cheese Swiss Processed .5 Oz,DA,Active,640,16.5,LBS,No,640,CS,EA,10000,
+0509,Film Fuji Baguette Cheese,PK,Active,5500,49,LBS,No,5500,RL,IMP,10000,520
+0510,Film Fuji MiniWrap Thai Chick,PK,Active,8000,49,LBS,No,8000,RL,IMP,10000,521
+0511,Film Fuji MiniWrap Turkey,PK,Active,8000,49,LBS,No,8000,RL,IMP,10000,522
+0512,Film Fuji MiniWrap Hummus,PK,Active,8000,49,LBS,No,8000,RL,IMP,10000,523
+1447,Swiss Sliced,DA,Not Stocked,,0,,,1000,CS,EA,10000,
+1483,Cheese Cheddar Buffalo,DA,Obsolete,,0,,,1,LB,LB,10000,
+0515,Film Fuji Bistro Brie/Apple,PK,Active,8000,49,LBS,No,8000,RL,IMP,10000,526
+0516,Sausage Ital Chick Crumble CAN,PR,Active,30,32,LBS,No,30,CS,LB,10000,527
+1503,Cheese Parmesan Shredded,DA,Obsolete,,0,,,20,CS,LB,10000,
+1606,Cheese White Red Fat Loaf,DA,Obsolete,,0,,,10,CS,LB,10000,
+1795,Cheese Cheddar Medium .75 Oz,DA,Obsolete,,0,,,264,CS,EA,10000,
+1804,Cheese Pepper Jack .75 OZ,DA,Obsolete,,0,,,192,CS,EA,10000,
+0521,Frank Skinless Vienna 5:1,PR,Active,52,11,LBS,No,50,CS,EA,10000,532
+1815,Cheese Jack Pepper Loaf 2-5 LB,DA,Obsolete,,0,,,10,CS,LB,10000,
+19160,Orange Chicken Bowl 12/cs,FG,Active,12,8.02,LBS,Yes,1,CS,CS,AMT836,
+19161,Sausage Breakfast Bowl 12/cs,FG,Active,12,6.97,LBS,Yes,1,CS,CS,AMT836,
+19162,Enchilada - Sonora Style 12/cs,FG,Active,12,8.55,LBS,Yes,1,CS,CS,AMT836,
+19167,Enchilada - Sonora Style 12/cs,FG,Active,12,8.175,LBS,Yes,1,CS,CS,DSI,
+85301,Sausage, Egg,Chs Bisc 12/1x4pk,FG,Active,12,15.3,LBS,No,1,CS,CS,WFF,
+85400,Sausage, Egg,Chs Cro 12/1x4pk,FG,Active,12,16.8,LBS,No,1,CS,CS,CSWG,
+85401,Sausage, Egg,Chs Bis 12/1x4pk,FG,Active,12,16.85,LBS,No,1,CS,CS,CSWG,
+85402,Bacon, Egg, Chs Bisc 12/1x4pk,FG,Active,12,13.9,LBS,No,1,CS,CS,CSWG,
+85403,Ham, Egg, Chs Crois 12/1x4pk,FG,Active,12,15.75,LBS,No,1,CS,CS,CSWG,
+85410,Sausage, Egg,Chs Cro 12/1x4pk,FG,Active,12,16.85,LBS,No,1,CS,CS,CSWG,
+85411,Sausage, Egg, Chs Bis 12/1x4pk,FG,Active,12,17.05,LBS,No,1,CS,CS,CSWG,
+85412,Bacon, Egg,Chs Bisc 12/1x4pk,FG,Active,12,13.9,LBS,No,1,CS,CS,CSWG,
+85413,Ham, Egg, Chs Crois 12/1x4pk,FG,Active,12,15.3,LBS,No,1,CS,CS,CSWG,
+85421,Sausage, Egg,Chs Cro 8/1x4pk,FG,Active,8,9.84,LBS,No,1,CS,CS,CSWG,
+85422,Sausage, Egg,Chs Bis 8/1x4pk,FG,Active,8,9.84,LBS,No,1,CS,CS,CSWG,
+85423,Ham, Egg, Chs Crois 8/1x4pk,FG,Active,8,9.24,LBS,No,1,CS,CS,CSWG,
+85424,Sausage, Egg,Chs Cro 8/1x4pk,FG,Active,8,9.84,LBS,No,1,CS,CS,CSWG,
+85425,Sausage, Egg, Chs Bis 8/1x4pk,FG,Active,8,9.84,LBS,No,1,CS,CS,CSWG,
+85426,Bacon, Egg,Chs Bisc 8/1x4pk,FG,Active,8,7.84,LBS,No,1,CS,CS,CSWG,
+0796,Box #5 RSC Corrugated Kraft,PK,Active,1,16.1,LBS,No,1,EA,EA,10000,553
+85427,Ham, Egg, Chs Crois 8/1x4pk,FG,Active,8,9.24,LBS,No,1,CS,CS,CSWG,
+0827,Pepperoncini Sliced,VE,Active,128,39.4,LBS,,128,GAL,OZ,10000,555
+85428,Bacon, Egg, Chs Bisc 8/1x4pk,FG,Active,8,7.84,LBS,No,1,CS,CS,CSWG,
+85453,Sausage, Egg,Chs Bisc 12/2x2pk,FG,Active,12,16.35,LBS,No,1,CS,CS,BBL,
+86000,Msh Stk Ched Lean Panini 12/cs,FG,Active,12,5.75,LBS,No,1,CS,CS,HEB,
+86001,Chkn Msh Spn Lean Panini 12/cs,FG,Active,12,5.75,LBS,No,1,CS,CS,HEB,
+86002,Philly Steak Lean Panini 12/cs,FG,Active,12,5.75,LBS,No,1,CS,CS,HEB,
+86003,Poblano Chkn Lean Panini 12/cs,FG,Active,12,5.75,LBS,No,1,CS,CS,HEB,
+86600,Chili Hot Dog (Nathans) 12/cs,FG,Active,12,3.38,LBS,No,1,CS,CS,VISTAR,
+86601,Chili Hot Dog (Nathans) 8/2pk,FG,Active,8,4,LBS,No,1,CS,CS,NEXCOM,
+86602,Beef Hot Dog 12/cs,FG,Active,12,2.63,LBS,No,1,CS,CS,VISTAR,
+86603,Beef Hot Dog Twin Pack 8/2pk,FG,Active,8,3.5,LBS,No,1,CS,CS,NFSI,
+86604,Jumbo Beef Hot Dog 12/cs,FG,Active,12,3.15,LBS,No,1,CS,CS,MCLN,
+86605,Jumbo Beef Spicy Dog 12/cs,FG,Active,12,3.83,LBS,No,1,CS,CS,MCLN,
+87000,Ham Chs Fritt Apple Sqsh 24/cs,FG,Obsolete,30,5.75,LBS,Yes,1,CS,CS,AIRFAYRE,
+87001,Ham Chs Fritt Potato Asp 24/cs,FG,Obsolete,30,5.75,LBS,Yes,1,CS,CS,AIRFAYRE,
+87200,Sausage, Egg Chs Crois 12pk,FG,Active,12,3.95,LBS,No,1,CS,CS,UWG,
+87203,Angus Cheeseburger 12/cs,FG,Active,12,6.135,LBS,No,1,CS,CS,UWG,
+87204,Angus Bacon Cheeseburger 12/cs,FG,Active,12,6.315,LBS,No,1,CS,CS,UWG,
+87500,Bacon, Egg,Chs Bisc 12/2x2pk,FG,Active,12,11.32,LBS,No,1,CS,CS,PWA,
+87501,Sausage, Egg,Chs Bisc 12/2x2pk,FG,Active,12,14.32,LBS,No,1,CS,CS,PWA,
+87502,Sausage, Egg,Chs Muff 12/2x2pk,FG,Active,12,14.32,LBS,No,1,CS,CS,PWA,
+87503,Sausage, Egg,Chs Croi 12/2x2pk,FG,Active,12,14.32,LBS,No,1,CS,CS,PWA,
+87504,Ham, Egg, Chs Muff 12/2x2pk,FG,Active,12,13.42,LBS,No,1,CS,CS,PWA,
+87505,Bcn,Egg,Pot,Chs Bowl 8oz-8/cs,FG,Active,8,4.52,LBS,No,1,CS,CS,PWA,
+87506,Sg,Egg,Pot,Chs Bwl 8.6oz-8/cs,FG,Active,8,4.82,LBS,No,1,CS,CS,PWA,
+87507,Hm,Egg,Pot,Chs Bwl 8oz - 8/cs,FG,Active,8,4.52,LBS,No,1,CS,CS,PWA,
+87600,Angus Burger 12/cs,FG,Active,12,5.64,LBS,No,1,CS,CS,CUMBP,
+87601,Angus Cheeseburger 12/cs,FG,Active,12,6.28,LBS,No,1,CS,CS,CUMBP,
+87602,Angus Bacon Cheeseburger 12/cs,FG,Active,12,6.46,LBS,No,1,CS,CS,CUMBP,
+87700,Saus, Egg & Chs Bisc 8/1x4pk,FG,Active,8,9.85,LBS,No,1,CS,CS,CSWG,
+87701,Bacon, Egg & Chs Bisc 8/1x4pk,FG,Active,8,9.85,LBS,No,1,CS,CS,CSWG,
+87702,Saus, Egg & Chs Crois 8/1x4pk,FG,Active,8,9.85,LBS,No,1,CS,CS,CSWG,
+87703,Trky, Egg & Chs Muff 8/1x4pk,FG,Active,8,10.91,LBS,No,1,CS,CS,CSWG,
+87800,Saus, Egg & Chs Bisc 8/1x4pk,FG,Active,8,9.85,LBS,No,1,CS,CS,WMK,
+87801,Bacon, Egg & Chs Bisc 8/1x4pk,FG,Active,8,7.85,LBS,No,1,CS,CS,WMK,
+87802,Saus, Egg & Chs Crois 8/1x4pk,FG,Active,8,9.85,LBS,No,1,CS,CS,WMK,
+87803,Saus, Egg & Chs Muff 8/1x4pk,FG,Active,8,9.85,LBS,No,1,CS,CS,WMK,
+123602,OP Chcken Salad Tpl Wdge 16/cs,FG,Active,16,7.1,LBS,No,1,CS,CS,GREATLAND,
+123604,Egg Salad Triple Wedge 16/cs,FG,Active,16,7.1,LBS,No,1,CS,CS,GREATLAND,
+123606,Ham Cheese Triple Wedge 16/cs,FG,Active,16,7.1,LBS,No,1,CS,CS,GREATLAND,
+123608,OP King Sub Trkey & Chse 15/cs,FG,Active,15,7.1,LBS,No,1,CS,CS,GREATLAND,
+123609,OP King Sub Ham & Cheese 15/cs,FG,Active,15,7.1,LBS,No,1,CS,CS,GREATLAND,
+125004,Pepperoni Baguetta 24/cs,FG,Active,24,8.6,LBS,Yes,1,CS,CS,MCLN,
+11019030,Sample Chicken Wrap 32/cs ,FG,Active,32,14.02,LBS,No,1,CS,CS,AJGOSS,
+11020154,RstdTom&Mozz Panini 24/cs ,FG,Active,24,9.35,LBS,No,1,CS,CS,AJGOSS,
+11020155,Ham & Swiss Panini 24/cs ,FG,Active,24,9.7,LBS,No,1,CS,CS,AJGOSS,
+11020156,Tuna Melt Panini 24/cs ,FG,Active,24,10.5,LBS,No,1,CS,CS,AJGOSS,
+19131,Vegan Burger 20/cs,FG,Obsolete,20,8.8,LBS,No,1,CS,CS,DSI,
+19137,Cheeseburger Angus 20/cs,FG,Active,20,9.2,LBS,No,1,CS,CS,AMT836,
+19151,Hebrew National Hot Dog 20/cs,FG,Active,20,7.1,LBS,No,1,CS,CS,AMT836,
+19152,Plain Bagel Cream Cheese 24/cs,FG,Active,24,6.9,LBS,No,1,CS,CS,AMT836,
+19154,Italian Hoagie 20/cs,FG,Obsolete,20,10.6,LBS,No,1,CS,CS,DSI,
+19156,Ham & Swiss Wheat Ciab 20/cs,FG,Active,20,9.8,LBS,No,1,CS,CS,AMT836,
+19157,Sausage Egg & Cheese Muf 20/cs,FG,Active,20,6.55,LBS,No,1,CS,CS,AMT836,
+19158,Chick Brst Wht Kais BBQ 20/cs,FG,Active,20,8.6,LBS,No,1,CS,CS,DSI,
+19159,Teriyaki Chicken Bowl 24/cs,FG,Obsolete,24,15.3,LBS,Yes,1,CS,CS,DSI,
+19163,Buffalo Chicken Wings 18/cs,FG,Active,18,6.12,LBS,Yes,1,CS,CS,AMT836,
+19164,Pulled Pork Sandwich 20/cs,FG,Active,20,7.06,LBS,No,1,CS,CS,AMT836,
+19165,Vegan Burger w/BBQ 20/cs,FG,Active,20,8.43,LBS,No,1,CS,CS,AMT836,
+19170,Vienna Beef Hot Dog 20/cs,FG,Active,20,7.375,LBS,No,1,CS,CS,DSI,
+19233,Turkey & Swiss Hoagie 20/cs,FG,Active,20,11,LBS,No,1,CS,CS,AMT836,
+19305,Cheese Spinach Omelette 12/cs,FG,Obsolete,12,6.2,LBS,No,1,CS,CS,ATLANTICFD,
+19309,Sausage Egg & Cheddar 12/cs,FG,Obsolete,12,6.6,LBS,No,1,CS,CS,ATLANTICFD,
+19313,SS Smoked Turkey Havarti 12/cs,FG,Obsolete,12,4.8,LBS,No,1,CS,CS,ATLANTICFD,
+19316,SS Turkey Club 12/cs,FG,Obsolete,12,4.54,LBS,No,1,CS,CS,ATLANTICFD,
+19317,Turkey Sausage, Egg,Ched 12/cs,FG,Obsolete,12,6.33,LBS,No,1,CS,CS,ATLANTICFD,
+19319,Ham & Egg Brkfst Sndwich 12/cs,FG,Obsolete,12,6.33,LBS,No,1,CS,CS,ATLANTICFD,
+19320,SS Smoked Turkey Havarti 12/cs,FG,Obsolete,12,4.8,LBS,No,1,CS,CS,10000,
+19321,SS Turkey Club 12/cs,FG,Obsolete,12,4.54,LBS,No,1,CS,CS,10000,
+19350,Cheese Spin Omelette 12/cs CAN,FG,Obsolete,12,6.2,LBS,No,1,CS,CS,HFSNAC,
+19352,Sausage Egg & Chddar 12/cs CAN,FG,Obsolete,12,6.6,LBS,Yes,1,CS,CS,HFSNAC,
+19353,SS Smkd Turk Havarti 12/cs CAN,FG,Obsolete,12,4.8,LBS,Yes,1,CS,CS,HFSNAC,
+0001,Sauce BBQ Smoky Cattlemens,SA,Active,512,40.35,LBS,No,512,CS,OZ,10000,1
+19354,SS Turkey Club 12/cs CAN,FG,Obsolete,12,4.54,LBS,Yes,1,CS,CS,HFSNAC,
+0009,Chicken Bnls Wing Breaded,PR,Active,10,10.68,LBS,No,10,CS,LB,10000,9
+0039,Pork Rib BBQ With Sauce,PR,Active,64,18.15,LBS,No,64,CS,EA,10000,40
+0045,Film Tiro OP Ham Wedge Lidding,PK,Active,22609,67.55,LBS,,22609,RL,EA,10000,47
+0046,Film Tiro OP Turky Wdg Lidding,PK,Active,22609,67.55,LBS,,22609,RL,EA,10000,48
+0050,Ribbon Black VideoJet iimak,PK,Obsolete,35433,6.25,LBS,No,35433,CS,FT,10000,52
+0051,Ribbon Blue VideoJet iimak,PK,Obsolete,35433,6.25,LBS,No,35433,CS,FT,10000,53
+0052,Ribbon Green VideoJet iimak,PK,Obsolete,35433,6.25,LBS,No,35433,CS,FT,10000,54
+0053,Ribbon Orange VideoJet iimak,PK,Obsolete,35433,6.25,LBS,No,35433,CS,FT,10000,55
+0054,Ribbon Red VideoJet iimak,PK,Obsolete,35433,6.25,LBS,No,35433,CS,FT,10000,56
+19355,Turkey Sausage, Egg, 12/cs CAN,FG,Obsolete,12,6.33,LBS,Yes,1,CS,CS,HFSNAC,
+19356,SS Smkd Turk Havarti 12/cs CAN,FG,Obsolete,12,4.8,LBS,Yes,1,CS,CS,10000,
+19357,SS Turkey Club 12/cs CAN,FG,Obsolete,12,4.54,LBS,Yes,1,CS,CS,10000,
+19588,Huevos Wrap 32/cs,FG,Obsolete,32,11.37,LBS,No,1,CS,CS,AJGOSS,
+19589,Bacon Egg Gouda Labaccia 32/cs,FG,Active,32,9.62,LBS,No,1,CS,CS,AJGOSS,
+0062,Susceptor Sleeve Baguetta,PK,Active,1600,13.4,LBS,,1,EA,EA,10000,63
+0064,Film Fuji PP Cheeseburger,PK,Active,1689.6,35,LBS,No,1689.600912,LB,IN,10000,65
+0069,Film Fuji Polish Baguetta,PK,Active,1,32.9,LBS,,1,IMP,IMP,10000,70
+0070,Film Fuji Bacon Chs Baguetta,PK,Active,1,32.6,LBS,,1,IMP,IMP,10000,71
+0071,Film Fuji Cheesy Beef Baguetta,PK,Active,1,32.2,LBS,,1,IMP,IMP,10000,72
+0080,Bacon Topping Preckd 1/2 Inch,PR,Active,160,10.8,LBS,No,160,CS,OZ,10000,81
+0083,Film Map Pillow 9 Mil,PK,Obsolete,14410,59.9,LBS,No,14410,RL,IN,10000,85
+0084,Tray Entree Black CPET 16 Oz,PK,Active,600,26.1,LBS,No,600,CS,EA,10000,86
+0085,Ctn Entree Saus Pancake,PK,Active,325,20.65,LBS,No,1,EA,EA,10000,87
+0086,Ctn Entree Saus Eggs Potato,PK,Active,325,20.65,LBS,No,1,EA,EA,10000,88
+0087,Ctn Entree Bacon Eggs Pot,PK,Active,325,20.65,LBS,No,1,EA,EA,10000,89
+0099,Syrup Cup 1 Oz Dipper,SA,Obsolete,200,13.6,LBS,No,200,CS,EA,10000,105
+0102,Ctn Dipper Cinnamon Biscuit,PK,Active,325,20.65,LBS,No,1,EA,EA,10000,109
+0106,Ctn Dipper Mini Waffles,PK,Active,325,20.65,LBS,No,1,EA,EA,10000,112
+0107,Film Map Rigid 14 Mil,PK,Active,14410,67.2,LBS,,14410,RL,IN,10000,113
+0108,Lbl OP 3-5/8x3 ,PK,Active,8000,23.75,LBS,No,8000,CS,EA,10000,114
+0113,Film Tiro OP Ham&Chs TriWdg,PK,Active,15603,67.55,LBS,,15603,RL,EA,10000,117
+19590,Ham Egg Cheddar Lab 32/cs,FG,Obsolete,32,10.14,LBS,No,1,CS,CS,AJGOSS,
+19591,Sausage Egg Cheddar Muff 24/cs,FG,Active,24,9.81,LBS,No,1,CS,CS,AJGOSS,
+0114,Film Tiro OP Egg Salad TriWdg,PK,Active,15603,67.55,LBS,,15603,RL,EA,10000,118
+0115,Film Tiro OP Chix Sal TriWdg,PK,Active,15603,67.55,LBS,,15603,RL,EA,10000,119
+0116,Film Tiro OP Tuna Sal TriWdg,PK,Active,15603,67.55,LBS,,15603,RL,EA,10000,120
+19592,RF Turkey Bacon 24/cs,FG,Obsolete,24,8.06,LBS,No,1,CS,CS,AJGOSS,
+0117,Film Tiro OP Trky&Chs TriWdg,PK,Active,15603,67.55,LBS,,15603,RL,EA,10000,121
+0118,Film Tiro OP Ham&Chs DblWdg,PK,Active,15603,67.55,LBS,,15603,RL,EA,10000,122
+0119,Film Tiro OP Egg Salad DblWdg,PK,Active,15603,67.55,LBS,,15603,RL,EA,10000,123
+19593,Egg White Wrap w/Spinach 32/cs,FG,Obsolete,32,12.01,LBS,No,1,CS,CS,AJGOSS,
+19594,Vegetarian Labaccia 32/cs,FG,Active,32,10.14,LBS,No,1,CS,CS,AJGOSS,
+0120,Film Tiro OP Tuna Salad DblWdg,PK,Active,15603,67.55,LBS,,15603,RL,EA,10000,124
+0121,Film Tiro OP Chix Salad DblWdg,PK,Active,15603,67.55,LBS,,15603,RL,EA,10000,125
+0122,Film Tiro OP Ham Tky Sw DblWdg,PK,Active,15603,67.55,LBS,,15603,RL,EA,10000,126
+0123,Film Tiro OP Trky&Chs DblWdg,PK,Active,15603,67.55,LBS,,15603,RL,EA,10000,127
+19595,Egg White Wrap w/Spinach 32/cs,FG,Active,32,12.4,LBS,No,1,CS,CS,AJGOSS,
+19596,RF Turkey Bacon 24/cs,FG,Active,24,8.06,LBS,No,1,CS,CS,AJGOSS,
+0124,Film Tiro OP Trky&Chs Hoagie,PK,Active,15603,67.55,LBS,,15603,RL,EA,10000,128
+0125,Film Tiro OP Ham&Trky Hoagie,PK,Active,15603,67.55,LBS,,15603,RL,EA,10000,129
+0126,Film Tiro OP Ham&Cheese Hoagie,PK,Active,15603,67.55,LBS,,15603,RL,EA,10000,130
+0127,Film Tiro KS OP Turkey&Cheese,PK,Active,10766,67.55,LBS,No,10766,RL,EA,10000,131
+0128,Film Tiro KS OP Ham&Cheese,PK,Active,10766,67.55,LBS,,10766,RL,EA,10000,132
+0129,Film Tiro KS OP Italian,PK,Active,10766,67.55,LBS,,10766,RL,EA,10000,133
+19597,Ham Egg Cheddar Lab 32/cs,FG,Active,32,10.14,LBS,No,1,CS,CS,AJGOSS,
+0134,Ctn 4 Pk WF Bacon Biscuit,PK,Active,350,41.95,LBS,No,1,EA,EA,10000,138
+0139,Bacon Canadian Log 4/Cs,PR,Active,28,33.6,LBS,No,1,LB,LB,10000,144
+0146,Carton Wellshire Chix Bisc 2Pk,PK,Obsolete,400,33.9,LBS,No,1,EA,EA,10000,151
+0147,Carton Wellshire Ham Muff 2Pk,PK,Obsolete,400,39.6,LBS,No,1,EA,EA,10000,152
+19607,Sausage Egg Muff 24/cs CAN,FG,Active,24,9.81,LBS,Yes,1,CS,CS,GFS,
+19608,Bacon Egg Gouda Lab 32/cs CAN,FG,Active,32,8.88,LBS,Yes,1,CS,CS,GFS,
+0148,Carton Wellshire Saus Muff 2Pk,PK,Obsolete,400,34.3,LBS,No,1,EA,EA,10000,153
+0154,Susceptor Sleeve Eng Muffin,PK,Active,1200,16.1,LBS,No,1,EA,EA,10000,159
+19609,Spinach  Wrap 32/cs CAN,FG,Obsolete,32,12.01,LBS,No,1,CS,CS,HFSNAC,
+0155,Susceptor Sleeve Biscuit,PK,Active,3600,40.05,LBS,,1,EA,EA,10000,160
+0162,Sauce BBQ TWB .6 OZ Puck,SA,Active,480,18,LBS,,480,CS,EA,10000,166
+0167,Bowl Teriyaki 19 Oz Black,PK,Obsolete,690,33.15,LBS,No,690,CS,EA,10000,171
+0168,Lid Teriyaki Bowl Clear,PK,Obsolete,690,19.98,LBS,No,690,CS,EA,10000,172
+0169,Box Master Amtrk Teriyaki Bowl,PK,Active,25,32,LBS,,1,EA,EA,10000,173
+0172,Ctn Dipper French Tst Heinz,PK,Active,325,21.7,LBS,No,1,EA,EA,10000,176
+0173,Ctn Dip Mini Pancakes Heinz,PK,Active,325,20.95,LBS,No,1,EA,EA,10000,177
+0174,Carton Dip Mini Waffles Heinz,PK,Obsolete,400,23,LBS,No,1,EA,EA,10000,178
+0175,Syrup Cup 1.5 Oz Dipper,SA,Active,100,9.9,LBS,No,100,CS,EA,10000,179
+0176,Box Master Wellshire 18 Pk,PK,Obsolete,1,25,LBS,No,1,EA,EA,10000,181
+0177,Ctn 4PK Ahold Bac Egg Bisc,PK,Active,350,46.5,LBS,No,1,EA,EA,10000,182
+0178,Ctn 4PK Ahold Ham Egg Crois,PK,Active,350,46.5,LBS,No,1,EA,EA,10000,183
+0180,Ctn 4PK Ahold Saus Egg Croi,PK,Active,350,6.5,LBS,No,1,EA,EA,10000,185
+0196,Divider Chipboard 12.5x9.5,PK,Active,2500,15,LBS,No,1,EA,EA,10000,201
+0198,Box Master Price Chopper 8-4Pk,PK,Active,25,0.7,LBS,No,1,EA,EA,10000,203
+0202,Ctn 4PK SausEggCrois WF,PK,Active,360,47.3,LBS,No,1,EA,EA,10000,207
+0203,Ctn 4PK HamChsCrois WF,PK,Active,360,47.3,LBS,No,1,EA,EA,10000,208
+0204,Chicken Bnls Wing Buffalo,PR,Active,10,10.68,LBS,No,10,CS,LB,10000,209
+19610,Ham Egg Cheddar Lab 32/cs CAN,FG,Obsolete,32,10.14,LBS,Yes,1,CS,CS,HFSNAC,
+19611,RF Turkey Bacon  24/cs CAN,FG,Obsolete,24,8.06,LBS,Yes,1,CS,CS,HFSNAC,
+19612,Spinach Florentine 24/cs CAN,FG,Obsolete,24,9.39,LBS,No,1,CS,CS,GFS,
+0205,Pork Pulled Smoked w/ Sauce,PR,Active,160,11,LBS,No,160,CS,OZ,10000,210
+19613,Spinach  Wrap 32/cs CAN,FG,Active,32,12.01,LBS,No,1,CS,CS,GFS,
+19614,RF Turkey Bacon  24/cs CAN,FG,Active,24,8.06,LBS,Yes,1,CS,CS,GFS,
+0207,Box Master Panini Jamba,PK,Active,25,13,LBS,No,1,EA,EA,10000,212
+19615,Ham Egg Cheddar Lab 32/cs CAN,FG,Active,32,10.14,LBS,Yes,1,CS,CS,GFS,
+0209,Pickle Dill 3/16 Sliced Kosher,VE,Active,2250,47.5,LBS,No,2250,PL,EA,10000,214
+19616,Vegetarian Labaccia CAN 32/cs,FG,Active,32,10.14,LBS,No,1,CS,CS,GFS,
+19617,Ham Egg Cheddar Lab 32/cs,FG,Obsolete,32,10.14,LBS,No,1,CS,CS,10000,
+19650,Ham & Swiss Panini 24/cs CAN,FG,Active,24,8.7,LBS,Yes,1,CS,CS,GFS,
+19651,RstdTom&Mozz Panini 24/cs CAN,FG,Active,24,9.35,LBS,No,1,CS,CS,GFS,
+0211,Film Fuji Bcn Chs Baguetta CAN,PK,Active,1,26.8,LBS,,1,IMP,IMP,10000,215
+0212,Film Fuji Chsy Bf Baguetta CAN,PK,Active,1,33.5,LBS,,1,IMP,IMP,10000,216
+19652,Santa Fe Chck Panini 24/cs CAN,FG,Active,24,10.9,LBS,Yes,1,CS,CS,GFS,
+0213,Film Shrink Perf 14in 60Ga,PK,Active,52440,35,LBS,No,52440,RL,IN,10000,217
+0214,LBL OP Hot Dog 3-5/8x3,PK,Obsolete,8000,23.75,LBS,No,8000,CS,EA,10000,218
+19653,Tuna Panini 24/cs CAN,FG,Active,24,10.5,LBS,No,1,CS,CS,GFS,
+83115,King Sub Ham & Cheese 8/cs,FG,Obsolete,8,6.27,LBS,,1,CS,CS,GREATLAND,
+83119,King Sub Roast Beef Chse 8/cs,FG,Obsolete,8,6.02,LBS,,1,CS,CS,GREATLAND,
+0216,Lbl OP CBurger 3-5/8x3,PK,Active,9000,23.75,LBS,No,9000,CS,EA,10000,220
+0219,Ctn 4PK Bacn Egg Bisc WINCO,PK,Active,350,38.55,LBS,No,1,EA,EA,10000,222
+0221,Ctn 4PK SausEgg Crois WINCO,PK,Active,350,38,LBS,No,1,EA,EA,10000,224
+0222,Ctn 4PK SausEgg Muff WINCO,PK,Active,350,38,LBS,No,1,EA,EA,10000,225
+83125,King Sub Turkey & Cheese 8/cs,FG,Obsolete,8,6.27,LBS,,1,CS,CS,GREATLAND,
+0224,Ctn 4PK SausEgg Muffin OP,PK,Active,300,23.5,LBS,No,1,EA,EA,10000,227
+0226,Ctn 4PK CanBac Egg Muff OP,PK,Active,350,45.6,LBS,No,1,EA,EA,10000,228
+83457,Poorboy Sub 8/cs,FG,Active,8,5.52,LBS,No,1,CS,CS,GREATLAND,
+0227,Ctn 4PK Saus Egg Biscuit OP,PK,Active,350,15.6,LBS,No,1,EA,EA,10000,229
+83730,Triple Wedge Ham & Cheese 8/cs,FG,Obsolete,8,4.65,LBS,,1,CS,CS,GREATLAND,
+83731,Trple Wedge Turkey Cheese 8/cs,FG,Obsolete,8,4.65,LBS,,1,CS,CS,GREATLAND,
+0228,Ctn 4PK Bacn Egg Biscuit OP,PK,Active,350,45.6,LBS,No,1,EA,EA,10000,230
+0232,Film Lidding EZ Peel 16.54in,PK,Active,36000,45,LBS,No,36000,RL,IN,10000,234
+0265,Flavor Beef Nat&Art SB,SA,Active,560,37.85,LBS,No,560,PL,OZ,10000,270
+0270,Starch Ultra Sperse M,MC,Active,800,22.7,LBS,No,800,BOX,OZ,10000,275
+0272,Tray Panini No Print Uncoated,PK,Active,450,13.35,LBS,No,1,EA,EA,10000,277
+83733,Triple Wedge Egg Salad 8/cs,FG,Obsolete,8,4.52,LBS,,1,CS,CS,GREATLAND,
+0273,Ctn HEB Panini Mush Stk Ched,PK,Active,400,36.6,LBS,No,1,EA,EA,10000,279
+0274,Ctn HEB Panini Philly Stk,PK,Active,400,36.6,LBS,No,1,EA,EA,10000,280
+0275,Ctn HEB Panini Chick Spin Mush,PK,Active,400,36.5,LBS,No,1,EA,EA,10000,281
+0276,Ctn HEB Panini Poblano Chicken,PK,Active,400,36.6,LBS,No,1,EA,EA,10000,282
+0278,Spread Ranch Fat Free,SA,Active,512,36.25,LBS,,512,CS,OZ,10000,284
+0279,Ham Blk Frst Log Unsliced SBUX,PR,Active,1,25,LBS,No,1,LB,LB,10000,285
+0281,Ctn Panini Chicken Club,PK,Active,400,36.5,LBS,No,1,EA,EA,10000,288
+83734,Triple Wedge Tuna Salad 8/cs,FG,Obsolete,8,4.52,LBS,,1,CS,CS,GREATLAND,
+0282,Ctn Panini Philly Stk&Chs,PK,Obsolete,400,36.5,LBS,No,1,EA,EA,10000,289
+0283,Ctn Panini Chicken Spinach,PK,Obsolete,400,36.6,LBS,No,1,EA,EA,10000,290
+0288,Film Baguetta Nathans Hot Dog,PK,Active,4000,25,LBS,,4000,RL,IMP,10000,295
+0289,Film Baguetta OP Pepperoni,PK,Active,4000,25,LBS,,4000,RL,IMP,10000,296
+0291,Spread Herb & Chs Florentine,SA,Obsolete,640,46,LBS,No,640,CS,OZ,10000,298
+0297,Bun Hot Dog Plain 6in,BR,Active,144,18.75,LBS,No,144,CS,EA,10000,303
+0298,Sauce Hot Dog Chili Sauce 1 Oz,SA,Active,288,18,LBS,,288,CS,EA,10000,304
+0299,Film Baguetta OP Pepperoni CAN,PK,Active,4000,32.3,LBS,,4000,RL,IMP,10000,305
+0301,Tray Nathans Hot Dog Double,PK,Active,500,14,LBS,,500,CS,EA,10000,307
+0302,Film Fuji Nathans Chili Dog,PK,Active,9000,13.05,LBS,,9000,RL,IMP,10000,308
+0303,Film Fuji Nathans Chl Dog Twin,PK,Active,9000,13.05,LBS,,9000,RL,IMP,10000,309
+0304,Film Fuji Nathans Bf Hot Dog,PK,Active,9000,13.05,LBS,,9000,RL,IMP,10000,310
+0305,Film Fuji Nathans Bf Dog Twin,PK,Active,9000,13.05,LBS,,9000,RL,IMP,10000,311
+83735,Trple Wedge Chicken Salad 8/cs,FG,Obsolete,8,4.52,LBS,,1,CS,CS,GREATLAND,
+0306,Film Fuji Nathans Jumbo Bf HD,PK,Active,9000,13.05,LBS,,9000,RL,IMP,10000,312
+0307,Film Fuji Nathans Jumbo Spicy,PK,Active,9000,13.05,LBS,,9000,RL,IMP,10000,313
+85000,Ham Cheese Double Wedge 48/cs,FG,Active,48,12.3,LBS,No,1,CS,CS,99ONLYSTOR,
+0309,Film Tiro OP Tuna Dbl Wdg CAN,PK,Active,15603,42,LBS,,15603,RL,EA,10000,315
+85001,Turkey Cheese Dbl Wedge 48/cs,FG,Active,48,12.3,LBS,No,1,CS,CS,99ONLYSTOR,
+0310,Film Tiro OP Hm Tky Sw Dbl CAN,PK,Active,42,42,LBS,,15603,RL,EA,10000,316
+0315,Tortilla White Homestyle 9in,BR,Active,144,18,LBS,No,144,CS,EA,10000,321
+0317,Corn/Pepper/Blk Bean Blend,VE,Active,400,27,LBS,No,400,CS,OZ,10000,323
+0318,Potato Popcorn 12-24 Oz,VE,Obsolete,288,19.5,LBS,No,288,CS,OZ,10000,324
+0319,Spread Cream Cheese Asiago,SA,Active,480,31.03,LBS,No,480,CS,OZ,10000,325
+0321,Cheese Mozz Shred 12-2 LB,DA,Active,24,26.5,LBS,No,24,CS,LB,10000,327
+0324,Lbl Direct Thermal 4x6 Blank,PK,Active,2000,23.8,LBS,No,2000,CS,EA,10000,330
+0334,Push Pull Grip Sht 43x51x.30 ,PK,Obsolete,1000,0.1,LBS,No,1000,PAL,EA,10000,340
+0335,Spread Artichoke,SA,Obsolete,480,32,LBS,No,480,PL,OZ,10000,341
+0336,Spread Dijonnaise,SA,Obsolete,480,32,LBS,No,480,PL,OZ,10000,342
+0337,Spread Mayo Pesto,SA,Obsolete,480,32,LBS,No,480,PL,OZ,10000,343
+0338,Spread Sun Dried Tomato,SA,Obsolete,480,32,LBS,No,480,PL,OZ,10000,344
+85005,Turkey & Cheese Kaiser 36/cs,FG,Obsolete,36,9.59,LBS,No,1,CS,CS,99ONLYSTOR,
+85006,Ham & Cheese Kaiser 36/cs,FG,Obsolete,36,9.59,LBS,No,1,CS,CS,99ONLYSTOR,
+0339,Ham Honey Smkd Diced 1/4in,PR,Active,10,12,LBS,No,10,CS,LB,10000,345
+0340,Pepper Green Diced 1/4in,VE,Active,400,27,LBS,No,400,CS,OZ,10000,346
+0341,Sausage Crumbles 2-5 Lb,PR,Active,160,12.82,LBS,No,160,CS,OZ,10000,348
+0342,Spread Cream Chs Cinn Maple,SA,Active,480,31.03,LBS,No,480,CS,OZ,10000,350
+0344,Ctn Westrn HEB Brkft Panini,PK,Active,400,33.5,LBS,No,1,EA,EA,10000,353
+0345,Film Tiro Heb National Hot Dog,PK,Active,15603,52.15,LBS,No,15603,RL,IMP,10000,355
+85007,Hamburger 36/cs,FG,Active,36,10.94,LBS,No,1,CS,CS,99ONLYSTOR,
+85100,Hamburger 24/cs,FG,Obsolete,24,7.95,LBS,,1,CS,CS,UWG,
+85101,Sausage & Cheese Muffin 16/cs,FG,Obsolete,16,6.1,LBS,,1,CS,CS,UWG,
+85300,Sausage, Egg, Chs Muf 12/1x4pk,FG,Active,12,15.3,LBS,No,1,CS,CS,WFF,
+85302,Bacon, Egg,Chs Bisc 12/1x4pk,FG,Active,12,12.3,LBS,No,1,CS,CS,WFF,
+85303,Can Bac,Egg,Chs Muff 12/1x4pk,FG,Active,12,13.5,LBS,No,1,CS,CS,WFF,
+85304,Sausage Egg Chs Crois 6/1x4pk,FG,Active,6,7.9,LBS,No,1,CS,CS,WFF,
+85305,Ham & Cheese Croissant 6/1x4pk,FG,Active,6,5.95,LBS,No,1,CS,CS,WFF,
+85450,Bacon, Egg,Chs Bisc 12/2x2pk,FG,Active,12,13.7,LBS,No,1,CS,CS,BBL,
+85451,Sausage, Egg,Chs Croi 12/2x2pk,FG,Active,12,16.1,LBS,No,1,CS,CS,BBL,
+85452,Sausage, Egg,Chs Muf 12/2x2pk,FG,Active,12,16.1,LBS,No,1,CS,CS,BBL,
+85500,Chicken Biscuit 18/2x1pk,FG,Obsolete,18,9.95,LBS,No,1,CS,CS,WELLSHIRE,
+85501,Blk Forest Ham Muf 12/2x1pk,FG,Obsolete,12,8.89,LBS,No,1,CS,CS,WELLSHIRE,
+0353,Vinegar Balsamic,SA,Obsolete,,0,,,338,CS,OZ,10000,364
+0360,Film SBUX Panini Tuna Salad,PK,Obsolete,,0,,No,1,IMP,IMP,10000,371
+85502,Pork Sausage Muff 12/2x1pk,FG,Obsolete,12,9.64,LBS,No,1,CS,CS,WELLSHIRE,
+85503,Turkey Cdn Bac Muf 12/2x1pk,FG,Obsolete,12,8.89,LBS,No,1,CS,CS,WELLSHIRE,
+85600,Bacon,Egg,Chs Biscuit 12/2x2pk,FG,Active,12,11.32,LBS,No,1,CS,CS,MEIJER,
+0361,Film SBUX Panini Ham&Swiss,PK,Obsolete,,0,,No,1,IMP,IMP,10000,372
+85601,Sausage, Egg,Chs Croi 12/2x2pk,FG,Active,12,14.32,LBS,No,1,CS,CS,MEIJER,
+0362,Film SBUX Panini Rstd Tomato,PK,Obsolete,,0,,No,1,IMP,IMP,10000,373
+0363,Film SBUX Panini Santa Fe Chic,PK,Obsolete,,0,,No,1,IMP,IMP,10000,374
+0364,Film BOPP Fuji 10 in Web,PK,Active,,0,,No,12,FT,IN,10000,375
+0395,Lbl OP Ham Scramble Bowl Lid,PK,Active,,0,,No,1000,RL,EA,10000,407
+85602,Sausage, Egg,Chs Muff 12/2x2pk,FG,Active,12,14.32,LBS,No,1,CS,CS,MEIJER,
+0396,Lbl OP Ham Scramble Bowl Btm,PK,Active,,0,,No,1000,RL,EA,10000,408
+85603,Sausage, Egg,Chs Bisc 12/2x2pk,FG,Active,12,14.32,LBS,No,1,CS,CS,MEIJER,
+0397,Lbl OP Saus Scramble Bowl Lid,PK,Active,,0,,No,1000,RL,EA,10000,409
+0398,Lbl OP Saus Scramble Bowl Btm,PK,Active,,0,,No,1000,RL,EA,10000,410
+0399,Biscuit Buttermilk 2 Oz Sliced,BR,Active,144,0,,No,144,CS,EA,10000,411
+86004,Western Breakfast Panini 12/cs,FG,Active,12,5.75,LBS,No,1,CS,CS,HEB,
+0400,Roll White Rustic 190/Cs,BR,Active,190,0,,No,190,CS,EA,10000,412
+0413,Film Fuji SECM Direct Plus,PK,Active,,0,,No,15000,RL,EA,10000,424
+86005,Saus Egg & Cheese Panini 12/cs,FG,Active,12,5.75,LBS,No,1,CS,CS,HEB,
+0414,Film Fuji CBECM Direct Plus,PK,Active,,0,,No,15000,RL,EA,10000,425
+0424,Film SBUX 9.5in ChickSaus Wrap,PK,Active,,0,,No,12500,RL,IMP,10000,435
+86500,SW Chicken Lean Panini 12/cs,FG,Obsolete,12,4.5,LBS,Yes,1,CS,CS,S04,
+86501,Chk Spn Mshm Lean Panini 12/cs,FG,Obsolete,12,4.5,LBS,Yes,1,CS,CS,S04,
+86502,Phly Stk Chs Lean Panini 12/cs,FG,Obsolete,12,4.5,LBS,Yes,1,CS,CS,S04,
+86503,Chicken Club Lean Panini 12/cs,FG,Obsolete,12,4.5,LBS,Yes,1,CS,CS,S04,
+86700,Spinach n Cheese  Wrap 32/cs,FG,Active,32,12.01,LBS,No,1,CS,CS,DDI,
+86701,SW Style Chken Chor Wrap 32/cs,FG,Active,32,12.01,LBS,Yes,1,CS,CS,DDI,
+86702,Turkey Saus n Chse Wrap 32/cs,FG,Active,32,12.01,LBS,Yes,1,CS,CS,DDI,
+0435,Tray Clear Hinged DV3708,PK,Active,250,0,,No,250,CS,EA,10000,445
+86703,Brie,Aple,Fig Rais Bread 20/cs,FG,Active,24,6.6,LBS,No,1,CS,CS,DDI,
+86704,Thai Chckn & Chili Wrap 28/cs,FG,Active,28,9.94,LBS,Yes,1,CS,CS,DDI,
+86705,Turkey,Dijon & Jack Wrap 28/cs,FG,Active,28,9.54,LBS,Yes,1,CS,CS,DDI,
+86706,Hummus & Cheese Wrap 28/cs,FG,Active,28,7.77,LBS,No,1,CS,CS,DDI,
+86707,Ham & Cheese Baguette 20/cs,FG,Active,20,6.66,LBS,No,1,CS,CS,MCDNLDWS,
+86708,Roasted Chicken Baguette 20/cs,FG,Active,20,6.1,LBS,No,1,CS,CS,MCDNLDWS,
+0446,Lbl CWrap Jamba Hummus 500/Rl,PK,Active,500,0,,No,500,RL,EA,10000,455
+0447,Lbl CWrap Jamba TrkyJck 500/Rl,PK,Active,500,0,,No,500,RL,EA,10000,456
+0448,Lbl CWrp Jamba ThaiChkn 500/Rl,PK,Active,500,0,,No,500,RL,EA,10000,457
+0457,Square White Blank 3 x 3,PK,Active,11700,0,,No,11700,CS,EA,10000,467
+0458,Lbl 3x3 Jamba Bistro Panini 1M,PK,Active,1000,0,,No,1000,RL,EA,10000,469
+0459,Lbl 3x5 Jamba Bistro Nutrtn 1M,PK,Active,1000,0,,No,1000,RL,EA,10000,470
+0461,Lbl Cmbrlnd Burger Top,PK,Active,2000,0,,No,2000,RL,EA,10000,472
+0462,Lbl Cmbrlnd Chs Burger Top,PK,Active,2000,0,,No,2000,RL,EA,10000,473
+0463,Lbl Cmbrlnd Bcn Chs Burger Top,PK,Active,2000,0,,No,2000,RL,EA,10000,474
+0464,Lbl Cmbrlnd Burger Bottom,PK,Active,2000,0,,No,2000,RL,EA,10000,475
+0465,Lbl Cmbrlnd Chs Burger Bottom,PK,Active,2000,0,,No,2000,RL,EA,10000,476
+0466,Lbl Cmbrlnd BcnChs Burger Btm,PK,Active,2000,0,,No,2000,RL,EA,10000,477
+0476,Ctn Bowl HEPC PigWig,PK,Active,,0,,No,1,EA,EA,10000,487
+0477,Rectangle NW Mrkt Frsh Grn,PK,Obsolete,,0,,No,16000,CS,EA,10000,488
+0478,Film SBUX 10in ChickSaus Wrap,PK,Active,,0,,No,12500,RL,IMP,10000,489
+0479,Pepper Bell Yellow Rstd IQF,VE,Obsolete,400,0,,No,400,CS,OZ,10000,490
+0480,Roll Wht Rustic 180/Cs Unslicd,BR,Active,180,0,,No,180,CS,EA,10000,491
+0495,Lbl Cmbrlnd Chicken Top,PK,Active,,0,,No,2000,RL,EA,10000,506
+0496,Lbl Cmbrlnd Chicken Btm,PK,Obsolete,,0,,No,2000,RL,EA,10000,507
+0497,Lbl Cmbrlnd Chick Chs Top,PK,Active,,0,,No,2000,RL,EA,10000,508
+0498,Lbl Cmbrlnd Chick Chs Btm,PK,Obsolete,,0,,No,2000,RL,EA,10000,509
+0499,Lbl Cmbrlnd ChickChsBac Top,PK,Active,,0,,No,2000,RL,EA,10000,510
+0500,Lbl Cmbrlnd ChickChsBac Btm,PK,Obsolete,,0,,No,2000,RL,EA,10000,511
+0508,Film Fuji Baguette Chicken,PK,Active,5500,49,,No,5500,RL,IMP,10000,519
+0513,Uboard Jamba Juice Baguette,PK,Active,,0,,No,1,EA,EA,10000,524
+0514,Uboard Jamba Juice MiniWrap,PK,Active,,0,,No,1,EA,EA,10000,525
+0517,Lbl Master C&C Angus Chs 5x7,PK,Active,,0,,No,1000,RL,EA,10000,528
+0518,Lbl Master C&C Angs BacChs 5x7,PK,Active,,0,,No,1000,RL,EA,10000,529
+86709,Three Cheese Baguette 20/cs,FG,Active,20,5.1,LBS,No,1,CS,CS,MCDNLDWS,
+86710,Brie,Aple,Fig Rais Bread 20/cs,FG,Active,20,6.6,LBS,No,1,CS,CS,MCDNLDWS,
+86711,Thai Chckn & Chili Wrap 36/cs,FG,Active,36,13.3,LBS,Yes,1,CS,CS,MCDNLDWS,
+86712,Turkey,Dijon & Jack Wrap 36/cs,FG,Active,36,12.67,LBS,Yes,1,CS,CS,MCDNLDWS,
+86713,Hummus & Cheese Wrap 36/cs,FG,Active,36,10,LBS,No,1,CS,CS,MCDNLDWS,
+87201,Sausage, Egg,Chs Muf 12pk,FG,Active,12,4.05,LBS,No,1,CS,CS,UWG,
+87202,Bacon, Egg,Chs Bisc 12pk,FG,Active,12,3.25,LBS,No,1,CS,CS,UWG,
+87205,Chicken Cheese Burger 12/cs,FG,Active,12,5.97,LBS,No,1,CS,CS,UWG,
+87206,Hebrew National Hot Dog 8/cs,FG,Active,8,3.335,LBS,No,1,CS,CS,UWG,
+87300,Bacon, Egg,Chs Bisc 8/4pk,FG,Active,8,7.78,LBS,No,1,CS,CS,GOLUP,
+0519,Lbl Master C&C Chick Chs 5x7,PK,Active,,0,,No,1000,RL,EA,10000,530
+0520,Lbl Master C&C Hot Dog 5x7,PK,Active,,0,,No,1000,RL,EA,10000,531
+0523,Flat Whole Wht Wrap Red Sodium,BR,Active,108,0,,No,108,CS,EA,10000,534
+0524,Flat Whole Wht Wrap Red Sodium,BR,Active,108,0,,No,108,CS,EA,10000,535
+0558,Film Fuji PP Sausage,PK,Obsolete,,0,,No,1857.601003,LB,IN,10000,537
+0559,Film Fuji PP Ham Egg Chs Muff,PK,Obsolete,,0,,No,1857,LB,IN,10000,538
+0577,Spread Mayo Pesto,SA,Obsolete,,0,,No,400,CS,OZ,10000,540
+87301,Sausage, Egg,Chs Bisc 8/4pk,FG,Active,8,9.79,LBS,No,1,CS,CS,GOLUP,
+87302,Sausage Egg Chs Crois 8/4pk,FG,Active,8,9.785,LBS,No,1,CS,CS,GOLUP,
+87303,Chicken Club Lean Panini 12/cs,FG,Active,12,5.24,LBS,No,1,CS,CS,GOLUP,
+87304,Chckn Philly Lean Panini 12/cs,FG,Active,12,5.24,LBS,No,1,CS,CS,GOLUP,
+87305,Chkn Spn Msh Lean Panini 12/cs,FG,Active,12,5.24,LBS,No,1,CS,CS,GOLUP,
+87306,Phly Stk Chs Lean Panini 12/cs,FG,Active,12,5.34,LBS,No,1,CS,CS,GOLUP,
+87307,Bcn Egg Pot Chs Bowl 8oz-8/cs,FG,Active,8,4.68,LBS,Yes,1,CS,CS,GOLUP,
+87308,Hm Egg Pot Chs Bwl 8 oz - 8/cs,FG,Active,8,4.68,LBS,Yes,1,CS,CS,GOLUP,
+87309,Sg Egg Pot Chs Bwl  8.6oz-8/cs,FG,Active,8,4.68,LBS,Yes,1,CS,CS,GOLUP,
+87400,Sg Egg Pot ChsBwl  8.6oz-12/cs,FG,Obsolete,12,7.21,LBS,Yes,1,CS,CS,FENM,
+87401,Bac Egg Pot Chs Bwl  8oz-12/cs,FG,Obsolete,12,7.21,LBS,Yes,1,CS,CS,FENM,
+87402,Sausage, Egg,Chs Muff 12/2pk,FG,Obsolete,12,8.57,LBS,No,1,CS,CS,FENM,
+87403,Trky Bcn, Egg, Chs Muff 12/2pk,FG,Obsolete,12,8.57,LBS,No,1,CS,CS,FENM,
+87603,Chicken Burger 12/cs,FG,Active,12,5.72,LBS,No,1,CS,CS,CUMBP,
+87604,Chicken Cheese Burger 12/cs,FG,Active,12,6.22,LBS,No,1,CS,CS,CUMBP,
+87605,Chicken Chs Bacon Burger 12/cs,FG,Active,12,6.4,LBS,No,1,CS,CS,CUMBP,
+123127,Double Hamburger  12/cs,FG,Active,12,6.77,LBS,No,1,CS,CS,GREATLAND,
+123128,Cheeseburger  12/cs,FG,Active,12,4.97,LBS,No,1,CS,CS,CFS,
+123300,Sausage Scramble Bowl 12/cs,FG,Active,12,10.63,LBS,Yes,1,CS,CS,MCLN,
+123301,Bacon Scramble Bowl 12/cs,FG,Active,12,10.63,LBS,Yes,1,CS,CS,MCLN,
+123302,Sausage&Maple Pcake Bowl 12/cs,FG,Obsolete,18,7.33,LBS,Yes,1,CS,CS,MCLN,
+123303,Sausage and Waffles 12/cs,FG,Obsolete,18,7.33,LBS,Yes,1,CS,CS,10000,
+123304,Chicken Teriyaki Bowl  12/cs,FG,Active,12,10.63,LBS,Yes,1,CS,CS,MCLN,
+123310,Sausag Scrmble Bowl  6oz-12/cs,FG,Active,12,7.33,LBS,Yes,1,CS,CS,LPRF,
+0649,Box #4 Kraft Plain,PK,Obsolete,,0,,,1,EA,EA,10000,544
+0664,Tape Sealing 48mmx100M 1.9mil,PK,Active,36,0,,No,36,CS,RL,10000,545
+0720,Pepper Red Strip Roasted ,VE,Obsolete,,0,,,276,CS,OZ,10000,546
+0737,Label Tuna Salad 2x4,PK,Obsolete,,0,,,1000,CS,EA,10000,547
+0738,Lab- Rec Chicken Salad 2x4 in ,PK,Obsolete,,0,,,1000,CS,EA,10000,548
+0739,Lab- rectangle Back 3x3 4762,PK,Obsolete,,0,,No,1000,CS,EA,10000,549
+0753,Square Blank White Firenza 3x3,PK,Obsolete,,0,,,1900,RL,EA,10000,550
+0758,Sqr Cheeseburger Firenza 3x3,PK,Obsolete,,0,,,1000,RL,EA,10000,551
+0765,Sqr Hot Dog Firenza 3x3 in,PK,Obsolete,,0,,,1000,RL,EA,10000,552
+0819,Stretch Film 18x2000 80ga,PK,Active,,0,,No,4,PAL,EA,10000,554
+0856,Tape clear 2x1000 2 mil ,PK,Obsolete,,0,,No,72,CS,EA,10000,556
+0959,Beard Cover Polypropylene,PK,Active,,0,,No,1000,CS,EA,10000,557
+0961,Ham Bavarian Unsliced,PR,Obsolete,,0,,,1,LB,LB,10000,558
+123311,Bacon Scrmble  Bowl 6oz-12/cs,FG,Active,12,7.33,LBS,Yes,1,CS,CS,LPRF,
+123314,Chicken Teriyaki Bowl 6oz12/cs,FG,Active,12,7.33,LBS,Yes,1,CS,CS,LPRF,
+123315,Ham Scramble Bowl 6 oz - 12/cs,FG,Active,12,7.33,LBS,Yes,1,CS,CS,LPRF,
+123412,Double Cheeseburger  12/cs,FG,Active,12,7.82,LBS,No,1,CS,CS,CFS,
+123496,Hamburger  12/cs,FG,In Development,12,6.77,LBS,,1,CS,CS,INDERBITZN,
+123497,Hickory Rib Sandwich  12/cs,FG,Active,12,5.73,LBS,No,1,CS,CS,CFS,
+123545,Ham Egg & Cheese Muffin  12/cs,FG,Obsolete,12,4.72,LBS,No,1,CS,CS,CFS,
+123555,Sausage Egg Cheese Muffin12/cs,FG,Obsolete,12,4.72,LBS,No,1,CS,CS,CFS,
+123586,Bacon Cheeseburger 12/cs,FG,Active,12,4.77,LBS,No,1,CS,CS,GREATLAND,
+123587,Maple Pancakes, Sausage  18/cs,FG,Active,18,7.33,LBS,Yes,1,CS,CS,99ONLYSTOR,
+123588,Sausage Scramble  18/cs,FG,Active,18,7.33,LBS,Yes,1,CS,CS,99ONLYSTOR,
+123589,Bacon Scramble 18/cs,FG,Active,18,6.2,LBS,Yes,1,CS,CS,99ONLYSTOR,
+123590,Mini Pancakes and Syrup  18/cs,FG,Active,18,6.43,LBS,No,1,CS,CS,99ONLYSTOR,
+123591,Mini Waffles and Syrup  18/cs,FG,Active,18,5.08,LBS,No,1,CS,CS,BROOKS,
+123592,French Toast and Syrup  18/cs,FG,Active,18,5.08,LBS,No,1,CS,CS,BROOKS,
+123593,Mini Cinn Buns, Frost  18/cs,FG,Obsolete,18,5.86,LBS,No,1,CS,CS,99ONLYSTOR,
+123594,Ham & Cheese Double Wdge 12/cs,FG,Active,12,4.4,LBS,No,1,CS,CS,CFS,
+123595, Egg Salad Double Wedge 12/cs,FG,Active,12,3.69,LBS,No,1,CS,CS,CFS,
+123596,Chicken Salad Dble Wdge 12/cs,FG,Active,12,3.69,LBS,No,1,CS,CS,CFS,
+123597,Turkey Cheese Dbl Wedge 12/cs,FG,Active,12,4.03,LBS,No,1,CS,CS,CFS,
+123598,Ham & Cheese Hoagie 12/cs,FG,Active,12,5.14,LBS,No,1,CS,CS,CFS,
+123599,Turkey Cheese Hoagie 12/cs,FG,Active,12,5.14,LBS,No,1,CS,CS,CFS,
+123600,Ham & Turkey Hoagie 12/cs,FG,Active,12,5.68,LBS,No,1,CS,CS,CFS,
+123601,Tuna Salad Double Wedge on,FG,Active,12,3.69,LBS,No,1,CS,CS,CFS,
+123603,OP Tuna Salad Tpl Wedge16/cs,FG,Active,16,7.1,LBS,No,1,CS,CS,GREATLAND,
+123605,Trkey Cheese Triple Wdge 16/cs,FG,Active,16,7.1,LBS,No,1,CS,CS,GREATLAND,
+123607,OP Dbl Wdge Turk,Sws,Ham 12/cs,FG,Active,12,5.25,LBS,No,1,CS,CS,CFS,
+123611,Maple Pancakes, Sausage  24/cs,FG,Obsolete,24,8,LBS,Yes,1,CS,CS,99ONLYSTOR,
+123612,Sausage Scramble 24/cs,FG,Obsolete,24,8.9,LBS,Yes,1,CS,CS,99ONLYSTOR,
+123613,Bacon Scramble 24/cs,FG,Obsolete,24,8.9,LBS,Yes,1,CS,CS,99ONLYSTOR,
+123616,OP Saus,Egg,Chse Muf 12/1x4pk,FG,Active,12,16.1,LBS,No,1,CS,CS,NASH,
+123617,OP Saus,Egg,Chs Bisc 12/1x4pk,FG,Active,12,16.1,LBS,No,1,CS,CS,NASH,
+123618,OP Bacn,Egg,Chs Bisc 12/1x4pk,FG,Active,12,13.65,LBS,No,1,CS,CS,NASH,
+123619,OP Can Bac,Egg Ch Muf 12/1x4pk,FG,Active,12,14.55,LBS,No,1,CS,CS,NASH,
+123701,Tuna Salad Double Wd 12/cs CAN,FG,Active,12,3.69,LBS,No,1,CS,CS,10000,
+123707,OP Db Wge Trk,Sws,Ham 12/csCAN,FG,Active,12,5.25,LBS,Yes,1,CS,CS,10000,
+124100,Sausage, Egg, Cheese Muf 12/cs,FG,Active,12,4.08,LBS,Yes,1,CS,CS,DPFG,
+124101,Can Bac,Egg,Cheese Muff 12/cs,FG,Active,12,3.64,LBS,Yes,1,CS,CS,DPFG,
+124103,Bacon Scrmble  Bowl 6oz-12/cs,FG,Active,12,7.33,LBS,Yes,1,CS,CS,10000,
+125000,Polish Sausage Baguetta 24/cs,FG,Active,24,9.12,LBS,Yes,1,CS,CS,CDI,
+125001,Bacn Egg Cheese Baguetta 24/cs,FG,Active,24,9.24,LBS,Yes,1,CS,CS,CDI,
+125002,Cheesy Beef Baguetta 24/cs,FG,Active,24,9.35,LBS,Yes,1,CS,CS,CDI,
+125003,Nathans Baguetta 24/cs,FG,Active,24,7.2,LBS,Yes,1,CS,CS,MCLN,
+125100,Polish Saus Baguetta 24/cs CAN,FG,Active,24,9.12,LBS,Yes,1,CS,CS,INFORM,
+125101,Bacn Egg Chse Bagtta 24/cs CAN,FG,Active,24,9.24,LBS,Yes,1,CS,CS,INFORM,
+125102,Cheesy Beef Baguetta 24/cs CAN,FG,Active,24,9.35,LBS,Yes,1,CS,CS,INFORM,
+154117,King Sub Turkey & Cheese 15/cs,FG,Active,15,10.43,LBS,No,1,CS,CS,INDERBITZN,
+154118,King Sub Ham & Cheese 15/cs,FG,Active,15,10.43,LBS,No,1,CS,CS,INDERBITZN,
+163737,Dbl Wdge Turk,Swiss,Ham 16/cs,FG,Active,16,7.33,LBS,No,1,CS,CS,INDERBITZN,
+164730,Triple Wedge Ham Cheese 16/cs,FG,Active,16,8.07,LBS,No,1,CS,CS,INDERBITZN,
+164741,Triple Wedge Egg Salad 16/cs,FG,Active,16,7.57,LBS,No,1,CS,CS,INDERBITZN,
+164761,Trple Wdge Chicken Salad 16/cs,FG,Active,16,7.57,LBS,No,1,CS,CS,INDERBITZN,
+164765,Triple Wedge Tuna Salad 16/cs,FG,Active,16,7.57,LBS,No,1,CS,CS,INDERBITZN,
+164766,Triple Wdge Trkey Cheese 16/cs,FG,Active,16,8.07,LBS,No,1,CS,CS,INDERBITZN,
+11009260,Sample HamEggCheddar Lab 32/cs,FG,Active,32,10.14,LBS,No,1,CS,CS,AJGOSS,
+11009261,Sample BaconEggGouda Lab 32/cs,FG,Active,32,8.92,LBS,No,1,CS,CS,AJGOSS,
+11010010,Sample Vegetarian Lab 32/cs,FG,Active,32,10.14,LBS,No,1,CS,CS,AJGOSS,
+11017416,Sample Veg Labaccia CAN 32/cs,FG,Active,32,10.14,LBS,No,1,CS,CS,GFS,
+11017461,Sample Veg Labaccia CAN 32/cs,FG,Obsolete,32,10.14,LBS,No,1,CS,CS,GFS,
+11017984,Sample Bacon Lab CAN 32/cs,FG,Active,32,9.62,LBS,Yes,1,CS,CS,10000,
+11019027,Chicken Wrap 32/cs ,FG,Active,32,14.03,LBS,Yes,1,CS,CS,AJGOSS,
+11023447,Chicken Wrap 32/cs CAN ,FG,Active,32,14.03,LBS,Yes,1,CS,CS,GFS,
+11023449,Sample Chicken Wrap 32/cs CAN ,FG,Active,32,14.03,LBS,Yes,1,CS,CS,GFS,
+11024408,Test Bacon Egg Gouda Lab 32/cs,FG,Obsolete,32,9.62,LBS,No,1,CS,CS,10000,
+11024409,Test Ham Egg Cheddar Lab 32/cs,FG,Obsolete,32,10.14,LBS,No,1,CS,CS,10000,
+11024410,Test Vegetarian Labaccia 32/cs,FG,Obsolete,32,10.14,LBS,No,1,CS,CS,10000,
+11024411,Test Saus Egg Ched Muff 24/cs,FG,Obsolete,24,9.81,LBS,No,1,CS,CS,10000,
+11024412,Test RF Turkey Bacon 24/cs,FG,Obsolete,24,8.06,LBS,No,1,CS,CS,10000,
+11024413,Test Egg Wht Wrap w/Spin 32/cs,FG,Obsolete,32,12.4,LBS,No,1,CS,CS,10000,
+11024419,Test Chicken Wrap 32/cs ,FG,Obsolete,32,14.03,LBS,Yes,1,CS,CS,10000,
+19228,Mango Chutney Chken Ciab 20/cs,FG,Obsolete,,0,,,1,CS,CS,DSI,
+19229,Chicken Caprese Sandwich 20/cs,FG,Obsolete,,0,,,1,CS,CS,DSI,
+19230,SW Chicken Sandwich 20/cs,FG,Obsolete,,0,,,1,CS,CS,DSI,
+19232,Ham & Swiss Marbled Rye 20/cs,FG,Obsolete,,0,,,1,CS,CS,DSI,
+19234,Italian Hoagie 20/cs,FG,Obsolete,,0,,,1,CS,CS,DSI,
+19306,Buffalo Chicken Sandwich 12/cs,FG,Obsolete,,0,,,1,CS,CS,ALOPRESTI,
+19307,Little Italy 12/cs,FG,Obsolete,,0,,,1,CS,CS,ALOPRESTI,
+19308,Smoked Turkey & Havarti 12/cs,FG,Obsolete,,0,,,1,CS,CS,ALOPRESTI,
+19311,Cheese & Tomato Melt 12/cs,FG,Obsolete,,0,,,1,CS,CS,ALOPRESTI,
+19312,SS Buffalo Chicken Sand 12/cs,FG,Obsolete,,0,,,1,CS,CS,GSF,
+19314,SS Little Italy 12/cs,FG,Obsolete,,0,,,1,CS,CS,GSF,
+19315,SS Cheese & Tomato Melt 12/cs,FG,Obsolete,,0,,,1,CS,CS,GSF,
+19318,Turkey Bacon, Egg,Ched 12/cs,FG,Obsolete,,0,,,1,CS,CS,10000,
+19351,Cheese & Tomato Melt 12/cs CDA,FG,Obsolete,,0,,,1,CS,CS,10000,
+19541,Bacon Egg Gouda Labaccia 40/cs,FG,Obsolete,,0,,,1,CS,CS,BALFORD,
+19542,Ham Egg Cheddar Labaccia 40/cs,FG,Obsolete,,0,,,1,CS,CS,BALFORD,
+19543,Sausage Egg Cheddar Muff 36/cs,FG,Obsolete,,0,,,1,CS,CS,BALFORD,
+19544,Vegetarian Jack Labaccia,FG,Obsolete,,0,,,1,CS,CS,10000,
+19545,Egg & Monterey Jack Muffin,FG,Obsolete,,0,,,1,CS,CS,SWTRADERS,
+19546,Sausage Egg Muff 36/cs CAN,FG,Obsolete,,0,,,1,CS,CS,HFSNAC,
+19547,Ham Egg Cheddar Labaccia 16/cs,FG,Obsolete,,0,,,1,CS,CS,AJGOSS,
+19548,Sausage Egg Cheddar Muff 12/cs,FG,Obsolete,,0,,,1,CS,CS,AJGOSS,
+19549,Bacon Egg Gouda Labaccia 16/cs,FG,Obsolete,,0,,,1,CS,CS,AJGOSS,
+19550,RF Bacon Egg Ched Muff 12/cs,FG,Obsolete,,0,,,1,CS,CS,MILEHI,
+19551,Sausage Egg & Cheddar Muffin,FG,Obsolete,,0,,,1,CS,CS,GSF,
+19552,Bacon Egg Cheddar Muffin 36/cs,FG,Obsolete,,0,,,1,CS,CS,GSF,
+19553,RF Turkey Bacon 36/cs,FG,Obsolete,,0,,,1,CS,CS,BALFORD,
+19555,Ham Egg & Cheese Muffin 36/cs,FG,Obsolete,,0,,,1,CS,CS,GSF,
+19561,Sausage Egg Cheese Muff 36/cs,FG,Obsolete,,0,,,1,CS,CS,HFSNAC,
+19562,Bacon Egg Muffin 36/cs CAN,FG,Obsolete,,0,,,1,CS,CS,HFSNAC,
+19563,RF Turkey Bacon 36/cs  CAN,FG,Obsolete,,0,,,1,CS,CS,HFSNAC,
+19564,Florentine Sandwich,FG,Obsolete,,0,,,1,CS,CS,HFSNAC,
+19565,Ham Egg Muffin 36/cs CAN,FG,Obsolete,,0,,,1,CS,CS,HFSNAC,
+19567,Spinach Rstd Tomato Wrap 36/cs,FG,Obsolete,,0,,,1,CS,CS,BALFORD,
+19569,Spinach Rstd Tomato Wrap 12/cs,FG,Obsolete,,0,,,1,CS,CS,AJGOSS,
+19570,Spinach Rstd Tomato Wrap 36/cs,FG,Obsolete,,0,,,1,CS,CS,HFSNAC,
+19571,Bacon Egg Gouda Lab 40/cs CAN,FG,Obsolete,,0,,,1,CS,CS,HFSNAC,
+19577,Ham Egg Cheddar Lab 40/cs CAN,FG,Obsolete,,0,,,1,CS,CS,HFSNAC,
+19580,Egg White Wrap w/Spinach 36/cs,FG,Obsolete,,0,,,1,CS,CS,AJGOSS,
+19581,Egg White Wrap w/Spinach 12/cs,FG,Obsolete,,0,,,1,CS,CS,AJGOSS,
+19585,RF Turkey Bacon 36/cs,FG,Obsolete,,0,,,1,CS,CS,AJGOSS,
+19587,RF Turkey Bacon 12/cs,FG,Obsolete,,0,,,1,CS,CS,HFSNA,
+19600,Spinach  Wrap 36/cs CAN,FG,Obsolete,,0,,,1,CS,CS,HFSNAC,
+19601,RF Turkey Bacon  36/cs CAN,FG,Obsolete,,0,,,1,CS,CS,HFSNAC,
+19602,Sausage Egg Muff 12/cs CAN,FG,Obsolete,,0,,,1,CS,CS,HFSNAC,
+19603,Bacon Egg Gouda Lab 16/cs CAN,FG,Obsolete,,0,,,1,CS,CS,HFSNAC,
+19604,RF Turkey Bacon  12/cs CAN,FG,Obsolete,,0,,,1,CS,CS,HFSNAC,
+19605,Ham Egg Cheddar Lab 16/cs CAN,FG,Obsolete,,0,,,1,CS,CS,HFSNAC,
+19606,Spinach Wrap 12/cs CAN,FG,Obsolete,,0,,,1,CS,CS,HFSNAC,
+83737,Double Wedge Ham Turkey & 8/cs,FG,Obsolete,,0,,,1,CS,CS,DOYLES,
+84068,British Sub 8/cs,FG,Obsolete,,0,,,1,CS,CS,DOYLES,
+84101,Double Wedge Italian 8/cs,FG,Obsolete,,0,,,1,CS,CS,DOYLES,
+84115,King Sub Ham & Cheese 8/cs,FG,Obsolete,,0,,,1,CS,CS,DOYLES,
+84126,King Sub Turkey & Cheese 8/cs,FG,Obsolete,,0,,,1,CS,CS,DOYLES,
+84361,Dbl Wedge Italian onWheat 8/cs,FG,Obsolete,,0,,,1,CS,CS,10000,
+84362,Trple Wedge Turkey Cheese 8/cs,FG,Obsolete,,0,,,1,CS,CS,10000,
+84363,Double Wedge Ham Turkey & 8/cs,FG,Obsolete,,0,,,1,CS,CS,10000,
+84364,Triple Wedge Ham & Cheese 8/cs,FG,Obsolete,,0,,,1,CS,CS,10000,
+84730,Triple Wedge Ham & Cheese 8/cs,FG,Obsolete,,0,,,1,CS,CS,DOYLES,
+84741,Triple Wedge Egg Salad on,FG,Obsolete,,0,,,1,CS,CS,DOYLES,
+84742,Trple Wedge Turkey Cheese 8/cs,FG,Obsolete,,0,,,1,CS,CS,DOYLES,
+84743,Tpl Wedge Pastrami Cheese 8/cs,FG,Obsolete,,0,,,1,CS,CS,DOYLES,
+84744,Triple Wedge Tuna Salad 8/cs,FG,Obsolete,,0,,,1,CS,CS,DOYLES,
+84747,Trple Wedge Chicken Salad 8/cs,FG,Obsolete,,0,,,1,CS,CS,DOYLES,
+85002,Ham, Turkey & Cheese Mini Sub,FG,Obsolete,,0,,No,1,CS,CS,10000,
+85003,Italian Mini Sub 24/cs,FG,Obsolete,,0,,No,1,CS,CS,10000,
+85004,Salami & Cheese Kaiser 24/cs,FG,Obsolete,,0,,No,1,CS,CS,10000,
+85200,Mediterranean Panini 24/cs,FG,Obsolete,,0,,No,1,CS,CS,10000,
+85201,Cheese and Tomato Melt,FG,Obsolete,,0,,No,1,CS,CS,10000,
+85202,Chicken Pesto Panini  24/cs,FG,Obsolete,,0,,No,1,CS,CS,10000,
+85203,Black Forest Ham and Cheddar,FG,Obsolete,,0,,No,1,CS,CS,10000,
+85350,Sausage, Egg & Chse Muf 36/cs,FG,Obsolete,,0,,No,1,CS,CS,10000,
+85351,Bacon, Egg & Chse Muf 36/cs,FG,Obsolete,,0,,No,1,CS,CS,10000,
+85352,Beef & Cheese Slider 36/cs,FG,Obsolete,,0,,No,1,CS,CS,10000,
+85353,Breaded Chicken Slider 48/cs,FG,Obsolete,,0,,No,1,CS,CS,10000,
+85414,Bacon, Egg, Chs Bagel 12/1x2pk,FG,Obsolete,,0,,No,1,CS,CS,10000,
+85415,Egg & Cheese Bagel 12/1x2pk,FG,Obsolete,,0,,No,1,CS,CS,10000,
+85416,Sausage, Egg,Chs Bagl 12/1x2pk,FG,Obsolete,,0,,No,1,CS,CS,10000,
+85417,Bacon, Egg , Chs Bisc 12/1x4pk,FG,Active,,0,,No,1,CS,CS,CSWG,
+85418,Sausage, Egg,Chs Bisc 12/1x4pk,FG,Active,,0,,No,1,CS,CS,CSWG,
+85419,Ham, Egg , Chs Croiss 12/1x4pk,FG,Active,,0,,No,1,CS,CS,CSWG,
+85420,Saus, Egg , Chs Crois 12/1x4pk,FG,Active,,0,,No,1,CS,CS,CSWG,
+90001,All Nat Ing Tky Can Bacon Br,FG,Obsolete,,0,,No,1,EA,EA,10000,
+90002,All Nat Ing Tky Ssg Bfst Sand,FG,Obsolete,,0,,No,1,EA,EA,10000,
+90003,All Nat Ing Gdn Ssg Bfst Sand,FG,Obsolete,,0,,No,1,EA,EA,10000,
+90004,All Nat Ing Pork Ssg Bfst Sand,FG,Obsolete,,0,,No,1,EA,EA,10000,
+123610,OP King Sub Italian 15/cs,FG,Active,15,0,,No,1,CS,CS,10000,
+123614,Sausage & Cheese Muffin,FG,Obsolete,,0,,No,1,CS,CS,10000,
+123615,Sausage Griddle Cakes 12/1x4pk,FG,Obsolete,,0,,No,1,CS,CS,10000,
+123620,OP Sausage, Egg Chs Bisc 12/cs,FG,Obsolete,,0,,No,1,CS,CS,10000,
+123621,OP Bacon, Egg Chs Bisc 12/cs,FG,Obsolete,,0,,No,1,CS,CS,10000,
+123622,OP Can Bacn, Egg Chs Muf 12/cs,FG,Obsolete,,0,,No,1,CS,CS,10000,
+123623,OP Saus, Egg Chs Crois 12/cs,FG,Obsolete,,0,,No,1,CS,CS,10000,
+123624,OP Ham & Cheese Croiss 12/cs,FG,Obsolete,,0,,No,1,CS,CS,10000,
+123625,Mini Corn Dogs with Ketchup,FG,Active,,0,,No,1,CS,CS,10000,
+123626,Popcorn Chckn w Ketchup 18/cs,FG,Active,,0,,No,1,CS,CS,10000,
+123627,Chicken Cheddar w Ketch 18/cs,FG,Active,,0,,No,1,CS,CS,10000,
+123628,Sausage and Cheese Muffin,FG,Active,,0,,No,1,CS,CS,10000,
+123629,Sausage and Griddle Cake Sand,FG,Obsolete,,0,,No,1,CS,CS,10000,
+124102,Sausag Scrmble Bowl  6oz-12/cs,FG,Active,,0,,Yes,1,CS,CS,10000,
+125104,Pepperoni Baguetta 24/cs CAN,FG,Active,,0,,Yes,1,CS,CS,10000,
+164775,Double British Wedge,FG,Obsolete,,0,,,1,CS,CS,INDERBITZN,
+164777,Double Pastrami Wedge,FG,Obsolete,,0,,,1,CS,CS,INDERBITZN,
+243726,Ham & Cheese Hoagie 24/cs,FG,Obsolete,,0,,No,1,CS,CS,INDERBITZN,
+244096,Turkey & Cheese Hoagie 24/cs,FG,Obsolete,,0,,No,1,CS,CS,INDERBITZN,
+244133,Dbl Sausage Cheese Muff 12/cs,FG,Obsolete,,0,,No,1,CS,CS,10000,
+0105,Plain Bagel & Cream Cheese,FG,Not Usable,,0,,,0,,EA,10000,
+123127EA,Double hamburger ,FG,Not Usable,,0,,,0,,EA,10000,
+123128EA,Cheeseburger,FG,Not Usable,,0,,,0,,CS,10000,
+123412EA,Double Cheeseburger,FG,Not Usable,,0,,,0,,EA,10000,
+123497EA,Hickory Rib Sandwich,FG,Not Usable,,0,,,0,,EA,10000,
+123545EA,Ham Egg & Cheese Muffin,FG,Not Usable,,0,,,0,,EA,10000,
+123555EA,Sausage Egg & Cheese 12/cs,FG,Not Usable,,0,,,0,,EA,10000,
+123586EA,Bacon Cheeseburger,FG,Not Usable,,0,,,0,,EA,10000,
+124003EA,Deli Club NW Market Fresh,FG,Not Usable,,0,,,0,,EA,10000,
+154115EA,Roast Beef King Sub 15/cs,FG,Not Usable,,0,,,0,,EA,10000,
+154117EA,Turkey & Cheese King Sub 15/cs,FG,Not Usable,,0,,,0,,EA,10000,
+154118EA,Ham & Cheese King Sub 15/cs,FG,Not Usable,,0,,,0,,EA,10000,
+163737EA,Triple Wedge Turkey,Swiss,Ham,FG,Not Usable,,0,,,0,,EA,10000,
+164730EA,Triple Ham & Cheese Wedge,FG,Not Usable,,0,,,0,,EA,10000,
+164741EA,Triple Egg Salad on White,FG,Not Usable,,0,,,0,,EA,10000,
+164761EA,Triple Chck Salad/Wheat,FG,Not Usable,,0,,,0,,EA,10000,
+164765EA,Triple Tuna Salad on Wheat,FG,Not Usable,,0,,,0,,EA,10000,
+164766EA,Triple Turkey & Cheese Wheat,FG,Not Usable,,0,,,0,,EA,10000,
+164773EA,Triple Tuna Salad on Egg ,FG,Not Usable,,0,,,0,,EA,10000,
+164775EA,Double British Wedge,FG,Not Usable,,0,,,0,,EA,10000,
+164777EA,Double Pastrami Wedge,FG,Not Usable,,0,,,0,,EA,10000,
+19131EA,Vegan Gardenburger,FG,Not Usable,,0,,,0,,EA,10000,
+19137EA,Cheeseburger Angus,FG,Not Usable,,0,,,0,,EA,10000,
+19151EA,Hebrew National Hot Dog,FG,Not Usable,,0,,,0,,EA,10000,
+19152EA,Plain Bagel & Cream Cheese,FG,Not Usable,,0,,,0,,EA,10000,
+19228EA,Mango Chutney Chkn Ciabata,FG,Not Usable,,0,,,0,,EA,10000,
+19229EA,Chicken Caprese,FG,Not Usable,,0,,,0,,EA,10000,
+19230EA,SW Chicken Sandwich,FG,Not Usable,,0,,,0,,EA,10000,
+19232EA,Ham & Swiss Marbled Rye,FG,Not Usable,,0,,,0,,EA,10000,
+19233EA,Turkey & Swiss Hoagie,FG,Not Usable,,0,,,0,,EA,10000,
+19234EA,Italian Hoagie,FG,Not Usable,,0,,,0,,EA,10000,
+19305EA,Cheese & Spinach Omelette,FG,Not Usable,,0,,,0,,EA,10000,
+19306EA,Buffalo Chicken Sandwich,FG,Not Usable,,0,,,0,,EA,10000,
+19307EA,Little Italy,FG,Not Usable,,0,,,0,,EA,10000,
+19308EA,Smoked Turkey & Havarti,FG,Not Usable,,0,,,0,,EA,10000,
+19309EA,Sausage Egg & Cheddar,FG,Not Usable,,0,,,0,,EA,10000,
+19311EA,Cheese & Tomato Melt,FG,Not Usable,,0,,,0,,EA,10000,
+19312EA,Buffalo Chicken SS,FG,Not Usable,,0,,,0,,EA,10000,
+19313EA,Smoked Turkey & Havarti SS,FG,Not Usable,,0,,,0,,EA,10000,
+19314EA,Little Italy SS,FG,Not Usable,,0,,,0,,EA,10000,
+19315EA,Cheese & Tomato Melt SS,FG,Not Usable,,0,,,0,,EA,10000,
+19541EA,Bacon Egg Gouda Labaccia,FG,Not Usable,,0,,,0,,EA,10000,
+19542EA,Ham Egg Cheddar Labaccia,FG,Not Usable,,0,,,0,,EA,10000,
+19543EA,Sausage Egg Cheddar Muffin,FG,Not Usable,,0,,,0,,EA,10000,
+19544EA,Vegetarian Jack Labaccia Sand,FG,Obsolete,,0,,,0,,EA,10000,
+19547EA,Ham Egg Cheddar Labaccia,FG,Not Usable,,0,,,0,,EA,10000,
+19548EA,Sausage Egg Cheddar Muffin,FG,Not Usable,,0,,,0,,EA,10000,
+19549EA,Bacon Egg Gouda Labaccia,FG,Not Usable,,0,,,0,,EA,10000,
+19550EA,RF Bacon Egg Cheddar,FG,Not Usable,,0,,,0,,EA,10000,
+19551EA,Sausage Egg & Cheddar ,FG,Not Usable,,0,,,0,,EA,10000,
+19552EA,Bacon Egg & Cheddar,FG,Not Usable,,0,,,0,,EA,10000,
+19553EA,RF Turkey Bacon,FG,Not Usable,,0,,,0,,EA,10000,
+19555EA,Ham, Egg & Cheese,FG,Not Usable,,0,,,0,,EA,10000,
+19561EA,Sausage Egg & Cheddar,FG,Not Usable,,0,,,0,,EA,10000,
+19562EA,Bacon Cheese and Egg,FG,Not Usable,,0,,,0,,EA,10000,
+19563EA,RF Turkey Bacon,FG,Not Usable,,0,,,0,,EA,10000,
+19564EA,Florentine Sandwich,FG,Not Usable,,0,,,0,,EA,10000,
+19565EA,Ham Egg & Cheese,FG,Not Usable,,0,,,0,,EA,10000,
+19567EA,Spinach Roasted Tomato Wrap,FG,Not Usable,,0,,,0,,EA,10000,
+19569EA,Spinach Roasted Tomato Wrap,FG,Not Usable,,0,,,0,,EA,10000,
+19570EA,Spinach Roasted Tomato Wrap,FG,Not Usable,,0,,,0,,EA,10000,
+243726EA,Ham & Cheese Hoagie,FG,Not Usable,,0,,,0,,EA,10000,
+244096EA,Turkey & Cheese,FG,Not Usable,,0,,,0,,EA,10000,
+244133EA,Double Sausage & Cheese,FG,Not Usable,,0,,,0,,EA,10000,
+83115EA,K/S Ham & Cheese,FG,Not Usable,,0,,,0,,EA,10000,
+83119EA,K/S Rst Beef & Cheese,FG,Not Usable,,0,,,0,,EA,10000,
+83457EA,Poorboy,FG,Not Usable,,0,,,0,,EA,10000,
+83730EA,Triple Ham & Cheese White,FG,Not Usable,,0,,,0,,EA,10000,
+83731EA,Triple Turkey & Cheese Wedge,FG,Not Usable,,0,,,0,,EA,10000,
+83733EA,Triple Egg Salad Wedge-White,FG,Not Usable,,0,,,0,,EA,10000,
+83734EA,Triple Tuna Salad on White,FG,Not Usable,,0,,,0,,CS,10000,
+83735EA,Triple Chicken Salad Wedge-Whi,FG,Not Usable,,0,,,0,,EA,10000,
+83737EA,Dbl Ham Trk Swiss White,FG,Not Usable,,0,,,0,,EA,10000,
+84068EA,British NW Mkt Sandwich,FG,Not Usable,,0,,,0,,EA,10000,
+84101EA,Italian Dbl Wedge NW Mrkt,FG,Not Usable,,0,,,0,,EA,10000,
+84115EA,K/S Ham Cheese NW Mrkt Fsh,FG,Not Usable,,0,,,0,,EA,10000,
+84126EA,K/S Turkey Cheese,FG,Not Usable,,0,,,0,,EA,10000,
+84361EA,Italian Double Wedge,FG,Not Usable,,0,,,0,,EA,10000,
+84362EA,Triple Turkey & Cheese Wheat,FG,Not Usable,,0,,,0,,EA,10000,
+84364EA,Triple Ham & Cheese Wheat,FG,Not Usable,,0,,,0,,EA,10000,
+84730EA,Triple Ham & Cheese White 8/cs,FG,Not Usable,,0,,,0,,EA,10000,
+84741EA,Triple Egg Salad White,FG,Not Usable,,0,,,0,,EA,10000,
+0010,Egg Patty Frittata Cheese,PR,Obsolete,200,23.4,LBS,No,200,CS,EA,10000,10
+84742EA,Triple Turkey & Cheese White,FG,Not Usable,,0,,,0,,EA,10000,
+84743EA,Triple Pastrami & Cheese,FG,Not Usable,,0,,,0,,EA,10000,
+0013,Cheese Cheddar Mild .5oz Slice,DA,Active,512,16.8,LBS,No,512,CS,EA,10000,12
+0014,Cheese Gouda .5oz Slice,DA,Active,512,16.7,LBS,No,512,CS,EA,10000,13
+0015,Ham Blk Forest Log Unsliced,PR,Obsolete,426,43.2,LBS,No,1,LB,LB,10000,14
+84744EA,Triple Tuna Salad Wedge,FG,Not Usable,,0,,,0,,EA,10000,
+0017,Sausage Patty Pork 1.5 oz Nat,PR,Active,426,43.3,LBS,No,426,CS,EA,10000,16
+84747EA,Triple Chicken Salad Wedge,FG,Not Usable,,0,,,0,,EA,10000,
+84815EA,K/S Italian,FG,Not Usable,,0,,,0,,EA,10000,
+1506,Spoon Polystyrene White 3 IN,MC,Active,3000,17.35,LBS,No,3000,CS,EA,10000,
+1361,Cap Bouffant White Proly.24in,MC,Active,,0,,No,1,CS,CS,10000,
+1422,Towel Paper Multifold MB560A,MC,Obsolete,,0,,No,1,CS,CS,10000,
+1643,Gas Nitrogen Liquid Bulk,MC,Active,,0,,No,1,EA,EA,10000,
+1756,Dust Mask Ear Loop,MC,Active,,0,,No,1000,CS,EA,10000,
+1775,Apron Polethylene 24x 42 1ML,MC,Active,,0,,No,1000,CS,EA,10000,
+0026,Film Lidding Z12 EZ Peel,PK,Obsolete,35984,59.95,LBS,No,35984,RL,IN,10000,27
+1779,Recorder Temperature Pallet,MC,Active,,0,,No,1,CS,EA,10000,
+1880,USB Docking Ball Temp Rec.,MC,Not Stocked,,0,,,1,EA,EA,10000,
+ADVERTISE,Advertising Expense,MC,Not Stocked,,0,,,1,EA,EA,10000,
+CAPITAL,Capital Expense,MC,Not Stocked,,0,,,1,EA,EA,10000,
+COMPUTER,Computer Expense,MC,Not Stocked,,0,,,1,EA,EA,10000,
+DEMO,Demonstration Expense,MC,Not Stocked,,0,,,1,EA,EA,10000,
+LUNCHROOM,Lunchroom Expense,MC,Not Stocked,,0,,,1,EA,EA,10000,
+0034,Egg Insert Folded Egg White,PR,Obsolete,180,20.4,LBS,No,180,CS,EA,10000,36
+0035,Tomato Rstd Diced Rdcd Moist ,VE,Active,640,46.8,LBS,No,640,CS,OZ,10000,37
+MAINTENANCE,Maintenance Expense,MC,Not Stocked,,0,,,1,EA,EA,10000,
+WAREHOUSE,Warehouse Expense,MC,Active,,0,,No,1,EA,EA,10000,
+1022,Rectangle Direct Thrml Transfr,PK,Active,8000,23.95,LBS,,8000,CS,EA,10000,
+0040,Cheese American Processed .40z,DA,Active,800,21.3,LBS,No,800,CS,EA,10000,41
+1094,Sqr Oven Pride Logo 3x8 5/8in,PK,Active,10800,23.95,LBS,,10800,CS,EA,10000,
+1385,Sqr Back For FG-3737 3x 3in,PK,Active,13500,29.45,LBS,No,1,EA,EA,10000,
+1387,Sqr Back For FG-4766 3x3 in,PK,Active,13500,29.45,LBS,No,1,EA,EA,10000,
+1390,Lab- Sqr Back for 164765,PK,Active,13500,29.45,LBS,No,1,EA,EA,10000,
+1393,Sqr Back For FG-4730 3x3 in,PK,Active,13500,29.45,LBS,No,1,EA,EA,10000,
+1396,Sqr Back for FG-4761 3 x 3 in,PK,Active,13500,29.45,LBS,No,1,EA,EA,10000,
+1401,Sqr Back For FG-4741 3x 3in,PK,Active,13500,29.45,LBS,No,1,EA,EA,10000,
+1624,Film Polypro Fuji 15 in Web,PK,Active,60840,46,LBS,No,60840,RL,IN,10000,
+1634,Ribbon Black VideoJet,PK,Active,23622,7.7,LBS,No,23622,RL,IN,10000,
+1635,Ribbon Blue VideoJet,PK,Active,17716,6.3,LBS,No,17716,RL,IN,10000,
+1636,Ribbon Red VideoJet,PK,Active,17716,6.2,LBS,No,17716,RL,IN,10000,
+1637,Ribbon Orange VideoJet,PK,Active,17716,6,LBS,No,17716,RL,IN,10000,
+1638,Ribbon Green VideoJet,PK,Active,17716,6.3,LBS,,17716,RL,IN,10000,
+1670,Rect Wht Blank Direct Thermal,PK,Active,2000,23.95,LBS,,2000,CS,EA,10000,
+1707,U Pad Firenza 4X7 IN,PK,Active,1800,25,LBS,No,1,EA,EA,10000,
+0056,Chicken Breast Bnls Ckd 4 Oz,PR,Active,120,31.196,LBS,No,120,CS,EA,10000,58
+0057,Bun Kaiser WW 6-12 Pk,BR,Active,72,13.5,LBS,No,72,CS,EA,10000,59
+0058,Baguette Big Hole 32/Cs,BR,Active,32,6,LBS,,32,CS,EA,10000,60
+1780,Film Tiro Chix Sal Inderbitzin,PK,Active,15600,37.7,LBS,No,15600,RL,EA,10000,
+0061,Box Master #1 Kraft Plain,PK,Active,25,12.9,LBS,No,1,EA,EA,10000,62
+1781,Film Tiro Egg Salad 16.34in,PK,Active,15600,76.8,LBS,No,15600,RL,EA,10000,
+0063,Insert RF Cheese Egg Bacon IQF,PR,Obsolete,125,27.7,LBS,No,125,CS,EA,10000,64
+1782,Film Tiro Ham Turkey Swiss ,PK,Active,15600,76.8,LBS,No,15600,RL,EA,10000,
+0065,Insert Cheeseburger IQF,PR,Obsolete,125,27.9,LBS,No,125,CS,EA,10000,66
+0066,Insert Polish Saus Smkd Sknls,PR,Obsolete,50,10.5,LBS,No,50,CS,EA,10000,67
+1783,Film Tiro Tuna Salad 16.34 in,PK,Active,15600,37.7,LBS,No,15600,RL,EA,10000,
+0068,Roll White Rustic 180/Cs,BR,Obsolete,180,25.4,LBS,No,180,CS,EA,10000,69
+1784,Film Tiro Ham & Cheese 16.34in,PK,Active,15600,76.8,LBS,No,15600,RL,EA,10000,
+1786,Film Tiro Turkey & Cheese,PK,Active,156000,67.55,LBS,No,15600,RL,EA,10000,
+1800,Pad Soaker UZ-25 3-1/8x6,PK,Active,4000,18.2,LBS,No,4000,CS,EA,10000,
+0072,Box Master Baguetta 24 Pk,PK,Obsolete,25,17.6,LBS,No,1,EA,EA,10000,73
+0073,Cheese RF Mild Chdr Orng .5 Oz,DA,Active,512,18.4,LBS,No,512,CS,EA,10000,74
+0074,Cheese RF Mild Chdr Wht .5 Oz,DA,Active,512,15.6,LBS,No,512,CS,EA,10000,75
+0075,Egg Frittata Patty 2 Oz,PR,Obsolete,140,18.8,LBS,No,140,CS,EA,10000,76
+0076,Sausage Patty Turkey 1.5 Oz,PR,Active,106,10.8,LBS,No,106,CS,EA,10000,77
+0077,Sausage Pork Link .5 Oz,PR,Active,320,10.8,LBS,No,320,CS,EA,10000,78
+0078,Potato Diced Brkfst Cube,VE,Active,480,31.5,LBS,No,480,CS,OZ,10000,79
+0079,Egg Curds IQF Large Cut,PR,Active,320,21.4,LBS,No,320,CS,OZ,10000,80
+1810,Film Tiro KS NWMF Ham & Cheese,PK,Active,10766,67.55,LBS,No,10766,RL,EA,10000,
+0081,Pancake Maple Krusteaz 240Ct,BR,Active,240,16.7,LBS,No,240,CS,EA,10000,82
+0082,Cheese Ched Shred Red Sodium,DA,Active,20,20,LBS,No,16,LB,OZ,10000,83
+1811,Film Tiro KS NWMF Turkey & Chs,PK,Active,10766,67.55,LBS,No,10766,RL,EA,10000,
+1822,U Pad 6 In Totem Firenza,PK,Active,1000,45.8,LBS,No,1000,K,EA,10000,
+1218,Box #3 RSC Corrugated 13x10x7,PK,Active,1,13.5,LBS,No,1,EA,EA,10000,
+0210,Film Fuji Polish Baguetta CAN,PK,Active,1,33.8,LBS,,1,IMP,IMP,10000,
+1736,Box #2 Kraft Remote,PK,Active,20,8.6,LBS,,1,EA,EA,10000,
+0088,Box Master Brkfst Entree 18Pk,PK,Active,25,15.3,LBS,,1,EA,EA,10000,90
+0089,Tomato Green Mix Blend IQF,VE,Obsolete,540,36.3,LBS,No,540.8,CS,OZ,10000,91
+0090,Box Master SBUX Muffin/Wrap,PK,Active,25,16.15,LBS,No,1,EA,EA,10000,92
+0091,Box Master SBUX Artisan,PK,Active,25,14.3,LBS,No,1,EA,EA,10000,95
+0092,Egg Dbl Folded Scrmbld 1.5 Oz,PR,Obsolete,200,20.4,LBS,No,200,CS,EA,10000,98
+0093,Flat Whole Wht Wrap Red Sodium,BR,Active,72,11.1,LBS,No,72,CS,EA,10000,99
+0094,Beans Black IQF,VE,Obsolete,720,47.5,LBS,No,720,CS,OZ,10000,100
+0095,Cheese Shred Ched/PepJk,DA,Obsolete,320,21.3,LBS,No,320,CS,OZ,10000,101
+0096,Biscuit Cinnamon .9 Oz,BR,Obsolete,240,17.9,LBS,No,240,CS,EA,10000,102
+0097,French Toast 1 Oz,BR,Active,192,14.8,LBS,No,192,CS,EA,10000,103
+0098,Pancakes Mini Dippers,BR,Active,480,13,LBS,,480,CS,EA,10000,104
+0425,Insert Heating Instructions DP,PK,Active,,0,,No,1,EA,EA,10000,
+0100,Icing Cup Dippers 1Oz,SA,Obsolete,200,22,LBS,No,200,CS,EA,10000,107
+0101,Waffles Homestyle Minis 1 Oz,BR,Active,120,10.3,LBS,,120,CS,EA,10000,108
+1082,U Pad Brat Firenza 4.75X6 IN,PK,Obsolete,,0,,,1000,K,EA,10000,
+1219,Ribbon Wax Violet,PK,Obsolete,,0,,,14172,RL,IN,10000,
+1220,Ribbon Green Wax 4x1181,PK,Not Stocked,,0,,,14172,RL,IN,10000,
+1221,Ribbon Wax Red,PK,Obsolete,,0,,No,14172,RL,IN,10000,
+1222,Ribbon Wax Blue,PK,Obsolete,,0,,,14172,RL,IN,10000,
+1223,Ribbon Wax Orange,PK,Obsolete,,0,,,14172,RL,IN,10000,
+1315,Rectangle Blank Yellow Thml,PK,Obsolete,,0,,No,4000,CS,EA,10000,
+1347,Small Vinyl Gloves,PK,Active,,0,,No,1000,CS,EA,10000,
+1348,Medium Vinyl Gloves,PK,Not Stocked,,0,,,1000,CS,EA,10000,
+1349,Large Vinyl Gloves,PK,Not Stocked,,0,,,1000,CS,EA,10000,
+1357,Rectangle NW mkt fresh orange,PK,Obsolete,,0,,No,1000,RL,EA,10000,
+1358,Rectangle NW mkt fresh red,PK,Obsolete,,0,,,1000,RL,EA,10000,
+1359,Lab- Sqr blank ground 3X4 ,PK,Obsolete,,0,,,1000,CS,EA,10000,
+1360,Rectangle NW mkt fresh green,PK,Obsolete,,0,,No,1000,RL,EA,10000,
+1409,Lab- Sqr PLN Bagel &Crm 3X3 ,PK,Obsolete,,0,,,1000,CS,EA,10000,
+1462,X Large Vinyl Gloves,PK,Active,,0,,No,1000,CS,EA,10000,
+1512,Pallet Slip Sheets,PK,Active,,0,,No,2000,PAL,EA,10000,
+1607,Sqr Vegan Gar-burger 3x3 in,PK,Obsolete,,0,,No,1000,RL,EA,10000,
+1608,Rectangle Blank Pink Thrml,PK,Obsolete,,0,,No,3000,RL,EA,10000,
+1609,Bar Code Pink 4x1.875 in,PK,Obsolete,,0,,,3000,RL,EA,10000,
+1640,Box #6 RSC Corrugated Kraft,PK,Obsolete,,0,,,1,EA,EA,10000,
+1645,Box #7 RSC Corrugated Kraft,PK,Obsolete,,0,,,1,EA,EA,10000,
+1649,Can Liner 43x38 blk,PK,Active,,0,,No,100,CS,EA,10000,
+1654,Can Liner 38x58 1.3 ml blk,PK,Active,,0,,No,100,CS,EA,10000,
+1656,Film Polypro Fuji 14 In Web,PK,Obsolete,,0,,,60840,RL,IN,10000,
+1702,Stretch Film 20x5000 80ga,PK,Active,,0,,No,40,PAL,EA,10000,
+0130,Sausage Patty Pork 1.2 Oz,PR,Active,133,11,LBS,No,133,CS,EA,10000,134
+0131,Egg Patty Scrambled 3in 1Oz,PR,Active,360,23.6,LBS,No,360,CS,EA,10000,135
+0132,Biscuit Buttermilk 2 Oz Sliced,BR,Obsolete,120,16.25,LBS,No,120,CS,EA,10000,136
+0133,Ctn 4 Pk WF Sausage Biscuit,PK,Active,350,41.7,LBS,No,1,EA,EA,10000,137
+1739,Film Polypro Fuji 10 In Web,PK,Obsolete,,0,,,60840,RL,IN,10000,
+0135,Ctn 4 Pk WF CanBac Muffin,PK,Active,350,40.6,LBS,No,1,EA,EA,10000,139
+0136,Ctn 4 Pk WF Sausage Muffin,PK,Active,350,40.9,LBS,No,1,EA,EA,10000,140
+0137,Bacon Round Fully Cooked,PR,Active,288,4.6,LBS,No,288,CS,EA,10000,141
+0138,English Muffin 2 Oz Sliced,BR,Active,144,21.5,LBS,No,144,CS,EA,10000,143
+1755,Sleeve 18 Polyethyene,PK,Active,,0,,No,1000,CS,EA,10000,
+0140,Box Master WF Saus Bisc 4-12Pk,PK,Active,25,22.2,LBS,No,1,EA,EA,10000,145
+0141,Box Master WF Bacn Bisc 4-12Pk,PK,Active,25,22.2,LBS,No,1,EA,EA,10000,146
+0142,Box Master WF CnBac Muf 4-12Pk,PK,Active,25,22.2,LBS,No,1,EA,EA,10000,147
+1792,Rectangle SKFG Logo 3.625 x3,PK,Obsolete,,0,,No,1000,RL,EA,10000,
+0144,Box Master OP Brk Entree 24Pk,PK,Active,25,18.5,LBS,,1,EA,EA,10000,149
+0145,Cheese Cheddar Med 6-5Lb,DA,Obsolete,30,30.25,LBS,No,30,CS,LB,10000,150
+1802,Circle Flourescent Red 1in,PK,Obsolete,,0,,,1000,RL,EA,10000,
+1816,Corner Post 2X2X38,PK,Active,,0,,No,2940,PAL,EA,10000,
+11009260C,11009260C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+11009261C,11009261C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+0150,Box Master Wellshire 12-2 Pk,PK,Obsolete,25,15,LBS,No,1,EA,EA,10000,155
+0151,Biscuit Natural 2 Oz Sliced,BR,Obsolete,320,19.5,LBS,No,320,CS,EA,10000,156
+0152,Muffin English Multigrain 2Oz ,BR,Obsolete,144,20.3,LBS,No,144,CS,EA,10000,157
+0153,Egg Patty Scram Cage Free 2 Oz,PR,Obsolete,112,15.6,LBS,No,112,CS,EA,10000,158
+11010010C,11010010C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+11017416C,11017416C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+0156,Chicken Patty Natural 2 Oz,PR,Obsolete,80,10.9,LBS,No,80,CS,EA,10000,161
+11017461C,11017461C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+0158,Bacon Turkey Canadian Natural,PR,Obsolete,18,17.1,LBS,No,18,CS,LB,10000,163
+11017984C,11017984C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+0160,Sauce Teriyaki Glaze Kikkoman,SA,Active,480,32.6,LBS,,480,CS,OZ,10000,164
+0161,Chicken Ginger Teriyaki Strips,PR,Active,160,10.8,LBS,,160,CS,OZ,10000,165
+11019027C,11019027C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+0163,Asian Blend SK 40 Lb,VE,Active,640,41.2,LBS,,640,CS,OZ,10000,167
+0164,Rice White IQF Precooked 40 Lb,VE,Active,640,41.3,LBS,No,640,CS,OZ,10000,168
+0165,Ciabatta Bun Wheat Sliced,BR,Active,48,11.6,LBS,No,48,CS,EA,10000,169
+0166,Kaiser Pan Wheat Sliced,BR,Active,48,10.3,LBS,,48,CS,EA,10000,170
+11019030C,11019030C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+11020154C,11020154C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+11020155C,11020155C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+11020156C,11020156C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+0171,Bacon Turkey Half Slce Natural,PR,Active,1,8.5766,LBS,No,1,LB,LB,10000,175
+11023447C,11023447C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+11023449C,11023449C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+11024408C,11024408C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+11024409C,11024409C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+11024410C,11024410C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+11024411C,11024411C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+11024412C,11024412C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+0179,Ctn 4PK Ahold Saus Egg Bisc,PK,Active,350,46.5,LBS,No,1,EA,EA,10000,184
+11024413C,11024413C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+0181,Box Master Brkfst Sand 12-4PK,PK,Obsolete,25,21.9,LBS,No,1,EA,EA,10000,186
+0182,Box Master Panini 12 Pk,PK,Active,25,9.9,LBS,,1,EA,EA,10000,187
+0183,Box Master Nathans Twin,PK,Active,25,9.8,LBS,,1,EA,EA,10000,188
+0184,Box Master 13.5x10.5x9.5 ID,PK,Active,25,18.3,LBS,No,1,EA,EA,10000,189
+0185,Croissant TFF 30-2 Oz,BR,Active,30,4.7,LBS,No,1,EA,EA,10000,190
+0186,Ham Breakfast Stk Log 6-4.7 Lb,PR,Obsolete,6,28.6,LBS,No,1,LB,LB,10000,191
+11024419C,11024419C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+123127C,123127C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123127L,123127L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+123128C,123128C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+0191,Ctn 4PK GofC Ham Egg Crois,PK,Active,350,469.5,LBS,No,1,EA,EA,10000,196
+123300C,123300C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+123301C,123301C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+0194,Box Master Bagel Sand 12-2PK,PK,Obsolete,25,18,LBS,No,1,EA,EA,10000,199
+0195,Box Master 12 Pk Flying J,PK,Active,25,14.75,LBS,No,1,EA,EA,10000,200
+123304C,123304C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+0197,Box Master WF 6-4PK SECC,PK,Active,25,13,LBS,No,1,EA,EA,10000,202
+123310C,123310C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+0199,Box Master PrcChop Bowls ,PK,Active,25,0.45,LBS,No,1,EA,EA,10000,204
+0200,Box Master Clam Shell Jamba,PK,Active,25,21,LBS,No,1,EA,EA,10000,205
+123311C,123311C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+123314C,123314C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+123315C,123315C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+123412C,123412C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123496C,123496C Master Case Label,PK,In Development,,0,,,0,,EA,10000,10000
+0206,Divider 12x9 Chipboard 20 Pt,PK,Active,650,46,LBS,No,1,EA,EA,10000,211
+123496L,123496L Sandwich Label,PK,In Development,,0,,,0,,EA,10000,10000
+0208,Divider 9x9 Chipboard 20 Pt,PK,Active,750,39.5,LBS,No,1,EA,EA,10000,213
+123497C,123497C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123545C,123545C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+123555C,123555C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+123586C,123586C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123586L,123586L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+123587C,123587C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+0215,Beef Patty Angus 4.5 OZ,PR,Active,54,15.5,LBS,No,54,CS,EA,10000,219
+123588C,123588C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+0217,Ctn 4PK Saus Egg Bisc WINCO,PK,Active,350,38.5,LBS,No,1,EA,EA,10000,221
+0002,Bailing Wire 12 ga, 14,PK,Active,,0,,No,125,BD,EA,10000,2
+0003,Blue Ice  Nordic 24oz - 24/Cs,PK,Active,,0,,No,24,CS,EA,10000,3
+0004,Tiro Black Ink Fast Dry 48/Cs,PK,Active,,0,,No,48,CS,EA,10000,4
+0005,Tiro Character/Number Kit 4ea,PK,Active,,0,,No,4,BOX,EA,10000,5
+0006,Pallet Covers 1 Mill 250/Roll,PK,Active,,0,,No,250,RL,EA,10000,6
+0223,Box Master WINCO 12-4PK,PK,Active,300,23.4,LBS,,1,EA,EA,10000,226
+0007,Roll Wheat Rustic 130/Cs,BR,Obsolete,,0,,,130,CS,EA,10000,7
+0008,Roll White Rustic 130/Cs,BR,Obsolete,,0,,,130,CS,EA,10000,8
+0012,Bacon Uncured Slcd 2-150 EA,PR,Obsolete,,0,,No,300,CS,EA,10000,11
+0016,Cheese Pepper Jack .5 OZ,DA,Obsolete,,0,,,320,CS,EA,10000,15
+0018,Tomato Roma Roasted Diced ,VE,Obsolete,,0,,,640,CS,OZ,10000,17
+0229,Box Master OP 12-4PK Value,PK,Active,25,20.6,LBS,No,1,EA,EA,10000,231
+0230,Muffin English Orig 3 Oz 80T,BR,Active,80,13,LBS,No,80,CS,EA,10000,232
+0231,Muffin Eng Multigrain 3 Oz 80T,BR,Active,80,12.9,LBS,No,80,CS,EA,10000,233
+0019,*Film Polypro Fuji 12 in Web,PK,Obsolete,,0,,,12,FT,IN,10000,18
+0233,Film BOPP Fuji 9.5 In Web,PK,Active,12,37,LBS,No,12,FT,IN,10000,235
+0234,Film BOPP Fuji 12 in Web,PK,Active,12,46.1,LBS,No,12,FT,IN,10000,237
+0235,Film BOPP Fuji 14.5 in Web,PK,Active,12,56.4,LBS,No,12,FT,IN,10000,239
+0020,Beef Hamburger Patty 2.6oz,PR,Obsolete,,0,,No,93,CS,EA,10000,19
+0021,Box #8 40PK Artisan Plain,PK,Obsolete,,0,,,1,EA,EA,10000,21
+0238,Tray Entree Black CPET 12 Oz,PK,Active,600,24.9,LBS,,600,CS,EA,10000,243
+0022,Box #9 12-16 PK Artisan/Muffin,PK,Obsolete,,0,,,1,EA,EA,10000,22
+0023,Box 60 PK Saus Muf Kraft Plain,PK,Obsolete,,0,,,1,EA,EA,10000,23
+0024,Film Polypro Fuji 9.5 In Web,PK,Obsolete,,0,,No,12,FT,IN,10000,24
+0025,Chutney Mango 4 Lb Sukhis,SA,Obsolete,,0,,,64,TB,OZ,10000,26
+0243,Ketchup Cup 1 Oz Dipper,SA,Obsolete,160,12,LBS,No,160,CS,EA,10000,248
+0027,Cheese Mont Jack Sliced .5 Oz,DA,Obsolete,,0,,,512,CS,EA,10000,29
+0028,*Film Polypro Fuji 14.5 in Web,PK,Obsolete,,0,,,12,FT,IN,10000,30
+0029,Film Fuji Spec Value Hamburger,PK,Obsolete,,0,,No,12500,RL,IMP,10000,31
+0030,Film Fuji Spec Value Saus&Chs,PK,Obsolete,,0,,No,13333,RL,IMP,10000,32
+0249,Egg White Patty 1.67 oz,PR,Obsolete,192,21.1,LBS,No,192,CS,EA,10000,253
+0250,Egg Patty Scrambled 1.67 oz,PR,Obsolete,168,18.7,LBS,No,168,CS,EA,10000,254
+0251,Bacon Uncured Slcd 2-150 EA,PR,Active,300,4.3,LBS,No,300,CS,EA,10000,255
+0252,Loaf Panini White,BR,Active,300,24.4,LBS,No,300,CS,EA,10000,256
+0253,Beef Seas Diced .5inx.5in,PR,Active,35,37,LBS,No,35,CS,LB,10000,258
+0254,Chicken Ckd Diced .5in x.5in,PR,Active,10,11,LBS,No,10,CS,LB,10000,259
+0255,Chicken Seas Diced .5in x.5in,PR,Active,10,10.9,LBS,No,10,CS,LB,10000,260
+0256,Onion Diced 1/4in Crmlzd ,VE,Active,400,26.9,LBS,No,400,CS,OZ,10000,261
+0257,Onion Diced 1/2in Rstd,VE,Active,400,26.7,LBS,No,400,CS,OZ,10000,262
+0258,Pepper Green Strip Rstd,VE,Active,320,21.9,LBS,No,320,CS,OZ,10000,263
+0259,Pepper Strip Red Rstd,VE,Active,320,21.9,LBS,No,320,CS,OZ,10000,264
+0260,Mushroom Diced 1/2in Rstd,VE,Active,400,27,LBS,No,400,CS,OZ,10000,265
+0261,Bacon Bits 3/16in Dice,PR,Active,320,21.2,LBS,No,320,CS,OZ,10000,266
+0262,Chile Poblana IQF 1/4in,VE,Active,720,47.1,LBS,No,720,CS,OZ,10000,267
+0263,Tomato RM IQF Diced 3/8in,VE,Active,720,46.8,LBS,No,720,CS,OZ,10000,268
+0264,Susceptor Micro Grill Panini,PK,Active,700,25.65,LBS,No,1,EA,EA,10000,269
+0031,Bacon Turkey Half Slce Natural,PR,Obsolete,,0,,,1,LB,LB,10000,33
+0266,Cheese Shred RF Mozz,DA,Active,480,31.6,LBS,,480,CS,OZ,10000,271
+0267,Cheese Grtd Rom/Parm/Asiago,DA,Active,800,52.2,LBS,No,800,CS,OZ,10000,272
+0032,Egg White Patty 1.75 oz,PR,Obsolete,,0,,No,184,CS,EA,10000,34
+0033,*Cheese Mild Red Fat Ched Slcd,DA,Obsolete,,0,,,384,CS,EA,10000,35
+0036,Box Master Spec Val Hamburger,PK,Obsolete,,0,,,1,EA,EA,10000,38
+0271,Spread Cream Cheese American,SA,Active,480,31.2,LBS,No,480,CS,OZ,10000,276
+0037,Box Master Spec Val Saus&Chs,PK,Obsolete,,0,,,1,EA,EA,10000,39
+0041,Box Master Kaiser 36 Ct,PK,Obsolete,,0,,No,1,EA,EA,10000,43
+0042,Carton 1PK Turkey Kaiser,PK,Obsolete,,0,,,1,EA,EA,10000,44
+0043,Carton 1PK Ham/Chs Kaiser,PK,Obsolete,,0,,,1,EA,EA,10000,45
+0044,Carton 1PK Hamburger,PK,Obsolete,,0,,,1,EA,EA,10000,46
+0277,Spread Chipotle Flavor Conc,SA,Active,86.4,6.1,LBS,No,86.4,CS,OZ,10000,283
+0047,Lbl Direct Therml 1-3/8x1-1/16,PK,Obsolete,,0,,,8000,RL,EA,10000,49
+0048,Glue Cartoning PHC9254,PK,Active,,0,,No,31,CS,LB,10000,50
+0280,Pepper Red Diced 1/4in,VE,Active,720,45,LBS,No,720,CS,OZ,10000,286
+0049,Roll White Rustic 160/Cs,BR,Obsolete,,0,,,160,CS,EA,10000,51
+0055,Beef Hamburger Patty 1 Oz,PR,In Development,,0,,,240,CS,EA,10000,57
+0060,Film Lidding Z14 EZ Peel,PK,Obsolete,,0,,,35984,RL,IN,10000,61
+0284,Ctn Panini Chicken Poblano,PK,Obsolete,400,36.5,LBS,No,1,EA,EA,10000,291
+0285,Insert Pepperoni Saus 5 to 1,PR,Obsolete,50,10.8,LBS,No,50,CS,EA,10000,292
+0286,Beef Hamburger Patty 2.6oz,PR,Active,247,42.3,LBS,No,247,CS,EA,10000,293
+0067,Ribbon Black Wax 4x1181,PK,Not Stocked,,0,,,24,CS,RL,10000,68
+0103,*Carton Dipper French Toast,PK,Obsolete,,0,,,1,EA,EA,10000,110
+0104,Carton Dipper Mini Pancakes,PK,Obsolete,,0,,No,1,EA,EA,10000,111
+0290,Cheese Havarti Sliced .5 Oz,DA,Obsolete,320,10.9,LBS,No,320,CS,EA,10000,297
+123589C,123589C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+0292,Polish Hot Bf Nathans 5-1 6in,PR,Active,50,10.8,LBS,No,50,CS,EA,10000,299
+0293,Hot Dog Nathans 7-1 6.75in,PR,Active,70,10.8,LBS,No,70,CS,EA,10000,300
+0110,Egg Frittata Round Patty 2 oz,PR,Obsolete,,0,,No,140,CS,EA,10000,115
+0295,Hot Dog Nathans 10-1 6in,PR,Active,100,10.8,LBS,No,100,CS,EA,10000,302
+0112,Egg Perfecta Patty,PR,Obsolete,160,0,,No,160,CS,EA,10000,116
+0143,Box Master WF Saus Muf 4-12Pk,PK,Active,25,0,,No,1,EA,EA,10000,148
+0149,Carton Wellshire TBac Muf 2Pk,PK,Obsolete,400,0,,No,1,EA,EA,10000,154
+0300,Tray Nathans Hot Dog Single,PK,Active,1000,12.9,LBS,,1000,CS,EA,10000,306
+0157,Sausage Patty Pork Natural ,PR,Obsolete,,0,,No,640,CS,EA,10000,162
+123590C,123590C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+0170,Film Shrink Teri Bowl 14in 52G,PK,Obsolete,,0,,No,60600,RL,IN,10000,174
+0187,Carton 2PK GofC Bac Egg Bagel,PK,Obsolete,,0,,No,1,EA,EA,10000,192
+0188,Carton 2PK GofC Egg Chs Bagel,PK,Obsolete,,0,,No,1,EA,EA,10000,193
+0189,Carton 2PK GofC Saus Egg Bagel,PK,Obsolete,,0,,No,1,EA,EA,10000,194
+0190,Carton 4PK GofC Bac Egg Bisc,PK,Obsolete,,0,,No,1,EA,EA,10000,195
+0308,Sauce Spin and Artichk Portion,SA,Obsolete,576,19.3,LBS,No,576,CS,EA,10000,314
+0192,Carton 4PK GofC Saus Egg Bisc,PK,Obsolete,,0,,No,1,EA,EA,10000,197
+0193,Carton 4PK GofC Saus Egg Crois,PK,Obsolete,,0,,No,1,EA,EA,10000,198
+0311,Chicken Crumble Ckd Chorizo,PR,Active,30,32,LBS,No,30,CS,LB,10000,317
+0312,Turkey Crumble Seasoned,PR,Active,30,32,LBS,No,30,CS,LB,10000,318
+0313,Egg Scrmbld IQF Chol&FF,PR,Active,320,22,LBS,No,320,CS,OZ,10000,319
+0314,Tortilla Salsa Homestyle 9in,BR,Active,144,18,LBS,No,144,CS,EA,10000,320
+0201,Tape 3M 371 48mmx914M 1.9mil,PK,Active,6,0,,No,6,CS,RL,10000,206
+0316,Tortilla Whl Wht Homestyle 9in,BR,Active,168,18,LBS,No,168,CS,EA,10000,322
+123591C,123591C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+0220,Ham Smoked Unsliced,PR,Active,1,0,,No,1,LB,LB,10000,223
+123592C,123592C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+0320,Cheese Ched Med Shred 4-5 LB,DA,Active,20,26.5,LBS,No,20,CS,LB,10000,326
+0236,U Pad 5 X 7 Hamburger Firenza,PK,Obsolete,,0,,,1000,K,EA,10000,241
+0322,Film Forming Map Pillow 9 Mil,PK,Active,14400,806,LBS,No,14400,RL,IN,10000,328
+0323,Cheese Shred LMPS Mozz 6/5 LB,DA,Obsolete,480,31.6,LBS,No,480,CS,OZ,10000,329
+0237,Film BOPP Fuji 15 in Web,PK,Obsolete,,0,,No,12,FT,IN,10000,242
+0239,Carton OP Dipper Corn Dog,PK,Obsolete,,0,,No,1,EA,EA,10000,244
+0326,Egg Frittata Chs&Veg 200-1.75Z,PR,Obsolete,200,22.7,LBS,No,200,CS,EA,10000,332
+0327,Cheese Mont Jack Slcd 1 Oz,DA,Active,256,18.4,LBS,No,256,CS,EA,10000,333
+0240,Carton OP Dipper Popcorn Chick,PK,Obsolete,,0,,No,1,EA,EA,10000,245
+0241,Carton OP Dipper Chicken Ched,PK,Obsolete,,0,,No,1,EA,EA,10000,246
+0242,Box Master OP 18Pk Lunch Dippr,PK,Obsolete,,0,,No,1,EA,EA,10000,247
+0244,Nuggets Chix N Cheddar .55 Oz,PR,Obsolete,,0,,No,1160,CS,EA,10000,249
+0245,Chicken Popcorn 20 Lb,PR,Obsolete,,0,,No,320,CS,OZ,10000,250
+0246,Nugget Corn Dog .67 Oz,PR,Obsolete,,0,,No,238,CS,EA,10000,251
+0248,Cheese Havarti Sliced 1 Oz,DA,Obsolete,,0,,,192,CS,EA,10000,252
+0268,Spread Asiago Processed,SA,Active,360,0,,No,360,CS,OZ,10000,273
+0269,Spread Cheddar Cheese,SA,Active,360,0,,No,360,CS,OZ,10000,274
+0287,Hot Dog Nathans 5-1 6in,PR,Active,50,0,,No,50,CS,EA,10000,294
+0325,Pallet AHOLD Grd A #1 Wht Wood,PK,Active,,0,,,1,EA,EA,10000,331
+0328,Film SBUX 9.5in Spinach Wrap,PK,Active,,0,,No,12500,RL,IMP,10000,334
+0329,Film SBUX 12in Bacon Artisan,PK,Active,,0,,No,16500,RL,IMP,10000,335
+0330,Film SBUX 12in Ham Artisan,PK,Active,,0,,No,16500,RL,IMP,10000,336
+0331,Film SBUX 12in Veg Artisan,PK,Active,,0,,No,16500,RL,IMP,10000,337
+0343,Ctn Saus HEB Brkfst Panini,PK,Active,400,33.4,LBS,No,1,EA,EA,10000,351
+0332,Film SBUX 14.5in Sausge Muffin,PK,Active,,0,,No,15000,RL,IMP,10000,338
+0333,Film SBUX 14.5in RF Trkey Bacn,PK,Active,,0,,No,15000,RL,IMP,10000,339
+0346,Egg CF Insert Folded Egg White,PR,Obsolete,180,20.225,LBS,No,180,CS,EA,10000,356
+0347,Egg CF White Patty 1.67 oz,PR,Active,192,21.65,LBS,No,192,CS,EA,10000,357
+0348,Tuna Salad w/ Albacore 45 Lb,PR,Active,720,0,LBS,No,720,CS,OZ,10000,358
+0349,Mustard Grey Poupon 2/128 Oz,SA,Active,256,20,LBS,No,256,CS,OZ,10000,359
+123593C,123593C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+123594C,123594C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123594L,123594L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+123595C,123595C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123595L,123595L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+123596C,123596C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123596L,123596L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+123597C,123597C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123597L,123597L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+123598C,123598C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123598L,123598L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+123599C,123599C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123599L,123599L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+123600C,123600C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123600L,123600L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+123601C,123601C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123601L,123601L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+123602C,123602C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123602L,123602L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+123603C,123603C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123603L,123603L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+123604C,123604C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123604L,123604L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+123605C,123605C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123605L,123605L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+123606C,123606C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123606L,123606L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+123607C,123607C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123608C,123608C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123609C,123609C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123610C,123610C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123611C,123611C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+123612C,123612C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+123613C,123613C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+123614C,123614C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123615C,123615C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123616C,123616C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123617C,123617C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123618C,123618C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123619C,123619C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123620C,123620C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123621C,123621C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123622C,123622C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123623C,123623C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123624C,123624C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123625C,123625C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123626C,123626C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123627C,123627C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123701C,123701C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+123707C,123707C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+124003L,124003L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+124100C,124100C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+124101C,124101C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+125000C,125000C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+125001C,125001C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+125002C,125002C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+125003C,125003C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+125004C,125004C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+125100C,125100C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+125101C,125101C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+125102C,125102C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+125104C,125104C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+154115L,154115L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+154117C,154117C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+154117L,154117L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+154118C,154118C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+154118L,154118L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+163737C,163737C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+163737L,163737L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+164730C,164730C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+164730L,164730L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+164741C,164741C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+164741L,164741L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+164761C,164761C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+164761L,164761L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+164765C,164765C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+164765L,164765L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+164766C,164766C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+164766L,164766L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+164773C,164773C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+164773L,164773L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+164775C,164775C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+164775L,164775L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+164777C,164777C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+164777L,164777L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+19131C,19131C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19131L,19131L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19137C,19137C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+19137L,19137L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+19151C,19151C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+19151L,19151L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+19152C,19152C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+19152L,19152L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+19154C,19154C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19154L,19154L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19156C,19156C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+19156L,19156L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+19157C,19157C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+19157L,19157L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19158C,19158C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+19158L,19158L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+19159C,19159C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19159L,19159L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19160C,19160C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+19160L,19160L Sandwich Label,PK,Active,,0,,No,0,,EA,10000,10000
+19161C,19161C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+19161L,19161L Sandwich Label,PK,Active,,0,,No,0,,EA,10000,10000
+19162C,19162C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+19162L,19162L Sandwich Label,PK,Active,,0,,No,0,,EA,10000,10000
+19163C,19163C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+19163L,19163L Sandwich Label,PK,Active,,0,,No,0,,EA,10000,10000
+19164C,19164C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+19164L,19164L Sandwich Label,PK,Active,,0,,No,0,,EA,10000,10000
+19165C,19165C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+19165L,19165L Sandwich Label,PK,Active,,0,,No,0,,EA,10000,10000
+19167C,19167C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+19167L,19167L Sandwich Label,PK,Active,,0,,No,0,,EA,10000,10000
+19170C,19170C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+19228C,19228C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19228L,19228L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19229C,19229C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19229L,19229L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19230C,19230C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19230L,19230L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19232C,19232C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19232L,19232L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19233C,19233C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+19233L,19233L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+19234C,19234C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19234L,19234L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19305C,19305C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19305L,19305L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19306C,19306C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19306L,19306L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19307C,19307C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19307L,19307L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19308C,19308C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19308L,19308L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19309C,19309C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19309L,19309L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19311C,19311C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19311L,19311L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19312C,19312C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19312L,19312L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19313C,19313C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19313L,19313L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19314C,19314C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19314L,19314L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19315C,19315C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19315L,19315L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19316C,19316C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19316L,19316L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19317C,19317C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19317L,19317L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19319C,19319C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19319L,19319L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19320C,19320C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19320L,19320L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19321C,19321C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19321L,19321L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19350C,19350C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19350L,19350L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19351C,19351C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19351L,19351L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19352C,19352C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19352L,19352L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19353C,19353C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19353L,19353L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19354C,19354C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19354L,19354L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19355C,19355C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19355L,19355L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19356C,19356C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19356L,19356L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19357C,19357C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19357L,19357L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19451C,19541C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19541C,19541C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19542C,19542C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19543C,19543C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19544C,19544C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19545C,19545C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19546C,19546C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19547C,19547C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19548C,19548C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19549C,19549C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19550C,19550C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19551C,19551C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19552C,19552C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19553C,19553C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19555C,19555C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19555L,19555L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19561C,19561C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19562C,19562C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19563C,19563C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19564C,19564C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19565C,19565C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19567C,19567C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19569C,19569C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19570C,19570C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19571C,19571C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19577C,19577C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19580C,19580C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19581C,19581C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19585C,19585C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19587C,19587C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19588C,19588C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+19589C,19589C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+19589L,19589C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19590C,19590C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19590L,19590C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19591C,19591C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+19591L,19591C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19592C,19592C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19592L,19592C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19593C,19593C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19593L,19593C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19594C,19594C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+19595C,19595C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+19596C,19596C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+19597C,19597C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+19600C,19600C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19601C,19601C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19602C,19602C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19603C,19603C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19604C,19604C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19605C,19605C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19606C,19606C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+19607C,19607C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+19608C,19608C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+19609C,19609C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19610C,19610C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19611C,19611C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19612C,19612C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+19613C,19613C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+19614C,19614C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+19615C,19615C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+19616C,19616C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+19650C,19650C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+19651C,19651C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+19652C,19652C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+19653C,19653C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+243726C,243726C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+243726L,243726L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+244096C,244096C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+244096L,244096L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+244133C,244133C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+244133L,244133L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+83115C,83115C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+83115L,83115L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+83119C,83119C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+83119L,83119L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+83125C,83125C  Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+83125L,83125L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+83457C,83457C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+83457L,83457L Sandwich Label,PK,Active,,0,,,0,,EA,10000,10000
+83730C,83730C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+83730L,83730L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+83731C,83731C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+83731L,83731L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+83733C,83733C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+83733L,83733L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+83734C,83734C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+83734L,83734L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+83735C,83735C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+83735L,83735L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+83737C,83737C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+83737L,83737L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84101C,84101C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84101L,84101L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84115C,84115C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84115L,84115L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84126C,84126C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84126L,84126L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84361L,84361L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84362C,84362C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84362L,84362L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84363C,84363C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84363L,84363L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84364C,84364C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84364L,84364L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84730C,84730C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84730L,84730L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84741C,84741C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84741L,84741L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84742C,84742C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84742L,84742L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84743C,84743C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84743L,84743L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84744C,84744C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84744L,84744L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84747C,84747C Master Case Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+84747L,84747L Sandwich Label,PK,Obsolete,,0,,,0,,EA,10000,10000
+85000C,85000C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85001C,85001C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85005C,85005C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+85006C,85006C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+85007C,85007C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85100C,85100C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85101C,85101C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85300C,85300C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+85301C,85301C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+85302C,85302C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+85303C,85303C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+85304C,85304C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+85305C,85305C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+85400C,85400C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85401C,85401C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85402C,85402C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85403C,85403C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85410C,85410C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85411C,85411C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85412C,85412C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85413C,85413C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85414C,85414C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85415C,85415C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85416C,85416C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85417C,85417C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85418C,85418C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85419C,85419C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85420C,85420C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85421C,85421C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+85422C,85422C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+85423C,85423C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+85424C,85424C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+85425C,85425C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+85426C,85426C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+85427C,85427C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+85428C,85428C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+85450C,85450C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85451C,85451C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85452C,85452C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85453C,85453C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+85500C,85500C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+85501C,85501C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+85502C,85502C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+85503C,85503C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+85600C,85600C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+85601C,85601C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+85602C,85602C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+85603C,85603C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+86000C,86000C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+86001C,86001C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+86002C,86002C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+86003C,86003C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+86004C,86004C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+86005C,86005C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+86500C,86500C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+86501C,86501C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+86502C,86502C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+86503C,86503C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+86600C,86600C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+86601C,86601C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+86602C,86602C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+86603C,86603C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+86604C,86604C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+86605C,86605C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+51379F,20oz Brick Frozen 40 crate/plt,,Active,20,28,LBS,No,1,CS,CAR,TRECOR,738
+86700C,86700C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+86701C,86701C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+86702C,86702C Master Case Label,PK,Active,,0,,,0,,EA,10000,10000
+86703C,86703C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+86703L,86703L Sandwich Label,PK,Active,,0,,No,0,,EA,10000,10000
+86704C,86704C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+86704L,86704L Sandwich Label,PK,Active,,0,,No,0,,EA,10000,10000
+86705C,86705C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+86705L,86705L Sandwich Label,PK,Active,,0,,No,0,,EA,10000,10000
+86706C,86706C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+86706L,86706L Sandwich Label,PK,Active,,0,,No,0,,EA,10000,10000
+86707C,86707C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+86708C,86708C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+86709C,86709C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+86710C,86710C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+86711C,86711C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+86712C,86712C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+86713C,86713C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87000C,87000C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+87001C,87001C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+87200C,87200C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87201C,87201C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87202C,87202C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87203C,87203C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87204C,87204C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87205C,87205C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87206C,87206C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87300C,87300C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87301C,87301C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87302C,87302C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87303C,87303C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87304C,87304C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87305C,87305C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87306C,87306C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87307C,87307C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87308C,87308C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87309C,87309C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87400C,87400C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87401C,87401C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87402C,87402C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87403C,87403C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87500C,87500C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87501C,87501C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87502C,87502C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87503C,87503C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87504C,87504C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87505C,87505C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87506C,87506C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87507C,87507C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87600C,87600C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87600L,87600L Sandwich Label,PK,Active,,0,,No,0,,EA,10000,10000
+87601C,87601C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87601L,87601L Sandwich Label,PK,Active,,0,,No,0,,EA,10000,10000
+87602C,87602C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87602L,87602L Sandwich Label,PK,Active,,0,,No,0,,EA,10000,10000
+87603C,87603C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87603L,87603L Sandwich Label,PK,Active,,0,,No,0,,EA,10000,10000
+87604C,87604C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87604L,87604L Sandwich Label,PK,Active,,0,,No,0,,EA,10000,10000
+87605C,87605C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87605L,87605L Sandwich Label,PK,Active,,0,,No,0,,EA,10000,10000
+87700C,87700C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87701C,87701C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87702C,87702C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87703C,87703C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87800C,87800C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87801C,87801C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87802C,87802C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+87803C,87803C Master Case Label,PK,Active,,0,,No,0,,EA,10000,10000
+90001C,90001C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+90001L,90001L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+90002C,90002C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+90002L,90002L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+90003C,90003C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+90003L,90003L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+90004C,90004C Master Case Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+90004L,90004L Sandwich Label,PK,Obsolete,,0,,No,0,,EA,10000,10000
+1443,Chicken Salad w/ Dressing,PR,Active,480,32.4,LBS,No,480,CS,OZ,10000,
+1444,Egg Salad With Dressing,PR,Active,480,32.4,LBS,No,480,CS,OZ,10000,
+1445,Tuna Salad With Dressing,PR,Active,480,31.8,LBS,No,480,CS,OZ,10000,
+1749,Bacon Round Fully Cooked,PR,Active,144,5.5,LBS,No,144,CS,EA,10000,
+1760,Salami Dry Sliced Galileo,PR,Active,16,16.7,LBS,,16,CS,LB,10000,
+1772,Bologna Unsliced Farmland,PR,Active,1,10,LBS,No,1,LB,LB,10000,
+1806,Turkey Breast Log 8370 3.9in,PR,Active,16.5,16.6667,LBS,No,1,LB,LB,10000,
+1819,Vegan Patty Veggieburger48-4oz,PR,Active,48,13.5,LBS,No,48,CS,EA,10000,
+1476,Sausage Patty Pork 1.5 oz,PR,Obsolete,102,11.3,LBS,No,102,CS,EA,10000,
+1484,Ham Capicola Spicy Unsliced,PR,Obsolete,1,22.95,LBS,No,1,LB,LB,10000,
+1499,Hot Dog Hebrew National 5-1,PR,Active,100,21.5,LBS,No,100,CS,EA,10000,
+1740,Salami Cotto Unsliced Farmland,PR,Active,1,10.8,LBS,No,1,LB,LB,10000,
+1747,Chicken Breast Fillet,PR,Active,100,22.7,LBS,No,100,CS,EA,10000,
+1823,Turkey Applewood Natural,PR,Obsolete,28,28.8,LBS,No,1,LB,LB,10000,
+1111,Chicken Breast Honey BBQ ,PR,Obsolete,,0,,,1,LB,LB,10000,
+1206,Bacon Peppered Thick Slice,PR,Obsolete,,0,,,300,CS,EA,10000,
+1491,Turkey Applewood Smoked,PR,Obsolete,,0,,,1,LB,LB,10000,
+1504,Salami Soppressata Carando,PR,Obsolete,,0,,,320,CS,EA,10000,
+1722,Egg Insert Scrambled IQF,PR,Obsolete,,0,,,265,CS,EA,10000,
+1725,Turkey Pastrami Unsliced,PR,Obsolete,,0,,,1,LB,LB,10000,
+1729,Egg Patty Scrambled 1.75 oz,PR,Obsolete,,0,,No,136,CS,EA,10000,
+1730,Egg Puffy Chol Free 1.75 oz ,PR,Obsolete,,0,,,144,CS,EA,10000,
+1737,Beef Corned Eye of Round,PR,Obsolete,,0,,,1,LB,LB,10000,
+1771,Bacon Turkey Half Slice,PR,Obsolete,,0,,,1,LB,LB,10000,
+1776,Beef Roast Cooked Medium,PR,Obsolete,,0,,No,1,LB,LB,10000,
+1803,Turkey Breast 50306 2-9lb,PR,Obsolete,,0,,,1,LB,LB,10000,
+0218,Ham Bav. Sliced (2 x 1oz),PR,Obsolete,,0,,No,8,LB,SL,10000,
+1119,Spread Sun-Dried Tomato,SA,Obsolete,400,26.3,LBS,No,400,CS,OZ,10000,
+0421,Spread Cream Chz Rst Red Ppr,SA,Active,480,31.03,LBS,No,480,CS,OZ,10000,
+1490,Mayonnaise X-Heavy Deluxe,SA,Active,480,31.85,LBS,No,480,CS,OZ,10000,
+1765,Oil Canola,SA,Active,560,36.6,LBS,No,560,CS,OZ,10000,
+1797,Pkt Mustard Yellow Heinz .2 OZ,SA,Active,500,7,LBS,No,500,CS,EA,10000,
+1713,Spread Cream Chz Tomato Sun,SA,Active,480,31,LBS,No,480,CS,OZ,10000,
+1743,Pkt Cream Cheese Spread,SA,Active,100,7.65,LBS,No,100,CS,EA,10000,
+1753,Mustard Yellow Prepared,SA,Active,512,35.8,LBS,No,512,CS,OZ,10000,
+1790,Spread Cream Cheese Salsa,SA,Active,480,31.3,LBS,No,480,CS,OZ,10000,
+1120,Mayonnaise Mother Sauce,SA,Obsolete,,0,,,400,CS,OZ,10000,
+1121,Spread Artichoke,SA,Obsolete,,0,,No,400,TB,OZ,10000,
+1463,Tomatoes Roasted -Oil Cantare ,SA,Obsolete,,0,,No,448,TB,OZ,10000,
+1492,Spread Dijonnaise,SA,Obsolete,400,0,,No,400,CS,OZ,10000,
+1493,Spread Tomato Kalamata,SA,Obsolete,,0,,,400,CS,OZ,10000,
+1494,Spread Buffalo Blue,SA,Obsolete,,0,,,400,CS,OZ,10000,
+1531,Spread Herb Cheese,SA,Obsolete,,0,,,640,TB,OZ,10000,
+1742,Dip Spinach and Artichoke,SA,Obsolete,,0,,No,216,CS,OZ,10000,
+1748,Mayonnaise Chipotle Monarch,SA,Obsolete,,0,,,256,CS,OZ,10000,
+1777,Salt Garlic,SA,Obsolete,,0,,,176,CS,OZ,10000,
+1808,Chutney Mango,SA,Obsolete,,0,,,384,CS,OZ,10000,
+1809,Pesto Basil Cibo 5 Gal,SA,Obsolete,,0,,,608,CS,OZ,10000,
+1818,Olive Spread Kalamata 2-5.5lb,SA,Obsolete,,0,,,176,CS,OZ,10000,
+1105,Trky Jerome Sliced (1 x 1 oz),SR,Obsolete,,18.06,LBS,No,0,,SL,10000,
+1108,Bologna Sliced  (1 x 1 oz),SR,Active,,34,LBS,,0,,SL,10000,
+1109,Cotto Salami (1 x 1 oz),SR,Active,,34,LBS,No,0,,SL,10000,
+1110,Ham Hill Sliced (1 x 1 oz),SR,Obsolete,,22.75,LBS,No,0,,SL,10000,
+1117,Cheese Swiss Sliced 0.5oz,SR,Active,,29,LBS,,0,,SL,10000,
+1123,Ham Hill Sliced (Shaved) 1oz,SR,Active,,22.75,LBS,No,0,,SL,10000,
+1124,Ham Hill Slcd (Shaved)3x0.5 oz,SR,Active,,12.44,LBS,No,0,,SL,10000,
+1125,Ham Hill Sliced  (Shaved) 2oz,SR,Active,,13.38,LBS,No,0,,SL,10000,
+1128,Ham Hill Sliced (Shaved) 4oz,SR,Active,,22.75,LBS,No,0,,SL,10000,
+1129,Trky Jerom Sliced(Shaved)1.5oz,SR,Active,,25.09,LBS,No,0,,SL,10000,
+1130,Trky Jerome (Shaved) 2oz,SR,Active,,22.75,LBS,No,0,,SL,10000,
+1132,Turkey Jerome (Shaved) 3oz,SR,Active,,20.88,LBS,No,0,,SL,10000,
+1133,Turkey Jerome (Shaved) 4oz,SR,Active,,26.5,LBS,No,0,,SL,10000,
+1137,Ham Hill Sliced (Shaved) 3oz,SR,Active,,20.88,LBS,No,0,,SL,10000,
+1138,Ham Hill Sliced (2 x .45oz),SR,In Development,,31.56,LBS,,0,,SL,10000,
+1139,Ham Brkfst Sliced (2 x .45oz),SR,Active,,31.56,LBS,,0,,SL,10000,
+1147,Cheese Swiss Sliced 1oz,SR,Active,,22.75,LBS,,0,,SL,10000,
+1161,Ham Blk Frst Slic (3x.667) oz ,SR,Active,,32.13,LBS,No,0,,SL,10000,
+1163,Chicken Brst Slic (3x.58) oz ,SR,Active,,29.31,LBS,No,0,,SL,10000,
+1170,Smoked Turkey Sliced .50 oz,SR,Active,,27.43,LBS,No,0,,SL,10000,
+1182,Turkey Applewood (2 x .75oz),SR,Active,,19,LBS,,0,,SL,10000,
+1189,Cheese White Cheddar 1 oz,SR,Active,,36.81,LBS,,0,,SL,10000,
+1193,Canadian Bacon (1 x .6 oz),SR,Active,,24.25,LBS,,0,,SL,10000,
+1197,Ham BF Smoked (2 x .75) oz,SR,Active,,40,LBS,No,0,,SL,10000,
+1198,Chckn Smkd Uncur Nat (2x.70)oz,SR,Active,,40,LBS,No,0,,SL,10000,
+1216,Ham Capicola Spicy .5 oz,SR,Obsolete,,22.75,LBS,No,0,,SL,10000,
+1225,Blended Roasted Tomatoe,SR,Obsolete,,44,LBS,No,0,,OZ,10000,
+1300,Frozen Spinach/Feta Mix,SR,Active,,21.5,LBS,,0,,OZ,10000,
+1320,Green, Red Pepper & Starch Mix,SR,Active,,24.2,LBS,No,0,,OZ,10000,
+1330,Sweet Chili Spread,SR,Active,,44,LBS,No,0,,OZ,10000,
+1340,Creamy Dijon Mustard Spread,SR,Active,,44,LBS,No,0,,OZ,10000,
+1341,Creamy Dijon Mustard Spread V2,SR,Active,,44,LBS,No,0,,OZ,10000,
+1342,Creamy Honey Dijon Spread ,SR,Active,,44,LBS,No,0,,OZ,10000,
+1520,Chipotle Ranch Sauce,SR,Active,,45.67,LBS,,0,,OZ,10000,
+1521,Cheddar Beef Sauce,SR,Active,,47.64,LBS,,0,,OZ,10000,
+1101,Ham Hill Sliced (2 x .5 oz),SR,Obsolete,,0,,No,1,SL,SL,10000,
+1103,Roast Beef Med (1 x 0.5 oz),SR,Obsolete,,0,,No,1,SL,SL,10000,
+1104,Past Trky Sliced (2 x 1 oz),SR,Obsolete,,0,,No,1,SL,SL,10000,
+1106,Ham BF Sliced 2 x 0.5 OZ,SR,Obsolete,,0,,No,1,SL,SL,10000,
+1107,Ham BF Sliced 2 x 0.5 OZ,SR,Obsolete,,0,,No,1,SL,SL,10000,
+1127,Ham Hill Sliced (3 x 1 oz),SR,Obsolete,,0,,No,1,SL,SL,10000,
+1134,Turkey Jerome (Shaved) 1.5oz,SR,Active,,0,,No,1,SL,SL,10000,
+1136,Roast Beef Medium 3 oz,SR,Obsolete,,0,,No,1,SL,SL,10000,
+1140,Can Bacon Sliced (1 x .6 oz),SR,Obsolete,,0,,No,1,SL,SL,10000,
+1156,Swiss Sliced .75oz,SR,Obsolete,,0,,No,1,SL,SL,10000,
+1158,Chicken Honey BBQ 3 oz,SR,Obsolete,,0,,No,1,SL,SL,10000,
+1159,Ham Bavarian Sliced 1 oz,SR,Obsolete,,0,,No,1,SL,SL,10000,
+1162,Cheddar White RF 1oz,SR,Obsolete,,0,,No,1,SL,SL,10000,
+1169,Turkey Applewood 6 oz,SR,Obsolete,,0,,No,1,SL,SL,10000,
+1181,Turkey Applewood (2x1oz),SR,Active,,0,,,1,SL,SL,10000,
+1183,Spinach Artichoke Dip,SR,Obsolete,,0,,No,1,OZ,OZ,10000,
+1191,Spinach Artichoke Dip,SR,Obsolete,,0,,,1,OZ,OZ,10000,
+1192,Carmelized Onions,SR,Obsolete,,0,,,1,OZ,OZ,10000,
+1194,Bacon Half Slice,SR,Obsolete,,0,,No,1,EA,EA,10000,
+1195,Turkey Candn Bacon (2 x .5 oz),SR,Obsolete,,0,,No,1,SL,SL,10000,
+1196,Cheese Cheddar .5 oz,SR,Obsolete,,0,,No,1,SL,SL,10000,
+1217,Cheddar Buffalo Sliced 1oz,SR,Obsolete,,0,,No,1,SL,SL,10000,
+1226,Roasted Tomatoes Carmalized ,SR,Obsolete,,0,,,1,OZ,OZ,10000,
+1263,Feta Chopped,SR,Obsolete,,0,,No,1,OZ,OZ,10000,
+1266,Spinach Blanched Decanted,SR,Obsolete,,0,,,1,OZ,OZ,10000,
+1269,Pepperjack Sliced .5 OZ,SR,Obsolete,,0,,No,1,SL,SL,10000,
+1270,Chicken Honey BBQ 2 oz,SR,Obsolete,,0,,No,1,SL,SL,10000,
+1271,Red & Yellow Peppers prepped,SR,Obsolete,,0,,,1,OZ,OZ,10000,
+1302,Pepper/Mushroom/Onion Mix,SR,Obsolete,,0,,No,1,OZ,OZ,10000,
+1304,Pepper/Mushroom/Spinach Mix,SR,Obsolete,,0,,No,1,OZ,OZ,10000,
+1306,RedPepper/GrnPepper/Onion Mix,SR,Obsolete,,0,,No,1,OZ,OZ,10000,
+1308,Onion/Tomato/Chile Poblana Mix,SR,Obsolete,,0,,No,1,OZ,OZ,10000,
+1310,Onion/RdPep/Chile Poblana Mix,SR,Obsolete,,0,,No,1,OZ,OZ,10000,
+1312,Mushroom/RedPepper/Spinach Mix,SR,Obsolete,,0,,No,1,OZ,OZ,10000,
+1314,Onion/RedPepper/GrnPepper Mix,SR,Obsolete,,0,,No,1,OZ,OZ,10000,
+1316,Onion/Tomato/Red Pepper Mix,SR,Obsolete,,0,,No,1,OZ,OZ,10000,
+1389,Ham Hill Sliced (2 x .5 oz),SR,Obsolete,400,0,,No,1,SL,SL,10000,
+1530,Pepper Mushroom Zucchini Mix,SR,Obsolete,,0,,No,1,OZ,OZ,10000,
+0011,Mustard Mayo Mix,SR,Active,,44,LBS,,0,,OZ,10000,
+101471,Spinach Blanched Decanted,SR,Not Usable,,0,,,1,OZ,OZ,10000,
+0159,Ham Bavarian Sliced (1 x 1 oz),SR,Obsolete,,0,,,300,TB,SL,10000,
+0225,Tomato Blended Roasted,SR,Obsolete,,0,,,640,TB,OZ,10000,
+0349F,Mustard Grey Poupon Full Shelf,SR,Active,256,20,LBS,No,256,CS,OZ,10000,
+83125EA,K/S Turkey & Cheese Sandwich,SR,Not Usable,,0,,,0,,EA,10000,
+1711,Spinach Blnch Chpped IQF ,VE,Active,640,46.3,LBS,No,640,CS,OZ,10000,
+1480,Garlic Roasted Concentrate,VE,Obsolete,,0,,,96,CS,OZ,10000,
+1671,Peppers Peppadew Piquante,VE,Obsolete,,0,,,210,CS,OZ,10000,
+1710,Tomatoes Roasted Diced ,VE,Obsolete,,0,,,400,CS,OZ,10000,
+1751,Peppers and Onions,VE,Obsolete,,0,,,160,CS,OZ,10000,
+1764,Basil Dry Jar,VE,Obsolete,,0,,,5.5,JAR,OZ,10000,
+1769,Spinach Stemless Cello FrshCut,VE,Obsolete,,0,,,160,CS,OZ,10000,
+1774,Onion Yellow Sliced,VE,Obsolete,,0,,,320,CS,OZ,10000,
+1805,Pepper Red Yellow Strips Roast,VE,Obsolete,,0,,,276,CS,OZ,10000,
+,,,,,,,,,,,10000,
+EXP0800001,Liner Can Black 55G,MC,Obsolete,,0,,,1,CS,CS,10000,739
+FACILITIES,Facilities Expense,MC,Active,,0,,No,1,EA,EA,10000,740
+FPP20SPF,20oz Foam Polar Pack 45 cs/plt,,Active,24,32,LBS,No,1,CS,CS,TRECOR,745
+,,,,,,,,,,,10000,
+19545EA,Egg Jack Muffin Sandwich,,Not Usable,,0,,,0,,EA,10000,
+MISC,Miscellaneous Credit,PK,Not Stocked,,0,,,1,EA,EA,10000,746
+OFFGEN,Office Supplies,MC,Active,,0,,No,1,EA,EA,10000,747
+PRODUCTION,Production Expense,MC,Active,,0,,No,1,EA,EA,10000,748
+84363EA,Double Turkey Swiss ,,Not Usable,,0,,,0,,EA,10000,
+SANITATION,SanitationExpense,MC,Active,,0,,No,1,EA,EA,10000,755
+PRODUCTION2,test,,Active,,0,,No,1,EA,EA,10000,
