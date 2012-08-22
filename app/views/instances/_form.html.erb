@@ -16,6 +16,8 @@
     <%= f.collection_select :stocker_id, User.all, :id, :name, :include_blank => false %></br></br>
 
     <% if current_user.nc_admin == true %>
+      <%= f.label :process_date %>
+      <%= f.text_field :process_date %>
       <%= f.input :supplier_lot %>
       <%= f.input :po_number %>
       <%= f.input :receipt_date, :discard_year => false, :discard_month => false, :ampm => true %>

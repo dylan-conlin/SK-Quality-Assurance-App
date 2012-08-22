@@ -31,5 +31,6 @@ jQuery ->
       source: $('#nonconformance_component_name').data('autocomplete-source')
     
 
-
+  $('#nonconformance_x3_post_date').datepicker
+    dateFormat: 'yy-mm-dd'
 

@@ -22,6 +22,9 @@
 	<div class="offset1">
 	  <%= @nonconformance.reason %>
 	  </br></br>
+	  <% if @nonconformance.status == 'Closed' %>
+	  <div class='pull-right'><p><small>posted to X3 on: <%= @nonconformance.x3_post_date %></small></p></div>
+	  <% end %>
 
 	  <% if current_user.nc_admin == true %>
 	  <%= form_for @nonconformance, :remote => true do |f| %>
@@ -108,6 +111,7 @@
 		<th>RTS</th>
 		<th>Sup Lot</th>
 		<th>PO</th>
+		<th>Prcs Date</th>
 		<th>Rcpt Date</th>
 		<th></th>
 	      </tr>
@@ -132,6 +136,7 @@
 		<td><%= link_to instance.stocker.name, instance.stocker %></td>
 		<td><%= instance.supplier_lot %></td>
 		<td><%= instance.po_number %></td>
+		<td><%= instance.process_date.try(:strftime, "%-m/%-d/%y") %></td>
 		<td><%= instance.receipt_date.strftime("%-m/%-d/%y") %></td>
 
 

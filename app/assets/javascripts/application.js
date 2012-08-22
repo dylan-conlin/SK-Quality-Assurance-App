@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
+//= require jquery.ui.datepicker
 //= require fancybox
 //= require dataTables/jquery.dataTables
 //= require bootstrap

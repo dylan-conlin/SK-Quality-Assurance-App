@@ -103,7 +103,9 @@
 
 	  <h3><%= link_to nonconformance.component.number + ": " + nonconformance.component.sk_description, nonconformance %> ID:<%= nonconformance.id %></h3></br>
 	  <p><%= nonconformance.reason %></p>
-
+	  <% if nonconformance.status == 'Closed' %>
+	  <p><small>posted to X3 on: <%= nonconformance.x3_post_date %></small></p>
+	  <% end %>
 	  <% if current_user.nc_admin == true %>
 	  <%= form_for nonconformance, :remote => true do |f| %>
 

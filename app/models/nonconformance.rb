@@ -1,9 +1,14 @@
 
 class Nonconformance < ActiveRecord::Base
-  attr_accessible :reason, :user_id, :component_id, :status, :instances_attributes, :photo_1, :photo_2, :photo_3, :photo_4, :letter, :recipient, :notification_date, :credit_number, :close_date, :days_until_due
+  attr_accessible :reason, :user_id, :component_id, :status, :instances_attributes, :photo_1, :photo_2, :photo_3, :photo_4, :letter, :recipient, :notification_date, :credit_number, :close_date, :days_until_due, :x3_post_date, :delete_photo_1, :delete_photo_2, :delete_photo_3, :delete_photo_4
 
 before_create :set_status, :set_labor_cost, :set_letter, :set_days_until_due
 
+attr_accessor :delete_photo_1, :delete_photo_2, :delete_photo_3, :delete_photo_4
+before_validation { photo_1.clear if delete_photo_1 == '1' }
+before_validation { photo_2.clear if delete_photo_2 == '1' }
+before_validation { photo_3.clear if delete_photo_3 == '1' }
+before_validation { photo_4.clear if delete_photo_4 == '1' }
 
 scope :open, where(:status => "Open")
 scope :waiting_on_supplier, where(:status => "Waiting on Supplier")
@@ -50,6 +55,19 @@ accepts_nested_attributes_for :instances, allow_destroy: true
      :s3_credentials => "#{Rails.root}/config/s3.yml",
      :path => "/:style/:id/:filename",
      :convert_options => { :all => "-auto-orient" }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

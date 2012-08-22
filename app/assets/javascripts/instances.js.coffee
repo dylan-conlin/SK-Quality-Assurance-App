@@ -22,6 +22,7 @@ jQuery ->
         $("#fancybox-title").fadeOut()
   )
 
-
+  $('#instance_process_date').datepicker
+    dateFormat: 'yy-mm-dd'
 
 

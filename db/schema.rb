@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120822041342) do
+ActiveRecord::Schema.define(:version => 20120822181454) do
 
   create_table "assets", :force => true do |t|
     t.string   "asset_file_name"
@@ -153,6 +153,7 @@ ActiveRecord::Schema.define(:version => 20120822041342) do
     t.string   "supplier_lot"
     t.string   "po_number"
     t.date     "receipt_date"
+    t.date     "process_date"
   end
 
   create_table "issues", :force => true do |t|
@@ -246,6 +247,7 @@ ActiveRecord::Schema.define(:version => 20120822041342) do
     t.string   "credit_number"
     t.datetime "close_date"
     t.integer  "days_until_due"
+    t.date     "x3_post_date"
   end
 
   create_table "packagings", :force => true do |t|

@@ -1,5 +1,5 @@
 class Instance < ActiveRecord::Base
-  attr_accessible :labor, :labor_units, :location, :lot, :nonconformance_id, :quantity, :sublot, :units, :user_id, :user_id, :workorder, :stocker_id, :supplier_lot, :po_number, :receipt_date
+  attr_accessible :labor, :labor_units, :location, :lot, :nonconformance_id, :quantity, :sublot, :units, :user_id, :user_id, :workorder, :stocker_id, :supplier_lot, :po_number, :receipt_date, :process_date
 
   #  before_create :set_receipt_date
 
