@@ -30,11 +30,11 @@ group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier'
-  gem 'jquery-ui-rails'
+
 end
 
 gem 'jquery-rails'
-
+gem 'jquery-ui-rails'
 
 group :test do
   gem 'capybara', '1.1.2'
