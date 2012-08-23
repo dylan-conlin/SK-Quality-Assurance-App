@@ -2,11 +2,12 @@
 
 <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered pretty">
   <tr>
+    <th>Date</th>
     <th>Item</th>
-    <th>Workorder</th>
-    <th>Finished Good</th>
-    <th>User</th>
+    <th>Description</th>
+    <th>Mixed?</th>
     <th>Quantity (lbs)</th>
+    <th>Recorded by</th>
     <th></th>
     <th></th>
     <th></th>
@@ -14,11 +15,13 @@
 
 <% @waste_captures.each do |waste_capture| %>
   <tr>
-    <td><%= waste_capture.item.number %> <%= waste_capture.item.description %></td>
-    <td><%= waste_capture.workorder.number %></td>
-    <td><%= waste_capture.workorder.item.number %> <%= waste_capture.workorder.item.description %></td>
-    <td><%= waste_capture.user.name %></td>
+
+    <td><%= waste_capture.created_at.try(:strftime, '%D')  %></td>    
+    <td><%= waste_capture.item.number %></td>
+    <td><%= waste_capture.item.description %></td>
+    <td><%= waste_capture.content_type %></td>
     <td><%= waste_capture.quantity %></td>
+    <td><%= waste_capture.recorded_by %></td>
     <td><%= link_to 'Show', waste_capture %></td>
     <td><%= link_to 'Edit', edit_waste_capture_path(waste_capture) %></td>
     <td><%= link_to 'Destroy', waste_capture, confirm: 'Are you sure?', method: :delete %></td>
@@ -26,6 +29,12 @@
 <% end %>
 </table>
 
+
+<div class="pull-right"><%= will_paginate @waste_captures %></div>
 <br />
+
+
+
+
 
 <%= link_to 'New Waste capture', new_waste_capture_path %>

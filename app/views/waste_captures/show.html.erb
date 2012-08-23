@@ -2,23 +2,18 @@
 
 <p>
   <b>User:</b>
-  <%= @waste_capture.user.name %>
+  <%= @waste_capture.recorded_by %>
 </p>
 
-<p>
-  <b>Workorder:</b>
-  <%= @waste_capture.workorder.number %>
-
-</p>
-
-<p>
-<b>Finished Good</b>
-<%= @waste_capture.workorder.item.number %> <%= @waste_capture.workorder.item.description %>
-</p>
 
 <p>
   <b>Item To Track Waste for:</b>
   <%= @waste_capture.item.number %> <%= @waste_capture.item.description %>
+</p>
+
+<p>
+  <b>Mixed?:</b>
+  <%= @waste_capture.content_type %>
 </p>
 
 <p>

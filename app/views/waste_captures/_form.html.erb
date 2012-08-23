@@ -3,14 +3,15 @@
 
   <div class="form-inputs">
 
+      <%= f.collection_select :item_id, Item.where(:category => 'FG', :customer_id => 2 ), :id, :number_and_description, :include_blank => true %>
 
-    <%= f.association :workorder, :label_method => lambda { |workorder| "#{workorder.number} | #{workorder.item.description}" } %> 
 
 
-    <%= f.association :item, :label_method => lambda { |item| "#{item.number} | #{item.description}" } %> 
-
+    <%= f.label :content_type, :label => 'Is the can mostly mixed? (check if yes)' %>
+    <%= f.input :content_type, :label => false %><br/><br/>
 
     <%= f.input :quantity, :label => "Quantity in lbs" %>
+    <%= f.input :recorded_by, :label => "What is your name?" %>
   </div>
   <div class="form-actions">
     <%= f.button :submit %>
