@@ -1,4 +1,8 @@
 class WorkordersController < ApplicationController
+  before_filter :signed_in_user, 
+                only: [:index, :edit, :show, :update, :destroy]
+
+
   # GET /workorders
   # GET /workorders.json
   def index

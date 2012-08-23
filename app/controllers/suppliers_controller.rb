@@ -1,4 +1,7 @@
 class SuppliersController < ApplicationController
+  before_filter :signed_in_user, 
+                only: [:index, :edit, :show, :update, :destroy]
+
   # GET /suppliers
   # GET /suppliers.json
   def index

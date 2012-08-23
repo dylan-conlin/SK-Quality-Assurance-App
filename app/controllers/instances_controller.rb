@@ -1,4 +1,8 @@
 class InstancesController < ApplicationController
+  before_filter :signed_in_user, 
+                only: [:index, :edit, :show, :update, :destroy]
+
+
   # GET /instances
   # GET /instances.json
   def index

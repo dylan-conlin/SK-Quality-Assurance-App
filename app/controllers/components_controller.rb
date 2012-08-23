@@ -1,4 +1,7 @@
 class ComponentsController < ApplicationController
+  before_filter :signed_in_user, 
+                only: [:index, :edit, :show, :update, :destroy]
+
   # GET /components
   # GET /components.json
   def index

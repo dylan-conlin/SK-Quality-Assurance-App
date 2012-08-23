@@ -1,4 +1,8 @@
 class ItemTypesController < ApplicationController
+  before_filter :signed_in_user, 
+                only: [:index, :edit, :show, :update, :destroy]
+
+
   # GET /item_types
   # GET /item_types.json
   def index
