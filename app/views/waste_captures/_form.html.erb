@@ -1,8 +1,34 @@
+<div class="alert alert-info">
+If you don't know the item number, ask someone in production!
+</div>
+<div class="well">
+<dl>
+  <dt>Multigrain</dt>
+  <dd>19596 RF Turkey Bacon</dd>
+  <dd>19614 RF Turkey Bacon</dd>
+<dt>Original</dt>
+  <dd>19591 Sausage Egg Cheddar Muffin</dd>
+<dt>Labrea Artisan</dt>
+  <dd>19589 bacon egg gouda labaccia</dd>
+  <dd>19608 bacon egg gouda labaccia</dd>
+  <dd>19594 Vegetarian labaccia</dd>
+  <dd>19616 Vegetarian labaccia</dd>
+  <dd>19597 Ham Egg Cheddar Labaccia</dd>
+  <dd>19615 Ham Egg Cheddar Labaccia</dd>
+<dt>spinach wrap</dt>
+  <dd>19595 Egg White Wrap</dd>
+  <dd>19613 Spinach Wrap</dd>
+</dl>
+</div>
+
+
+
+
 <%= simple_form_for(@waste_capture) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
-
+      <%= f.label :item_id, :label => 'Item Number' %>
       <%= f.collection_select :item_id, Item.where(:category => 'FG', :customer_id => 2 ), :id, :number_and_description, :include_blank => true %>
 
 
@@ -13,7 +39,12 @@
     <%= f.input :quantity, :label => "Quantity in lbs" %>
     <%= f.input :recorded_by, :label => "What is your name?" %>
   </div>
+
+
+
   <div class="form-actions">
     <%= f.button :submit %>
   </div>
 <% end %>
+
+
