@@ -1,0 +1,60 @@
+<%= form_for @packaging do |f| %>
+ 
+<legend>Packaging Check</legend>
+    <%= f.label "Workorder" %>
+    <%= f.text_field :workorder, :input_html => { :class => "span6" } %>       
+
+
+
+
+<div class="alert alert-error">
+Only check items that fail! If there are no issues, leave checkbox unchecked.
+</div>
+
+
+
+    <%= f.label :individual_label_placement %>
+    <%= f.check_box :individual_label_placement %>
+
+    <%= f.label :individual_label_legibility %>
+    <%= f.check_box :individual_label_legibility %>
+
+    <%= f.label :individual_seal_integrity %>
+    <%= f.check_box :individual_seal_integrity %>
+
+    <%= f.label :individual_label_accuracy %>
+    <%= f.check_box :individual_label_accuracy %>
+
+    <%= f.label :individual_general_appearance %>
+    <%= f.check_box :individual_general_appearance %>
+
+    <%= f.label :master_label_placement %>
+    <%= f.check_box :master_label_placement %>
+
+    <%= f.label :master_label_legibility %>
+    <%= f.check_box :master_label_legibility %>
+
+    <%= f.label :master_tape_glue %>
+    <%= f.check_box :master_tape_glue %>
+
+    <%= f.label :master_case_appearance %>
+    <%= f.check_box :master_case_appearance %>
+</br>
+</br>
+</br>
+    <%= f.label :case_count, :input_html => { :class => "span6" }  %>
+    <%= f.text_field :case_count, :input_html => { :class => "span6" }  %>
+
+    <%= f.label :case_weight, :input_html => { :class => "span6" }  %>
+    <%= f.text_field :case_weight, :input_html => { :class => "span6" }  %>
+
+    <%= f.label :comments, :input_html => { :class => "span6" }  %>
+    <%= f.text_area :comments, :input_html => { :class => "span6" }  %>
+  <div class="form-actions">
+    <%= f.submit :submit %>
+  </div>
+
+
+
+<% end %>
+

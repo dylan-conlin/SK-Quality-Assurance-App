@@ -5,7 +5,6 @@
     <th><%= sortable "created_at", "Date" %></th>
     <th><%= sortable "user_id", "User" %></th>   
     <th><%= sortable "workorder", "Workorder" %></th>   
-    <th>Item</th>   
     <th>Individual Label Placement</th>   
     <th>individual label legibility</th>
     <th>individual seal integrity</th>
@@ -30,7 +29,7 @@
     <td><%= gravatar_for packaging.user, size: 52 %></br>
         <%= link_to packaging.user.name, packaging.user %></td>
     <td><%= packaging.workorder %></td>
-    <td><%= packaging.item_id %></td>
+
 
     <% if packaging.individual_label_placement == true %>
     <td><span class="label label-important">Fail</span></td>
