@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120823202603) do
+ActiveRecord::Schema.define(:version => 20120824160500) do
 
   create_table "assets", :force => true do |t|
     t.string   "asset_file_name"
@@ -277,7 +277,6 @@ ActiveRecord::Schema.define(:version => 20120823202603) do
     t.text     "comments"
     t.datetime "created_at",                    :null => false
     t.datetime "updated_at",                    :null => false
-    t.integer  "item_id"
   end
 
   create_table "production_checks", :force => true do |t|
