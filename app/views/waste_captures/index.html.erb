@@ -1,10 +1,9 @@
 <h1>Listing waste_captures</h1>
 
-
-
 <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered pretty">
   <tr>
     <th>Date</th>
+    <th>Shift</th>
     <th>Item</th>
     <th>Description</th>
     <th>Mixed?</th>
@@ -16,9 +15,18 @@
   </tr>
 
 <% @waste_captures.each do |waste_capture| %>
+
   <tr>
 
-    <td><%= waste_capture.created_at.try(:strftime, '%D')  %></td>    
+
+<td><%= waste_capture.created_at.try(:strftime, '%D') %></td>
+    <% am_shift = waste_capture.created_at.try(:strftime, '%k').to_i %>
+    <% if am_shift > 6 && am_shift < 17  %>
+      <td>am</td>
+      <% else %>
+      <td>pm</td>
+      <% end %>
+      
     <td><%= waste_capture.item.number %></td>
     <td><%= waste_capture.item.description %></td>
     <td><%= waste_capture.content_type %></td>
