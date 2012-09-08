@@ -109,13 +109,6 @@ ActiveRecord::Schema.define(:version => 20120823202603) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "documents", :force => true do |t|
-    t.string   "name"
-    t.text     "content"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "foreign_objects", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
@@ -170,7 +163,6 @@ ActiveRecord::Schema.define(:version => 20120823202603) do
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
-    t.decimal  "score"
     t.string   "short_description"
     t.integer  "views"
   end
@@ -218,6 +210,12 @@ ActiveRecord::Schema.define(:version => 20120823202603) do
     t.datetime "updated_at",  :null => false
   end
 
+  create_table "material_lists", :force => true do |t|
+    t.integer  "item_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "microposts", :force => true do |t|
     t.string   "content"
     t.integer  "user_id"
@@ -263,6 +261,7 @@ ActiveRecord::Schema.define(:version => 20120823202603) do
   create_table "packagings", :force => true do |t|
     t.integer  "user_id"
     t.string   "workorder"
+    t.string   "item_number"
     t.boolean  "individual_label_placement"
     t.boolean  "individual_label_legibility"
     t.boolean  "individual_seal_integrity"
@@ -293,6 +292,16 @@ ActiveRecord::Schema.define(:version => 20120823202603) do
     t.integer  "recipient_id"
   end
 
+  create_table "production_runs", :force => true do |t|
+    t.integer  "workorder_id"
+    t.integer  "line_id"
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.text     "comments"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
   create_table "recipes", :force => true do |t|
     t.integer  "component_id"
     t.integer  "subrecipe_id"
@@ -312,6 +321,12 @@ ActiveRecord::Schema.define(:version => 20120823202603) do
   add_index "relationships", ["followed_id"], :name => "index_relationships_on_followed_id"
   add_index "relationships", ["follower_id", "followed_id"], :name => "index_relationships_on_follower_id_and_followed_id", :unique => true
   add_index "relationships", ["follower_id"], :name => "index_relationships_on_follower_id"
+
+  create_table "schedules", :force => true do |t|
+    t.integer  "booking_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "suppliers", :force => true do |t|
     t.string   "name"
@@ -352,32 +367,6 @@ ActiveRecord::Schema.define(:version => 20120823202603) do
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["remember_token"], :name => "index_users_on_remember_token"
 
-  create_table "users_table", :id => false, :force => true do |t|
-    t.integer "id"
-    t.text    "name"
-  end
-
-  create_table "versions", :force => true do |t|
-    t.integer  "versioned_id"
-    t.string   "versioned_type"
-    t.integer  "user_id"
-    t.string   "user_type"
-    t.string   "user_name"
-    t.text     "modifications"
-    t.integer  "number"
-    t.integer  "reverted_from"
-    t.string   "tag"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-  end
-
-  add_index "versions", ["created_at"], :name => "index_versions_on_created_at"
-  add_index "versions", ["number"], :name => "index_versions_on_number"
-  add_index "versions", ["tag"], :name => "index_versions_on_tag"
-  add_index "versions", ["user_id", "user_type"], :name => "index_versions_on_user_id_and_user_type"
-  add_index "versions", ["user_name"], :name => "index_versions_on_user_name"
-  add_index "versions", ["versioned_id", "versioned_type"], :name => "index_versions_on_versioned_id_and_versioned_type"
-
   create_table "waste_captures", :force => true do |t|
     t.decimal  "quantity"
     t.datetime "created_at",   :null => false
@@ -387,15 +376,6 @@ ActiveRecord::Schema.define(:version => 20120823202603) do
     t.date     "capture_date"
     t.boolean  "content_type"
     t.string   "recorded_by"
-  end
-
-  create_table "wastes", :force => true do |t|
-    t.integer  "user_id"
-    t.integer  "component_id"
-    t.string   "workorder"
-    t.decimal  "quantity"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
   end
 
   create_table "workorders", :force => true do |t|

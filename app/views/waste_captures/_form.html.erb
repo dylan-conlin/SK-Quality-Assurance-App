@@ -24,12 +24,15 @@ If you don't know the item number, ask someone in production!
 
 
 
+
+
+
 <%= simple_form_for(@waste_capture) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
       <%= f.label :item_id, :label => 'Item Number' %>
-      <%= f.collection_select :item_id, Item.where(:category => 'FG', :customer_id => 2 ), :id, :number_and_description, :include_blank => true %>
+      <%= f.collection_select :item_id, Item.where(:category => 'FG', :customer_id => Customer.find_by_long_name("Starbucks").id ), :id, :number_and_description, :include_blank => true %>
 
 
 

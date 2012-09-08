@@ -10,4 +10,11 @@ class WasteCapture < ActiveRecord::Base
   validates :recorded_by, presence: true
 
 
+
+
+
+
+
+
+
 end

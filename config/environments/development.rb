@@ -29,16 +29,17 @@ SampleApp::Application.configure do
 #   password: "qualitycontrol"
 # }
 
-config.action_mailer.delivery_method = :smtp
-config.action_mailer.perform_deliveries = true
-config.action_mailer.smtp_settings = {
-     :authentication => :plain,
-     :address => "smtp.mailgun.org",
-     :port => 587,
-     :domain => "skfoodgroup.mailgun.org",
-     :user_name => "postmaster@skfoodgroup.mailgun.org",
-     :password => "9s4-m8cs1t76"
-}
+ config.action_mailer.delivery_method = :smtp
+ config.action_mailer.perform_deliveries = true
+ config.action_mailer.smtp_settings = {
+      :authentication => :plain,
+      :address => "smtp.mailgun.org",
+      :port => 587,
+      :domain => "skfoodgroup.mailgun.org",
+      :user_name => "postmaster@skfoodgroup.mailgun.org",
+      :password => "9s4-m8cs1t76"
+ }
+
 
 
   # Specify what domain to use for mailer URLs
