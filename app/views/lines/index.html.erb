@@ -2,30 +2,46 @@
 
 
 
-
+<ul class="unstyled" id="workorders" data-update-url="<%= sort_workorders_url %>">
 <% @lines.each do |line| %>
 
 <h3><%= line.description %></h3>
 <br/>
-<table cellpadding="0" cellspacing="0" border="0" class="table  table-bordered pretty" >
+
+
 <% line.workorders.each do |workorder| %>
 
-  <tr>
-    <td><%= workorder.item.number %> <%= workorder.item.description %></td>
-    <td><%= workorder.number %></td>
-    <td><%= workorder.status %></td>
-    <td><%= workorder.scheduled_quantity %></td>
-  </tr>
+
+   <%= content_tag_for :li, workorder do %>
+     <div class='well handle'>
+
+	 <h4><%= link_to workorder.item.number + ' ' + workorder.item.description, workorder.item %></h4><br/>
+	 <div class='span2'>Workorder: <span class="label label-inverse"><%= workorder.number %></span></div>
+	 
+	 <div class='span2'>Status: 
+	 <% if workorder.status == "In Process" %>
+	 <span class="label label-success"><%= workorder.status %></span>
+	 <% elsif workorder.status == "Scheduled" %>
+	 <span class="label label-info"><%= workorder.status %></span>
+	 <% elsif workorder.status == "Closed" %>
+	 <span class="label label-important"><%= workorder.status %></span>
+	 <% end %>
+	 </div>
+	 <div class='span2'>Sched Qty: <span class="label label-info"><%= workorder.scheduled_quantity %></span></div>
+       </div>
+
+   <% end %>
 
 <% end %>
 
-</table>
+
 
 
     <%= link_to 'edit', edit_line_path(line)  %>
 <br/>
 <br/>
 <% end %>
+</ul>
 <br />
 
 <%= link_to 'New Line', new_line_path %>

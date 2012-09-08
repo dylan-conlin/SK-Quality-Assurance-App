@@ -2,7 +2,9 @@ SampleApp::Application.routes.draw do
 
 
 
-  resources :workorders
+  resources :workorders do
+    collection { post :sort }
+  end
 
   resources :lines
 

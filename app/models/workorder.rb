@@ -5,5 +5,6 @@ class Workorder < ActiveRecord::Base
   belongs_to :line
   
   has_many :waste_captures
+  acts_as_list
 
 end

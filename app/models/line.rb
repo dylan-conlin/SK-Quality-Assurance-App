@@ -1,7 +1,5 @@
 class Line < ActiveRecord::Base
   attr_accessible :description, :number, :workorders_attributes
-
-  
   
   has_many :workorders
   has_many :items, :through => :workorders

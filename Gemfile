@@ -15,7 +15,7 @@ gem 'aws-sdk', '~> 1.3.4'
 gem 'fancybox-rails'
 gem 'pg_search'
 gem 'prawn'
-
+gem 'acts_as_list'
 
 group :development, :test do
   gem 'pg', '0.12.2'

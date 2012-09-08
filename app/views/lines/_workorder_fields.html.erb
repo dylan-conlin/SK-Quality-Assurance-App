@@ -3,16 +3,25 @@
 <div class="span2">
   <%= f.input :number, :placeholder => 'workorder number', :label => false, :input_html => { :class => 'input-small inline' }  %>
 </div>
-<div class="span2">
-  <%= f.association :item, :label_method => lambda { |item| "#{item.number} #{item.description}" }, :label => false, :input_html => { :class => 'input-small inline' }  %>
+<div class="span3">
+  <%= f.association :item, :label_method => lambda { |item| "#{item.number} #{item.description}" }, :label => false  %>
 </div>
 <div class="span2">
 
-  <%= f.input :status, :placeholder => 'status', :label => false, :input_html => { :class => 'input-small' }  %>
+  <%= f.input :status, :collection => ["Scheduled", "In Process", "Closed"], :label => false, :input_html => { :class => 'input-small' }, :include_blank => false  %>
 
 </div>
+
 <div class="span2">
   <%= f.input :scheduled_quantity, :placeholder => 'sched qty', :label => false, :input_html => { :class => 'input-small' }  %>
+</div>
+
+
+
+
+<div class="span2">
+<%= f.input :start_time, :label => false, :discard_year => true, :input_html => { :class => 'input-small' }  %>
+
 </div>
 
 

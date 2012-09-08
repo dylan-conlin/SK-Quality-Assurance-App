@@ -5,8 +5,16 @@ class WorkordersController < ApplicationController
 
   # GET /workorders
   # GET /workorders.json
+  def sort
+    params[:workorder].each_with_index do |id, index|
+      Workorder.update_all({position: index+1}, {id: id})
+    end
+    render nothing: true
+  end
+
+
   def index
-    @workorders = Workorder.all
+    @workorders = Workorder.order("position")
 
     respond_to do |format|
       format.html # index.html.erb
