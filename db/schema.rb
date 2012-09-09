@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120908194605) do
+ActiveRecord::Schema.define(:version => 20120909020519) do
 
   create_table "assets", :force => true do |t|
     t.string   "asset_file_name"
@@ -210,6 +210,13 @@ ActiveRecord::Schema.define(:version => 20120908194605) do
     t.datetime "updated_at",  :null => false
   end
 
+  create_table "lines_workorders", :force => true do |t|
+    t.integer  "line_id"
+    t.integer  "workorder_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
   create_table "material_lists", :force => true do |t|
     t.integer  "item_id"
     t.datetime "created_at", :null => false
@@ -298,6 +305,15 @@ ActiveRecord::Schema.define(:version => 20120908194605) do
     t.datetime "start_date"
     t.datetime "end_date"
     t.text     "comments"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "progress_reports", :force => true do |t|
+    t.integer  "workorder_id"
+    t.integer  "quantity"
+    t.integer  "user_id"
+    t.text     "notes"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end

@@ -2,6 +2,8 @@ SampleApp::Application.routes.draw do
 
 
 
+  resources :progress_reports
+
   resources :workorders do
     collection { post :sort }
   end

@@ -5,7 +5,8 @@
 
     <%= f.input :number, :label => 'Workorder number' %>
 
-    <%= f.association :line, :label_method => lambda { |line| "#{line.number} #{line.description}" } %>
+    <%= f.select :line_ids, Line.all.collect {|x| [x.description, x.id]}, {}, :multiple => true %>
+
 
     <%= f.association :item, :label_method => lambda { |item| "#{item.number} #{item.description}" } %>
 
@@ -16,7 +17,7 @@
 
     <%= f.input :scheduled_quantity %>
 
-    <%= f.input :amount_produced %>
+
 
     <%= f.input :start_time %>
 
@@ -25,6 +26,13 @@
     <%= f.input :notes %>
 
   </div>
+
+
+<%= f.fields_for :progress_reports do |builder| %>
+  <%= render 'progress_report_fields', f: builder %>
+<% end %>
+<%= link_to_add_fields "Add Progress Report", f, :progress_reports %>
+
 
   <div class="form-actions">
     <%= f.button :submit %>

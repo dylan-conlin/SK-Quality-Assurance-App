@@ -25,7 +25,11 @@
 
     <td><%= link_to workorder.item.number + ' ' + workorder.item.description, workorder.item %></td>
     <td><%= workorder.status %></td>
-    <td><%= workorder.line.description %></td>
+    <td>
+      <% workorder.lines.each do |line| %>
+      <%= line.description %>
+    <% end %>
+    </td>
     <td><%= workorder.scheduled_quantity %></td>
     <td><%= workorder.amount_produced %></td>
     <td><%= workorder.start_time %></td>

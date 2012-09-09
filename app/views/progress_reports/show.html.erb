@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Workorder:</b>
+  <%= @progress_report.workorder.number %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @progress_report.quantity %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @progress_report.user_id %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @progress_report.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_progress_report_path(@progress_report) %> |
+<%= link_to 'Back', progress_reports_path %>

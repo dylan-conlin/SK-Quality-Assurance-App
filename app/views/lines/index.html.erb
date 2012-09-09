@@ -5,7 +5,9 @@
 <ul class="unstyled" id="workorders" data-update-url="<%= sort_workorders_url %>">
 <% @lines.each do |line| %>
 
+
 <h3><%= line.description %></h3>
+
 <br/>
 
 
@@ -15,10 +17,11 @@
    <%= content_tag_for :li, workorder do %>
      <div class='well handle'>
 
-	 <h4><%= link_to workorder.item.number + ' ' + workorder.item.description, workorder.item %></h4><br/>
-	 <div class='span2'>Workorder: <span class="label label-inverse"><%= workorder.number %></span></div>
+	 <h4><div class="pull-left"><%= link_to workorder.item.number + ' ' + workorder.item.description, workorder %></div></h4>
+	 <div class="offset3">
+
 	 
-	 <div class='span2'>Status: 
+	 <div class='span2'> 
 	 <% if workorder.status == "In Process" %>
 	 <span class="label label-success"><%= workorder.status %></span>
 	 <% elsif workorder.status == "Scheduled" %>
@@ -27,7 +30,11 @@
 	 <span class="label label-important"><%= workorder.status %></span>
 	 <% end %>
 	 </div>
-	 <div class='span2'>Sched Qty: <span class="label label-info"><%= workorder.scheduled_quantity %></span></div>
+	 
+	 <div class='span2'>Workorder: <%= workorder.number %></div>
+	 <div class='span2'>Sched Qty: <%= workorder.scheduled_quantity %></div>
+	 <div class='span2'>Amt Produced: <%= workorder.progress_reports.sum { |p| p.quantity } %></div>
+	 </div>
        </div>
 
    <% end %>

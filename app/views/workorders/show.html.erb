@@ -22,9 +22,11 @@
   <%= @workorder.scheduled_quantity %>
 </p>
 
+
+
 <p>
   <b>Amount produced:</b>
-  <%= @workorder.amount_produced %>
+  <%= @workorder.progress_reports.sum { |p| p.quantity } %>
 </p>
 
 <p>
@@ -43,5 +45,21 @@
 </p>
 
 
+</br>
+
+
 <%= link_to 'Edit', edit_workorder_path(@workorder) %> |
 <%= link_to 'Back', workorders_path %>
+
+<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered">
+<th>Time</th>
+<th>Quantity</th>
+<th>Notes</th>
+<% @workorder.progress_reports.each do |progress_report| %>
+<tr>
+  <td><%= progress_report.created_at.strftime("%D %l:%M %P") %></td>
+  <td><%= progress_report.quantity %></td>
+  <td><%= progress_report.notes %></td>
+</tr>
+<% end %>
+</table>

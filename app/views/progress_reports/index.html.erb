@@ -1,0 +1,29 @@
+<h1>Listing progress_reports</h1>
+
+<table>
+  <tr>
+    <th>Workorder</th>
+    <th>Quantity</th>
+    <th>User</th>
+    <th>Notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @progress_reports.each do |progress_report| %>
+  <tr>
+    <td><%= progress_report.workorder.number %></td>
+    <td><%= progress_report.quantity %></td>
+    <td><%= progress_report.user_id %></td>
+    <td><%= progress_report.notes %></td>
+    <td><%= link_to 'Show', progress_report %></td>
+    <td><%= link_to 'Edit', edit_progress_report_path(progress_report) %></td>
+    <td><%= link_to 'Destroy', progress_report, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Progress report', new_progress_report_path %>
