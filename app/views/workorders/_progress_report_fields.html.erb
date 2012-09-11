@@ -1,6 +1,6 @@
 <fieldset>
-  <%= f.text_field :quantity %>
-  <%= f.text_field :notes %>
+  <%= f.text_field :quantity, :placeholder => "Quantity" %>
+  <%= f.text_field :notes, :placeholder => "Notes" %>
   <%= f.hidden_field :_destroy %>
   <%= link_to "remove", '#', class: "remove_fields" %>
 </fieldset>

@@ -8,11 +8,11 @@
     <th>Item</th>
     <th>Status</th>
     <th>Line</th>
-    <th>Scheduled run date</th>
+
     <th>Scheduled quantity</th>
-    <th>Amount produced</th>
+
     <th>Start time</th>
-    <th>Special equipment</th>
+
     <th>Notes</th>
     <th></th>
     <th></th>
@@ -30,10 +30,11 @@
       <%= line.description %>
     <% end %>
     </td>
+
     <td><%= workorder.scheduled_quantity %></td>
-    <td><%= workorder.amount_produced %></td>
+
     <td><%= workorder.start_time %></td>
-    <td><%= workorder.special_equipment %></td>
+
     <td><%= workorder.notes %></td>
     <td><%= link_to 'Show', workorder %></td>
     <td><%= link_to 'Edit', edit_workorder_path(workorder) %></td>

@@ -1,33 +1,32 @@
-<%= simple_form_for(@workorder) do |f| %>
+<%= simple_form_for(@workorder, :html => { :class => 'form-horizontal' }) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
+    <div class="row well">
+    <%= f.input :number, :label => 'Workorder number', :wrapper_html => { :class => 'span4' }, :input_html => { :class => 'input-small' } %>
 
-    <%= f.input :number, :label => 'Workorder number' %>
+    <%= f.input :line_ids, :collection => Line.order("number"), :as => :check_boxes, :label_method => lambda { |line| "#{line.description}" }, :label => 'Lines', :wrapper_html => { :class => 'span6' } %>
 
-    <%= f.select :line_ids, Line.all.collect {|x| [x.description, x.id]}, {}, :multiple => true %>
+    </div>
+
+    <div class="row well">
+    <%= f.association :item, :label_method => lambda { |item| "#{item.number} #{item.description}" }, :wrapper_html => { :class => 'span4' } %>
+    
+    <%= f.input :status, :collection => ["Scheduled", "In Process", "Closed"], :input_html => { :class => 'input-small' }, :include_blank => false, :wrapper_html => { :class => 'span6' }  %>
+    </div>
+    <div class="row well">
+    <%= f.input :scheduled_quantity, :wrapper_html => { :class => 'span3' }, :input_html => { :class => 'input-small' } %>
+
+    <%= f.input :start_time, :discard_year => true, :input_html => { :class => 'input-small' }, :wrapper_html => { :class => 'span8' }  %>
+    </div>
+    <div class="row well">
 
 
-    <%= f.association :item, :label_method => lambda { |item| "#{item.number} #{item.description}" } %>
-
-
-    <%= f.input :status %>
-
-
-
-    <%= f.input :scheduled_quantity %>
-
-
-
-    <%= f.input :start_time %>
-
-    <%= f.input :special_equipment %>
-
-    <%= f.input :notes %>
-
+    <%= f.input :notes, :wrapper_html => { :class => 'span6' } %>
+    </div>
   </div>
 
-
+<h4>Progress Reports</h4><br/>
 <%= f.fields_for :progress_reports do |builder| %>
   <%= render 'progress_report_fields', f: builder %>
 <% end %>
