@@ -12,7 +12,7 @@
 
 <% line.workorders.order("position").each do |workorder| %>
   <%= content_tag_for :li, workorder do %>
-   <div class="handle bs-docs-example">
+   <div class="handle workorder-box">
     <%= link_to workorder.item.number + ' ' + workorder.item.description, workorder %><br/>
     <%= workorder.status %>
     </div>

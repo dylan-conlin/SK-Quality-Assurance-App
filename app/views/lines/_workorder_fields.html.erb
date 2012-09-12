@@ -1,26 +1,28 @@
   <fieldset>
-
+<div class="well">
 <div class="span2">
-  <%= f.input :number, :placeholder => 'workorder number', :label => false, :input_html => { :class => 'input-small inline' }  %>
+  <%= f.input :number, :placeholder => 'workorder number',  :input_html => { :class => 'input-small' }, :label => "WO #"  %>
 </div>
 <div class="span3">
-  <%= f.association :item, :label_method => lambda { |item| "#{item.number} #{item.description}" }, :label => false  %>
+  <%= f.association :item, :label_method => lambda { |item| "#{item.number} #{item.description}" }  %>
 </div>
 <div class="span2">
 
-  <%= f.input :status, :collection => ["Scheduled", "In Process", "Closed"], :label => false, :input_html => { :class => 'input-small' }, :include_blank => false  %>
+  <%= f.input :status, :collection => ["Scheduled", "In Process", "Closed"],  :input_html => { :class => 'input-small' }, :include_blank => false  %>
 
 </div>
 
 <div class="span2">
-  <%= f.input :scheduled_quantity, :placeholder => 'sched qty', :label => false, :input_html => { :class => 'input-small' }  %>
+  <%= f.input :scheduled_quantity, :placeholder => 'sched qty',  :input_html => { :class => 'input-small' }  %>
 </div>
 
 
+<br/>
+<br/>
+<br/>
 
-
-<div class="span2">
-<%= f.input :start_time, :label => false, :discard_year => true, :input_html => { :class => 'input-small' }  %>
+<div class="span6">
+<%= f.input :start_time,  :discard_year => true, :input_html => { :class => 'input-small' }  %>
 
 </div>
 
@@ -28,6 +30,6 @@
       <%= f.hidden_field :_destroy %>
 
 
-      <%= link_to "X", '#', class: "btn btn-danger remove_fields" %>
-
+      <%= link_to "remove", '#', class: "btn btn-danger remove_fields" %>
+</div>
   </fieldset>
