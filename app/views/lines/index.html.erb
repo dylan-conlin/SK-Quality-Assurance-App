@@ -1,33 +1,29 @@
-<h1>Listing lines</h1>
+<legend>Workorder Sequence</legend>
 
 
-
-
-<% @lines.each do |line| %>
 <ul class="unstyled" id="workorders" data-update-url="<%= sort_workorders_url %>">
+<% @lines.each do |line| %>
+
 
 <h3><%= line.description %></h3>
 
 <br/>
 
 
-
-
-
-
 <% line.workorders.order("position").each do |workorder| %>
   <%= content_tag_for :li, workorder do %>
-    <%= workorder.position %>
-    <%= workorder.id %>
+   <div class="handle bs-docs-example">
     <%= link_to workorder.item.number + ' ' + workorder.item.description, workorder %><br/>
+    <%= workorder.status %>
+    </div>
   <% end %>
 <% end %>
 
 
 <%= link_to 'edit', edit_line_path(line)  %>
-</ul>
-<% end %>
 
+<% end %>
+</ul>
 
 
 
