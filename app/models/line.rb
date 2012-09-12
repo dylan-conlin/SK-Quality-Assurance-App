@@ -1,5 +1,6 @@
 class Line < ActiveRecord::Base
   attr_accessible :description, :number, :workorders_attributes, :workorder_ids
+
   
   has_many :lines_workorders
   has_many :workorders, :through => :lines_workorders

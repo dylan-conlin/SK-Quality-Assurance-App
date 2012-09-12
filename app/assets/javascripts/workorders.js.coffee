@@ -4,11 +4,14 @@
 
 
 jQuery ->
-  $('#workorders').sortable(
-    handle: '.handle'
+  $('#workorders').sortable
+    axis: 'y'
     update: ->
       $.post($(this).data('update-url'), $(this).sortable('serialize'))
-  )
+
+
+   
+
 
 
 

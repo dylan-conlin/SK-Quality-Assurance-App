@@ -3,16 +3,6 @@ class WorkordersController < ApplicationController
                 only: [:index, :edit, :show, :update, :destroy]
 
 
-  # GET /workorders
-  # GET /workorders.json
-  def sort
-    params[:workorder].each_with_index do |id, index|
-      Workorder.update_all({position: index+1}, {id: id})
-    end
-    render nothing: true
-  end
-
-
   def index
     @workorders = Workorder.order("position")
 
@@ -21,6 +11,16 @@ class WorkordersController < ApplicationController
       format.json { render json: @workorders }
     end
   end
+
+
+  
+  def sort
+    params[:workorder].each_with_index do |id, index|
+      Workorder.update_all({position: index+1}, {id: id})
+    end
+    render nothing: true
+  end
+
 
   # GET /workorders/1
   # GET /workorders/1.json
