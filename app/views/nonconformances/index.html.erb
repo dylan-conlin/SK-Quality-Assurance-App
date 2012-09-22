@@ -16,10 +16,14 @@
     <% end %>
 
 
-    <li class="<%= 'active' if params[:status] == 'Waiting on Supplier' %>"><%= link_to "Waiting on supplier (#{Nonconformance.waiting_on_supplier.count})", :status => "Waiting on Supplier", :data => {:toggle=>"tab"} %></li>
 
-    <li class="<%= 'active' if params[:status] == 'Closed' %>"><%= link_to "Closed (#{Nonconformance.closed.count})", :status => "Closed", :data => {:toggle=>"tab"} %></li>
+
+    <li class="<%= 'active' if params[:status] == 'Waiting on Supplier' %>"><%= link_to "Waiting on supplier (#{Nonconformance.waiting_on_supplier.count})" + " " + "| Total: #{number_to_currency(Nonconformance.waiting_on_supplier_total)}", :status => "Waiting on Supplier", :data => {:toggle=>"tab"} %></li>
+
+    <li class="<%= 'active' if params[:status] == 'Closed' %>"><%= link_to "Closed (#{Nonconformance.closed.count})" + " " + "| Total: #{number_to_currency(Nonconformance.closed_total)}", :status => "Closed", :data => {:toggle=>"tab"} %></li>
   </ul>
+
+
 
 
   <% if params[:status] == 'Waiting on Supplier' %>
@@ -66,6 +70,8 @@
 
 
 <% @nonconformances.each do |nonconformance| %>
+
+
 
 <div>
   <div class="nonconformance-summary">
@@ -124,9 +130,6 @@
 	  created <%= time_ago_in_words(nonconformance.created_at) %> ago by <%= link_to nonconformance.user.name, nonconformance.user %>
 	</div>    
        </div>
-
-
-
       </div>
       
 

@@ -62,16 +62,21 @@ accepts_nested_attributes_for :instances, allow_destroy: true
 
 
 
+def total
+  instances.sum { |p| p.quantity * component.price_per_purchase_unit + p.labor * labor_cost }
+end
 
+def self.waiting_on_supplier_total
+  waiting_on_supplier.sum { |elm| elm.total }
+end
 
+def self.open_total
+  open.sum { |elm| elm.total }
+end
 
-
-
-
-
-
-
-
+def self.closed_total
+  closed.sum { |elm| elm.total }
+end
 
 
 private

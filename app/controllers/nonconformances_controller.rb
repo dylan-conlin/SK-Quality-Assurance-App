@@ -5,20 +5,11 @@ class NonconformancesController < ApplicationController
 
   helper_method :sort_column, :sort_direction
 
+
+
+
+
   def index
-
-    # if ["Quality Assurance", "Production"].include?(current_user.department.name)
-    #   @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
-    # elsif ["Logistics"].include?(current_user.department.name)
-    #   @nonconformances = Nonconformance.in_process.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
-    # else   
-    #   @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 25, :page => params[:page])
-      
-    # end
-
-
-
-    
 
     if params.has_key?(:status) == false
     @nonconformances = Nonconformance.open.order(sort_column + " " + sort_direction).paginate(:per_page => 20, :page => params[:page])
@@ -34,19 +25,6 @@ class NonconformancesController < ApplicationController
     end
 
 
-
-
-#     if params[:status] == 'Waiting on Supplier' 
-#       @nonconformances = Nonconformance.where(:status => (params[:status]))
-      
-#       if params[:limit] == 'overdue' 
-#         @nonconformances = Nonconformance.waiting_on_supplier.overdue
-#       end
-#     end
-
-#     if params[:status] == 'Closed'
-#       @nonconformances = Nonconformance.closed
-#     end
 
   end
 
