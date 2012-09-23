@@ -17,6 +17,7 @@ class User < ActiveRecord::Base
                                    dependent:   :destroy
   has_many :followers, through: :reverse_relationships, source: :follower
   belongs_to :department                                   
+  before_create :set_status                                 
   before_save { |user| user.email = email.downcase }
   before_save :create_remember_token
   has_many :packagings, dependent: :destroy
@@ -30,6 +31,8 @@ class User < ActiveRecord::Base
   validates :user_id, presence: true
   validates :department_id, presence: true
   default_scope order: 'name ASC'
+  scope :active, where(:active => true)
+                                 
   def feed
     Micropost.from_users_followed_by(self)
   end
@@ -47,6 +50,10 @@ class User < ActiveRecord::Base
   end
 
   private
+
+    def set_status
+      self.active = true
+    end
 
     def create_remember_token
       self.remember_token = SecureRandom.urlsafe_base64

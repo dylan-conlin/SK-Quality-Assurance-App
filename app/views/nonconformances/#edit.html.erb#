@@ -1,0 +1,8 @@
+<h1>Editing nonconformance</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @nonconformance %> |
+<%= link_to 'Back', nonconformances_path %>
+
+<div>this</div>

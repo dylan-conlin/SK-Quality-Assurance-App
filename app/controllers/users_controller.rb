@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_filter :admin_user,     only: [:new, :destroy]
 
   def index
-    @users = User.paginate(page: params[:page])
+    @users = User.active.paginate(page: params[:page])
   end
 
   def show
@@ -51,8 +51,8 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    User.find(params[:id]).destroy
-    flash[:success] = "User destroyed."
+    User.find(params[:id]).toggle!(:active)
+    flash[:success] = "Account deactivated."
     redirect_to users_path
   end
 
