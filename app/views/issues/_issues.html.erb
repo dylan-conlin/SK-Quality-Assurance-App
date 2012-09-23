@@ -35,7 +35,7 @@
 	    (<%= link_to issue.comments.count, issue_path(issue)%>)
 	    
     </div></td>
-    <% if current_user.admin = true %>
+    <% if current_user.admin == true %>
     <td><%= issue.views %></td>
     <% end %>
     <td>
