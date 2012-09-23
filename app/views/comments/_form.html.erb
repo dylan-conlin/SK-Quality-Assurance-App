@@ -31,7 +31,7 @@
 	<%= department.name %>
       </strong>
       <ol>
-	<% department.users.each do |user|%> 
+	<% department.users.active.each do |user|%> 
 	
 	<div class="row">
 	<% checked_users = @commentable.comments.map(&:user).uniq + [@commentable.user] %>	  
