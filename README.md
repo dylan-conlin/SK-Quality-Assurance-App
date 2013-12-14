@@ -4,4 +4,4 @@ While learning rails, as a first project, I developed this sample application fo
 
 live demo: http://skfoodgroup.herokuapp.com
 
-![non-conformance system view](http://note.io/1fubeDS)
+![non-conformance system view](https://raw.github.com/dylan-conlin/SK-Quality-Assurance-App/master/public/SK_Food_Group_-_Quality_Assurance.jpg)
